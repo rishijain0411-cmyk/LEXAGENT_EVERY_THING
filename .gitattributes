@@ -1,0 +1,4 @@
+V3_with_CAP_as_main/data/cap_corpus.json filter=lfs diff=lfs merge=lfs -text
+V3_with_CAP_as_main/data/cap_bm25_index.pkl filter=lfs diff=lfs merge=lfs -text
+V3_with_CAP_as_main/data/retrieval_v2/dense_embeddings.float16.npy filter=lfs diff=lfs merge=lfs -text
+V3_with_CAP_as_main/data/retrieval_v2/bm25_word_index.pkl filter=lfs diff=lfs merge=lfs -text
