@@ -1,0 +1,45 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STEP 3: RUNNING 2-CASE COMPREHENSIVE BENCHMARK EVALUATION (FULL RUN)
+██████████████████████████████████████████████████████████████████████████████
+
+===========================================================================
+  LEXAGENT v3.0 (CAP EDITION) — 2-CASE FULL BENCHMARK EVALUATION
+===========================================================================
+  Loaded 313611 canonical CAP cases and citations.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27188.72it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/291 [00:00<00:04, 58.15it/s]Loading weights:   4%|▍         | 13/291 [00:00<00:07, 39.67it/s]Loading weights:   6%|▌         | 18/291 [00:00<00:08, 33.51it/s]Loading weights:   9%|▉         | 26/291 [00:00<00:09, 29.21it/s]Loading weights:  12%|█▏        | 36/291 [00:01<00:08, 30.33it/s]Loading weights:  15%|█▌        | 45/291 [00:01<00:06, 35.27it/s]Loading weights:  19%|█▊        | 54/291 [00:01<00:05, 42.54it/s]Loading weights:  20%|██        | 59/291 [00:01<00:06, 36.44it/s]Loading weights:  22%|██▏       | 64/291 [00:01<00:07, 30.28it/s]Loading weights:  23%|██▎       | 68/291 [00:02<00:08, 27.37it/s]Loading weights:  26%|██▋       | 77/291 [00:02<00:05, 36.03it/s]Loading weights:  28%|██▊       | 82/291 [00:02<00:05, 37.29it/s]Loading weights:  30%|██▉       | 87/291 [00:02<00:06, 29.91it/s]Loading weights:  32%|███▏      | 94/291 [00:02<00:05, 36.93it/s]Loading weights:  34%|███▍      | 99/291 [00:02<00:05, 33.24it/s]Loading weights:  37%|███▋      | 108/291 [00:03<00:05, 33.80it/s]Loading weights:  39%|███▉      | 114/291 [00:03<00:04, 36.64it/s]Loading weights:  41%|████      | 119/291 [00:03<00:04, 36.43it/s]Loading weights:  42%|████▏     | 123/291 [00:03<00:06, 27.35it/s]Loading weights:  46%|████▌     | 134/291 [00:03<00:04, 36.60it/s]Loading weights:  48%|████▊     | 139/291 [00:04<00:04, 36.74it/s]Loading weights:  49%|████▉     | 144/291 [00:04<00:04, 33.67it/s]Loading weights:  52%|█████▏    | 150/291 [00:04<00:04, 30.18it/s]Loading weights:  56%|█████▌    | 162/291 [00:04<00:03, 38.39it/s]Loading weights:  57%|█████▋    | 166/291 [00:04<00:03, 38.52it/s]Loading weights:  58%|█████▊    | 170/291 [00:05<00:03, 30.82it/s]Loading weights:  62%|██████▏   | 180/291 [00:05<00:02, 37.59it/s]Loading weights:  63%|██████▎   | 184/291 [00:05<00:02, 35.80it/s]Loading weights:  65%|██████▍   | 189/291 [00:05<00:03, 33.01it/s]Loading weights:  66%|██████▋   | 193/291 [00:05<00:03, 27.19it/s]Loading weights:  68%|██████▊   | 199/291 [00:05<00:02, 31.15it/s]Loading weights:  70%|███████   | 204/291 [00:06<00:02, 30.09it/s]Loading weights:  74%|███████▍  | 215/291 [00:06<00:02, 37.01it/s]Loading weights:  76%|███████▌  | 221/291 [00:06<00:01, 38.63it/s]Loading weights:  77%|███████▋  | 225/291 [00:06<00:01, 33.71it/s]Loading weights:  79%|███████▊  | 229/291 [00:06<00:02, 24.20it/s]Loading weights:  82%|████████▏ | 240/291 [00:07<00:01, 31.10it/s]Loading weights:  85%|████████▍ | 247/291 [00:07<00:01, 36.58it/s]Loading weights:  87%|████████▋ | 253/291 [00:07<00:01, 34.56it/s]Loading weights:  88%|████████▊ | 257/291 [00:07<00:00, 35.51it/s]Loading weights:  90%|█████████ | 262/291 [00:07<00:00, 31.61it/s]Loading weights:  92%|█████████▏| 267/291 [00:07<00:00, 33.03it/s]Loading weights:  93%|█████████▎| 271/291 [00:08<00:00, 27.44it/s]Loading weights:  96%|█████████▌| 279/291 [00:08<00:00, 28.19it/s]Loading weights:  99%|█████████▉| 289/291 [00:08<00:00, 40.37it/s]Loading weights: 100%|██████████| 291/291 [00:08<00:00, 34.17it/s]
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\experiments\..\src\models\load_model.py:130: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the `langchain-huggingface package and should be used instead. To use it run `pip install -U `langchain-huggingface` and import as `from `langchain_huggingface import HuggingFacePipeline``.
+  llm_pipeline = HuggingFacePipeline(pipeline=text_pipeline)
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  60%|██████    | 64/106 [00:00<00:00, 632.79it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 1016.01it/s]
+
+[1/2] Case #1: Fourth Amendment — Private Searches
+      Q: Does the Fourth Amendment protect against warrantless searches conducted by private indivi...
+      -> HR: 0.00% | CAS: 0.9243 | Conf: 0.00 | Status: CONTESTED
+
+[2/2] Case #2: Eighth Amendment — Juvenile Death Penalty
+      Q: Can a state constitutionally impose the death penalty on an offender who was under the age...
+      -> HR: 0.00% | CAS: 0.8810 | Conf: 0.00 | Status: CONTESTED
+
+===========================================================================
+  AGGREGATE BENCHMARK SCORECARD SUMMARY
+===========================================================================
+  Total Cases Evaluated:           2
+  Completed Successfully:          2
+  Crashed/Failed Cases:            0
+  Mean Hallucination Rate (HR):    0.00%
+    ├─ Citation Fabrication Rate (CFR): 0.00%
+    ├─ Off-Corpus Precedent Rate (OOR): 0.00%
+    └─ Misattribution Rate (MAR):       100.00%
+  Unsupported Claim Rate (UCR):    40.00%
+  Answer Semantic Similarity (ASS):0.9026
+  Authority Recall (AR):           50.00%
+  Authority Precision (AP):        16.66%
+  Holding Attribution Acc (HAA):   0.00%
+  Mean Evidence Overlap (EOR):     0.00%
+  Mean Judge Confidence:           0.00
+  Debate Convergence Rate (DCR):   0.00%
+  Total Execution Time:            227.3s
+===========================================================================
+
+Detailed scorecard saved to: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\benchmark_2_cases_results.json

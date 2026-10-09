@@ -1,0 +1,813 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STAGE 1: DOWNLOADING RAW HARVARD CAP VOLUMES (all)
+██████████████████████████████████████████████████████████████████████████████
+
+==============================================================================
+  [CAP STAGE 1: DOWNLOAD ONLY]
+    Source:             https://static.case.law/us/<volume>/
+    Raw cache:          C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_raw_volumes
+    Worker threads:     16
+    Target volumes:     600 (1 ... 600)
+    Checkpoint file:    C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_download_checkpoint.json
+    Batch checkpoint:   every 64 volumes (10 batches)
+==============================================================================
+  -> Verifying the cache files already on disk for 600 volumes...
+    Verified COMPLETE:  3 (skipped)
+    To process now:     597 (not started: 597)
+  [1/597] Vol 4: COMPLETE - 156/156 cases (0 without text) | 5.8s | overall 4/600 complete, 0 failed, 0 unavailable | ETA 57m 41s
+  [2/597] Vol 5: COMPLETE - 24/24 cases (0 without text) | 1.6s | overall 5/600 complete, 0 failed, 0 unavailable | ETA 36m 48s
+  [3/597] Vol 6: COMPLETE - 24/24 cases (0 without text) | 1.2s | overall 6/600 complete, 0 failed, 0 unavailable | ETA 28m 24s
+  [4/597] Vol 7: COMPLETE - 42/42 cases (0 without text) | 1.7s | overall 7/600 complete, 0 failed, 0 unavailable | ETA 25m 26s
+  [5/597] Vol 8: COMPLETE - 51/51 cases (0 without text) | 2.0s | overall 8/600 complete, 0 failed, 0 unavailable | ETA 24m 13s
+  [6/597] Vol 9: COMPLETE - 46/46 cases (0 without text) | 1.9s | overall 9/600 complete, 0 failed, 0 unavailable | ETA 23m 20s
+  [7/597] Vol 10: COMPLETE - 39/39 cases (0 without text) | 2.4s | overall 10/600 complete, 0 failed, 0 unavailable | ETA 23m 18s
+  [8/597] Vol 11: COMPLETE - 86/86 cases (0 without text) | 2.9s | overall 11/600 complete, 0 failed, 0 unavailable | ETA 23m 51s
+  [9/597] Vol 12: COMPLETE - 48/48 cases (0 without text) | 2.0s | overall 12/600 complete, 0 failed, 0 unavailable | ETA 23m 20s
+  [10/597] Vol 13: COMPLETE - 40/40 cases (0 without text) | 1.9s | overall 13/600 complete, 0 failed, 0 unavailable | ETA 22m 49s
+  [11/597] Vol 14: COMPLETE - 43/43 cases (0 without text) | 1.6s | overall 14/600 complete, 0 failed, 0 unavailable | ETA 22m 11s
+  [12/597] Vol 15: COMPLETE - 42/42 cases (0 without text) | 1.6s | overall 15/600 complete, 0 failed, 0 unavailable | ETA 21m 36s
+  [13/597] Vol 16: COMPLETE - 38/38 cases (0 without text) | 2.4s | overall 16/600 complete, 0 failed, 0 unavailable | ETA 21m 42s
+  [14/597] Vol 17: COMPLETE - 33/33 cases (0 without text) | 1.5s | overall 17/600 complete, 0 failed, 0 unavailable | ETA 21m 10s
+  [15/597] Vol 18: COMPLETE - 27/27 cases (0 without text) | 1.6s | overall 18/600 complete, 0 failed, 0 unavailable | ETA 20m 46s
+  [16/597] Vol 19: COMPLETE - 41/41 cases (0 without text) | 1.6s | overall 19/600 complete, 0 failed, 0 unavailable | ETA 20m 23s
+  [17/597] Vol 20: COMPLETE - 31/31 cases (0 without text) | 1.8s | overall 20/600 complete, 0 failed, 0 unavailable | ETA 20m 12s
+  [18/597] Vol 21: COMPLETE - 30/30 cases (0 without text) | 1.5s | overall 21/600 complete, 0 failed, 0 unavailable | ETA 19m 51s
+  [19/597] Vol 22: COMPLETE - 41/41 cases (0 without text) | 1.7s | overall 22/600 complete, 0 failed, 0 unavailable | ETA 19m 39s
+  [20/597] Vol 23: COMPLETE - 27/27 cases (0 without text) | 1.2s | overall 23/600 complete, 0 failed, 0 unavailable | ETA 19m 14s
+  [21/597] Vol 24: COMPLETE - 33/33 cases (0 without text) | 2.2s | overall 24/600 complete, 0 failed, 0 unavailable | ETA 19m 18s
+  [22/597] Vol 25: COMPLETE - 47/47 cases (0 without text) | 2.5s | overall 25/600 complete, 0 failed, 0 unavailable | ETA 19m 28s
+  [23/597] Vol 26: COMPLETE - 55/55 cases (0 without text) | 2.6s | overall 26/600 complete, 0 failed, 0 unavailable | ETA 19m 40s
+  [24/597] Vol 27: COMPLETE - 44/44 cases (0 without text) | 1.6s | overall 27/600 complete, 0 failed, 0 unavailable | ETA 19m 28s
+  [25/597] Vol 28: COMPLETE - 33/33 cases (0 without text) | 1.8s | overall 28/600 complete, 0 failed, 0 unavailable | ETA 19m 20s
+  [26/597] Vol 29: COMPLETE - 26/26 cases (0 without text) | 1.2s | overall 29/600 complete, 0 failed, 0 unavailable | ETA 19m 01s
+  [27/597] Vol 30: COMPLETE - 42/42 cases (0 without text) | 1.7s | overall 30/600 complete, 0 failed, 0 unavailable | ETA 18m 52s
+  [28/597] Vol 31: COMPLETE - 56/56 cases (0 without text) | 1.9s | overall 31/600 complete, 0 failed, 0 unavailable | ETA 18m 49s
+  [29/597] Vol 32: COMPLETE - 41/41 cases (0 without text) | 1.9s | overall 32/600 complete, 0 failed, 0 unavailable | ETA 18m 45s
+  [30/597] Vol 33: COMPLETE - 62/62 cases (0 without text) | 2.3s | overall 33/600 complete, 0 failed, 0 unavailable | ETA 18m 49s
+  [31/597] Vol 34: COMPLETE - 43/43 cases (0 without text) | 1.6s | overall 34/600 complete, 0 failed, 0 unavailable | ETA 18m 40s
+  [32/597] Vol 35: COMPLETE - 52/52 cases (0 without text) | 1.9s | overall 35/600 complete, 0 failed, 0 unavailable | ETA 18m 37s
+  [33/597] Vol 36: COMPLETE - 20/20 cases (0 without text) | 2.0s | overall 36/600 complete, 0 failed, 0 unavailable | ETA 18m 36s
+  [34/597] Vol 37: COMPLETE - 42/42 cases (0 without text) | 1.8s | overall 37/600 complete, 0 failed, 0 unavailable | ETA 18m 31s
+  [35/597] Vol 38: COMPLETE - 50/50 cases (0 without text) | 2.4s | overall 38/600 complete, 0 failed, 0 unavailable | ETA 18m 36s
+  [36/597] Vol 39: COMPLETE - 45/45 cases (0 without text) | 1.7s | overall 39/600 complete, 0 failed, 0 unavailable | ETA 18m 31s
+  [37/597] Vol 40: COMPLETE - 31/31 cases (0 without text) | 1.3s | overall 40/600 complete, 0 failed, 0 unavailable | ETA 18m 19s
+  [38/597] Vol 41: COMPLETE - 43/43 cases (0 without text) | 1.7s | overall 41/600 complete, 0 failed, 0 unavailable | ETA 18m 14s
+  [39/597] Vol 42: COMPLETE - 35/35 cases (0 without text) | 2.2s | overall 42/600 complete, 0 failed, 0 unavailable | ETA 18m 16s
+  [40/597] Vol 43: COMPLETE - 39/39 cases (0 without text) | 1.7s | overall 43/600 complete, 0 failed, 0 unavailable | ETA 18m 10s
+  [41/597] Vol 44: COMPLETE - 51/51 cases (0 without text) | 2.0s | overall 44/600 complete, 0 failed, 0 unavailable | ETA 18m 10s
+  [42/597] Vol 45: COMPLETE - 47/47 cases (0 without text) | 1.9s | overall 45/600 complete, 0 failed, 0 unavailable | ETA 18m 06s
+  [43/597] Vol 46: COMPLETE - 37/37 cases (0 without text) | 1.6s | overall 46/600 complete, 0 failed, 0 unavailable | ETA 18m 00s
+  [44/597] Vol 47: COMPLETE - 36/36 cases (0 without text) | 1.7s | overall 47/600 complete, 0 failed, 0 unavailable | ETA 17m 55s
+  [45/597] Vol 48: COMPLETE - 42/42 cases (0 without text) | 2.2s | overall 48/600 complete, 0 failed, 0 unavailable | ETA 17m 57s
+  [46/597] Vol 49: COMPLETE - 40/40 cases (0 without text) | 1.6s | overall 49/600 complete, 0 failed, 0 unavailable | ETA 17m 51s
+  [47/597] Vol 50: COMPLETE - 49/49 cases (0 without text) | 2.0s | overall 50/600 complete, 0 failed, 0 unavailable | ETA 17m 50s
+  [48/597] Vol 51: COMPLETE - 41/41 cases (0 without text) | 1.6s | overall 51/600 complete, 0 failed, 0 unavailable | ETA 17m 44s
+  [49/597] Vol 52: COMPLETE - 47/47 cases (0 without text) | 2.1s | overall 52/600 complete, 0 failed, 0 unavailable | ETA 17m 44s
+  [50/597] Vol 53: COMPLETE - 47/47 cases (0 without text) | 2.0s | overall 53/600 complete, 0 failed, 0 unavailable | ETA 17m 43s
+  [51/597] Vol 54: COMPLETE - 50/50 cases (0 without text) | 2.3s | overall 54/600 complete, 0 failed, 0 unavailable | ETA 17m 45s
+  [52/597] Vol 55: COMPLETE - 57/57 cases (0 without text) | 2.2s | overall 55/600 complete, 0 failed, 0 unavailable | ETA 17m 45s
+  [53/597] Vol 56: COMPLETE - 37/37 cases (0 without text) | 1.9s | overall 56/600 complete, 0 failed, 0 unavailable | ETA 17m 42s
+  [54/597] Vol 57: COMPLETE - 44/44 cases (0 without text) | 1.7s | overall 57/600 complete, 0 failed, 0 unavailable | ETA 17m 38s
+  [55/597] Vol 58: COMPLETE - 68/68 cases (0 without text) | 2.5s | overall 58/600 complete, 0 failed, 0 unavailable | ETA 17m 42s
+  [56/597] Vol 59: COMPLETE - 95/95 cases (0 without text) | 3.5s | overall 59/600 complete, 0 failed, 0 unavailable | ETA 17m 55s
+  [57/597] Vol 60: COMPLETE - 62/62 cases (0 without text) | 2.8s | overall 60/600 complete, 0 failed, 0 unavailable | ETA 18m 01s
+  [58/597] Vol 61: COMPLETE - 72/72 cases (0 without text) | 2.4s | overall 61/600 complete, 0 failed, 0 unavailable | ETA 18m 02s
+  [59/597] Vol 62: COMPLETE - 67/67 cases (0 without text) | 2.3s | overall 62/600 complete, 0 failed, 0 unavailable | ETA 18m 03s
+  [60/597] Vol 63: COMPLETE - 56/56 cases (0 without text) | 2.7s | overall 63/600 complete, 0 failed, 0 unavailable | ETA 18m 07s
+  [61/597] Vol 64: COMPLETE - 59/59 cases (0 without text) | 2.1s | overall 64/600 complete, 0 failed, 0 unavailable | ETA 18m 05s
+  [CHECKPOINT] Batch 1/10 (volumes 1-64): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [62/597] Vol 65: COMPLETE - 65/65 cases (0 without text) | 3.7s | overall 65/600 complete, 0 failed, 0 unavailable | ETA 18m 18s
+  [63/597] Vol 66: COMPLETE - 73/73 cases (0 without text) | 2.9s | overall 66/600 complete, 0 failed, 0 unavailable | ETA 18m 24s
+  [64/597] Vol 67: COMPLETE - 41/41 cases (0 without text) | 1.6s | overall 67/600 complete, 0 failed, 0 unavailable | ETA 18m 18s
+  [65/597] Vol 68: COMPLETE - 76/76 cases (0 without text) | 3.0s | overall 68/600 complete, 0 failed, 0 unavailable | ETA 18m 23s
+  [66/597] Vol 69: COMPLETE - 58/58 cases (0 without text) | 2.0s | overall 69/600 complete, 0 failed, 0 unavailable | ETA 18m 20s
+  [67/597] Vol 70: COMPLETE - 75/75 cases (0 without text) | 2.7s | overall 70/600 complete, 0 failed, 0 unavailable | ETA 18m 23s
+  [68/597] Vol 71: COMPLETE - 56/56 cases (0 without text) | 2.0s | overall 71/600 complete, 0 failed, 0 unavailable | ETA 18m 20s
+  [69/597] Vol 72: COMPLETE - 74/74 cases (0 without text) | 2.4s | overall 72/600 complete, 0 failed, 0 unavailable | ETA 18m 21s
+  [70/597] Vol 73: COMPLETE - 98/98 cases (0 without text) | 3.2s | overall 73/600 complete, 0 failed, 0 unavailable | ETA 18m 27s
+  [71/597] Vol 74: COMPLETE - 85/85 cases (0 without text) | 27.3s | overall 74/600 complete, 0 failed, 0 unavailable | ETA 21m 32s
+  [72/597] Vol 75: COMPLETE - 65/65 cases (0 without text) | 2.5s | overall 75/600 complete, 0 failed, 0 unavailable | ETA 21m 29s
+  [73/597] Vol 76: COMPLETE - 107/107 cases (0 without text) | 3.2s | overall 76/600 complete, 0 failed, 0 unavailable | ETA 21m 32s
+  [74/597] Vol 77: COMPLETE - 69/69 cases (0 without text) | 2.3s | overall 77/600 complete, 0 failed, 0 unavailable | ETA 21m 29s
+  [75/597] Vol 78: COMPLETE - 61/61 cases (0 without text) | 2.4s | overall 78/600 complete, 0 failed, 0 unavailable | ETA 21m 26s
+  [76/597] Vol 79: COMPLETE - 63/63 cases (0 without text) | 2.4s | overall 79/600 complete, 0 failed, 0 unavailable | ETA 21m 22s
+  [77/597] Vol 80: COMPLETE - 85/85 cases (0 without text) | 2.8s | overall 80/600 complete, 0 failed, 0 unavailable | ETA 21m 22s
+  [78/597] Vol 81: COMPLETE - 68/68 cases (0 without text) | 2.3s | overall 81/600 complete, 0 failed, 0 unavailable | ETA 21m 19s
+  [79/597] Vol 82: COMPLETE - 83/83 cases (0 without text) | 2.8s | overall 82/600 complete, 0 failed, 0 unavailable | ETA 21m 18s
+  [80/597] Vol 83: COMPLETE - 60/60 cases (0 without text) | 2.0s | overall 83/600 complete, 0 failed, 0 unavailable | ETA 21m 13s
+  [81/597] Vol 84: COMPLETE - 72/72 cases (0 without text) | 2.3s | overall 84/600 complete, 0 failed, 0 unavailable | ETA 21m 09s
+  [82/597] Vol 85: COMPLETE - 63/63 cases (0 without text) | 2.5s | overall 85/600 complete, 0 failed, 0 unavailable | ETA 21m 07s
+  [83/597] Vol 86: COMPLETE - 64/64 cases (0 without text) | 2.2s | overall 86/600 complete, 0 failed, 0 unavailable | ETA 21m 03s
+  [84/597] Vol 87: COMPLETE - 63/63 cases (0 without text) | 2.2s | overall 87/600 complete, 0 failed, 0 unavailable | ETA 20m 59s
+  [85/597] Vol 88: COMPLETE - 68/68 cases (0 without text) | 2.3s | overall 88/600 complete, 0 failed, 0 unavailable | ETA 20m 56s
+  [86/597] Vol 89: COMPLETE - 48/48 cases (0 without text) | 1.9s | overall 89/600 complete, 0 failed, 0 unavailable | ETA 20m 50s
+  [87/597] Vol 90: COMPLETE - 43/43 cases (0 without text) | 2.0s | overall 90/600 complete, 0 failed, 0 unavailable | ETA 20m 45s
+  [88/597] Vol 91: COMPLETE - 104/104 cases (0 without text) | 3.8s | overall 91/600 complete, 0 failed, 0 unavailable | ETA 20m 51s
+  [89/597] Vol 92: COMPLETE - 96/96 cases (0 without text) | 3.2s | overall 92/600 complete, 0 failed, 0 unavailable | ETA 20m 52s
+  [90/597] Vol 93: COMPLETE - 95/95 cases (0 without text) | 3.3s | overall 93/600 complete, 0 failed, 0 unavailable | ETA 20m 54s
+  [91/597] Vol 94: COMPLETE - 127/127 cases (0 without text) | 3.8s | overall 94/600 complete, 0 failed, 0 unavailable | ETA 20m 59s
+  [92/597] Vol 95: COMPLETE - 112/112 cases (0 without text) | 3.3s | overall 95/600 complete, 0 failed, 0 unavailable | ETA 21m 01s
+  [93/597] Vol 96: COMPLETE - 99/99 cases (0 without text) | 3.9s | overall 96/600 complete, 0 failed, 0 unavailable | ETA 21m 07s
+  [94/597] Vol 97: COMPLETE - 81/81 cases (0 without text) | 3.0s | overall 97/600 complete, 0 failed, 0 unavailable | ETA 21m 07s
+  [95/597] Vol 98: COMPLETE - 66/66 cases (0 without text) | 2.6s | overall 98/600 complete, 0 failed, 0 unavailable | ETA 21m 05s
+  [96/597] Vol 99: COMPLETE - 95/95 cases (0 without text) | 3.2s | overall 99/600 complete, 0 failed, 0 unavailable | ETA 21m 06s
+  [97/597] Vol 100: COMPLETE - 83/83 cases (0 without text) | 2.8s | overall 100/600 complete, 0 failed, 0 unavailable | ETA 21m 05s
+  [98/597] Vol 101: COMPLETE - 120/120 cases (0 without text) | 4.6s | overall 101/600 complete, 0 failed, 0 unavailable | ETA 21m 13s
+  [99/597] Vol 102: COMPLETE - 88/88 cases (0 without text) | 3.4s | overall 102/600 complete, 0 failed, 0 unavailable | ETA 21m 15s
+  [100/597] Vol 103: COMPLETE - 128/128 cases (0 without text) | 3.8s | overall 103/600 complete, 0 failed, 0 unavailable | ETA 21m 18s
+  [101/597] Vol 104: COMPLETE - 119/119 cases (0 without text) | 3.4s | overall 104/600 complete, 0 failed, 0 unavailable | ETA 21m 20s
+  [102/597] Vol 105: COMPLETE - 109/109 cases (0 without text) | 3.4s | overall 105/600 complete, 0 failed, 0 unavailable | ETA 21m 21s
+  [103/597] Vol 106: COMPLETE - 100/100 cases (0 without text) | 3.1s | overall 106/600 complete, 0 failed, 0 unavailable | ETA 21m 21s
+  [104/597] Vol 107: COMPLETE - 74/74 cases (0 without text) | 2.7s | overall 107/600 complete, 0 failed, 0 unavailable | ETA 21m 19s
+  [105/597] Vol 108: COMPLETE - 88/88 cases (0 without text) | 2.7s | overall 108/600 complete, 0 failed, 0 unavailable | ETA 21m 17s
+  [106/597] Vol 109: COMPLETE - 92/92 cases (0 without text) | 3.4s | overall 109/600 complete, 0 failed, 0 unavailable | ETA 21m 18s
+  [107/597] Vol 110: COMPLETE - 91/91 cases (0 without text) | 3.1s | overall 110/600 complete, 0 failed, 0 unavailable | ETA 21m 18s
+  [108/597] Vol 111: COMPLETE - 96/96 cases (0 without text) | 2.9s | overall 111/600 complete, 0 failed, 0 unavailable | ETA 21m 16s
+  [109/597] Vol 112: COMPLETE - 84/84 cases (0 without text) | 2.6s | overall 112/600 complete, 0 failed, 0 unavailable | ETA 21m 14s
+  [110/597] Vol 113: COMPLETE - 86/86 cases (0 without text) | 2.8s | overall 113/600 complete, 0 failed, 0 unavailable | ETA 21m 12s
+  [111/597] Vol 114: COMPLETE - 78/78 cases (0 without text) | 2.4s | overall 114/600 complete, 0 failed, 0 unavailable | ETA 21m 08s
+  [112/597] Vol 115: COMPLETE - 74/74 cases (0 without text) | 2.4s | overall 115/600 complete, 0 failed, 0 unavailable | ETA 21m 05s
+  [113/597] Vol 116: COMPLETE - 90/90 cases (0 without text) | 2.9s | overall 116/600 complete, 0 failed, 0 unavailable | ETA 21m 03s
+  [114/597] Vol 117: COMPLETE - 79/79 cases (0 without text) | 2.4s | overall 117/600 complete, 0 failed, 0 unavailable | ETA 21m 00s
+  [115/597] Vol 118: COMPLETE - 69/69 cases (0 without text) | 2.8s | overall 118/600 complete, 0 failed, 0 unavailable | ETA 20m 58s
+  [116/597] Vol 119: COMPLETE - 84/84 cases (0 without text) | 2.8s | overall 119/600 complete, 0 failed, 0 unavailable | ETA 20m 56s
+  [117/597] Vol 120: COMPLETE - 86/86 cases (0 without text) | 3.0s | overall 120/600 complete, 0 failed, 0 unavailable | ETA 20m 55s
+  [118/597] Vol 121: COMPLETE - 64/64 cases (0 without text) | 2.6s | overall 121/600 complete, 0 failed, 0 unavailable | ETA 20m 53s
+  [119/597] Vol 122: COMPLETE - 59/59 cases (0 without text) | 2.1s | overall 122/600 complete, 0 failed, 0 unavailable | ETA 20m 48s
+  [120/597] Vol 123: COMPLETE - 72/72 cases (0 without text) | 2.3s | overall 123/600 complete, 0 failed, 0 unavailable | ETA 20m 44s
+  [121/597] Vol 124: COMPLETE - 81/81 cases (0 without text) | 2.6s | overall 124/600 complete, 0 failed, 0 unavailable | ETA 20m 42s
+  [122/597] Vol 125: COMPLETE - 54/54 cases (0 without text) | 2.5s | overall 125/600 complete, 0 failed, 0 unavailable | ETA 20m 39s
+  [123/597] Vol 126: COMPLETE - 1/1 cases (0 without text) | 1.7s | overall 126/600 complete, 0 failed, 0 unavailable | ETA 20m 33s
+  [124/597] Vol 127: COMPLETE - 82/82 cases (0 without text) | 2.7s | overall 127/600 complete, 0 failed, 0 unavailable | ETA 20m 30s
+  [125/597] Vol 128: COMPLETE - 73/73 cases (0 without text) | 2.7s | overall 128/600 complete, 0 failed, 0 unavailable | ETA 20m 28s
+  [CHECKPOINT] Batch 2/10 (volumes 65-128): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [126/597] Vol 129: COMPLETE - 67/67 cases (0 without text) | 2.5s | overall 129/600 complete, 0 failed, 0 unavailable | ETA 20m 25s
+  [127/597] Vol 130: COMPLETE - 72/72 cases (0 without text) | 3.5s | overall 130/600 complete, 0 failed, 0 unavailable | ETA 20m 26s
+  [128/597] Vol 131: COMPLETE - 45/45 cases (0 without text) | 1.7s | overall 131/600 complete, 0 failed, 0 unavailable | ETA 20m 20s
+  [129/597] Vol 132: COMPLETE - 84/84 cases (0 without text) | 2.7s | overall 132/600 complete, 0 failed, 0 unavailable | ETA 20m 18s
+  [130/597] Vol 133: COMPLETE - 57/57 cases (0 without text) | 2.7s | overall 133/600 complete, 0 failed, 0 unavailable | ETA 20m 15s
+  [131/597] Vol 134: COMPLETE - 63/63 cases (0 without text) | 2.2s | overall 134/600 complete, 0 failed, 0 unavailable | ETA 20m 11s
+  [132/597] Vol 135: COMPLETE - 51/51 cases (0 without text) | 2.5s | overall 135/600 complete, 0 failed, 0 unavailable | ETA 20m 08s
+  [133/597] Vol 136: COMPLETE - 36/36 cases (0 without text) | 1.7s | overall 136/600 complete, 0 failed, 0 unavailable | ETA 20m 02s
+  [134/597] Vol 137: COMPLETE - 84/84 cases (0 without text) | 2.8s | overall 137/600 complete, 0 failed, 0 unavailable | ETA 20m 00s
+  [135/597] Vol 138: COMPLETE - 62/62 cases (0 without text) | 2.1s | overall 138/600 complete, 0 failed, 0 unavailable | ETA 19m 56s
+  [136/597] Vol 139: COMPLETE - 68/68 cases (0 without text) | 2.4s | overall 139/600 complete, 0 failed, 0 unavailable | ETA 19m 53s
+  [137/597] Vol 140: COMPLETE - 71/71 cases (0 without text) | 2.3s | overall 140/600 complete, 0 failed, 0 unavailable | ETA 19m 49s
+  [138/597] Vol 141: COMPLETE - 71/71 cases (0 without text) | 2.3s | overall 141/600 complete, 0 failed, 0 unavailable | ETA 19m 46s
+  [139/597] Vol 142: COMPLETE - 56/56 cases (0 without text) | 2.8s | overall 142/600 complete, 0 failed, 0 unavailable | ETA 19m 44s
+  [140/597] Vol 143: COMPLETE - 42/42 cases (0 without text) | 2.9s | overall 143/600 complete, 0 failed, 0 unavailable | ETA 19m 43s
+  [141/597] Vol 144: COMPLETE - 72/72 cases (0 without text) | 2.4s | overall 144/600 complete, 0 failed, 0 unavailable | ETA 19m 40s
+  [142/597] Vol 145: COMPLETE - 55/55 cases (0 without text) | 2.1s | overall 145/600 complete, 0 failed, 0 unavailable | ETA 19m 36s
+  [143/597] Vol 146: COMPLETE - 55/55 cases (0 without text) | 2.2s | overall 146/600 complete, 0 failed, 0 unavailable | ETA 19m 32s
+  [144/597] Vol 147: COMPLETE - 63/63 cases (0 without text) | 2.1s | overall 147/600 complete, 0 failed, 0 unavailable | ETA 19m 28s
+  [145/597] Vol 148: COMPLETE - 67/67 cases (0 without text) | 2.7s | overall 148/600 complete, 0 failed, 0 unavailable | ETA 19m 26s
+  [146/597] Vol 149: COMPLETE - 74/74 cases (0 without text) | 2.3s | overall 149/600 complete, 0 failed, 0 unavailable | ETA 19m 22s
+  [147/597] Vol 150: COMPLETE - 76/76 cases (0 without text) | 2.6s | overall 150/600 complete, 0 failed, 0 unavailable | ETA 19m 20s
+  [148/597] Vol 151: COMPLETE - 63/63 cases (0 without text) | 2.4s | overall 151/600 complete, 0 failed, 0 unavailable | ETA 19m 17s
+  [149/597] Vol 152: COMPLETE - 70/70 cases (0 without text) | 2.6s | overall 152/600 complete, 0 failed, 0 unavailable | ETA 19m 14s
+  [150/597] Vol 153: COMPLETE - 57/57 cases (0 without text) | 2.1s | overall 153/600 complete, 0 failed, 0 unavailable | ETA 19m 10s
+  [151/597] Vol 154: COMPLETE - 221/221 cases (0 without text) | 6.4s | overall 154/600 complete, 0 failed, 0 unavailable | ETA 19m 19s
+  [152/597] Vol 155: COMPLETE - 74/74 cases (0 without text) | 2.5s | overall 155/600 complete, 0 failed, 0 unavailable | ETA 19m 16s
+  [153/597] Vol 156: COMPLETE - 57/57 cases (0 without text) | 2.0s | overall 156/600 complete, 0 failed, 0 unavailable | ETA 19m 12s
+  [154/597] Vol 157: COMPLETE - 49/49 cases (0 without text) | 2.0s | overall 157/600 complete, 0 failed, 0 unavailable | ETA 19m 08s
+  [155/597] Vol 158: COMPLETE - 55/55 cases (0 without text) | 2.2s | overall 158/600 complete, 0 failed, 0 unavailable | ETA 19m 04s
+  [156/597] Vol 159: COMPLETE - 62/62 cases (0 without text) | 2.1s | overall 159/600 complete, 0 failed, 0 unavailable | ETA 19m 00s
+  [157/597] Vol 160: COMPLETE - 58/58 cases (0 without text) | 2.0s | overall 160/600 complete, 0 failed, 0 unavailable | ETA 18m 56s
+  [158/597] Vol 161: COMPLETE - 65/65 cases (0 without text) | 2.4s | overall 161/600 complete, 0 failed, 0 unavailable | ETA 18m 53s
+  [159/597] Vol 162: COMPLETE - 46/46 cases (0 without text) | 1.9s | overall 162/600 complete, 0 failed, 0 unavailable | ETA 18m 48s
+  [160/597] Vol 163: COMPLETE - 58/58 cases (0 without text) | 1.9s | overall 163/600 complete, 0 failed, 0 unavailable | ETA 18m 44s
+  [161/597] Vol 164: COMPLETE - 71/71 cases (0 without text) | 2.4s | overall 164/600 complete, 0 failed, 0 unavailable | ETA 18m 41s
+  [162/597] Vol 165: COMPLETE - 69/69 cases (0 without text) | 2.5s | overall 165/600 complete, 0 failed, 0 unavailable | ETA 18m 38s
+  [163/597] Vol 166: COMPLETE - 51/51 cases (0 without text) | 2.1s | overall 166/600 complete, 0 failed, 0 unavailable | ETA 18m 35s
+  [164/597] Vol 167: COMPLETE - 54/54 cases (0 without text) | 2.0s | overall 167/600 complete, 0 failed, 0 unavailable | ETA 18m 31s
+  [165/597] Vol 168: COMPLETE - 72/72 cases (0 without text) | 2.4s | overall 168/600 complete, 0 failed, 0 unavailable | ETA 18m 28s
+  [166/597] Vol 169: COMPLETE - 46/46 cases (0 without text) | 2.4s | overall 169/600 complete, 0 failed, 0 unavailable | ETA 18m 25s
+  [167/597] Vol 170: COMPLETE - 53/53 cases (0 without text) | 1.9s | overall 170/600 complete, 0 failed, 0 unavailable | ETA 18m 20s
+  [168/597] Vol 171: COMPLETE - 49/49 cases (0 without text) | 2.0s | overall 171/600 complete, 0 failed, 0 unavailable | ETA 18m 16s
+  [169/597] Vol 172: COMPLETE - 49/49 cases (0 without text) | 1.9s | overall 172/600 complete, 0 failed, 0 unavailable | ETA 18m 12s
+  [170/597] Vol 173: COMPLETE - 87/87 cases (0 without text) | 2.8s | overall 173/600 complete, 0 failed, 0 unavailable | ETA 18m 10s
+  [171/597] Vol 174: COMPLETE - 58/58 cases (0 without text) | 2.0s | overall 174/600 complete, 0 failed, 0 unavailable | ETA 18m 06s
+  [172/597] Vol 175: COMPLETE - 50/50 cases (0 without text) | 2.2s | overall 175/600 complete, 0 failed, 0 unavailable | ETA 18m 03s
+  [173/597] Vol 176: COMPLETE - 51/51 cases (0 without text) | 2.4s | overall 176/600 complete, 0 failed, 0 unavailable | ETA 18m 00s
+  [174/597] Vol 177: COMPLETE - 69/69 cases (0 without text) | 3.0s | overall 177/600 complete, 0 failed, 0 unavailable | ETA 17m 59s
+  [175/597] Vol 178: COMPLETE - 48/48 cases (0 without text) | 1.8s | overall 178/600 complete, 0 failed, 0 unavailable | ETA 17m 54s
+  [176/597] Vol 179: COMPLETE - 62/62 cases (0 without text) | 2.1s | overall 179/600 complete, 0 failed, 0 unavailable | ETA 17m 50s
+  [177/597] Vol 180: COMPLETE - 53/53 cases (0 without text) | 2.4s | overall 180/600 complete, 0 failed, 0 unavailable | ETA 17m 48s
+  [178/597] Vol 181: COMPLETE - 112/112 cases (0 without text) | 3.3s | overall 181/600 complete, 0 failed, 0 unavailable | ETA 17m 47s
+  [179/597] Vol 182: COMPLETE - 24/24 cases (0 without text) | 1.2s | overall 182/600 complete, 0 failed, 0 unavailable | ETA 17m 41s
+  [180/597] Vol 183: COMPLETE - 96/96 cases (0 without text) | 3.2s | overall 183/600 complete, 0 failed, 0 unavailable | ETA 17m 40s
+  [181/597] Vol 184: COMPLETE - 52/52 cases (0 without text) | 2.3s | overall 184/600 complete, 0 failed, 0 unavailable | ETA 17m 37s
+  [182/597] Vol 185: COMPLETE - 40/40 cases (0 without text) | 1.8s | overall 185/600 complete, 0 failed, 0 unavailable | ETA 17m 33s
+  [183/597] Vol 186: COMPLETE - 82/82 cases (0 without text) | 2.8s | overall 186/600 complete, 0 failed, 0 unavailable | ETA 17m 31s
+  [184/597] Vol 187: COMPLETE - 153/153 cases (0 without text) | 5.0s | overall 187/600 complete, 0 failed, 0 unavailable | ETA 17m 34s
+  [185/597] Vol 188: COMPLETE - 73/73 cases (0 without text) | 4.4s | overall 188/600 complete, 0 failed, 0 unavailable | ETA 17m 36s
+  [186/597] Vol 189: COMPLETE - 110/110 cases (0 without text) | 3.4s | overall 189/600 complete, 0 failed, 0 unavailable | ETA 17m 35s
+  [187/597] Vol 190: COMPLETE - 62/62 cases (0 without text) | 2.7s | overall 190/600 complete, 0 failed, 0 unavailable | ETA 17m 33s
+  [188/597] Vol 191: COMPLETE - 138/138 cases (0 without text) | 3.9s | overall 191/600 complete, 0 failed, 0 unavailable | ETA 17m 33s
+  [189/597] Vol 192: COMPLETE - 61/61 cases (0 without text) | 2.1s | overall 192/600 complete, 0 failed, 0 unavailable | ETA 17m 29s
+  [CHECKPOINT] Batch 3/10 (volumes 129-192): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [190/597] Vol 193: COMPLETE - 87/87 cases (0 without text) | 3.4s | overall 193/600 complete, 0 failed, 0 unavailable | ETA 17m 29s
+  [191/597] Vol 194: COMPLETE - 118/118 cases (0 without text) | 4.6s | overall 194/600 complete, 0 failed, 0 unavailable | ETA 17m 30s
+  [192/597] Vol 195: COMPLETE - 59/59 cases (0 without text) | 3.7s | overall 195/600 complete, 0 failed, 0 unavailable | ETA 17m 30s
+  [193/597] Vol 196: COMPLETE - 96/96 cases (0 without text) | 3.6s | overall 196/600 complete, 0 failed, 0 unavailable | ETA 17m 30s
+  [194/597] Vol 197: COMPLETE - 49/49 cases (0 without text) | 2.1s | overall 197/600 complete, 0 failed, 0 unavailable | ETA 17m 26s
+  [195/597] Vol 198: COMPLETE - 86/86 cases (0 without text) | 3.3s | overall 198/600 complete, 0 failed, 0 unavailable | ETA 17m 25s
+  [196/597] Vol 199: COMPLETE - 68/68 cases (0 without text) | 2.8s | overall 199/600 complete, 0 failed, 0 unavailable | ETA 17m 23s
+  [197/597] Vol 200: COMPLETE - 109/109 cases (0 without text) | 3.3s | overall 200/600 complete, 0 failed, 0 unavailable | ETA 17m 22s
+  [198/597] Vol 201: COMPLETE - 84/84 cases (0 without text) | 2.7s | overall 201/600 complete, 0 failed, 0 unavailable | ETA 17m 19s
+  [199/597] Vol 202: COMPLETE - 49/49 cases (0 without text) | 1.9s | overall 202/600 complete, 0 failed, 0 unavailable | ETA 17m 16s
+  [200/597] Vol 203: COMPLETE - 152/152 cases (0 without text) | 4.5s | overall 203/600 complete, 0 failed, 0 unavailable | ETA 17m 17s
+  [201/597] Vol 204: COMPLETE - 94/94 cases (0 without text) | 2.7s | overall 204/600 complete, 0 failed, 0 unavailable | ETA 17m 14s
+  [202/597] Vol 205: COMPLETE - 112/112 cases (0 without text) | 3.4s | overall 205/600 complete, 0 failed, 0 unavailable | ETA 17m 13s
+  [203/597] Vol 206: COMPLETE - 63/63 cases (0 without text) | 2.5s | overall 206/600 complete, 0 failed, 0 unavailable | ETA 17m 11s
+  [204/597] Vol 207: COMPLETE - 141/141 cases (0 without text) | 4.5s | overall 207/600 complete, 0 failed, 0 unavailable | ETA 17m 12s
+  [205/597] Vol 208: COMPLETE - 84/84 cases (0 without text) | 2.7s | overall 208/600 complete, 0 failed, 0 unavailable | ETA 17m 09s
+  [206/597] Vol 209: COMPLETE - 108/108 cases (0 without text) | 3.3s | overall 209/600 complete, 0 failed, 0 unavailable | ETA 17m 08s
+  [207/597] Vol 210: COMPLETE - 31/31 cases (0 without text) | 1.3s | overall 210/600 complete, 0 failed, 0 unavailable | ETA 17m 03s
+  [208/597] Vol 211: COMPLETE - 58/58 cases (0 without text) | 2.1s | overall 211/600 complete, 0 failed, 0 unavailable | ETA 16m 59s
+  [209/597] Vol 212: COMPLETE - 154/154 cases (0 without text) | 4.6s | overall 212/600 complete, 0 failed, 0 unavailable | ETA 17m 00s
+  [210/597] Vol 213: COMPLETE - 39/39 cases (0 without text) | 1.6s | overall 213/600 complete, 0 failed, 0 unavailable | ETA 16m 56s
+  [211/597] Vol 214: COMPLETE - 149/149 cases (0 without text) | 4.6s | overall 214/600 complete, 0 failed, 0 unavailable | ETA 16m 57s
+  [212/597] Vol 215: COMPLETE - 171/171 cases (0 without text) | 6.5s | overall 215/600 complete, 0 failed, 0 unavailable | ETA 17m 01s
+  [213/597] Vol 216: COMPLETE - 101/101 cases (0 without text) | 3.7s | overall 216/600 complete, 0 failed, 0 unavailable | ETA 17m 00s
+  [214/597] Vol 217: COMPLETE - 93/93 cases (0 without text) | 4.3s | overall 217/600 complete, 0 failed, 0 unavailable | ETA 17m 01s
+  [215/597] Vol 218: COMPLETE - 168/168 cases (0 without text) | 4.8s | overall 218/600 complete, 0 failed, 0 unavailable | ETA 17m 02s
+  [216/597] Vol 219: COMPLETE - 47/47 cases (0 without text) | 2.2s | overall 219/600 complete, 0 failed, 0 unavailable | ETA 16m 58s
+  [217/597] Vol 220: COMPLETE - 152/152 cases (0 without text) | 5.8s | overall 220/600 complete, 0 failed, 0 unavailable | ETA 17m 01s
+  [218/597] Vol 221: COMPLETE - 40/40 cases (0 without text) | 1.6s | overall 221/600 complete, 0 failed, 0 unavailable | ETA 16m 57s
+  [219/597] Vol 222: COMPLETE - 79/79 cases (0 without text) | 2.7s | overall 222/600 complete, 0 failed, 0 unavailable | ETA 16m 54s
+  [220/597] Vol 223: COMPLETE - 92/92 cases (0 without text) | 3.7s | overall 223/600 complete, 0 failed, 0 unavailable | ETA 16m 53s
+  [221/597] Vol 224: COMPLETE - 58/58 cases (0 without text) | 2.1s | overall 224/600 complete, 0 failed, 0 unavailable | ETA 16m 49s
+  [222/597] Vol 225: COMPLETE - 131/131 cases (0 without text) | 3.9s | overall 225/600 complete, 0 failed, 0 unavailable | ETA 16m 49s
+  [223/597] Vol 226: COMPLETE - 157/157 cases (0 without text) | 4.9s | overall 226/600 complete, 0 failed, 0 unavailable | ETA 16m 50s
+  [224/597] Vol 227: COMPLETE - 110/110 cases (0 without text) | 3.3s | overall 227/600 complete, 0 failed, 0 unavailable | ETA 16m 48s
+  [225/597] Vol 228: COMPLETE - 73/73 cases (0 without text) | 3.0s | overall 228/600 complete, 0 failed, 0 unavailable | ETA 16m 46s
+  [226/597] Vol 229: COMPLETE - 137/137 cases (0 without text) | 4.7s | overall 229/600 complete, 0 failed, 0 unavailable | ETA 16m 47s
+  [227/597] Vol 230: COMPLETE - 26/26 cases (0 without text) | 1.4s | overall 230/600 complete, 0 failed, 0 unavailable | ETA 16m 42s
+  [228/597] Vol 231: COMPLETE - 109/109 cases (0 without text) | 3.6s | overall 231/600 complete, 0 failed, 0 unavailable | ETA 16m 41s
+  [229/597] Vol 232: COMPLETE - 101/101 cases (0 without text) | 3.7s | overall 232/600 complete, 0 failed, 0 unavailable | ETA 16m 40s
+  [230/597] Vol 233: COMPLETE - 66/66 cases (0 without text) | 2.5s | overall 233/600 complete, 0 failed, 0 unavailable | ETA 16m 36s
+  [231/597] Vol 234: COMPLETE - 89/89 cases (0 without text) | 3.6s | overall 234/600 complete, 0 failed, 0 unavailable | ETA 16m 35s
+  [232/597] Vol 235: COMPLETE - 105/105 cases (0 without text) | 3.2s | overall 235/600 complete, 0 failed, 0 unavailable | ETA 16m 33s
+  [233/597] Vol 236: COMPLETE - 73/73 cases (0 without text) | 2.6s | overall 236/600 complete, 0 failed, 0 unavailable | ETA 16m 30s
+  [234/597] Vol 237: COMPLETE - 80/80 cases (0 without text) | 2.6s | overall 237/600 complete, 0 failed, 0 unavailable | ETA 16m 27s
+  [235/597] Vol 238: COMPLETE - 70/70 cases (0 without text) | 2.3s | overall 238/600 complete, 0 failed, 0 unavailable | ETA 16m 24s
+  [236/597] Vol 239: COMPLETE - 124/124 cases (0 without text) | 3.6s | overall 239/600 complete, 0 failed, 0 unavailable | ETA 16m 23s
+  [237/597] Vol 240: COMPLETE - 79/79 cases (0 without text) | 2.5s | overall 240/600 complete, 0 failed, 0 unavailable | ETA 16m 20s
+  [238/597] Vol 241: COMPLETE - 273/273 cases (0 without text) | 7.3s | overall 241/600 complete, 0 failed, 0 unavailable | ETA 16m 24s
+  [239/597] Vol 242: COMPLETE - 117/117 cases (0 without text) | 3.8s | overall 242/600 complete, 0 failed, 0 unavailable | ETA 16m 23s
+  [240/597] Vol 243: COMPLETE - 88/88 cases (0 without text) | 2.7s | overall 243/600 complete, 0 failed, 0 unavailable | ETA 16m 20s
+  [241/597] Vol 244: COMPLETE - 97/97 cases (0 without text) | 3.3s | overall 244/600 complete, 0 failed, 0 unavailable | ETA 16m 18s
+  [242/597] Vol 245: COMPLETE - 133/133 cases (0 without text) | 3.8s | overall 245/600 complete, 0 failed, 0 unavailable | ETA 16m 17s
+  [243/597] Vol 246: COMPLETE - 192/192 cases (0 without text) | 5.4s | overall 246/600 complete, 0 failed, 0 unavailable | ETA 16m 18s
+  [244/597] Vol 247: COMPLETE - 61/61 cases (0 without text) | 2.1s | overall 247/600 complete, 0 failed, 0 unavailable | ETA 16m 14s
+  [245/597] Vol 248: COMPLETE - 322/322 cases (0 without text) | 8.7s | overall 248/600 complete, 0 failed, 0 unavailable | ETA 16m 20s
+  [246/597] Vol 249: COMPLETE - 254/254 cases (0 without text) | 8.3s | overall 249/600 complete, 0 failed, 0 unavailable | ETA 16m 25s
+  [247/597] Vol 250: COMPLETE - 81/81 cases (0 without text) | 2.6s | overall 250/600 complete, 0 failed, 0 unavailable | ETA 16m 22s
+  [248/597] Vol 251: COMPLETE - 94/94 cases (0 without text) | 2.8s | overall 251/600 complete, 0 failed, 0 unavailable | ETA 16m 19s
+  [249/597] Vol 252: COMPLETE - 137/137 cases (0 without text) | 4.1s | overall 252/600 complete, 0 failed, 0 unavailable | ETA 16m 18s
+  [250/597] Vol 253: COMPLETE - 64/64 cases (0 without text) | 2.3s | overall 253/600 complete, 0 failed, 0 unavailable | ETA 16m 15s
+  [251/597] Vol 254: COMPLETE - 315/315 cases (0 without text) | 8.2s | overall 254/600 complete, 0 failed, 0 unavailable | ETA 16m 19s
+  [252/597] Vol 255: COMPLETE - 89/89 cases (0 without text) | 2.7s | overall 255/600 complete, 0 failed, 0 unavailable | ETA 16m 16s
+  [253/597] Vol 256: COMPLETE - 108/108 cases (0 without text) | 3.1s | overall 256/600 complete, 0 failed, 0 unavailable | ETA 16m 14s
+  [CHECKPOINT] Batch 4/10 (volumes 193-256): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [254/597] Vol 257: COMPLETE - 141/141 cases (0 without text) | 4.1s | overall 257/600 complete, 0 failed, 0 unavailable | ETA 16m 13s
+  [255/597] Vol 258: COMPLETE - 111/111 cases (0 without text) | 3.5s | overall 258/600 complete, 0 failed, 0 unavailable | ETA 16m 11s
+  [256/597] Vol 259: COMPLETE - 60/60 cases (0 without text) | 2.0s | overall 259/600 complete, 0 failed, 0 unavailable | ETA 16m 07s
+  [257/597] Vol 260: COMPLETE - 352/352 cases (0 without text) | 9.2s | overall 260/600 complete, 0 failed, 0 unavailable | ETA 16m 13s
+  [258/597] Vol 261: COMPLETE - 179/179 cases (0 without text) | 5.0s | overall 261/600 complete, 0 failed, 0 unavailable | ETA 16m 13s
+  [259/597] Vol 262: COMPLETE - 221/221 cases (0 without text) | 5.9s | overall 262/600 complete, 0 failed, 0 unavailable | ETA 16m 14s
+  [260/597] Vol 263: COMPLETE - 310/310 cases (0 without text) | 8.8s | overall 263/600 complete, 0 failed, 0 unavailable | ETA 16m 19s
+  [261/597] Vol 264: COMPLETE - 209/209 cases (0 without text) | 5.6s | overall 264/600 complete, 0 failed, 0 unavailable | ETA 16m 19s
+  [262/597] Vol 265: COMPLETE - 201/201 cases (0 without text) | 5.5s | overall 265/600 complete, 0 failed, 0 unavailable | ETA 16m 19s
+  [263/597] Vol 266: COMPLETE - 153/153 cases (0 without text) | 4.3s | overall 266/600 complete, 0 failed, 0 unavailable | ETA 16m 18s
+  [264/597] Vol 267: COMPLETE - 239/239 cases (0 without text) | 6.9s | overall 267/600 complete, 0 failed, 0 unavailable | ETA 16m 20s
+  [265/597] Vol 268: COMPLETE - 122/122 cases (0 without text) | 3.9s | overall 268/600 complete, 0 failed, 0 unavailable | ETA 16m 19s
+  [266/597] Vol 269: COMPLETE - 103/103 cases (0 without text) | 3.4s | overall 269/600 complete, 0 failed, 0 unavailable | ETA 16m 16s
+  [267/597] Vol 270: COMPLETE - 259/259 cases (0 without text) | 6.9s | overall 270/600 complete, 0 failed, 0 unavailable | ETA 16m 18s
+  [268/597] Vol 271: COMPLETE - 111/111 cases (0 without text) | 3.6s | overall 271/600 complete, 0 failed, 0 unavailable | ETA 16m 16s
+  [269/597] Vol 272: COMPLETE - 54/54 cases (0 without text) | 2.0s | overall 272/600 complete, 0 failed, 0 unavailable | ETA 16m 12s
+  [270/597] Vol 273: ... 389/675 cases
+  [270/597] Vol 273: COMPLETE - 675/675 cases (0 without text) | 16.6s | overall 273/600 complete, 0 failed, 0 unavailable | ETA 16m 25s
+  [271/597] Vol 274: COMPLETE - 124/124 cases (0 without text) | 3.5s | overall 274/600 complete, 0 failed, 0 unavailable | ETA 16m 23s
+  [272/597] Vol 275: ... 396/435 cases
+  [272/597] Vol 275: COMPLETE - 435/435 cases (0 without text) | 11.0s | overall 275/600 complete, 0 failed, 0 unavailable | ETA 16m 29s
+  [273/597] Vol 276: COMPLETE - 66/66 cases (0 without text) | 3.1s | overall 276/600 complete, 0 failed, 0 unavailable | ETA 16m 26s
+  [274/597] Vol 277: COMPLETE - 49/49 cases (0 without text) | 1.8s | overall 277/600 complete, 0 failed, 0 unavailable | ETA 16m 22s
+  [275/597] Vol 278: COMPLETE - 199/199 cases (0 without text) | 5.4s | overall 278/600 complete, 0 failed, 0 unavailable | ETA 16m 22s
+  [276/597] Vol 279: COMPLETE - 113/113 cases (0 without text) | 3.5s | overall 279/600 complete, 0 failed, 0 unavailable | ETA 16m 19s
+  [277/597] Vol 280: ... 402/470 cases
+  [277/597] Vol 280: COMPLETE - 470/470 cases (0 without text) | 11.6s | overall 280/600 complete, 0 failed, 0 unavailable | ETA 16m 26s
+  [278/597] Vol 281: ... 367/404 cases
+  [278/597] Vol 281: COMPLETE - 404/404 cases (0 without text) | 10.9s | overall 281/600 complete, 0 failed, 0 unavailable | ETA 16m 32s
+  [279/597] Vol 282: ... 401/532 cases
+  [279/597] Vol 282: COMPLETE - 532/532 cases (0 without text) | 13.2s | overall 282/600 complete, 0 failed, 0 unavailable | ETA 16m 40s
+  [280/597] Vol 283: COMPLETE - 384/384 cases (0 without text) | 9.6s | overall 283/600 complete, 0 failed, 0 unavailable | ETA 16m 45s
+  [281/597] Vol 284: COMPLETE - 125/125 cases (0 without text) | 3.7s | overall 284/600 complete, 0 failed, 0 unavailable | ETA 16m 42s
+  [282/597] Vol 285: COMPLETE - 199/199 cases (0 without text) | 5.3s | overall 285/600 complete, 0 failed, 0 unavailable | ETA 16m 41s
+  [283/597] Vol 286: COMPLETE - 212/212 cases (0 without text) | 5.5s | overall 286/600 complete, 0 failed, 0 unavailable | ETA 16m 41s
+  [284/597] Vol 287: ... 392/505 cases
+  [284/597] Vol 287: COMPLETE - 505/505 cases (0 without text) | 12.7s | overall 287/600 complete, 0 failed, 0 unavailable | ETA 16m 48s
+  [285/597] Vol 288: COMPLETE - 174/174 cases (0 without text) | 4.8s | overall 288/600 complete, 0 failed, 0 unavailable | ETA 16m 47s
+  [286/597] Vol 289: COMPLETE - 86/86 cases (0 without text) | 2.7s | overall 289/600 complete, 0 failed, 0 unavailable | ETA 16m 43s
+  [287/597] Vol 290: ... 359/573 cases
+  [287/597] Vol 290: COMPLETE - 573/573 cases (0 without text) | 15.1s | overall 290/600 complete, 0 failed, 0 unavailable | ETA 16m 52s
+  [288/597] Vol 291: COMPLETE - 255/255 cases (0 without text) | 6.8s | overall 291/600 complete, 0 failed, 0 unavailable | ETA 16m 53s
+  [289/597] Vol 292: COMPLETE - 321/321 cases (0 without text) | 8.5s | overall 292/600 complete, 0 failed, 0 unavailable | ETA 16m 55s
+  [290/597] Vol 293: ... 401/568 cases
+  [290/597] Vol 293: COMPLETE - 568/568 cases (0 without text) | 14.0s | overall 293/600 complete, 0 failed, 0 unavailable | ETA 17m 03s
+  [291/597] Vol 294: COMPLETE - 263/263 cases (0 without text) | 6.8s | overall 294/600 complete, 0 failed, 0 unavailable | ETA 17m 04s
+  [292/597] Vol 295: COMPLETE - 297/297 cases (0 without text) | 7.6s | overall 295/600 complete, 0 failed, 0 unavailable | ETA 17m 05s
+  [293/597] Vol 296: ... 393/622 cases
+  [293/597] Vol 296: COMPLETE - 622/622 cases (0 without text) | 15.4s | overall 296/600 complete, 0 failed, 0 unavailable | ETA 17m 14s
+  [294/597] Vol 297: COMPLETE - 95/95 cases (0 without text) | 2.9s | overall 297/600 complete, 0 failed, 0 unavailable | ETA 17m 10s
+  [295/597] Vol 298: COMPLETE - 266/266 cases (0 without text) | 6.9s | overall 298/600 complete, 0 failed, 0 unavailable | ETA 17m 10s
+  [296/597] Vol 299: COMPLETE - 125/125 cases (0 without text) | 3.6s | overall 299/600 complete, 0 failed, 0 unavailable | ETA 17m 07s
+  [297/597] Vol 300: COMPLETE - 90/90 cases (0 without text) | 2.8s | overall 300/600 complete, 0 failed, 0 unavailable | ETA 17m 03s
+  [298/597] Vol 301: COMPLETE - 282/282 cases (0 without text) | 7.4s | overall 301/600 complete, 0 failed, 0 unavailable | ETA 17m 03s
+  [299/597] Vol 302: ... 374/738 cases
+  [299/597] Vol 302: COMPLETE - 738/738 cases (0 without text) | 18.8s | overall 302/600 complete, 0 failed, 0 unavailable | ETA 17m 15s
+  [300/597] Vol 303: COMPLETE - 306/306 cases (0 without text) | 8.0s | overall 303/600 complete, 0 failed, 0 unavailable | ETA 17m 16s
+  [301/597] Vol 304: COMPLETE - 271/271 cases (0 without text) | 7.0s | overall 304/600 complete, 0 failed, 0 unavailable | ETA 17m 16s
+  [302/597] Vol 305: ... 388/526 cases
+  [302/597] Vol 305: COMPLETE - 526/526 cases (0 without text) | 13.2s | overall 305/600 complete, 0 failed, 0 unavailable | ETA 17m 22s
+  [303/597] Vol 306: COMPLETE - 272/272 cases (0 without text) | 7.9s | overall 306/600 complete, 0 failed, 0 unavailable | ETA 17m 23s
+  [304/597] Vol 307: COMPLETE - 239/239 cases (0 without text) | 6.4s | overall 307/600 complete, 0 failed, 0 unavailable | ETA 17m 22s
+  [305/597] Vol 308: ... 365/652 cases
+  [305/597] Vol 308: COMPLETE - 652/652 cases (0 without text) | 16.6s | overall 308/600 complete, 0 failed, 0 unavailable | ETA 17m 31s
+  [306/597] Vol 309: COMPLETE - 400/400 cases (0 without text) | 10.0s | overall 309/600 complete, 0 failed, 0 unavailable | ETA 17m 34s
+  [307/597] Vol 310: COMPLETE - 258/258 cases (0 without text) | 6.6s | overall 310/600 complete, 0 failed, 0 unavailable | ETA 17m 33s
+  [308/597] Vol 311: ... 412/616 cases
+  [308/597] Vol 311: COMPLETE - 616/616 cases (0 without text) | 14.7s | overall 311/600 complete, 0 failed, 0 unavailable | ETA 17m 40s
+  [309/597] Vol 312: COMPLETE - 358/358 cases (0 without text) | 9.1s | overall 312/600 complete, 0 failed, 0 unavailable | ETA 17m 41s
+  [310/597] Vol 313: COMPLETE - 322/322 cases (0 without text) | 8.4s | overall 313/600 complete, 0 failed, 0 unavailable | ETA 17m 42s
+  [311/597] Vol 314: ... 406/677 cases
+  [311/597] Vol 314: COMPLETE - 677/677 cases (0 without text) | 16.4s | overall 314/600 complete, 0 failed, 0 unavailable | ETA 17m 50s
+  [312/597] Vol 315: COMPLETE - 290/290 cases (0 without text) | 7.3s | overall 315/600 complete, 0 failed, 0 unavailable | ETA 17m 49s
+  [313/597] Vol 316: ... 399/404 cases
+  [313/597] Vol 316: COMPLETE - 404/404 cases (0 without text) | 10.2s | overall 316/600 complete, 0 failed, 0 unavailable | ETA 17m 51s
+  [314/597] Vol 317: ... 414/642 cases
+  [314/597] Vol 317: COMPLETE - 642/642 cases (0 without text) | 16.0s | overall 317/600 complete, 0 failed, 0 unavailable | ETA 17m 58s
+  [315/597] Vol 318: COMPLETE - 332/332 cases (0 without text) | 8.4s | overall 318/600 complete, 0 failed, 0 unavailable | ETA 17m 59s
+  [316/597] Vol 319: COMPLETE - 326/326 cases (0 without text) | 8.1s | overall 319/600 complete, 0 failed, 0 unavailable | ETA 17m 59s
+  [317/597] Vol 320: ... 404/602 cases
+  [317/597] Vol 320: COMPLETE - 602/602 cases (0 without text) | 14.8s | overall 320/600 complete, 0 failed, 0 unavailable | ETA 18m 05s
+  [CHECKPOINT] Batch 5/10 (volumes 257-320): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [318/597] Vol 321: COMPLETE - 352/352 cases (0 without text) | 9.0s | overall 321/600 complete, 0 failed, 0 unavailable | ETA 18m 05s
+  [319/597] Vol 322: COMPLETE - 383/383 cases (0 without text) | 9.5s | overall 322/600 complete, 0 failed, 0 unavailable | ETA 18m 06s
+  [320/597] Vol 323: ... 394/767 cases
+  [320/597] Vol 323: COMPLETE - 767/767 cases (0 without text) | 18.8s | overall 323/600 complete, 0 failed, 0 unavailable | ETA 18m 15s
+  [321/597] Vol 324: COMPLETE - 348/348 cases (0 without text) | 9.2s | overall 324/600 complete, 0 failed, 0 unavailable | ETA 18m 16s
+  [322/597] Vol 325: COMPLETE - 364/364 cases (0 without text) | 9.7s | overall 325/600 complete, 0 failed, 0 unavailable | ETA 18m 17s
+  [323/597] Vol 326: ... 389/712 cases
+  [323/597] Vol 326: COMPLETE - 712/712 cases (0 without text) | 17.5s | overall 326/600 complete, 0 failed, 0 unavailable | ETA 18m 24s
+  [324/597] Vol 327: COMPLETE - 381/381 cases (0 without text) | 9.3s | overall 327/600 complete, 0 failed, 0 unavailable | ETA 18m 25s
+  [325/597] Vol 328: COMPLETE - 378/378 cases (0 without text) | 10.0s | overall 328/600 complete, 0 failed, 0 unavailable | ETA 18m 26s
+  [326/597] Vol 329: ... 372/854 cases
+  [326/597] Vol 329: ... 808/854 cases
+  [326/597] Vol 329: COMPLETE - 854/854 cases (0 without text) | 21.4s | overall 329/600 complete, 0 failed, 0 unavailable | ETA 18m 36s
+  [327/597] Vol 330: COMPLETE - 303/303 cases (0 without text) | 7.8s | overall 330/600 complete, 0 failed, 0 unavailable | ETA 18m 35s
+  [328/597] Vol 331: ... 397/469 cases
+  [328/597] Vol 331: COMPLETE - 469/469 cases (0 without text) | 12.2s | overall 331/600 complete, 0 failed, 0 unavailable | ETA 18m 37s
+  [329/597] Vol 332: ... 399/507 cases
+  [329/597] Vol 332: COMPLETE - 507/507 cases (0 without text) | 12.6s | overall 332/600 complete, 0 failed, 0 unavailable | ETA 18m 40s
+  [330/597] Vol 333: ... 363/394 cases
+  [330/597] Vol 333: COMPLETE - 394/394 cases (0 without text) | 11.2s | overall 333/600 complete, 0 failed, 0 unavailable | ETA 18m 42s
+  [331/597] Vol 334: COMPLETE - 365/365 cases (0 without text) | 10.1s | overall 334/600 complete, 0 failed, 0 unavailable | ETA 18m 42s
+  [332/597] Vol 335: ... 387/664 cases
+  [332/597] Vol 335: COMPLETE - 664/664 cases (0 without text) | 16.4s | overall 335/600 complete, 0 failed, 0 unavailable | ETA 18m 48s
+  [333/597] Vol 336: ... 400/476 cases
+  [333/597] Vol 336: COMPLETE - 476/476 cases (0 without text) | 11.8s | overall 336/600 complete, 0 failed, 0 unavailable | ETA 18m 49s
+  [334/597] Vol 337: COMPLETE - 405/405 cases (0 without text) | 10.0s | overall 337/600 complete, 0 failed, 0 unavailable | ETA 18m 50s
+  [335/597] Vol 338: ... 392/757 cases
+  [335/597] Vol 338: COMPLETE - 757/757 cases (0 without text) | 18.5s | overall 338/600 complete, 0 failed, 0 unavailable | ETA 18m 56s
+  [336/597] Vol 339: ... 400/584 cases
+  [336/597] Vol 339: COMPLETE - 584/584 cases (0 without text) | 14.7s | overall 339/600 complete, 0 failed, 0 unavailable | ETA 19m 00s
+  [337/597] Vol 340: ... 406/892 cases
+  [337/597] Vol 340: ... 833/892 cases
+  [337/597] Vol 340: COMPLETE - 892/892 cases (0 without text) | 21.4s | overall 340/600 complete, 0 failed, 0 unavailable | ETA 19m 09s
+  [338/597] Vol 341: COMPLETE - 370/370 cases (0 without text) | 9.6s | overall 341/600 complete, 0 failed, 0 unavailable | ETA 19m 08s
+  [339/597] Vol 342: ... 368/862 cases
+  [339/597] Vol 342: ... 797/862 cases
+  [339/597] Vol 342: COMPLETE - 862/862 cases (0 without text) | 21.6s | overall 342/600 complete, 0 failed, 0 unavailable | ETA 19m 17s
+  [340/597] Vol 343: ... 351/455 cases
+  [340/597] Vol 343: COMPLETE - 455/455 cases (0 without text) | 12.5s | overall 343/600 complete, 0 failed, 0 unavailable | ETA 19m 19s
+  [341/597] Vol 344: ... 393/789 cases
+  [341/597] Vol 344: COMPLETE - 789/789 cases (0 without text) | 19.2s | overall 344/600 complete, 0 failed, 0 unavailable | ETA 19m 25s
+  [342/597] Vol 345: ... 371/567 cases
+  [342/597] Vol 345: COMPLETE - 567/567 cases (0 without text) | 15.2s | overall 345/600 complete, 0 failed, 0 unavailable | ETA 19m 29s
+  [343/597] Vol 346: ... 376/745 cases
+  [343/597] Vol 346: COMPLETE - 745/745 cases (0 without text) | 18.7s | overall 346/600 complete, 0 failed, 0 unavailable | ETA 19m 34s
+  [344/597] Vol 347: ... 394/690 cases
+  [344/597] Vol 347: COMPLETE - 690/690 cases (0 without text) | 16.8s | overall 347/600 complete, 0 failed, 0 unavailable | ETA 19m 39s
+  [345/597] Vol 348: ... 397/1028 cases
+  [345/597] Vol 348: ... 818/1028 cases
+  [345/597] Vol 348: COMPLETE - 1028/1028 cases (0 without text) | 25.0s | overall 348/600 complete, 0 failed, 0 unavailable | ETA 19m 49s
+  [346/597] Vol 349: ... 394/424 cases
+  [346/597] Vol 349: COMPLETE - 424/424 cases (0 without text) | 10.8s | overall 349/600 complete, 0 failed, 0 unavailable | ETA 19m 49s
+  [347/597] Vol 350: ... 392/1212 cases
+  [347/597] Vol 350: ... 825/1212 cases
+  [347/597] Vol 350: COMPLETE - 1212/1212 cases (0 without text) | 29.1s | overall 350/600 complete, 0 failed, 0 unavailable | ETA 20m 02s
+  [348/597] Vol 351: ... 403/533 cases
+  [348/597] Vol 351: COMPLETE - 533/533 cases (0 without text) | 13.0s | overall 351/600 complete, 0 failed, 0 unavailable | ETA 20m 03s
+  [349/597] Vol 352: ... 404/1167 cases
+  [349/597] Vol 352: ... 811/1167 cases
+  [349/597] Vol 352: COMPLETE - 1167/1167 cases (0 without text) | 28.5s | overall 352/600 complete, 0 failed, 0 unavailable | ETA 20m 15s
+  [350/597] Vol 353: ... 400/477 cases
+  [350/597] Vol 353: COMPLETE - 477/477 cases (0 without text) | 12.0s | overall 353/600 complete, 0 failed, 0 unavailable | ETA 20m 15s
+  [351/597] Vol 354: COMPLETE - 230/230 cases (0 without text) | 6.1s | overall 354/600 complete, 0 failed, 0 unavailable | ETA 20m 11s
+  [352/597] Vol 355: ... 316/1027 cases
+  [352/597] Vol 355: ... 747/1027 cases
+  [352/597] Vol 355: COMPLETE - 1027/1027 cases (0 without text) | 26.7s | overall 355/600 complete, 0 failed, 0 unavailable | ETA 20m 21s
+  [353/597] Vol 356: ... 374/526 cases
+  [353/597] Vol 356: COMPLETE - 526/526 cases (0 without text) | 13.6s | overall 356/600 complete, 0 failed, 0 unavailable | ETA 20m 22s
+  [354/597] Vol 357: COMPLETE - 314/314 cases (0 without text) | 8.0s | overall 357/600 complete, 0 failed, 0 unavailable | ETA 20m 19s
+  [355/597] Vol 358: ... 397/895 cases
+  [355/597] Vol 358: ... 811/895 cases
+  [355/597] Vol 358: COMPLETE - 895/895 cases (0 without text) | 22.8s | overall 358/600 complete, 0 failed, 0 unavailable | ETA 20m 26s
+  [356/597] Vol 359: ... 373/750 cases
+  [356/597] Vol 359: COMPLETE - 750/750 cases (0 without text) | 19.2s | overall 359/600 complete, 0 failed, 0 unavailable | ETA 20m 31s
+  [357/597] Vol 360: COMPLETE - 277/277 cases (0 without text) | 7.8s | overall 360/600 complete, 0 failed, 0 unavailable | ETA 20m 27s
+  [358/597] Vol 361: ... 381/1018 cases
+  [358/597] Vol 361: ... 791/1018 cases
+  [358/597] Vol 361: COMPLETE - 1018/1018 cases (0 without text) | 25.9s | overall 361/600 complete, 0 failed, 0 unavailable | ETA 20m 36s
+  [359/597] Vol 362: ... 391/535 cases
+
+██████████████████████████████████████████████████████████████████████████████
+  STAGE 1: DOWNLOADING RAW HARVARD CAP VOLUMES (all)
+██████████████████████████████████████████████████████████████████████████████
+
+==============================================================================
+  [CAP STAGE 1: DOWNLOAD ONLY]
+    Source:             https://static.case.law/us/<volume>/
+    Raw cache:          C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_raw_volumes
+    Worker threads:     64
+    Target volumes:     600 (1 ... 600)
+    Checkpoint file:    C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_download_checkpoint.json
+    Batch checkpoint:   every 64 volumes (10 batches)
+==============================================================================
+  -> Verifying the cache files already on disk for 600 volumes...
+    Verified COMPLETE:  361 (skipped)
+    To process now:     239 (not started: 238, interrupted: 1)
+  [1/239] Vol 362: COMPLETE - 535/535 cases (0 without text) | 7.8s | overall 362/600 complete, 0 failed, 0 unavailable | ETA 30m 46s
+  [2/239] Vol 363: COMPLETE - 367/367 cases (0 without text) | 3.2s | overall 363/600 complete, 0 failed, 0 unavailable | ETA 21m 45s
+  [3/239] Vol 364: COMPLETE - 946/946 cases (0 without text) | 6.6s | overall 364/600 complete, 0 failed, 0 unavailable | ETA 23m 04s
+  [4/239] Vol 365: COMPLETE - 588/588 cases (0 without text) | 5.3s | overall 365/600 complete, 0 failed, 0 unavailable | ETA 22m 25s
+  [5/239] Vol 366: COMPLETE - 521/521 cases (0 without text) | 5.6s | overall 366/600 complete, 0 failed, 0 unavailable | ETA 22m 15s
+  [6/239] Vol 367: COMPLETE - 44/44 cases (0 without text) | 1.5s | overall 367/600 complete, 0 failed, 0 unavailable | ETA 19m 26s
+  [7/239] Vol 368: COMPLETE - 1287/1287 cases (0 without text) | 9.4s | overall 368/600 complete, 0 failed, 0 unavailable | ETA 21m 46s
+  [8/239] Vol 369: COMPLETE - 606/606 cases (0 without text) | 6.0s | overall 369/600 complete, 0 failed, 0 unavailable | ETA 21m 51s
+  [9/239] Vol 370: COMPLETE - 422/422 cases (0 without text) | 4.8s | overall 370/600 complete, 0 failed, 0 unavailable | ETA 21m 23s
+  [10/239] Vol 371: COMPLETE - 1092/1092 cases (0 without text) | 7.9s | overall 371/600 complete, 0 failed, 0 unavailable | ETA 22m 12s
+  [11/239] Vol 372: COMPLETE - 568/568 cases (0 without text) | 4.5s | overall 372/600 complete, 0 failed, 0 unavailable | ETA 21m 40s
+  [12/239] Vol 373: COMPLETE - 381/381 cases (0 without text) | 3.1s | overall 373/600 complete, 0 failed, 0 unavailable | ETA 20m 45s
+  [13/239] Vol 374: COMPLETE - 450/450 cases (0 without text) | 3.5s | overall 374/600 complete, 0 failed, 0 unavailable | ETA 20m 05s
+  [14/239] Vol 375: COMPLETE - 1253/1253 cases (0 without text) | 8.5s | overall 375/600 complete, 0 failed, 0 unavailable | ETA 20m 50s
+  [15/239] Vol 376: COMPLETE - 518/518 cases (0 without text) | 3.8s | overall 376/600 complete, 0 failed, 0 unavailable | ETA 20m 18s
+  [16/239] Vol 377: COMPLETE - 663/663 cases (0 without text) | 5.4s | overall 377/600 complete, 0 failed, 0 unavailable | ETA 20m 13s
+  [17/239] Vol 378: COMPLETE - 76/76 cases (0 without text) | 1.9s | overall 378/600 complete, 0 failed, 0 unavailable | ETA 19m 21s
+  [18/239] Vol 379: COMPLETE - 1263/1263 cases (0 without text) | 9.6s | overall 379/600 complete, 0 failed, 0 unavailable | ETA 20m 10s
+  [19/239] Vol 380: COMPLETE - 620/620 cases (0 without text) | 5.4s | overall 380/600 complete, 0 failed, 0 unavailable | ETA 20m 03s
+  [20/239] Vol 381: COMPLETE - 408/408 cases (0 without text) | 3.1s | overall 381/600 complete, 0 failed, 0 unavailable | ETA 19m 31s
+  [21/239] Vol 382: COMPLETE - 1479/1479 cases (0 without text) | 10.0s | overall 382/600 complete, 0 failed, 0 unavailable | ETA 20m 14s
+  [22/239] Vol 383: COMPLETE - 510/510 cases (0 without text) | 4.3s | overall 383/600 complete, 0 failed, 0 unavailable | ETA 19m 57s
+  [23/239] Vol 384: COMPLETE - 849/849 cases (0 without text) | 6.4s | overall 384/600 complete, 0 failed, 0 unavailable | ETA 19m 59s
+  [CHECKPOINT] Batch 6/10 (volumes 321-384): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [24/239] Vol 385: COMPLETE - 1532/1532 cases (0 without text) | 10.5s | overall 385/600 complete, 0 failed, 0 unavailable | ETA 20m 38s
+  [25/239] Vol 386: COMPLETE - 943/943 cases (0 without text) | 6.9s | overall 386/600 complete, 0 failed, 0 unavailable | ETA 20m 42s
+  [26/239] Vol 387: COMPLETE - 353/353 cases (0 without text) | 3.0s | overall 387/600 complete, 0 failed, 0 unavailable | ETA 20m 13s
+  [27/239] Vol 388: COMPLETE - 184/184 cases (0 without text) | 2.1s | overall 388/600 complete, 0 failed, 0 unavailable | ETA 19m 39s
+  [28/239] Vol 389: COMPLETE - 1414/1414 cases (0 without text) | 9.8s | overall 389/600 complete, 0 failed, 0 unavailable | ETA 20m 06s
+  [29/239] Vol 390: COMPLETE - 977/977 cases (0 without text) | 6.8s | overall 390/600 complete, 0 failed, 0 unavailable | ETA 20m 08s
+  [30/239] Vol 391: COMPLETE - 386/386 cases (0 without text) | 4.6s | overall 391/600 complete, 0 failed, 0 unavailable | ETA 19m 54s
+  [31/239] Vol 392: COMPLETE - 349/349 cases (0 without text) | 2.7s | overall 392/600 complete, 0 failed, 0 unavailable | ETA 19m 28s
+  [32/239] Vol 393: ... 1559/2019 cases
+  [32/239] Vol 393: COMPLETE - 2019/2019 cases (0 without text) | 12.9s | overall 393/600 complete, 0 failed, 0 unavailable | ETA 20m 10s
+  [33/239] Vol 394: COMPLETE - 735/735 cases (0 without text) | 5.1s | overall 394/600 complete, 0 failed, 0 unavailable | ETA 20m 00s
+  [34/239] Vol 395: COMPLETE - 576/576 cases (0 without text) | 4.5s | overall 395/600 complete, 0 failed, 0 unavailable | ETA 19m 46s
+  [35/239] Vol 396: ... 1530/1670 cases
+  [35/239] Vol 396: COMPLETE - 1670/1670 cases (0 without text) | 11.3s | overall 396/600 complete, 0 failed, 0 unavailable | ETA 20m 13s
+  [36/239] Vol 397: COMPLETE - 1289/1289 cases (0 without text) | 9.1s | overall 397/600 complete, 0 failed, 0 unavailable | ETA 20m 24s
+  [37/239] Vol 398: COMPLETE - 465/465 cases (0 without text) | 3.6s | overall 398/600 complete, 0 failed, 0 unavailable | ETA 20m 05s
+  [38/239] Vol 399: COMPLETE - 274/274 cases (0 without text) | 2.4s | overall 399/600 complete, 0 failed, 0 unavailable | ETA 19m 40s
+  [39/239] Vol 400: ... 1493/1567 cases
+  [39/239] Vol 400: COMPLETE - 1567/1567 cases (0 without text) | 10.8s | overall 400/600 complete, 0 failed, 0 unavailable | ETA 19m 59s
+  [40/239] Vol 401: COMPLETE - 932/932 cases (0 without text) | 6.2s | overall 401/600 complete, 0 failed, 0 unavailable | ETA 19m 55s
+  [41/239] Vol 402: COMPLETE - 758/758 cases (0 without text) | 5.8s | overall 402/600 complete, 0 failed, 0 unavailable | ETA 19m 48s
+  [42/239] Vol 403: COMPLETE - 379/379 cases (0 without text) | 3.3s | overall 403/600 complete, 0 failed, 0 unavailable | ETA 19m 29s
+  [43/239] Vol 404: ... 1564/1821 cases
+  [43/239] Vol 404: COMPLETE - 1821/1821 cases (0 without text) | 11.6s | overall 404/600 complete, 0 failed, 0 unavailable | ETA 19m 49s
+  [44/239] Vol 405: COMPLETE - 1050/1050 cases (0 without text) | 7.4s | overall 405/600 complete, 0 failed, 0 unavailable | ETA 19m 49s
+  [45/239] Vol 406: COMPLETE - 631/631 cases (0 without text) | 4.4s | overall 406/600 complete, 0 failed, 0 unavailable | ETA 19m 36s
+  [46/239] Vol 407: COMPLETE - 211/211 cases (0 without text) | 2.6s | overall 407/600 complete, 0 failed, 0 unavailable | ETA 19m 15s
+  [47/239] Vol 408: COMPLETE - 296/296 cases (0 without text) | 2.5s | overall 408/600 complete, 0 failed, 0 unavailable | ETA 18m 55s
+  [48/239] Vol 409: ... 1418/2123 cases
+  [48/239] Vol 409: COMPLETE - 2123/2123 cases (0 without text) | 14.6s | overall 409/600 complete, 0 failed, 0 unavailable | ETA 19m 24s
+  [49/239] Vol 410: COMPLETE - 747/747 cases (0 without text) | 5.5s | overall 410/600 complete, 0 failed, 0 unavailable | ETA 19m 15s
+  [50/239] Vol 411: COMPLETE - 648/648 cases (0 without text) | 6.1s | overall 411/600 complete, 0 failed, 0 unavailable | ETA 19m 09s
+  [51/239] Vol 412: COMPLETE - 471/471 cases (0 without text) | 3.5s | overall 412/600 complete, 0 failed, 0 unavailable | ETA 18m 54s
+  [52/239] Vol 413: COMPLETE - 112/112 cases (0 without text) | 1.5s | overall 413/600 complete, 0 failed, 0 unavailable | ETA 18m 31s
+  [53/239] Vol 414: ... 1593/2204 cases
+  [53/239] Vol 414: COMPLETE - 2204/2204 cases (0 without text) | 13.9s | overall 414/600 complete, 0 failed, 0 unavailable | ETA 18m 53s
+  [54/239] Vol 415: COMPLETE - 730/730 cases (0 without text) | 5.7s | overall 415/600 complete, 0 failed, 0 unavailable | ETA 18m 46s
+  [55/239] Vol 416: COMPLETE - 665/665 cases (0 without text) | 5.8s | overall 416/600 complete, 0 failed, 0 unavailable | ETA 18m 39s
+  [56/239] Vol 417: COMPLETE - 529/529 cases (0 without text) | 4.3s | overall 417/600 complete, 0 failed, 0 unavailable | ETA 18m 27s
+  [57/239] Vol 418: COMPLETE - 100/100 cases (0 without text) | 2.2s | overall 418/600 complete, 0 failed, 0 unavailable | ETA 18m 09s
+  [58/239] Vol 419: ... 1578/2128 cases
+  [58/239] Vol 419: COMPLETE - 2128/2128 cases (0 without text) | 13.6s | overall 419/600 complete, 0 failed, 0 unavailable | ETA 18m 27s
+  [59/239] Vol 420: COMPLETE - 890/890 cases (0 without text) | 7.4s | overall 420/600 complete, 0 failed, 0 unavailable | ETA 18m 24s
+  [60/239] Vol 421: COMPLETE - 861/861 cases (0 without text) | 5.8s | overall 421/600 complete, 0 failed, 0 unavailable | ETA 18m 17s
+  [61/239] Vol 422: COMPLETE - 283/283 cases (0 without text) | 2.4s | overall 422/600 complete, 0 failed, 0 unavailable | ETA 18m 00s
+  [62/239] Vol 423: ... 1582/2114 cases
+  [62/239] Vol 423: COMPLETE - 2114/2114 cases (0 without text) | 13.6s | overall 423/600 complete, 0 failed, 0 unavailable | ETA 18m 16s
+  [63/239] Vol 424: ... 269/644 cases
+  [63/239] Vol 424: COMPLETE - 644/644 cases (0 without text) | 12.5s | overall 424/600 complete, 0 failed, 0 unavailable | ETA 18m 27s
+  [64/239] Vol 425: COMPLETE - 759/759 cases (0 without text) | 5.6s | overall 425/600 complete, 0 failed, 0 unavailable | ETA 18m 19s
+  [65/239] Vol 426: COMPLETE - 444/444 cases (0 without text) | 3.4s | overall 426/600 complete, 0 failed, 0 unavailable | ETA 18m 05s
+  [66/239] Vol 427: COMPLETE - 78/78 cases (0 without text) | 1.3s | overall 427/600 complete, 0 failed, 0 unavailable | ETA 17m 46s
+  [67/239] Vol 428: COMPLETE - 90/90 cases (0 without text) | 1.4s | overall 428/600 complete, 0 failed, 0 unavailable | ETA 17m 27s
+  [68/239] Vol 429: ... 1490/2586 cases
+  [68/239] Vol 429: COMPLETE - 2586/2586 cases (0 without text) | 16.7s | overall 429/600 complete, 0 failed, 0 unavailable | ETA 17m 48s
+  [69/239] Vol 430: COMPLETE - 803/803 cases (0 without text) | 5.6s | overall 430/600 complete, 0 failed, 0 unavailable | ETA 17m 40s
+  [70/239] Vol 431: COMPLETE - 693/693 cases (0 without text) | 6.1s | overall 431/600 complete, 0 failed, 0 unavailable | ETA 17m 33s
+  [71/239] Vol 432: COMPLETE - 116/116 cases (0 without text) | 1.4s | overall 432/600 complete, 0 failed, 0 unavailable | ETA 17m 16s
+  [72/239] Vol 433: COMPLETE - 151/151 cases (0 without text) | 3.1s | overall 433/600 complete, 0 failed, 0 unavailable | ETA 17m 02s
+  [73/239] Vol 434: ... 1300/2499 cases
+  [73/239] Vol 434: COMPLETE - 2499/2499 cases (0 without text) | 17.3s | overall 434/600 complete, 0 failed, 0 unavailable | ETA 17m 22s
+  [74/239] Vol 435: COMPLETE - 874/874 cases (0 without text) | 6.7s | overall 435/600 complete, 0 failed, 0 unavailable | ETA 17m 17s
+  [75/239] Vol 436: COMPLETE - 546/546 cases (0 without text) | 47.6s | overall 436/600 complete, 0 failed, 0 unavailable | ETA 18m 41s
+  [76/239] Vol 437: COMPLETE - 120/120 cases (0 without text) | 3.0s | overall 437/600 complete, 0 failed, 0 unavailable | ETA 18m 25s
+  [77/239] Vol 438: COMPLETE - 100/100 cases (0 without text) | 1.5s | overall 438/600 complete, 0 failed, 0 unavailable | ETA 18m 07s
+  [78/239] Vol 439: ... 1343/2359 cases
+  [78/239] Vol 439: COMPLETE - 2359/2359 cases (0 without text) | 16.7s | overall 439/600 complete, 0 failed, 0 unavailable | ETA 18m 21s
+  [79/239] Vol 440: COMPLETE - 863/863 cases (0 without text) | 6.4s | overall 440/600 complete, 0 failed, 0 unavailable | ETA 18m 14s
+  [80/239] Vol 441: COMPLETE - 588/588 cases (0 without text) | 6.3s | overall 441/600 complete, 0 failed, 0 unavailable | ETA 18m 06s
+  [81/239] Vol 442: COMPLETE - 411/411 cases (0 without text) | 3.3s | overall 442/600 complete, 0 failed, 0 unavailable | ETA 17m 52s
+  [82/239] Vol 443: COMPLETE - 83/83 cases (0 without text) | 1.7s | overall 443/600 complete, 0 failed, 0 unavailable | ETA 17m 35s
+  [83/239] Vol 444: ... 1437/2476 cases
+  [83/239] Vol 444: COMPLETE - 2476/2476 cases (0 without text) | 16.5s | overall 444/600 complete, 0 failed, 0 unavailable | ETA 17m 47s
+  [84/239] Vol 445: COMPLETE - 620/620 cases (0 without text) | 4.8s | overall 445/600 complete, 0 failed, 0 unavailable | ETA 17m 36s
+  [85/239] Vol 446: COMPLETE - 690/690 cases (0 without text) | 5.4s | overall 446/600 complete, 0 failed, 0 unavailable | ETA 17m 27s
+  [86/239] Vol 447: COMPLETE - 299/299 cases (0 without text) | 3.2s | overall 447/600 complete, 0 failed, 0 unavailable | ETA 17m 14s
+  [87/239] Vol 448: COMPLETE - 105/105 cases (0 without text) | 1.8s | overall 448/600 complete, 0 failed, 0 unavailable | ETA 16m 59s
+  [CHECKPOINT] Batch 7/10 (volumes 385-448): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [88/239] Vol 449: ... 1541/2418 cases
+  [88/239] Vol 449: COMPLETE - 2418/2418 cases (0 without text) | 16.8s | overall 449/600 complete, 0 failed, 0 unavailable | ETA 17m 09s
+  [89/239] Vol 450: COMPLETE - 980/980 cases (0 without text) | 6.9s | overall 450/600 complete, 0 failed, 0 unavailable | ETA 17m 03s
+  [90/239] Vol 451: COMPLETE - 691/691 cases (0 without text) | 5.4s | overall 451/600 complete, 0 failed, 0 unavailable | ETA 16m 53s
+  [91/239] Vol 452: COMPLETE - 454/454 cases (0 without text) | 3.7s | overall 452/600 complete, 0 failed, 0 unavailable | ETA 16m 42s
+  [92/239] Vol 453: COMPLETE - 159/159 cases (0 without text) | 2.1s | overall 453/600 complete, 0 failed, 0 unavailable | ETA 16m 27s
+  [93/239] Vol 454: ... 1425/2274 cases
+  [93/239] Vol 454: COMPLETE - 2274/2274 cases (0 without text) | 15.2s | overall 454/600 complete, 0 failed, 0 unavailable | ETA 16m 34s
+  [94/239] Vol 455: COMPLETE - 1015/1015 cases (0 without text) | 7.4s | overall 455/600 complete, 0 failed, 0 unavailable | ETA 16m 28s
+  [95/239] Vol 456: COMPLETE - 948/948 cases (0 without text) | 6.5s | overall 456/600 complete, 0 failed, 0 unavailable | ETA 16m 21s
+  [96/239] Vol 457: COMPLETE - 406/406 cases (0 without text) | 3.1s | overall 457/600 complete, 0 failed, 0 unavailable | ETA 16m 09s
+  [97/239] Vol 458: COMPLETE - 223/223 cases (0 without text) | 2.2s | overall 458/600 complete, 0 failed, 0 unavailable | ETA 15m 55s
+  [98/239] Vol 459: ... 1532/2755 cases
+  [98/239] Vol 459: COMPLETE - 2755/2755 cases (0 without text) | 18.0s | overall 459/600 complete, 0 failed, 0 unavailable | ETA 16m 05s
+  [99/239] Vol 460: COMPLETE - 762/762 cases (0 without text) | 5.4s | overall 460/600 complete, 0 failed, 0 unavailable | ETA 15m 56s
+  [100/239] Vol 461: COMPLETE - 570/570 cases (0 without text) | 4.3s | overall 461/600 complete, 0 failed, 0 unavailable | ETA 15m 45s
+  [101/239] Vol 462: COMPLETE - 359/359 cases (0 without text) | 4.4s | overall 462/600 complete, 0 failed, 0 unavailable | ETA 15m 35s
+  [102/239] Vol 463: COMPLETE - 260/260 cases (0 without text) | 3.5s | overall 463/600 complete, 0 failed, 0 unavailable | ETA 15m 24s
+  [103/239] Vol 464: ... 1371/2255 cases
+  [103/239] Vol 464: COMPLETE - 2255/2255 cases (0 without text) | 15.5s | overall 464/600 complete, 0 failed, 0 unavailable | ETA 15m 29s
+  [104/239] Vol 465: COMPLETE - 902/902 cases (0 without text) | 6.2s | overall 465/600 complete, 0 failed, 0 unavailable | ETA 15m 21s
+  [105/239] Vol 466: COMPLETE - 707/707 cases (0 without text) | 5.6s | overall 466/600 complete, 0 failed, 0 unavailable | ETA 15m 13s
+  [106/239] Vol 467: COMPLETE - 591/591 cases (0 without text) | 4.5s | overall 467/600 complete, 0 failed, 0 unavailable | ETA 15m 03s
+  [107/239] Vol 468: COMPLETE - 187/187 cases (0 without text) | 2.2s | overall 468/600 complete, 0 failed, 0 unavailable | ETA 14m 51s
+  [108/239] Vol 469: ... 1458/2778 cases
+  [108/239] Vol 469: COMPLETE - 2778/2778 cases (0 without text) | 18.3s | overall 469/600 complete, 0 failed, 0 unavailable | ETA 14m 58s
+  [109/239] Vol 470: COMPLETE - 492/492 cases (0 without text) | 4.0s | overall 470/600 complete, 0 failed, 0 unavailable | ETA 14m 48s
+  [110/239] Vol 471: COMPLETE - 893/893 cases (0 without text) | 6.5s | overall 471/600 complete, 0 failed, 0 unavailable | ETA 14m 41s
+  [111/239] Vol 472: COMPLETE - 341/341 cases (0 without text) | 3.7s | overall 472/600 complete, 0 failed, 0 unavailable | ETA 14m 30s
+  [112/239] Vol 473: COMPLETE - 186/186 cases (0 without text) | 2.0s | overall 473/600 complete, 0 failed, 0 unavailable | ETA 14m 18s
+  [113/239] Vol 474: ... 1535/2351 cases
+  [113/239] Vol 474: COMPLETE - 2351/2351 cases (0 without text) | 15.3s | overall 474/600 complete, 0 failed, 0 unavailable | ETA 14m 21s
+  [114/239] Vol 475: COMPLETE - 1235/1235 cases (0 without text) | -25093.5s | overall 475/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [115/239] Vol 476: COMPLETE - 725/725 cases (0 without text) | 5.2s | overall 476/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [116/239] Vol 477: COMPLETE - 123/123 cases (0 without text) | 1.8s | overall 477/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [117/239] Vol 478: COMPLETE - 301/301 cases (0 without text) | 2.7s | overall 478/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [118/239] Vol 479: ... 1574/2819 cases
+  [118/239] Vol 479: COMPLETE - 2819/2819 cases (0 without text) | 17.7s | overall 479/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [119/239] Vol 480: COMPLETE - 532/532 cases (0 without text) | 4.1s | overall 480/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [120/239] Vol 481: COMPLETE - 748/748 cases (0 without text) | 5.4s | overall 481/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [121/239] Vol 482: COMPLETE - 330/330 cases (0 without text) | 4.2s | overall 482/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [122/239] Vol 483: COMPLETE - 372/372 cases (0 without text) | 3.0s | overall 483/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [123/239] Vol 484: ... 1360/2686 cases
+  [123/239] Vol 484: COMPLETE - 2686/2686 cases (0 without text) | 18.5s | overall 484/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [124/239] Vol 485: COMPLETE - 1031/1031 cases (0 without text) | 7.1s | overall 485/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [125/239] Vol 486: COMPLETE - 611/611 cases (0 without text) | 4.3s | overall 486/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [126/239] Vol 487: COMPLETE - 493/493 cases (0 without text) | 3.7s | overall 487/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [127/239] Vol 488: ... 1583/2510 cases
+  [127/239] Vol 488: COMPLETE - 2510/2510 cases (0 without text) | 15.7s | overall 488/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [128/239] Vol 489: COMPLETE - 980/980 cases (0 without text) | 7.2s | overall 489/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [129/239] Vol 490: COMPLETE - 1149/1149 cases (0 without text) | 8.2s | overall 490/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [130/239] Vol 491: COMPLETE - 152/152 cases (0 without text) | 2.0s | overall 491/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [131/239] Vol 492: COMPLETE - 380/380 cases (0 without text) | 3.5s | overall 492/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [132/239] Vol 493: ... 1478/3039 cases
+  [132/239] Vol 493: COMPLETE - 3039/3039 cases (0 without text) | 19.7s | overall 493/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [133/239] Vol 494: COMPLETE - 849/849 cases (0 without text) | 6.4s | overall 494/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [134/239] Vol 495: COMPLETE - 664/664 cases (0 without text) | 5.0s | overall 495/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [135/239] Vol 496: COMPLETE - 414/414 cases (0 without text) | 3.2s | overall 496/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [136/239] Vol 497: COMPLETE - 374/374 cases (0 without text) | 7.5s | overall 497/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [137/239] Vol 498: ... 1447/3429 cases
+  [137/239] Vol 498: ... 3152/3429 cases
+  [137/239] Vol 498: COMPLETE - 3429/3429 cases (0 without text) | 21.9s | overall 498/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [138/239] Vol 499: COMPLETE - 992/992 cases (0 without text) | 7.4s | overall 499/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [139/239] Vol 500: COMPLETE - 688/688 cases (0 without text) | 5.0s | overall 500/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [140/239] Vol 501: COMPLETE - 735/735 cases (0 without text) | 5.1s | overall 501/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [141/239] Vol 502: ... 1515/3784 cases
+  [141/239] Vol 502: ... 3200/3784 cases
+  [141/239] Vol 502: COMPLETE - 3784/3784 cases (0 without text) | 24.9s | overall 502/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [142/239] Vol 503: COMPLETE - 1227/1227 cases (0 without text) | 9.4s | overall 503/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [143/239] Vol 504: COMPLETE - 913/913 cases (0 without text) | 6.5s | overall 504/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [144/239] Vol 505: COMPLETE - 456/456 cases (0 without text) | 3.6s | overall 505/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [145/239] Vol 506: ... 1557/3463 cases
+  [145/239] Vol 506: ... 3250/3463 cases
+  [145/239] Vol 506: COMPLETE - 3463/3463 cases (0 without text) | 22.2s | overall 506/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [146/239] Vol 507: ... 1586/1866 cases
+  [146/239] Vol 507: COMPLETE - 1866/1866 cases (0 without text) | 11.8s | overall 507/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [147/239] Vol 508: COMPLETE - 1007/1007 cases (0 without text) | 7.4s | overall 508/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [148/239] Vol 509: COMPLETE - 503/503 cases (0 without text) | 3.8s | overall 509/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [149/239] Vol 510: ... 1551/4746 cases
+  [149/239] Vol 510: ... 3260/4746 cases
+  [149/239] Vol 510: COMPLETE - 4746/4746 cases (0 without text) | 29.0s | overall 510/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [150/239] Vol 511: ... 1415/1635 cases
+  [150/239] Vol 511: COMPLETE - 1635/1635 cases (0 without text) | 12.0s | overall 511/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [151/239] Vol 512: COMPLETE - 718/718 cases (0 without text) | 5.7s | overall 512/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [CHECKPOINT] Batch 8/10 (volumes 449-512): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [152/239] Vol 513: ... 1319/4976 cases
+  [152/239] Vol 513: ... 3018/4976 cases
+  [152/239] Vol 513: ... 4715/4976 cases
+  [152/239] Vol 513: COMPLETE - 4976/4976 cases (0 without text) | 32.1s | overall 513/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [153/239] Vol 514: ... 1561/1683 cases
+  [153/239] Vol 514: COMPLETE - 1683/1683 cases (0 without text) | 10.9s | overall 514/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [154/239] Vol 515: COMPLETE - 927/927 cases (0 without text) | 6.7s | overall 515/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [155/239] Vol 516: ... 0/4704 cases
+  [155/239] Vol 516: ... 1638/4704 cases
+  [155/239] Vol 516: ... 3338/4704 cases
+  [155/239] Vol 516: COMPLETE - 4704/4704 cases (0 without text) | 39.7s | overall 516/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [156/239] Vol 517: ... 1516/1768 cases
+  [156/239] Vol 517: COMPLETE - 1768/1768 cases (0 without text) | 11.7s | overall 517/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [157/239] Vol 518: COMPLETE - 535/535 cases (0 without text) | 4.0s | overall 518/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [158/239] Vol 519: ... 1559/4383 cases
+  [158/239] Vol 519: ... 3238/4383 cases
+  [158/239] Vol 519: COMPLETE - 4383/4383 cases (0 without text) | 27.4s | overall 519/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [159/239] Vol 520: ... 1567/2235 cases
+  [159/239] Vol 520: COMPLETE - 2235/2235 cases (0 without text) | 14.2s | overall 520/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [160/239] Vol 521: COMPLETE - 506/506 cases (0 without text) | 4.0s | overall 521/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [161/239] Vol 522: ... 1340/4450 cases
+  [161/239] Vol 522: ... 3023/4450 cases
+  [161/239] Vol 522: COMPLETE - 4450/4450 cases (0 without text) | 28.9s | overall 522/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [162/239] Vol 523: ... 1534/1764 cases
+  [162/239] Vol 523: COMPLETE - 1764/1764 cases (0 without text) | 11.9s | overall 523/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [163/239] Vol 524: COMPLETE - 897/897 cases (0 without text) | 6.5s | overall 524/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [164/239] Vol 525: ... 1455/4644 cases
+  [164/239] Vol 525: ... 3141/4644 cases
+  [164/239] Vol 525: COMPLETE - 4644/4644 cases (0 without text) | 29.4s | overall 525/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [165/239] Vol 526: ... 1366/2052 cases
+  [165/239] Vol 526: COMPLETE - 2052/2052 cases (0 without text) | 14.7s | overall 526/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [166/239] Vol 527: COMPLETE - 623/623 cases (0 without text) | 4.7s | overall 527/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [167/239] Vol 528: ... 1452/4802 cases
+  [167/239] Vol 528: ... 3161/4802 cases
+  [167/239] Vol 528: COMPLETE - 4802/4802 cases (0 without text) | 30.3s | overall 528/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [168/239] Vol 529: ... 1572/1690 cases
+  [168/239] Vol 529: COMPLETE - 1690/1690 cases (0 without text) | 11.2s | overall 529/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [169/239] Vol 530: COMPLETE - 1039/1039 cases (0 without text) | 8.3s | overall 530/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [170/239] Vol 531: ... 1342/4991 cases
+  [170/239] Vol 531: ... 2996/4991 cases
+  [170/239] Vol 531: ... 4674/4991 cases
+  [170/239] Vol 531: COMPLETE - 4991/4991 cases (0 without text) | 32.3s | overall 531/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [171/239] Vol 532: ... 1524/2107 cases
+  [171/239] Vol 532: COMPLETE - 2107/2107 cases (0 without text) | 13.8s | overall 532/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [172/239] Vol 533: COMPLETE - 847/847 cases (0 without text) | 6.0s | overall 533/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [173/239] Vol 534: ... 1409/4724 cases
+  [173/239] Vol 534: ... 3085/4724 cases
+  [173/239] Vol 534: ... 4723/4724 cases
+  [173/239] Vol 534: COMPLETE - 4724/4724 cases (0 without text) | 30.8s | overall 534/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [174/239] Vol 535: ... 1558/2598 cases
+  [174/239] Vol 535: COMPLETE - 2598/2598 cases (0 without text) | 16.4s | overall 535/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [175/239] Vol 536: COMPLETE - 969/969 cases (0 without text) | 7.1s | overall 536/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [176/239] Vol 537: ... 1453/5541 cases
+  [176/239] Vol 537: ... 3149/5541 cases
+  [176/239] Vol 537: ... 4831/5541 cases
+  [176/239] Vol 537: COMPLETE - 5541/5541 cases (0 without text) | 35.0s | overall 537/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [177/239] Vol 538: ... 1568/2110 cases
+  [177/239] Vol 538: COMPLETE - 2110/2110 cases (0 without text) | 13.4s | overall 538/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [178/239] Vol 539: COMPLETE - 904/904 cases (0 without text) | 8.7s | overall 539/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [179/239] Vol 540: ... 1407/5253 cases
+  [179/239] Vol 540: ... 3087/5253 cases
+  [179/239] Vol 540: ... 4767/5253 cases
+  [179/239] Vol 540: COMPLETE - 5253/5253 cases (0 without text) | 33.8s | overall 540/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [180/239] Vol 541: ... 1550/2098 cases
+  [180/239] Vol 541: COMPLETE - 2098/2098 cases (0 without text) | 13.5s | overall 541/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [181/239] Vol 542: COMPLETE - 615/615 cases (0 without text) | 5.3s | overall 542/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [182/239] Vol 543: ... 1530/4481 cases
+  [182/239] Vol 543: ... 3233/4481 cases
+  [182/239] Vol 543: COMPLETE - 4481/4481 cases (0 without text) | 27.8s | overall 543/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [183/239] Vol 544: ... 1568/1809 cases
+  [183/239] Vol 544: COMPLETE - 1809/1809 cases (0 without text) | 11.6s | overall 544/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [184/239] Vol 545: COMPLETE - 702/702 cases (0 without text) | 5.1s | overall 545/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [185/239] Vol 546: ... 1454/5363 cases
+  [185/239] Vol 546: ... 3130/5363 cases
+  [185/239] Vol 546: ... 4820/5363 cases
+  [185/239] Vol 546: COMPLETE - 5363/5363 cases (0 without text) | 33.6s | overall 546/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [186/239] Vol 547: COMPLETE - 37/37 cases (0 without text) | 1.7s | overall 547/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [187/239] Vol 548: COMPLETE - 16/16 cases (0 without text) | 1.8s | overall 548/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [188/239] Vol 549: COMPLETE - 28/28 cases (0 without text) | 1.6s | overall 549/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [189/239] Vol 550: COMPLETE - 21/21 cases (0 without text) | 1.4s | overall 550/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [190/239] Vol 551: COMPLETE - 27/27 cases (0 without text) | 1.5s | overall 551/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [191/239] Vol 552: COMPLETE - 28/28 cases (0 without text) | 1.4s | overall 552/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [192/239] Vol 553: COMPLETE - 27/27 cases (0 without text) | 1.5s | overall 553/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [193/239] Vol 554: COMPLETE - 18/18 cases (0 without text) | 1.1s | overall 554/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [194/239] Vol 555: COMPLETE - 29/29 cases (0 without text) | 1.0s | overall 555/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [195/239] Vol 556: COMPLETE - 40/40 cases (0 without text) | 1.7s | overall 556/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [196/239] Vol 557: COMPLETE - 16/16 cases (0 without text) | 1.0s | overall 557/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [197/239] Vol 558: COMPLETE - 19/19 cases (0 without text) | 1.0s | overall 558/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [198/239] Vol 559: COMPLETE - 28/28 cases (0 without text) | 1.4s | overall 559/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [199/239] Vol 560: COMPLETE - 29/29 cases (0 without text) | 4.7s | overall 560/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [200/239] Vol 561: COMPLETE - 18/18 cases (0 without text) | 2.5s | overall 561/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [201/239] Vol 562: ... 1531/5833 cases
+  [201/239] Vol 562: ... 3201/5833 cases
+  [201/239] Vol 562: ... 4871/5833 cases
+  [201/239] Vol 562: COMPLETE - 5833/5833 cases (0 without text) | 36.4s | overall 562/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [202/239] Vol 563: ... 1374/1767 cases
+  [202/239] Vol 563: COMPLETE - 1767/1767 cases (0 without text) | 12.9s | overall 563/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [203/239] Vol 564: COMPLETE - 656/656 cases (0 without text) | 5.3s | overall 564/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [204/239] Vol 565: ... 1371/5543 cases
+  [204/239] Vol 565: ... 3043/5543 cases
+  [204/239] Vol 565: ... 4722/5543 cases
+  [204/239] Vol 565: COMPLETE - 5543/5543 cases (0 without text) | 35.4s | overall 565/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [205/239] Vol 566: ... 1550/1778 cases
+  [205/239] Vol 566: COMPLETE - 1778/1778 cases (0 without text) | 11.8s | overall 566/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [206/239] Vol 567: COMPLETE - 623/623 cases (0 without text) | 4.7s | overall 567/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [207/239] Vol 568: ... 1524/5595 cases
+  [207/239] Vol 568: ... 3197/5595 cases
+  [207/239] Vol 568: ... 4867/5595 cases
+  [207/239] Vol 568: COMPLETE - 5595/5595 cases (0 without text) | 35.2s | overall 568/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [208/239] Vol 569: ... 1474/2006 cases
+  [208/239] Vol 569: COMPLETE - 2006/2006 cases (0 without text) | 13.4s | overall 569/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [209/239] Vol 570: COMPLETE - 594/594 cases (0 without text) | 4.9s | overall 570/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [210/239] Vol 571: ... 1519/5768 cases
+  [210/239] Vol 571: ... 3191/5768 cases
+  [210/239] Vol 571: ... 4862/5768 cases
+  [210/239] Vol 571: COMPLETE - 5768/5768 cases (0 without text) | 36.8s | overall 571/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [211/239] Vol 572: ... 1541/2187 cases
+  [211/239] Vol 572: COMPLETE - 2187/2187 cases (0 without text) | 15.2s | overall 572/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [212/239] Vol 573: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 1 unavailable | ETA 0s
+  [213/239] Vol 574: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 2 unavailable | ETA 0s
+  [214/239] Vol 575: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 3 unavailable | ETA 0s
+  [215/239] Vol 576: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 4 unavailable | ETA 0s
+  [CHECKPOINT] Batch 9/10 (volumes 513-576): 60/64 COMPLETE, 0 failed, 4 unavailable - checkpoint saved.
+  [216/239] Vol 577: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 5 unavailable | ETA 0s
+  [217/239] Vol 578: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 6 unavailable | ETA 0s
+  [218/239] Vol 579: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 7 unavailable | ETA 0s
+  [219/239] Vol 580: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 8 unavailable | ETA 0s
+  [220/239] Vol 581: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 9 unavailable | ETA 0s
+  [221/239] Vol 582: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 10 unavailable | ETA 0s
+  [222/239] Vol 583: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 11 unavailable | ETA 0s
+  [223/239] Vol 584: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 12 unavailable | ETA 0s
+  [224/239] Vol 585: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 13 unavailable | ETA 0s
+  [225/239] Vol 586: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 14 unavailable | ETA 0s
+  [226/239] Vol 587: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 15 unavailable | ETA 0s
+  [227/239] Vol 588: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 16 unavailable | ETA 0s
+  [228/239] Vol 589: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 17 unavailable | ETA 0s
+  [229/239] Vol 590: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 18 unavailable | ETA 0s
+  [230/239] Vol 591: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 19 unavailable | ETA 0s
+  [231/239] Vol 592: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 20 unavailable | ETA 0s
+  [232/239] Vol 593: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 21 unavailable | ETA 0s
+  [233/239] Vol 594: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 22 unavailable | ETA 0s
+  [234/239] Vol 595: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 23 unavailable | ETA 0s
+  [235/239] Vol 596: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 24 unavailable | ETA 0s
+  [236/239] Vol 597: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 25 unavailable | ETA 0s
+  [237/239] Vol 598: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.5s | overall 572/600 complete, 0 failed, 26 unavailable | ETA 0s
+  [238/239] Vol 599: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 27 unavailable | ETA 0s
+  [239/239] Vol 600: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume) | 0.4s | overall 572/600 complete, 0 failed, 28 unavailable | ETA 0s
+  [CHECKPOINT] Batch 10/10 (volumes 577-600): 0/24 COMPLETE, 0 failed, 24 unavailable - checkpoint saved.
+
+==============================================================================
+  [CAP STAGE 1: DOWNLOAD ONLY - REPORT]  (elapsed 0s)
+    Target volumes:     600
+    COMPLETE:           572
+    FAILED:             0  -> volumes none
+    UNAVAILABLE:        28  -> volumes 573-600
+      Vol 573: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 574: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 575: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 576: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 577: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 578: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 579: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 580: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 581: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 582: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 583: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 584: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 585: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 586: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      Vol 587: UNAVAILABLE - CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)
+      ... and 13 more (full record: 'not_completed' in the checkpoint file)
+  ALL 600 TARGET VOLUMES COMPLETE: NO
+  Record of every volume not completed: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_download_checkpoint.json
+==============================================================================

@@ -1,0 +1,4 @@
+stress-test(100) exit=0
+benchmark(2) exit=0
+baseline(2) exit=1
+ablation(2) exit=0

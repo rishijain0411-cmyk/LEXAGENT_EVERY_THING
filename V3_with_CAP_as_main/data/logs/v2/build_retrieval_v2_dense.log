@@ -1,0 +1,10 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+corpus: 528,283 passages; index directory: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/retrieval_v2
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  24%|██▍       | 48/199 [00:00<00:00, 456.83it/s]Loading weights:  54%|█████▍    | 107/199 [00:00<00:00, 533.46it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 917.66it/s]
+    0 of 528,283 passages embedded, 29s
+    100,000 of 528,283 passages embedded, 149s
+    200,000 of 528,283 passages embedded, 246s
+    300,000 of 528,283 passages embedded, 314s
+    400,000 of 528,283 passages embedded, 389s
+    500,000 of 528,283 passages embedded, 451s
+  dense index written: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/retrieval_v2/dense_embeddings.float16.npy (811 MB, 460s)

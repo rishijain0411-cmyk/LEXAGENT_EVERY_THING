@@ -1,0 +1,11 @@
+{
+  "corpus_fingerprint": "843beb0a3410102d183142eeb79cf621f3e6ec298379932e5a1b5e076a43e6d7",
+  "volumes": "all",
+  "chunk_count": 528283,
+  "artifacts": {
+    "corpus_json": true,
+    "known_cases": true,
+    "bm25": true,
+    "case_catalog": true
+  }
+}

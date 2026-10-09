@@ -1,0 +1,67 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STAGE 1b: OFFICIAL U.S. REPORTS PDFs FOR VOLUMES CAP DOES NOT PUBLISH (573-600)
+██████████████████████████████████████████████████████████████████████████████
+
+==============================================================================
+  [CAP STAGE 1b: U.S. REPORTS OFFICIAL PDF SUPPLEMENT]
+
+    PDF cache:          C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/us_reports_bound_volumes==============================================================================
+  -> Verifying the cache files already on disk for 28 volumes...
+)
+    Checkpoint file:    C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_download_checkpoint.json
+    Batch checkpoint:   every 64 volumes (1 batches)
+    Verified COMPLETE:  0 (skipped)
+    To process now:     28 (unavailable: 28)
+  [1/28] Vol 573: COMPLETE - 22 cases from the official PDF | 4.0s | overall 1/28 complete, 0 failed, 27 unavailable | ETA 1m 51s
+  [2/28] Vol 574: COMPLETE - 23 cases from the official PDF | 1.7s | overall 2/28 complete, 0 failed, 26 unavailable | ETA 1m 15s
+  [3/28] Vol 575: COMPLETE - 32 cases from the official PDF | 0.0s | overall 3/28 complete, 0 failed, 25 unavailable | ETA 49s
+  [4/28] Vol 576: COMPLETE - 21 cases from the official PDF | 0.0s | overall 4/28 complete, 0 failed, 24 unavailable | ETA 35s
+  [5/28] Vol 577: COMPLETE - 29 cases from the official PDF | 0.0s | overall 5/28 complete, 0 failed, 23 unavailable | ETA 27s
+  [6/28] Vol 578: COMPLETE - 30 cases from the official PDF | 0.0s | overall 6/28 complete, 0 failed, 22 unavailable | ETA 21s
+  [7/28] Vol 579: COMPLETE - 22 cases from the official PDF | 0.0s | overall 7/28 complete, 0 failed, 21 unavailable | ETA 17s
+  [8/28] Vol 580: COMPLETE - 21 cases from the official PDF | 0.0s | overall 8/28 complete, 0 failed, 20 unavailable | ETA 14s
+  [9/28] Vol 581: COMPLETE - 26 cases from the official PDF | 1.4s | overall 9/28 complete, 0 failed, 19 unavailable | ETA 15s
+  [10/28] Vol 582: COMPLETE - 23 cases from the official PDF | 0.2s | overall 10/28 complete, 0 failed, 18 unavailable | ETA 13s
+  [11/28] Vol 583: COMPLETE - 20 cases from the official PDF | 2.3s | overall 11/28 complete, 0 failed, 17 unavailable | ETA 15s
+  [12/28] Vol 584: COMPLETE - 30 cases from the official PDF | 0.7s | overall 12/28 complete, 0 failed, 16 unavailable | ETA 14s
+  [13/28] Vol 585: COMPLETE - 26 cases from the official PDF | 0.0s | overall 13/28 complete, 0 failed, 15 unavailable | ETA 12s
+  [14/28] Vol 586: COMPLETE - 26 cases from the official PDF | 1.1s | overall 14/28 complete, 0 failed, 14 unavailable | ETA 11s
+  [15/28] Vol 587: COMPLETE - 29 cases from the official PDF (page proof) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 10s
+  [16/28] Vol 588: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 8s
+  [17/28] Vol 589: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 7s
+  [18/28] Vol 590: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 6s
+  [19/28] Vol 591: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 5s
+  [20/28] Vol 592: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 4s
+  [21/28] Vol 593: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 3s
+  [22/28] Vol 594: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 3s
+  [23/28] Vol 595: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 2s
+  [24/28] Vol 596: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 1s
+  [25/28] Vol 597: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 1s
+  [26/28] Vol 598: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 0s
+  [27/28] Vol 599: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 0s
+  [28/28] Vol 600: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404) | 0.0s | overall 15/28 complete, 0 failed, 13 unavailable | ETA 0s
+  [CHECKPOINT] Batch 1/1 (volumes 573-600): 15/28 COMPLETE, 0 failed, 13 unavailable - checkpoint saved.
+
+==============================================================================
+  [CAP STAGE 1b: U.S. REPORTS OFFICIAL PDF SUPPLEMENT - REPORT]  (elapsed 11s)
+    Target volumes:     28
+    COMPLETE:           15
+    FAILED:             0  -> volumes none
+    UNAVAILABLE:        13  -> volumes 588-600
+      Vol 588: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 589: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 590: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 591: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 592: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 593: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 594: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 595: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 596: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 597: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 598: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 599: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+      Vol 600: UNAVAILABLE - not published by CAP, and the Supreme Court has no bound-volume PDF for it (HTTP 404)
+  ALL 28 TARGET VOLUMES COMPLETE: NO
+  Record of every volume not completed: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_download_checkpoint.json
+==============================================================================

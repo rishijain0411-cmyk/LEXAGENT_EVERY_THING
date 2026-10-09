@@ -1,0 +1,90 @@
+[LexAgent-V3] 2026-10-06 15:31:43 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 23359.73it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-06 15:31:46 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-06 15:31:55 | src.retrieval.dense_retriever | INFO | DenseRetriever initialized (top_k=4, collection=cap_authorities)
+[LexAgent-V3] 2026-10-06 15:32:10 | src.retrieval.bm25_retriever | INFO | BM25 index loaded from: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl (1779847 vocabulary terms)
+[LexAgent-V3] 2026-10-06 15:32:10 | src.retrieval.hybrid_retriever | INFO | HybridRetriever initialized (RRF k=60)
+[LexAgent-V3] 2026-10-06 15:32:12 | src.models.load_model | INFO | High-VRAM GPU detected (34.2 GB). Loading mistralai/Mistral-7B-Instruct-v0.3 in unquantized torch.bfloat16 for maximum generation quality & speed...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/291 [00:00<00:09, 29.03it/s]Loading weights:   5%|▍         | 14/291 [00:00<00:06, 41.01it/s]Loading weights:   7%|▋         | 19/291 [00:00<00:08, 31.51it/s]Loading weights:   9%|▉         | 27/291 [00:00<00:08, 29.52it/s]Loading weights:  11%|█         | 32/291 [00:00<00:08, 32.10it/s]Loading weights:  12%|█▏        | 36/291 [00:01<00:08, 30.55it/s]Loading weights:  15%|█▌        | 45/291 [00:01<00:07, 33.16it/s]Loading weights:  18%|█▊        | 52/291 [00:01<00:07, 33.71it/s]Loading weights:  21%|██        | 60/291 [00:01<00:07, 31.76it/s]Loading weights:  25%|██▍       | 72/291 [00:02<00:05, 39.14it/s]Loading weights:  27%|██▋       | 78/291 [00:02<00:05, 37.72it/s]Loading weights:  30%|██▉       | 86/291 [00:02<00:06, 33.73it/s]Loading weights:  32%|███▏      | 93/291 [00:02<00:05, 37.16it/s]Loading weights:  34%|███▍      | 99/291 [00:02<00:05, 34.95it/s]Loading weights:  36%|███▋      | 106/291 [00:03<00:04, 39.59it/s]Loading weights:  38%|███▊      | 111/291 [00:03<00:04, 40.31it/s]Loading weights:  40%|███▉      | 116/291 [00:03<00:05, 34.50it/s]Loading weights:  42%|████▏     | 121/291 [00:03<00:06, 26.71it/s]Loading weights:  46%|████▋     | 135/291 [00:03<00:04, 35.91it/s]Loading weights:  48%|████▊     | 140/291 [00:04<00:04, 33.12it/s]Loading weights:  51%|█████     | 149/291 [00:04<00:03, 39.03it/s]Loading weights:  53%|█████▎    | 154/291 [00:04<00:04, 33.82it/s]Loading weights:  56%|█████▌    | 162/291 [00:04<00:03, 36.25it/s]Loading weights:  57%|█████▋    | 167/291 [00:04<00:03, 37.88it/s]Loading weights:  59%|█████▉    | 171/291 [00:04<00:03, 37.96it/s]Loading weights:  60%|██████    | 175/291 [00:05<00:03, 35.23it/s]Loading weights:  62%|██████▏   | 180/291 [00:05<00:03, 30.00it/s]Loading weights:  65%|██████▍   | 189/291 [00:05<00:03, 31.04it/s]Loading weights:  67%|██████▋   | 195/291 [00:05<00:02, 35.49it/s]Loading weights:  68%|██████▊   | 199/291 [00:05<00:02, 32.33it/s]Loading weights:  71%|███████   | 206/291 [00:06<00:02, 30.60it/s]Loading weights:  73%|███████▎  | 213/291 [00:06<00:02, 36.96it/s]Loading weights:  75%|███████▍  | 218/291 [00:06<00:02, 34.71it/s]Loading weights:  77%|███████▋  | 225/291 [00:06<00:01, 37.25it/s]Loading weights:  79%|███████▊  | 229/291 [00:06<00:01, 36.61it/s]Loading weights:  80%|████████  | 233/291 [00:06<00:02, 28.73it/s]Loading weights:  84%|████████▎ | 243/291 [00:07<00:01, 35.92it/s]Loading weights:  86%|████████▌ | 249/291 [00:07<00:01, 39.24it/s]Loading weights:  87%|████████▋ | 254/291 [00:07<00:01, 36.75it/s]Loading weights:  89%|████████▊ | 258/291 [00:07<00:00, 35.73it/s]Loading weights:  90%|█████████ | 262/291 [00:07<00:00, 30.88it/s]Loading weights:  92%|█████████▏| 267/291 [00:07<00:00, 33.26it/s]Loading weights:  93%|█████████▎| 271/291 [00:07<00:00, 30.54it/s]Loading weights:  95%|█████████▍| 276/291 [00:08<00:00, 34.13it/s]Loading weights:  96%|█████████▌| 280/291 [00:08<00:00, 28.44it/s]Loading weights:  99%|█████████▉| 289/291 [00:08<00:00, 41.08it/s]Loading weights: 100%|██████████| 291/291 [00:08<00:00, 34.94it/s]
+[LexAgent-V3] 2026-10-06 15:32:22 | src.models.load_model | INFO | Model loaded. VRAM used: 14.94 GB
+[transformers] Passing `generation_config` together with generation-related arguments=({'temperature', 'do_sample', 'max_new_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:130: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the `langchain-huggingface package and should be used instead. To use it run `pip install -U `langchain-huggingface` and import as `from `langchain_huggingface import HuggingFacePipeline``.
+  llm_pipeline = HuggingFacePipeline(pipeline=text_pipeline)
+[LexAgent-V3] 2026-10-06 15:32:22 | src.models.load_model | INFO | LLM pipeline ready.
+[LexAgent-V3] 2026-10-06 15:32:24 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 66/106 [00:00<00:00, 654.62it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 1015.89it/s]
+[LexAgent-V3] 2026-10-06 15:32:28 | src.novel.cce | INFO | Loaded NLI CrossEncoder: cross-encoder/nli-deberta-v3-small
+[LexAgent-V3] 2026-10-06 15:32:28 | src.novel.cce | INFO | CCE policy=legacy | support gate CLOSED (no validation on record)
+[LexAgent-V3] 2026-10-06 15:32:28 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+citations: {'development': {'correct': 48, 'misattributed': 48, 'casehold_distractor': 8}, 'test': {'correct': 48, 'misattributed': 48, 'casehold_distractor': 12}}
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  56%|█████▌    | 59/106 [00:00<00:00, 584.42it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 954.72it/s]
+  scored cross-encoder/nli-deberta-v3-small in 14s
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 57/202 [00:00<00:00, 568.69it/s]Loading weights:  84%|████████▍ | 170/202 [00:00<00:00, 898.47it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 1002.21it/s]
+  scored cross-encoder/nli-deberta-v3-base in 38s
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:   8%|▊         | 32/394 [00:00<00:01, 310.93it/s]Loading weights:  18%|█▊        | 69/394 [00:00<00:00, 328.33it/s]Loading weights:  26%|██▌       | 102/394 [00:00<00:00, 324.48it/s]Loading weights:  34%|███▍      | 135/394 [00:00<00:00, 303.04it/s]Loading weights:  43%|████▎     | 169/394 [00:00<00:00, 312.59it/s]Loading weights:  51%|█████     | 201/394 [00:00<00:00, 310.57it/s]Loading weights:  61%|██████    | 240/394 [00:00<00:00, 334.50it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 483.97it/s]
+  scored cross-encoder/nli-deberta-v3-large in 77s
+Loading weights:   0%|          | 0/394 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 55/394 [00:00<00:00, 539.58it/s]Loading weights:  28%|██▊       | 111/394 [00:00<00:00, 540.14it/s]Loading weights:  43%|████▎     | 168/394 [00:00<00:00, 549.13it/s]Loading weights: 100%|██████████| 394/394 [00:00<00:00, 1029.25it/s]
+  scored MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli in 41s
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 52/202 [00:00<00:00, 516.01it/s]Loading weights:  53%|█████▎    | 108/202 [00:00<00:00, 541.71it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 891.48it/s]
+  scored tasksource/deberta-base-long-nli in 39s
+  scored generator-yes-no in 122s
+
+----------------------------------------------------------------------------------------------------------------------
+  candidate                                                                              | dev AUC | test AUC | test correct / swapped accepted
+----------------------------------------------------------------------------------------------------------------------
+  tasksource/deberta-base-long-nli | whole passages | dense_top3                         | 1.000   | 0.991    | 43/48 / 2/48
+  generator-yes-no | whole passages | dense_top3                                         | 1.000   | 1.000    | 46/48 / 0/48
+  generator-yes-no | whole passages | hybrid_top3                                        | 1.000   | 1.000    | 47/48 / 0/48
+  generator-yes-no | whole passages | hybrid_top5                                        | 1.000   | 1.000    | 48/48 / 0/48
+  tasksource/deberta-base-long-nli | whole passages | hybrid_top5                        | 0.999   | 0.993    | 47/48 / 1/48
+  tasksource/deberta-base-long-nli | whole passages | hybrid_top3                        | 0.999   | 0.994    | 47/48 / 4/48
+  tasksource/deberta-base-long-nli | 450-character windows | hybrid_top3                 | 0.977   | 0.986    | 45/48 / 4/48
+  tasksource/deberta-base-long-nli | 450-character windows | hybrid_top5                 | 0.977   | 0.982    | 46/48 / 5/48
+  tasksource/deberta-base-long-nli | 450-character windows | dense_top3                  | 0.973   | 0.975    | 42/48 / 5/48
+  cross-encoder/nli-deberta-v3-large | whole passages | hybrid_top5                      | 0.816   | 0.843    | 37/48 / 11/48
+  cross-encoder/nli-deberta-v3-large | 450-character windows | hybrid_top5               | 0.805   | 0.791    | 26/48 / 2/48
+  cross-encoder/nli-deberta-v3-large | whole passages | hybrid_top3                      | 0.791   | 0.835    | 32/48 / 5/48
+  MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | 450-character windows | hyb | 0.776   | 0.857    | 36/48 / 9/48
+  MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | whole passages | hybrid_top | 0.769   | 0.786    | 26/48 / 10/48
+  MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | 450-character windows | hyb | 0.761   | 0.870    | 32/48 / 4/48
+  MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | 450-character windows | den | 0.758   | 0.835    | 32/48 / 4/48
+  MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | whole passages | hybrid_top | 0.758   | 0.803    | 24/48 / 6/48
+  cross-encoder/nli-deberta-v3-large | 450-character windows | dense_top3                | 0.734   | 0.725    | 19/48 / 1/48
+  cross-encoder/nli-deberta-v3-large | 450-character windows | hybrid_top3               | 0.733   | 0.737    | 26/48 / 3/48
+  cross-encoder/nli-deberta-v3-base | whole passages | hybrid_top3                       | 0.729   | 0.760    | 42/48 / 31/48
+  cross-encoder/nli-deberta-v3-small | 450-character windows | dense_top3                | 0.724   | 0.709    | 24/48 / 15/48
+  cross-encoder/nli-deberta-v3-base | 450-character windows | dense_top3                 | 0.723   | 0.696    | 22/48 / 9/48
+  cross-encoder/nli-deberta-v3-small | 450-character windows | hybrid_top5               | 0.716   | 0.715    | 42/48 / 31/48
+  cross-encoder/nli-deberta-v3-base | 450-character windows | hybrid_top5                | 0.708   | 0.727    | 25/48 / 11/48
+  cross-encoder/nli-deberta-v3-small | 450-character windows | hybrid_top3               | 0.704   | 0.737    | 20/48 / 8/48
+  cross-encoder/nli-deberta-v3-large | whole passages | dense_top3                       | 0.701   | 0.782    | 30/48 / 7/48
+  cross-encoder/nli-deberta-v3-small | whole passages | hybrid_top5                      | 0.694   | 0.629    | 32/48 / 27/48
+  cross-encoder/nli-deberta-v3-base | 450-character windows | hybrid_top3                | 0.682   | 0.726    | 15/48 / 2/48
+  MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | whole passages | dense_top3 | 0.672   | 0.756    | 41/48 / 27/48
+  cross-encoder/nli-deberta-v3-small | whole passages | hybrid_top3                      | 0.668   | 0.650    | 27/48 / 20/48
+  cross-encoder/nli-deberta-v3-base | whole passages | dense_top3                        | 0.661   | 0.754    | 42/48 / 31/48
+  cross-encoder/nli-deberta-v3-base | whole passages | hybrid_top5                       | 0.659   | 0.762    | 45/48 / 40/48
+  cross-encoder/nli-deberta-v3-small | whole passages | dense_top3                       | 0.636   | 0.655    | 19/48 / 9/48
+----------------------------------------------------------------------------------------------------------------------
+  selected: tasksource/deberta-base-long-nli | whole passages | dense_top3
+  test AUC 0.9906 [0.9767, 0.999] against the required 0.9: GATE OPEN
+  wrote C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\e2_verifier_validation\results.json and C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cce_support_gate.json

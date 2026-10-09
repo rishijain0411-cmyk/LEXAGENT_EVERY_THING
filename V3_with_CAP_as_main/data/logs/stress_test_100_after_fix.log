@@ -1,0 +1,64 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STEP 4: RUNNING CITATION STRESS-TEST PROTOCOL (100 Benchmark Cases Pool)
+██████████████████████████████████████████████████████████████████████████████
+
+=====================================================================================
+  LEXAGENT v3.0: CITATION STRESS-TEST PROTOCOL (Novelty 5)
+  Controlled Diagnostic Verification Across 6 Error Types
+=====================================================================================
+[LexAgent-V3] 2026-10-05 23:31:04 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 25532.00it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\experiments\..\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-05 23:31:07 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-05 23:31:07 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  62%|██████▏   | 66/106 [00:00<00:00, 648.79it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 1005.33it/s]
+[LexAgent-V3] 2026-10-05 23:31:13 | src.novel.cce | INFO | Loaded NLI CrossEncoder: cross-encoder/nli-deberta-v3-small
+[LexAgent-V3] 2026-10-05 23:31:13 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+  [TEST SET] 4 benchmark case(s) are left out because the corpus has no source text for them:
+    - #45 Buckley v. Valeo: only 216 words of the target case are in the corpus (423 U.S. 1040)
+    - #98 Dobbs v. Jackson Women's Health Organization: the target case is not in the corpus
+    - #99 New York State Rifle & Pistol Association, Inc. v. Bruen: the target case is not in the corpus
+    - #100 Students for Fair Admissions, Inc. v. President and Fellows of Harvard College: the target case is not in the corpus
+  Corpus-supported benchmark cases: 96 | real cases outside the corpus (class 6): 4
+[LexAgent-V3] 2026-10-05 23:31:18 | src.evaluation.stress_test | INFO | Executing Citation Stress-Test Protocol across 6 citation classes...
+
+─────────────────────────────────────────────────────────────────────────────────────
+  Citation Type             | Total  | Accepted  | Rejected  | Verdict Breakdown
+─────────────────────────────────────────────────────────────────────────────────────
+  correct                   | 96     | 22        | 74        | SUP:22 UNC:5 MIS:69 FAB:0 UNV:0
+  misattributed             | 96     | 5         | 91        | SUP:5 UNC:1 MIS:90 FAB:0 UNV:0
+  casehold_distractor       | 20     | 0         | 20        | SUP:0 UNC:0 MIS:20 FAB:0 UNV:0
+  fabricated_with_cite      | 20     | 0         | 20        | SUP:0 UNC:0 MIS:0 FAB:20 UNV:0
+  fabricated_no_cite        | 20     | 0         | 20        | SUP:0 UNC:0 MIS:0 FAB:0 UNV:20
+  real_off_corpus           | 4      | 0         | 4         | SUP:0 UNC:0 MIS:0 FAB:0 UNV:4
+─────────────────────────────────────────────────────────────────────────────────────
+
+  SUMMARY DIAGNOSTIC METRICS:
+  - Power (Correct Citations Accepted):              22.92%
+  - False-Acceptance Rate on Misattributed Citations: 5.21%
+  - False-Acceptance Rate on CaseHOLD Distractors:   0.00%
+  - Fabrication Catch Rate (Invented Cases):         100.00%
+  - False-Fabrication Rate (Off-Corpus Cases):        0.00%
+  - Execution Time:                                  326.17s
+=====================================================================================
+
+Detailed stress test results saved to: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\citation_stress_test_results.json
+

@@ -1,0 +1,52 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STAGE 3: BUILDING PRIMARY HARVARD CAP DATABASE (all)
+██████████████████████████████████████████████████████████████████████████████
+
+==============================================================================
+  BUILDING LEXAGENT v3.0 PRIMARY CAP DATABASE (STAGE 3: EMBEDDING / INDEXING)
+  Selection Mode: 'all'
+  Checkpoint Resume: ACTIVE
+==============================================================================
+  -> Target Volumes (600 total): ['1', '2', '3', '4', '5', '6', '7', '8']...
+
+  -> Loading verified chunk caches for 600 volumes from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chunks_cache...
+     Loaded [50/600] volumes | Total chunks: 32,205
+     Loaded [100/600] volumes | Total chunks: 69,119
+     Loaded [150/600] volumes | Total chunks: 106,568
+     Loaded [200/600] volumes | Total chunks: 141,507
+     Loaded [250/600] volumes | Total chunks: 172,854
+     Loaded [300/600] volumes | Total chunks: 206,409
+     Loaded [350/600] volumes | Total chunks: 253,971
+     Loaded [400/600] volumes | Total chunks: 308,570
+     Loaded [450/600] volumes | Total chunks: 359,606
+     Loaded [500/600] volumes | Total chunks: 417,678
+     Loaded [550/600] volumes | Total chunks: 484,942
+     Loaded [600/600] volumes | Total chunks: 528,283
+  [NOTICE] 7 target volume(s) are not published by CAP and are not in the corpus: 594-600
+
+  -> Total Retrieval Chunks: 528,283 from 593 volumes
+  [OK] Corpus JSON already matches this corpus: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_corpus.json. Preserved.
+
+------------------------------------------------------------------------------
+  [STEP 2: LEXICAL ARTIFACTS & CCE CATALOG PERSISTENCE]
+------------------------------------------------------------------------------
+  [OK] Known cases catalog already matches this corpus: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl. Preserved.
+  [OK] Case catalog saved: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_case_catalog.json (181,941 reports)
+  [OK] BM25 index already matches this corpus: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl. Preserved.
+
+------------------------------------------------------------------------------
+  [STEP 3: HARDWARE ACCELERATION & DENSE VECTOR INDEXING]
+------------------------------------------------------------------------------
+  [*] CUDA Acceleration: ACTIVE (GPU: NVIDIA GeForce RTX 5090, Total VRAM: 31.8 GB)
+     Target: Tensor Core batch parallelism enabled.
+------------------------------------------------------------------------------
+  [*] Active ChromaDB Storage: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chroma_corpus
+
+  [OK] ChromaDB index already 100% complete: 528,283 / 528,283 chunks stored.
+    Path: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chroma_corpus
+[LexAgent-V3] 2026-10-05 23:10:35 | src.data.cap_ingest | INFO | Manifest written to: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_corpus_manifest.json
+
+==============================================================================
+  LEXAGENT v3.0 CAP DATABASE IS READY AND FULLY VERIFIED!
+==============================================================================

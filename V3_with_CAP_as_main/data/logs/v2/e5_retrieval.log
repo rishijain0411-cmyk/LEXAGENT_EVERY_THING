@@ -1,0 +1,254 @@
+[LexAgent-V3] 2026-10-06 15:55:25 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 25724.00it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-06 15:55:28 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-06 15:55:30 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 52/202 [00:00<00:00, 495.35it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 1006.13it/s]
+[LexAgent-V3] 2026-10-06 15:55:34 | src.novel.cce | INFO | Loaded NLI CrossEncoder: tasksource/deberta-base-long-nli
+[LexAgent-V3] 2026-10-06 15:55:34 | src.novel.cce | INFO | CCE policy=gated | support gate OPEN (experiments/v2/e2_verifier_validation.py, 2026-10-06T15:38:55)
+[LexAgent-V3] 2026-10-06 15:55:34 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+[   38s] corpus loaded: 528,283 passages; targets resolved: 96/96
+[LexAgent-V3] 2026-10-06 15:56:18 | src.retrieval.bm25_retriever | INFO | BM25 index loaded from: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl (1779847 vocabulary terms)
+[LexAgent-V3] 2026-10-06 15:56:18 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:19 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Can a state constitutionally impose the death pena...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:20 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May police officers stop and briefly detain a susp...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:21 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Are statements made by a suspect during custodial ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:22 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does an indigent criminal defendant charged with a...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:22 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the prosecution violate due process when it s...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:23 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Is evidence obtained through an unconstitutional s...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:24 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What legal standard must a convicted defendant sat...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:25 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May law enforcement search the digital contents of...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:26 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does government acquisition of historical cell-sit...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:27 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Eighth Amendment permit sentencing a juve...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:28 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May a state mandate a sentence of life imprisonmen...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:29 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does electronic eavesdropping on a conversation in...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:29 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Can a prosecutor use peremptory challenges to stri...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:30 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What legal standard governs the admissibility of s...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:31 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='When a federal statute administered by an agency i...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:31 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What standard of fault must a public official prov...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:32 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the First Amendment protect independent polit...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:33 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does racial segregation of children in public scho...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:34 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Second Amendment protect an individual's ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:34 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state law banning the use of contraceptives...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:35 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does Congress have constitutional authority under ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:36 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does government use of thermal-imaging technology ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:37 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Double Jeopardy Clause prevent separate p...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:37 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourteenth Amendment require states to li...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:38 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Due Process Clause of the Fourteenth Amen...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:39 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Are state statutory requirements requiring committ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:39 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state public school finance system relying ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:40 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does government supply of an essential chemical in...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:41 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What three-prong test determines whether speech or...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:42 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What level of judicial scrutiny applies to governm...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:42 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the President have inherent constitutional au...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:43 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Are state officials and legislatures bound by Supr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:44 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May Congress prohibit racial discrimination in pla...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:44 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Commerce Clause empower Congress to regul...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:45 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Do state anti-miscegenation criminal statutes proh...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:46 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May public school officials prohibit students from...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:47 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Under what standard may government constitutionall...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:47 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What three-pronged standard determines whether gov...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:48 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May the federal government obtain an injunction re...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:49 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the imposition of the death penalty under sta...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:49 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Are bifurcated state capital punishment systems pr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:50 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May the President assert an absolute, unqualified ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:51 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Must a private individual proving defamation on a ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:52 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May a state university medical school set aside a ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:52 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does city historic preservation landmark designati...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:53 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May police officers enter a suspect's home without...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:54 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a statutory provision authorizing one House o...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:55 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Is the manufacturer of home video recording equipm...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:56 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Should the exclusionary rule bar evidence obtained...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:56 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment require school administr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:57 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Tenth Amendment preclude Congress from ap...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:58 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May federal agency regulations force medical treat...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:58 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does severe or pervasive sexual harassment creatin...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:56:59 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state law mandating the teaching of creatio...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:00 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Ethics in Government Act provision creati...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:01 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May a state constitutionally criminalize the burni...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:02 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Constitution require a state to permit su...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:02 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Free Exercise Clause exempt religious ind...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:03 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state environmental regulation that denies ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:04 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What legal standard determines the constitutional ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:05 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does an unexplainably bizarre congressional distri...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:05 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a public school district policy requiring ran...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:06 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May Congress abrogate state sovereign immunity und...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:06 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state constitutional amendment that revokes...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:07 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the exclusion of women from a state-supported...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:08 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May Congress constitutionally command state law en...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:09 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Do the broad indecency and patently offensive prov...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:09 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May Congress expand substantive constitutional rig...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:10 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Line Item Veto Act, allowing the Presiden...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:11 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Under what circumstances may an employer assert an...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:12 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Census Act prohibit the use of statistica...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:13 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Must any fact other than a prior conviction that i...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:14 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does applying a state public accommodations law to...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:15 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state court order for manual recounts of pr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:15 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Eighth Amendment's Cruel and Unusual Puni...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:16 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a government tuition aid voucher program perm...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:16 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Did Congress exceed its enumerated authority under...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:17 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state statute criminalizing consensual same...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:18 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May a public university law school consider race a...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:19 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a United States citizen captured abroad and d...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:20 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the disposition of private property condemned...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:21 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='May the President establish military commissions t...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:22 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Is a warrantless search of a shared residence cons...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:22 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state have Article III standing to petition...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:23 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Do non-citizen foreign detainees held as enemy com...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:25 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Eighth Amendment prohibit the imposition ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:25 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a state statute requiring in-person voters to...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:26 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='What pleading standard governs a federal civil com...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:27 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Is the Second Amendment individual right to keep a...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:28 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the government's physical installation of a G...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:29 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does Congress have the constitutional authority un...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:30 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Section 4(b) preclearance coverage formul...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:31 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the federal Defense of Marriage Act provision...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:31 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does a town board practice of opening monthly publ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:57:32 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does Title VII's prohibition against sex discrimin...' -> 50 results
+[  130s] system BM25 done
+[LexAgent-V3] 2026-10-06 15:57:55 | src.retrieval.bm25_retriever | INFO | Building memory-efficient BM25 index over 528283 documents...
+     BM25 Inverted Index: 52,828/528,283 docs (10.0%) in 4.0s...
+     BM25 Inverted Index: 105,656/528,283 docs (20.0%) in 9.4s...
+     BM25 Inverted Index: 158,484/528,283 docs (30.0%) in 13.7s...
+     BM25 Inverted Index: 211,312/528,283 docs (40.0%) in 17.3s...
+     BM25 Inverted Index: 264,140/528,283 docs (50.0%) in 20.2s...
+     BM25 Inverted Index: 316,968/528,283 docs (60.0%) in 22.9s...
+     BM25 Inverted Index: 369,796/528,283 docs (70.0%) in 26.4s...
+     BM25 Inverted Index: 422,624/528,283 docs (80.0%) in 29.9s...
+     BM25 Inverted Index: 475,452/528,283 docs (90.0%) in 32.4s...
+     BM25 Inverted Index: 528,280/528,283 docs (100.0%) in 35.3s...
+     BM25 Inverted Index: 528,283/528,283 docs (100.0%) in 35.3s...
+[LexAgent-V3] 2026-10-06 15:58:38 | src.retrieval.bm25_retriever | INFO | BM25 index built successfully (407098 unique terms, avgdl=324.0).
+[LexAgent-V3] 2026-10-06 15:58:39 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the fourth amendment protect against warrantl...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:40 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='can a state constitutionally impose the death pena...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:40 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may police officers stop and briefly detain a susp...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:42 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='are statements made by a suspect during custodial ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:43 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does an indigent criminal defendant charged with a...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:43 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the prosecution violate due process when it s...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:44 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='is evidence obtained through an unconstitutional s...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:45 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what legal standard must a convicted defendant sat...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:46 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may law enforcement search the digital contents of...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:46 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does government acquisition of historical cell sit...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:47 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the eighth amendment permit sentencing a juve...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:48 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may a state mandate a sentence of life imprisonmen...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:49 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does electronic eavesdropping on a conversation in...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:49 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='can a prosecutor use peremptory challenges to stri...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:50 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what legal standard governs the admissibility of s...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:51 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='when a federal statute administered by an agency i...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:52 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what standard of fault must a public official prov...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:52 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the first amendment protect independent polit...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:53 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does racial segregation of children in public scho...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:54 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the second amendment protect an individual s ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:55 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state law banning the use of contraceptives...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:56 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does congress have constitutional authority under ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:57 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does government use of thermal imaging technology ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:58 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the double jeopardy clause prevent separate p...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:58 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the fourteenth amendment require states to li...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:58:59 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the due process clause of the fourteenth amen...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:00 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='are state statutory requirements requiring committ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:00 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state public school finance system relying ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:01 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does government supply of an essential chemical in...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:02 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what three prong test determines whether speech or...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:03 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what level of judicial scrutiny applies to governm...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:03 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the president have inherent constitutional au...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:04 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='are state officials and legislatures bound by supr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:05 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may congress prohibit racial discrimination in pla...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:06 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the commerce clause empower congress to regul...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:06 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='do state anti miscegenation criminal statutes proh...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:07 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may public school officials prohibit students from...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:08 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='under what standard may government constitutionall...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:09 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what three pronged standard determines whether gov...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:10 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may the federal government obtain an injunction re...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:10 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the imposition of the death penalty under sta...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:11 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='are bifurcated state capital punishment systems pr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:12 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may the president assert an absolute unqualified p...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:13 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='must a private individual proving defamation on a ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:13 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may a state university medical school set aside a ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:14 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does city historic preservation landmark designati...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:15 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may police officers enter a suspect s home without...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:16 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a statutory provision authorizing one house o...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:16 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='is the manufacturer of home video recording equipm...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:17 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='should the exclusionary rule bar evidence obtained...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:18 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the fourth amendment require school administr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:19 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the tenth amendment preclude congress from ap...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:20 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may federal agency regulations force medical treat...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:20 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does severe or pervasive sexual harassment creatin...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:21 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state law mandating the teaching of creatio...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:22 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the ethics in government act provision creati...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:23 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may a state constitutionally criminalize the burni...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:24 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the constitution require a state to permit su...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:25 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the free exercise clause exempt religious ind...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:25 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state environmental regulation that denies ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:26 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what legal standard determines the constitutional ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:27 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does an unexplainably bizarre congressional distri...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:27 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a public school district policy requiring ran...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:28 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may congress abrogate state sovereign immunity und...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:29 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state constitutional amendment that revokes...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:30 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the exclusion of women from a state supported...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:30 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may congress constitutionally command state law en...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:31 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='do the broad indecency and patently offensive prov...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:32 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may congress expand substantive constitutional rig...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:33 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the line item veto act allowing the president...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:34 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='under what circumstances may an employer assert an...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:35 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the census act prohibit the use of statistica...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:36 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='must any fact other than a prior conviction that i...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:37 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does applying a state public accommodations law to...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:38 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state court order for manual recounts of pr...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:39 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the eighth amendment s cruel and unusual puni...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:39 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a government tuition aid voucher program perm...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:40 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='did congress exceed its enumerated authority under...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:41 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state statute criminalizing consensual same...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:42 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may a public university law school consider race a...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:43 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a united states citizen captured abroad and d...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:44 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the disposition of private property condemned...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:45 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='may the president establish military commissions t...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:46 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='is a warrantless search of a shared residence cons...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:47 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state have article iii standing to petition...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:48 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='do non citizen foreign detainees held as enemy com...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:49 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the eighth amendment prohibit the imposition ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:50 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a state statute requiring in person voters to...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:50 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='what pleading standard governs a federal civil com...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:51 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='is the second amendment individual right to keep a...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:52 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the government s physical installation of a g...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:53 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does congress have the constitutional authority un...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:54 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the section 4 b preclearance coverage formula...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:55 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does the federal defense of marriage act provision...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:56 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does a town board practice of opening monthly publ...' -> 50 results
+[LexAgent-V3] 2026-10-06 15:59:57 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='does title vii s prohibition against sex discrimin...' -> 50 results
+[  274s] word-token BM25 done
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  25%|██▌       | 50/199 [00:00<00:00, 495.96it/s]Loading weights:  50%|█████     | 100/199 [00:00<00:00, 407.79it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 821.29it/s]
+    bge-base-en-v1.5: 0 passages embedded, 28s
+    bge-base-en-v1.5: 100,000 passages embedded, 100s
+    bge-base-en-v1.5: 200,000 passages embedded, 155s
+    bge-base-en-v1.5: 300,000 passages embedded, 195s
+    bge-base-en-v1.5: 400,000 passages embedded, 240s
+    bge-base-en-v1.5: 500,000 passages embedded, 277s
+[  557s] bge-base-en-v1.5 done
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 2931.07it/s]
+    all-MiniLM-L6-v2: 0 passages embedded, 20s
+    all-MiniLM-L6-v2: 100,000 passages embedded, 69s
+    all-MiniLM-L6-v2: 200,000 passages embedded, 113s
+    all-MiniLM-L6-v2: 300,000 passages embedded, 146s
+    all-MiniLM-L6-v2: 400,000 passages embedded, 181s
+    all-MiniLM-L6-v2: 500,000 passages embedded, 211s
+[  772s] all-MiniLM-L6-v2 done
+wrote C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\e5_retrieval\results.json
+system as it is: {'dense': "legal-bert, question + jurisdiction (the debate's query)", 'lexical': "bm25, whitespace tokens (the system's)", 'depth_each': 4, 'per_case_limit': None, 'target_at_rank_1': 29, 'target_in_top_4': 62, 'target_in_top_8': 76, 'share_top_8': 0.7917, 'distinct_cases_in_top_8': 5.17}
+best fusion: bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 20+20 | no limit {'dense': 'bge-base-en-v1.5 (retrieval-trained)', 'lexical': 'bm25, word tokens', 'depth_each': 20, 'per_case_limit': None, 'target_at_rank_1': 61, 'target_in_top_4': 73, 'target_in_top_8': 84, 'share_top_8': 0.875, 'distinct_cases_in_top_8': 3.8}

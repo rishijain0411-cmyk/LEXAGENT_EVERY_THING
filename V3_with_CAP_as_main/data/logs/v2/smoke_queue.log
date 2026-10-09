@@ -1,0 +1,348 @@
+Queue root: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases
+[LexAgent-V3] 2026-10-06 15:43:18 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 26671.77it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-06 15:43:21 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-06 15:43:29 | src.retrieval.dense_retriever | INFO | DenseRetriever initialized (top_k=4, collection=cap_authorities)
+[LexAgent-V3] 2026-10-06 15:43:43 | src.retrieval.bm25_retriever | INFO | BM25 index loaded from: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl (1779847 vocabulary terms)
+[LexAgent-V3] 2026-10-06 15:43:43 | src.retrieval.hybrid_retriever | INFO | HybridRetriever initialized (RRF k=60)
+[LexAgent-V3] 2026-10-06 15:43:45 | src.models.load_model | INFO | High-VRAM GPU detected (34.2 GB). Loading mistralai/Mistral-7B-Instruct-v0.3 in unquantized torch.bfloat16 for maximum generation quality & speed...
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<00:51,  5.61it/s]Loading weights:   2%|▏         | 5/291 [00:00<00:15, 18.93it/s]Loading weights:   3%|▎         | 10/291 [00:00<00:11, 24.05it/s]Loading weights:   6%|▌         | 18/291 [00:00<00:08, 32.22it/s]Loading weights:   9%|▉         | 27/291 [00:00<00:05, 44.33it/s]Loading weights:  11%|█         | 32/291 [00:00<00:06, 41.52it/s]Loading weights:  13%|█▎        | 37/291 [00:01<00:07, 32.00it/s]Loading weights:  14%|█▍        | 41/291 [00:01<00:08, 28.13it/s]Loading weights:  15%|█▌        | 45/291 [00:01<00:09, 27.07it/s]Loading weights:  16%|█▋        | 48/291 [00:01<00:08, 27.19it/s]Loading weights:  21%|██        | 60/291 [00:01<00:06, 37.15it/s]Loading weights:  23%|██▎       | 68/291 [00:01<00:05, 44.04it/s]Loading weights:  25%|██▌       | 73/291 [00:02<00:06, 35.31it/s]Loading weights:  26%|██▋       | 77/291 [00:02<00:07, 30.06it/s]Loading weights:  29%|██▉       | 84/291 [00:02<00:05, 34.91it/s]Loading weights:  31%|███       | 90/291 [00:02<00:05, 35.04it/s]Loading weights:  34%|███▍      | 99/291 [00:02<00:05, 36.78it/s]Loading weights:  36%|███▌      | 105/291 [00:03<00:05, 33.55it/s]Loading weights:  40%|███▉      | 116/291 [00:03<00:04, 38.87it/s]Loading weights:  42%|████▏     | 121/291 [00:03<00:04, 40.33it/s]Loading weights:  43%|████▎     | 126/291 [00:03<00:04, 37.15it/s]Loading weights:  46%|████▋     | 135/291 [00:03<00:04, 38.75it/s]Loading weights:  48%|████▊     | 139/291 [00:04<00:04, 37.79it/s]Loading weights:  49%|████▉     | 144/291 [00:04<00:03, 40.18it/s]Loading weights:  53%|█████▎    | 153/291 [00:04<00:03, 44.37it/s]Loading weights:  54%|█████▍    | 158/291 [00:04<00:02, 44.87it/s]Loading weights:  56%|█████▌    | 163/291 [00:04<00:03, 35.05it/s]Loading weights:  57%|█████▋    | 167/291 [00:04<00:04, 27.06it/s]Loading weights:  62%|██████▏   | 180/291 [00:05<00:03, 35.50it/s]Loading weights:  65%|██████▍   | 188/291 [00:05<00:02, 38.55it/s]Loading weights:  67%|██████▋   | 194/291 [00:05<00:02, 35.70it/s]Loading weights:  68%|██████▊   | 199/291 [00:05<00:02, 35.92it/s]Loading weights:  70%|███████   | 204/291 [00:05<00:02, 32.22it/s]Loading weights:  73%|███████▎  | 212/291 [00:06<00:02, 33.69it/s]Loading weights:  76%|███████▋  | 222/291 [00:06<00:01, 34.80it/s]Loading weights:  80%|████████  | 233/291 [00:06<00:01, 36.99it/s]Loading weights:  82%|████████▏ | 240/291 [00:06<00:01, 39.62it/s]Loading weights:  84%|████████▍ | 245/291 [00:06<00:01, 38.37it/s]Loading weights:  86%|████████▌ | 249/291 [00:07<00:01, 36.49it/s]Loading weights:  88%|████████▊ | 257/291 [00:07<00:00, 36.65it/s]Loading weights:  91%|█████████ | 265/291 [00:07<00:00, 43.19it/s]Loading weights:  93%|█████████▎| 270/291 [00:07<00:00, 35.04it/s]Loading weights:  94%|█████████▍| 274/291 [00:07<00:00, 29.87it/s]Loading weights:  98%|█████████▊| 284/291 [00:07<00:00, 40.80it/s]Loading weights: 100%|██████████| 291/291 [00:07<00:00, 36.61it/s]
+[LexAgent-V3] 2026-10-06 15:43:55 | src.models.load_model | INFO | Model loaded. VRAM used: 14.94 GB
+[transformers] Passing `generation_config` together with generation-related arguments=({'do_sample', 'max_new_tokens', 'temperature'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:130: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the `langchain-huggingface package and should be used instead. To use it run `pip install -U `langchain-huggingface` and import as `from `langchain_huggingface import HuggingFacePipeline``.
+  llm_pipeline = HuggingFacePipeline(pipeline=text_pipeline)
+[LexAgent-V3] 2026-10-06 15:43:55 | src.models.load_model | INFO | LLM pipeline ready.
+  [run] baseline_4x300/seed0: baseline, seed 0, 4 passages x 300 characters
+[LexAgent-V3] 2026-10-06 15:43:59 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:44:00 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:44:00 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[LexAgent-V3] 2026-10-06 15:44:06 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 53/202 [00:00<00:00, 512.49it/s]Loading weights:  58%|█████▊    | 118/202 [00:00<00:00, 565.25it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 788.38it/s]
+[LexAgent-V3] 2026-10-06 15:44:10 | src.novel.cce | INFO | Loaded NLI CrossEncoder: tasksource/deberta-base-long-nli
+[LexAgent-V3] 2026-10-06 15:44:10 | src.novel.cce | INFO | CCE policy=gated | support gate OPEN (experiments/v2/e2_verifier_validation.py, 2026-10-06T15:38:55)
+[LexAgent-V3] 2026-10-06 15:44:10 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  24%|██▎       | 47/199 [00:00<00:00, 395.88it/s]Loading weights:  52%|█████▏    | 103/199 [00:00<00:00, 481.91it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 883.74it/s]
+  [score] 1 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+  [run] baseline_8x500/seed0: baseline, seed 0, 8 passages x 500 characters
+[LexAgent-V3] 2026-10-06 15:44:45 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:44:46 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:44:46 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  20%|██        | 40/199 [00:00<00:00, 397.91it/s]Loading weights:  41%|████      | 82/199 [00:00<00:00, 393.21it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 832.40it/s]
+  [score] 2 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+[LexAgent-V3] 2026-10-06 15:44:58 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  43%|████▎     | 46/106 [00:00<00:00, 444.06it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 833.04it/s]
+[LexAgent-V3] 2026-10-06 15:45:01 | src.novel.cce | INFO | Loaded NLI CrossEncoder: cross-encoder/nli-deberta-v3-small
+[LexAgent-V3] 2026-10-06 15:45:01 | src.novel.cce | INFO | CCE policy=legacy | support gate OPEN (experiments/v2/e2_verifier_validation.py, 2026-10-06T15:38:55)
+[LexAgent-V3] 2026-10-06 15:45:01 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+[LexAgent-V3] 2026-10-06 15:45:01 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace='v2smoke1_1791281701_e0_legacy_checker_no_memory_seed0'): 0 cached verdicts, 0 risk entries
+  [run] e0_legacy_checker_no_memory/seed0: variant A3, seed 0, checker legacy, cache off, 0/1 cases saved
+[LexAgent-V3] 2026-10-06 15:45:02 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:02 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:02 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:45:02 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:45:02 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:45:09 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 0
+[LexAgent-V3] 2026-10-06 15:45:09 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:10 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:10 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:45:27 | src.agents.defense_agent | INFO | Defense round 0: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:45:30 | src.novel.cce | INFO | Factorized CCE scored 3 citations: avg_CCS=0.2271 | SUPPORTED=0, UNCERTAIN=1, MISATTRIBUTED=2, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:45:30 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:45:35 | src.novel.ddc | INFO | DDC: CONTINUE — Round 1: avg_CCS=0.23, min_CCS=0.03 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:45:35 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Round 1: avg_CCS=0.23, min_CCS=0.03 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:45:35 | src.graph.lexagent_graph | INFO | Round 1: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:45:35 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:36 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:36 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:45:36 | src.retrieval.hybrid_retriever | INFO | Entity map built: 20 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:45:36 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:45:48 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 1
+[LexAgent-V3] 2026-10-06 15:45:48 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:48 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:45:49 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:46:06 | src.agents.defense_agent | INFO | Defense round 1: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:46:09 | src.novel.cce | INFO | Factorized CCE scored 4 citations: avg_CCS=0.2112 | SUPPORTED=1, UNCERTAIN=0, MISATTRIBUTED=3, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:46:09 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:46:15 | src.novel.ddc | INFO | DDC: CONTINUE — Round 2: avg_CCS=0.21, min_CCS=0.01 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:46:15 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Round 2: avg_CCS=0.21, min_CCS=0.01 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:46:15 | src.graph.lexagent_graph | INFO | Round 2: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:46:15 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:46:16 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:46:16 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 7 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:46:16 | src.retrieval.hybrid_retriever | INFO | Entity map built: 24 lookup keys from 7 documents
+[LexAgent-V3] 2026-10-06 15:46:16 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:46:28 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 2
+[LexAgent-V3] 2026-10-06 15:46:28 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:46:29 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:46:29 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:46:40 | src.agents.defense_agent | INFO | Defense round 2: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:46:41 | src.novel.cce | INFO | Factorized CCE scored 2 citations: avg_CCS=0.4018 | SUPPORTED=0, UNCERTAIN=1, MISATTRIBUTED=1, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:46:41 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 2
+[transformers] You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:46:46 | src.novel.ddc | INFO | DDC: Max rounds (3) reached — TERMINATE
+[LexAgent-V3] 2026-10-06 15:46:46 | src.graph.lexagent_graph | INFO | DDC decision: TERMINATE — Maximum rounds (3) reached
+[LexAgent-V3] 2026-10-06 15:46:46 | src.agents.judge_agent | INFO | Judge node: rendering verdict for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+    1/1 cases, 119s
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 55/199 [00:00<00:00, 549.34it/s]Loading weights:  55%|█████▌    | 110/199 [00:00<00:00, 453.65it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 835.42it/s]
+  [score] 3 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+[LexAgent-V3] 2026-10-06 15:47:12 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace='v2smoke1_1791281832_e4_repaired_Full_seed0'): 0 cached verdicts, 0 risk entries
+  [run] e4_repaired_Full/seed0: variant Full, seed 0, checker gated, cache exact, 0/1 cases saved
+[LexAgent-V3] 2026-10-06 15:47:12 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:13 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:13 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:47:13 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:47:13 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:47:20 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 0
+[LexAgent-V3] 2026-10-06 15:47:20 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:21 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:21 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:47:36 | src.agents.defense_agent | INFO | Defense round 0: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:47:36 | src.novel.cce | INFO | Factorized CCE scored 3 citations: avg_CCS=0.7169 | SUPPORTED=3, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:47:36 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:47:41 | src.novel.ddc | INFO | DDC: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:47:41 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:47:41 | src.graph.lexagent_graph | INFO | Round 1: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:47:41 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:42 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:42 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:47:42 | src.retrieval.hybrid_retriever | INFO | Entity map built: 20 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:47:42 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:47:52 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 1
+[LexAgent-V3] 2026-10-06 15:47:52 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:53 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:47:53 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:48:07 | src.agents.defense_agent | INFO | Defense round 1: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:48:08 | src.novel.cce | INFO | Factorized CCE scored 4 citations: avg_CCS=0.7543 | SUPPORTED=3, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:48:08 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:48:13 | src.novel.ddc | INFO | DDC: CONTINUE — Round 2: avg_CCS=0.75, min_CCS=0.21 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:48:13 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Round 2: avg_CCS=0.75, min_CCS=0.21 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:48:13 | src.graph.lexagent_graph | INFO | Round 2: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:48:13 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:48:14 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:48:14 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:48:14 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:48:14 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:48:22 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 2
+[LexAgent-V3] 2026-10-06 15:48:22 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:48:23 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:48:23 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:48:37 | src.agents.defense_agent | INFO | Defense round 2: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:48:37 | src.novel.cce | INFO | Factorized CCE scored 2 citations: avg_CCS=0.6383 | SUPPORTED=2, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:48:37 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:48:42 | src.novel.ddc | INFO | DDC: Max rounds (3) reached — TERMINATE
+[LexAgent-V3] 2026-10-06 15:48:42 | src.graph.lexagent_graph | INFO | DDC decision: TERMINATE — Maximum rounds (3) reached
+[LexAgent-V3] 2026-10-06 15:48:42 | src.agents.judge_agent | INFO | Judge node: rendering verdict for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:48:56 | src.novel.adaptive_memory | INFO | Verdict cached: id=verdict_d734ede129734773
+    1/1 cases, 104s
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 38/199 [00:00<00:00, 373.56it/s]Loading weights:  47%|████▋     | 94/199 [00:00<00:00, 474.26it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 865.81it/s]
+  [score] 4 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+[LexAgent-V3] 2026-10-06 15:49:06 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace='v2smoke1_1791281946_e4_repaired_A3_seed0'): 0 cached verdicts, 0 risk entries
+  [run] e4_repaired_A3/seed0: variant A3, seed 0, checker gated, cache off, 0/1 cases saved
+[LexAgent-V3] 2026-10-06 15:49:06 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:06 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:06 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:49:06 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:49:06 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:49:14 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 0
+[LexAgent-V3] 2026-10-06 15:49:14 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:15 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:15 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:49:31 | src.agents.defense_agent | INFO | Defense round 0: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:49:31 | src.novel.cce | INFO | Factorized CCE scored 3 citations: avg_CCS=0.7169 | SUPPORTED=3, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:49:31 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:49:36 | src.novel.ddc | INFO | DDC: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:49:36 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:49:36 | src.graph.lexagent_graph | INFO | Round 1: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:49:36 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:37 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:37 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:49:37 | src.retrieval.hybrid_retriever | INFO | Entity map built: 20 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:49:37 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:49:47 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 1
+[LexAgent-V3] 2026-10-06 15:49:47 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:48 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:49:48 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:50:02 | src.agents.defense_agent | INFO | Defense round 1: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:50:03 | src.novel.cce | INFO | Factorized CCE scored 4 citations: avg_CCS=0.7543 | SUPPORTED=3, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:50:03 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:50:08 | src.novel.ddc | INFO | DDC: CONTINUE — Round 2: avg_CCS=0.75, min_CCS=0.21 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:50:08 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Round 2: avg_CCS=0.75, min_CCS=0.21 with 1 unresolved gap(s). Initiating next debate round.
+[LexAgent-V3] 2026-10-06 15:50:08 | src.graph.lexagent_graph | INFO | Round 2: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:50:09 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:50:10 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:50:10 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:50:10 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:50:10 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:50:17 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 2
+[LexAgent-V3] 2026-10-06 15:50:18 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:50:18 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:50:18 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:50:32 | src.agents.defense_agent | INFO | Defense round 2: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:50:32 | src.novel.cce | INFO | Factorized CCE scored 2 citations: avg_CCS=0.6383 | SUPPORTED=2, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:50:32 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:50:38 | src.novel.ddc | INFO | DDC: Max rounds (3) reached — TERMINATE
+[LexAgent-V3] 2026-10-06 15:50:38 | src.graph.lexagent_graph | INFO | DDC decision: TERMINATE — Maximum rounds (3) reached
+[LexAgent-V3] 2026-10-06 15:50:38 | src.agents.judge_agent | INFO | Judge node: rendering verdict for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+    1/1 cases, 107s
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  26%|██▌       | 51/199 [00:00<00:00, 484.86it/s]Loading weights:  52%|█████▏    | 104/199 [00:00<00:00, 502.86it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 872.05it/s]
+  [score] 5 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+[LexAgent-V3] 2026-10-06 15:51:04 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace='v2smoke1_1791282064_e4_repaired_A4_seed0'): 0 cached verdicts, 0 risk entries
+  [run] e4_repaired_A4/seed0: variant A4, seed 0, checker gated, cache off, 0/1 cases saved
+[LexAgent-V3] 2026-10-06 15:51:04 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:51:05 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:51:05 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:51:05 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:51:05 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:51:13 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 0
+[LexAgent-V3] 2026-10-06 15:51:13 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:51:14 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:51:14 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:51:32 | src.agents.defense_agent | INFO | Defense round 0: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:51:32 | src.novel.cce | INFO | Factorized CCE scored 3 citations: avg_CCS=0.7169 | SUPPORTED=3, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:51:32 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:51:38 | src.novel.ddc | INFO | DDC: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:51:38 | src.agents.judge_agent | INFO | Judge node: rendering verdict for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:51:48 | src.novel.adaptive_memory | INFO | Verdict cached: id=verdict_d734ede129734773
+    1/1 cases, 44s
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 32/199 [00:00<00:00, 295.03it/s]Loading weights:  33%|███▎      | 66/199 [00:00<00:00, 313.90it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 841.09it/s]
+  [score] 6 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+[LexAgent-V3] 2026-10-06 15:51:58 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace='v2smoke1_1791282118_e4_repaired_A1_seed0'): 0 cached verdicts, 0 risk entries
+  [run] e4_repaired_A1/seed0: variant A1, seed 0, checker gated, cache off, 0/1 cases saved
+[LexAgent-V3] 2026-10-06 15:51:58 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:51:58 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:51:59 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:51:59 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:51:59 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:52:06 | src.novel.cce | INFO | Factorized CCE scored 1 citations: avg_CCS=0.8015 | SUPPORTED=1, UNCERTAIN=0, MISATTRIBUTED=0, FABRICATED=0, UNVERIFIABLE=0
+[LexAgent-V3] 2026-10-06 15:52:06 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:52:11 | src.novel.ddc | INFO | DDC: TERMINATE — Deliberation concluded: avg_CCS=0.80, gaps=1, round=0
+[LexAgent-V3] 2026-10-06 15:52:11 | src.graph.lexagent_graph | INFO | DDC decision: TERMINATE — Deliberation concluded: avg_CCS=0.80, gaps=1, round=0
+[LexAgent-V3] 2026-10-06 15:52:11 | src.agents.judge_agent | INFO | Judge node: rendering verdict for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:52:21 | src.novel.adaptive_memory | INFO | Verdict cached: id=verdict_d734ede129734773
+    1/1 cases, 23s
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 36/199 [00:00<00:00, 357.33it/s]Loading weights:  47%|████▋     | 93/199 [00:00<00:00, 481.99it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 806.43it/s]
+  [score] 7 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+[LexAgent-V3] 2026-10-06 15:52:33 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace='v2smoke1_1791282153_e4_repaired_A2_seed0'): 0 cached verdicts, 0 risk entries
+  [run] e4_repaired_A2/seed0: variant A2, seed 0, checker gated, cache off, 0/1 cases saved
+[LexAgent-V3] 2026-10-06 15:52:33 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:52:33 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:52:33 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:52:33 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:52:33 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:52:41 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 0
+[LexAgent-V3] 2026-10-06 15:52:41 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:52:42 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:52:42 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:52:58 | src.agents.defense_agent | INFO | Defense round 0: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:52:58 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 0
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:53:03 | src.novel.ddc | INFO | DDC: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:53:03 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:53:03 | src.graph.lexagent_graph | INFO | Round 1: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:53:03 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:04 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:04 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:53:04 | src.retrieval.hybrid_retriever | INFO | Entity map built: 20 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:53:04 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:53:12 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 1
+[LexAgent-V3] 2026-10-06 15:53:12 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:13 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:13 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:53:30 | src.agents.defense_agent | INFO | Defense round 1: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:53:30 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 1
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:53:35 | src.novel.ddc | INFO | DDC: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:53:35 | src.graph.lexagent_graph | INFO | DDC decision: CONTINUE — Defense challenge_strength=0.80 with 1 gaps. Additional evidence needed.
+[LexAgent-V3] 2026-10-06 15:53:35 | src.graph.lexagent_graph | INFO | Round 2: augmented query with reflection queries
+[LexAgent-V3] 2026-10-06 15:53:35 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:36 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:36 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[LexAgent-V3] 2026-10-06 15:53:36 | src.retrieval.hybrid_retriever | INFO | Entity map built: 26 lookup keys from 8 documents
+[LexAgent-V3] 2026-10-06 15:53:36 | src.agents.prosecutor_agent | INFO | Prosecutor node: generating argument for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:53:46 | src.agents.defense_agent | INFO | Evidence-Disjoint Defense node: round 2
+[LexAgent-V3] 2026-10-06 15:53:46 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:47 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-06 15:53:47 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:54:04 | src.agents.defense_agent | INFO | Defense round 2: Evidence Overlap Ratio (EOR) = 0.0000
+[LexAgent-V3] 2026-10-06 15:54:04 | src.agents.reflection_agent | INFO | Reflection node: analyzing debate quality for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:54:10 | src.novel.ddc | INFO | DDC: Max rounds (3) reached — TERMINATE
+[LexAgent-V3] 2026-10-06 15:54:10 | src.graph.lexagent_graph | INFO | DDC decision: TERMINATE — Maximum rounds (3) reached
+[LexAgent-V3] 2026-10-06 15:54:10 | src.agents.judge_agent | INFO | Judge node: rendering verdict for round 2
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+[LexAgent-V3] 2026-10-06 15:54:25 | src.novel.adaptive_memory | INFO | Verdict cached: id=verdict_d734ede129734773
+    1/1 cases, 113s
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  13%|█▎        | 26/199 [00:00<00:00, 225.15it/s]Loading weights:  34%|███▍      | 68/199 [00:00<00:00, 316.22it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 839.33it/s]
+  [score] 8 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+[transformers] Both `max_new_tokens` (=1024) and `max_length`(=20) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+  [paraphrases] C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\e3_memory\paraphrases.json
+[LexAgent-V3] 2026-10-06 15:54:38 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace='v2_e3_memory_pass1'): 0 cached verdicts, 0 risk entries
+  [e3] no stored verdicts in the namespace yet
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 38/199 [00:00<00:00, 351.38it/s]Loading weights:  37%|███▋      | 74/199 [00:00<00:00, 356.23it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 868.23it/s]
+  [score] 8 runs scored -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\_smoke_1_cases\REPORT.md
+Queue finished.

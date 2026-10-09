@@ -1,0 +1,40 @@
+[LexAgent-V3] 2026-10-06 15:40:46 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 27151.57it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-06 15:40:50 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-06 15:40:57 | src.retrieval.dense_retriever | INFO | DenseRetriever initialized (top_k=4, collection=cap_authorities)
+[LexAgent-V3] 2026-10-06 15:41:12 | src.retrieval.bm25_retriever | INFO | BM25 index loaded from: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl (1779847 vocabulary terms)
+[LexAgent-V3] 2026-10-06 15:41:12 | src.retrieval.hybrid_retriever | INFO | HybridRetriever initialized (RRF k=60)
+[LexAgent-V3] 2026-10-06 15:41:15 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  28%|██▊       | 57/202 [00:00<00:00, 556.73it/s]Loading weights:  59%|█████▉    | 119/202 [00:00<00:00, 577.37it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 945.27it/s]
+[LexAgent-V3] 2026-10-06 15:41:19 | src.novel.cce | INFO | Loaded NLI CrossEncoder: tasksource/deberta-base-long-nli
+[LexAgent-V3] 2026-10-06 15:41:19 | src.novel.cce | INFO | CCE policy=gated | support gate OPEN (experiments/v2/e2_verifier_validation.py, 2026-10-06T15:38:55)
+[LexAgent-V3] 2026-10-06 15:41:19 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+accepted (of 96 each): {'correct_holding': 91, 'holding_of_an_unrelated_case': 2, 'holding_of_the_most_similar_other_case': 22}
+contradicted: {'correct': 1, 'unrelated': 0, 'near_miss': 0}
+   near miss accepted: United States v. Jacobsen <- holding of Kyllo v. United States (score 0.3269, similarity 0.9423)
+   near miss accepted: Mapp v. Ohio <- holding of United States v. Leon (score 0.7908, similarity 0.915)
+   near miss accepted: Riley v. California <- holding of Kyllo v. United States (score 0.3505, similarity 0.9456)
+   near miss accepted: Carpenter v. United States <- holding of Kyllo v. United States (score 0.7861, similarity 0.9433)
+   near miss accepted: Graham v. Florida <- holding of Miller v. Alabama (score 0.4663, similarity 0.9431)
+   near miss accepted: Miller v. Alabama <- holding of Graham v. Florida (score 0.6448, similarity 0.9431)
+   near miss accepted: Katz v. United States <- holding of Kyllo v. United States (score 0.7384, similarity 0.9369)
+   near miss accepted: District of Columbia v. Heller <- holding of McDonald v. City of Chicago (score 0.3547, similarity 0.9278)
+wrote C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\e2_verifier_validation\near_miss_probe.json

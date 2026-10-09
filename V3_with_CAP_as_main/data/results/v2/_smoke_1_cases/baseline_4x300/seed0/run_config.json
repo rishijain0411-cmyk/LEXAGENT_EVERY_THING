@@ -1,0 +1,37 @@
+{
+  "kind": "baseline",
+  "experiment": "baseline_4x300",
+  "run": "seed0",
+  "seed": 0,
+  "case_seed_rule": "seed * 100003 + case_id",
+  "context_passages": 4,
+  "context_characters_per_passage": 300,
+  "dense_query_jurisdiction": "US_Federal",
+  "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+  "cases": 1,
+  "settings": {
+    "MODEL_NAME": "mistralai/Mistral-7B-Instruct-v0.3",
+    "EMBEDDER_NAME": "nlpaueb/legal-bert-base-uncased",
+    "NLI_MODEL_NAME": "cross-encoder/nli-deberta-v3-small",
+    "TOP_K_DENSE": 4,
+    "TOP_K_BM25": 4,
+    "RRF_K": 60,
+    "TAU_ACCEPTANCE_THRESHOLD": 0.7,
+    "CCS_VERIFIED_THRESHOLD": 0.75,
+    "CCS_UNCERTAIN_THRESHOLD": 0.4,
+    "CCE_FUZZY_THRESHOLD_RATIO": 0.85,
+    "CCE_OPINION_SCAN_LIMIT": 8000,
+    "DDC_MAX_ROUNDS": 3,
+    "DDC_CCS_CONTINUE_THRESH": 0.6,
+    "DDC_MIN_GAPS_TO_CONTINUE": 1,
+    "DDC_CHALLENGE_STRENGTH_THRESH": 0.5,
+    "MEMORY_CACHE_THRESHOLD": 0.92,
+    "MEMORY_HIGH_RISK_CCS_THRESH": 0.45,
+    "CCE_GATE_MIN_AUC": 0.9
+  },
+  "git": {
+    "commit": "3d511de25fcb579199bcf49e2532693c868b0ce2",
+    "uncommitted_files": 28
+  },
+  "created": "2026-10-06T15:43:57"
+}

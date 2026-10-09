@@ -1,0 +1,68 @@
+{
+  "note": "compute_ccs on one real case cited in different surface forms; same holding each time. No LLM.",
+  "rows": [
+    {
+      "name_as_cited": "Gideon v. Wainwright",
+      "reporter_cite_field": "",
+      "tier": "MISATTRIBUTED",
+      "existence": 1.0,
+      "support": 0.016,
+      "resolved_to": "Gideon v. Wainwright, 372 U.S. 335",
+      "cite_check": "NOT_GIVEN"
+    },
+    {
+      "name_as_cited": "Gideon v. Wainwright (1963)",
+      "reporter_cite_field": "",
+      "tier": "MISATTRIBUTED",
+      "existence": 1.0,
+      "support": 0.016,
+      "resolved_to": "Gideon v. Wainwright, 372 U.S. 335",
+      "cite_check": "NOT_GIVEN"
+    },
+    {
+      "name_as_cited": "Gideon v. Wainwright, 372 U.S. 335",
+      "reporter_cite_field": "",
+      "tier": "MISATTRIBUTED",
+      "existence": 1.0,
+      "support": 0.016,
+      "resolved_to": "Gideon v. Wainwright, 372 U.S. 335",
+      "cite_check": "MATCH"
+    },
+    {
+      "name_as_cited": "Gideon v. Wainwright (372 U.S. 335) [CAP]",
+      "reporter_cite_field": "",
+      "tier": "MISATTRIBUTED",
+      "existence": 1.0,
+      "support": 0.016,
+      "resolved_to": "Gideon v. Wainwright, 372 U.S. 335",
+      "cite_check": "MATCH"
+    },
+    {
+      "name_as_cited": "Gideon v. Wainwright",
+      "reporter_cite_field": "372 U.S. 335",
+      "tier": "MISATTRIBUTED",
+      "existence": 1.0,
+      "support": 0.016,
+      "resolved_to": "Gideon v. Wainwright, 372 U.S. 335",
+      "cite_check": "MATCH"
+    },
+    {
+      "name_as_cited": "Gideon vs. Wainwright",
+      "reporter_cite_field": "",
+      "tier": "MISATTRIBUTED",
+      "existence": 0.98,
+      "support": 0.016,
+      "resolved_to": "Gideon v. Wainwright, 372 U.S. 335",
+      "cite_check": "NOT_GIVEN"
+    },
+    {
+      "name_as_cited": "Gideon",
+      "reporter_cite_field": "",
+      "tier": "UNVERIFIABLE",
+      "existence": 0.46,
+      "support": null,
+      "resolved_to": "",
+      "cite_check": "NOT_GIVEN"
+    }
+  ]
+}

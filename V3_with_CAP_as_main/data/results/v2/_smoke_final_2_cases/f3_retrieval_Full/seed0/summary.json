@@ -1,0 +1,17 @@
+{
+  "cases": 2,
+  "errors": 0,
+  "skipped_by_cache": 0,
+  "seconds_this_session": 199.7,
+  "seconds_sum_of_cases": 199.7,
+  "finished": "2026-10-07T16:49:44",
+  "legacy_metric_means": {
+    "hr": 0.0,
+    "ass": 0.90315,
+    "ar": 0.5,
+    "ap": 0.16665,
+    "judge_confidence": 0.835
+  },
+  "note": "legacy_metric_means use the pre-audit definitions and are kept only for continuity; see experiments/v2/score.py",
+  "memory_namespace": "v2smoke2_1791371784_f3_retrieval_Full_seed0"
+}

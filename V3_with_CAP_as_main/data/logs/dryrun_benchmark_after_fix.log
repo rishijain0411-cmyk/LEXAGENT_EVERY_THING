@@ -1,0 +1,54 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STEP 3: RUNNING 3-CASE COMPREHENSIVE BENCHMARK EVALUATION (FULL RUN)
+██████████████████████████████████████████████████████████████████████████████
+  [TEST SET] 4 benchmark case(s) are left out because the corpus has no source text for them:
+    - #45 Buckley v. Valeo: only 216 words of the target case are in the corpus (423 U.S. 1040)
+    - #98 Dobbs v. Jackson Women's Health Organization: the target case is not in the corpus
+    - #99 New York State Rifle & Pistol Association, Inc. v. Bruen: the target case is not in the corpus
+    - #100 Students for Fair Admissions, Inc. v. President and Fellows of Harvard College: the target case is not in the corpus
+
+===========================================================================
+  LEXAGENT v3.0 (CAP EDITION) — 3-CASE FULL BENCHMARK EVALUATION
+===========================================================================
+  Loaded 313611 canonical CAP cases and citations.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 19608.30it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<00:31,  9.34it/s]Loading weights:   2%|▏         | 6/291 [00:00<00:13, 21.28it/s]Loading weights:   5%|▍         | 14/291 [00:00<00:07, 36.67it/s]Loading weights:   7%|▋         | 19/291 [00:00<00:08, 30.62it/s]Loading weights:   9%|▊         | 25/291 [00:00<00:09, 29.43it/s]Loading weights:  11%|█         | 31/291 [00:00<00:07, 33.50it/s]Loading weights:  12%|█▏        | 36/291 [00:01<00:09, 28.26it/s]Loading weights:  14%|█▎        | 40/291 [00:01<00:08, 28.17it/s]Loading weights:  16%|█▌        | 46/291 [00:01<00:07, 30.71it/s]Loading weights:  18%|█▊        | 52/291 [00:01<00:08, 27.58it/s]Loading weights:  22%|██▏       | 63/291 [00:02<00:06, 35.33it/s]Loading weights:  23%|██▎       | 67/291 [00:02<00:06, 34.15it/s]Loading weights:  24%|██▍       | 71/291 [00:02<00:07, 27.70it/s]Loading weights:  28%|██▊       | 81/291 [00:02<00:06, 30.74it/s]Loading weights:  29%|██▉       | 85/291 [00:02<00:07, 27.42it/s]Loading weights:  33%|███▎      | 95/291 [00:03<00:05, 36.25it/s]Loading weights:  34%|███▍      | 99/291 [00:03<00:06, 29.40it/s]Loading weights:  36%|███▌      | 104/291 [00:03<00:06, 30.95it/s]Loading weights:  37%|███▋      | 109/291 [00:03<00:05, 31.12it/s]Loading weights:  39%|███▉      | 113/291 [00:03<00:06, 27.41it/s]Loading weights:  41%|████      | 118/291 [00:03<00:05, 30.27it/s]Loading weights:  42%|████▏     | 123/291 [00:04<00:06, 26.75it/s]Loading weights:  46%|████▌     | 134/291 [00:04<00:04, 34.07it/s]Loading weights:  47%|████▋     | 138/291 [00:04<00:04, 34.42it/s]Loading weights:  49%|████▉     | 142/291 [00:04<00:05, 27.35it/s]Loading weights:  53%|█████▎    | 153/291 [00:05<00:04, 31.88it/s]Loading weights:  56%|█████▌    | 162/291 [00:05<00:04, 31.03it/s]Loading weights:  57%|█████▋    | 167/291 [00:05<00:03, 31.35it/s]Loading weights:  59%|█████▉    | 171/291 [00:05<00:03, 30.98it/s]Loading weights:  62%|██████▏   | 180/291 [00:05<00:03, 30.64it/s]Loading weights:  63%|██████▎   | 184/291 [00:06<00:04, 25.36it/s]Loading weights:  68%|██████▊   | 197/291 [00:06<00:03, 30.60it/s]Loading weights:  70%|███████   | 205/291 [00:06<00:02, 30.58it/s]Loading weights:  74%|███████▎  | 214/291 [00:06<00:02, 33.46it/s]Loading weights:  76%|███████▋  | 222/291 [00:07<00:01, 38.93it/s]Loading weights:  78%|███████▊  | 227/291 [00:07<00:01, 33.33it/s]Loading weights:  79%|███████▉  | 231/291 [00:07<00:02, 27.00it/s]Loading weights:  82%|████████▏ | 240/291 [00:07<00:01, 36.01it/s]Loading weights:  84%|████████▍ | 245/291 [00:07<00:01, 32.31it/s]Loading weights:  86%|████████▌ | 249/291 [00:08<00:01, 32.86it/s]Loading weights:  87%|████████▋ | 253/291 [00:08<00:01, 31.07it/s]Loading weights:  88%|████████▊ | 257/291 [00:08<00:01, 32.03it/s]Loading weights:  90%|████████▉ | 261/291 [00:08<00:01, 24.91it/s]Loading weights:  91%|█████████ | 265/291 [00:08<00:00, 26.78it/s]Loading weights:  93%|█████████▎| 270/291 [00:08<00:00, 29.25it/s]Loading weights:  95%|█████████▍| 275/291 [00:08<00:00, 30.60it/s]Loading weights:  96%|█████████▌| 279/291 [00:09<00:00, 30.31it/s]Loading weights:  97%|█████████▋| 283/291 [00:09<00:00, 27.68it/s]Loading weights: 100%|██████████| 291/291 [00:09<00:00, 31.21it/s]
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\experiments\..\src\models\load_model.py:130: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the `langchain-huggingface package and should be used instead. To use it run `pip install -U `langchain-huggingface` and import as `from `langchain_huggingface import HuggingFacePipeline``.
+  llm_pipeline = HuggingFacePipeline(pipeline=text_pipeline)
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  45%|████▌     | 48/106 [00:00<00:00, 466.45it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 821.83it/s]
+
+[1/3] Case #1: Fourth Amendment — Private Searches
+      Q: Does the Fourth Amendment protect against warrantless searches conducted by private indivi...
+      -> HR: 0.00% | CAS: 0.9371 | Conf: 0.98 | Status: CONVERGED
+
+[2/3] Case #2: Eighth Amendment — Juvenile Death Penalty
+      Q: Can a state constitutionally impose the death penalty on an offender who was under the age...
+      -> HR: 0.00% | CAS: 0.8686 | Conf: 0.98 | Status: CONVERGED
+
+[3/3] Case #3: Fourth Amendment — Stop and Frisk
+      Q: May police officers stop and briefly detain a suspect on the street without probable cause...
+      -> HR: 0.00% | CAS: 0.9110 | Conf: 0.86 | Status: CONVERGED
+
+===========================================================================
+  AGGREGATE BENCHMARK SCORECARD SUMMARY
+===========================================================================
+  Total Cases Evaluated:           3
+  Completed Successfully:          3
+  Crashed/Failed Cases:            0
+  Mean Hallucination Rate (HR):    0.00%
+    ├─ Citation Fabrication Rate (CFR): 0.00%
+    ├─ Off-Corpus Precedent Rate (OOR): 0.00%
+    └─ Misattribution Rate (MAR):       33.33%
+  Unsupported Claim Rate (UCR):    0.00%
+  Answer Semantic Similarity (ASS):0.9056
+  Authority Recall (AR):           33.33%
+  Authority Precision (AP):        16.67%
+  Holding Attribution Acc (HAA):   66.67%
+  Mean Evidence Overlap (EOR):     0.00%
+  Mean Judge Confidence:           0.94
+  Debate Convergence Rate (DCR):   100.00%
+  Total Execution Time:            346.2s
+===========================================================================
+
+Detailed scorecard saved to: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\benchmark_3_cases_results.json

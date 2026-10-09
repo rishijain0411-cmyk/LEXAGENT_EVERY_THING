@@ -1,0 +1,48 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STAGE 1b: OFFICIAL U.S. REPORTS PDFs FOR VOLUMES CAP DOES NOT PUBLISH (573-600)
+██████████████████████████████████████████████████████████████████████████████
+
+==============================================================================
+  [CAP STAGE 1b: U.S. REPORTS OFFICIAL PDF SUPPLEMENT]
+    Source:             https://www.supremecourt.gov/opinions/USReports.aspx
+    PDF cache:          C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/us_reports_bound_volumes
+    Raw cache:          C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_raw_volumes
+    Target volumes:     28 (573 ... 600)
+    Checkpoint file:    C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_download_checkpoint.json
+    Batch checkpoint:   every 64 volumes (1 batches)
+==============================================================================
+  -> Verifying the cache files already on disk for 28 volumes...
+    Verified COMPLETE:  15 (skipped)
+    To process now:     13 (unavailable: 13)
+  [1/13] Vol 588: COMPLETE - 18 cases from the official preliminary print | 7.7s | overall 16/28 complete, 0 failed, 12 unavailable | ETA 1m 33s
+  [2/13] Vol 589: COMPLETE - 23 cases from the official preliminary print | 1.2s | overall 17/28 complete, 0 failed, 11 unavailable | ETA 49s
+  [3/13] Vol 590: COMPLETE - 22 cases from the official preliminary print | 0.0s | overall 18/28 complete, 0 failed, 10 unavailable | ETA 29s
+  [4/13] Vol 591: COMPLETE - 18 cases from the official preliminary print | 0.0s | overall 19/28 complete, 0 failed, 9 unavailable | ETA 20s
+  [5/13] Vol 592: COMPLETE - 25 cases from the official preliminary print | 0.0s | overall 20/28 complete, 0 failed, 8 unavailable | ETA 14s
+  [6/13] Vol 593: COMPLETE - 11 cases from the official preliminary print (INCOMPLETE VOLUME: later part not printed yet; page proof) | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 10s
+  [7/13] Vol 594: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 7s
+  [8/13] Vol 595: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 5s
+  [9/13] Vol 596: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 4s
+  [10/13] Vol 597: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 2s
+  [11/13] Vol 598: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 1s
+  [12/13] Vol 599: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 0s
+  [13/13] Vol 600: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF | 0.0s | overall 21/28 complete, 0 failed, 7 unavailable | ETA 0s
+  [CHECKPOINT] Batch 1/1 (volumes 573-600): 21/28 COMPLETE, 0 failed, 7 unavailable - checkpoint saved.
+
+==============================================================================
+  [CAP STAGE 1b: U.S. REPORTS OFFICIAL PDF SUPPLEMENT - REPORT]  (elapsed 9s)
+    Target volumes:     28
+    COMPLETE:           21
+    FAILED:             0  -> volumes none
+    UNAVAILABLE:        7  -> volumes 594-600
+      Vol 594: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF
+      Vol 595: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF
+      Vol 596: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF
+      Vol 597: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF
+      Vol 598: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF
+      Vol 599: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF
+      Vol 600: UNAVAILABLE - the Court has published only the orders section of this volume so far; its opinions are not available as a U.S. Reports PDF
+  ALL 28 TARGET VOLUMES COMPLETE: NO
+  Record of every volume not completed: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_download_checkpoint.json
+==============================================================================

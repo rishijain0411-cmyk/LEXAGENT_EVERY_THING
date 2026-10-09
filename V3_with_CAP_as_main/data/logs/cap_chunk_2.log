@@ -1,0 +1,70 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STAGE 2: CHUNKING VERIFIED RAW CAP VOLUMES (all)
+██████████████████████████████████████████████████████████████████████████████
+
+==============================================================================
+  [CAP STAGE 2: CHUNK ONLY]
+    Raw cache:          C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_raw_volumes
+    Chunk cache:        C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chunks_cache
+    Network:            never used by this stage
+    Target volumes:     600 (1 ... 600)
+    Checkpoint file:    C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chunk_checkpoint.json
+    Batch checkpoint:   every 64 volumes (10 batches)
+==============================================================================
+  -> Verifying the cache files already on disk for 600 volumes...
+    Verified COMPLETE:  572 (skipped)
+    To process now:     28 (not started: 28)
+  [1/28] Vol 573: COMPLETE - 705 chunks from 22 documents | 0.1s | overall 573/600 complete, 0 failed, 0 unavailable | ETA 2s
+  [2/28] Vol 574: COMPLETE - 418 chunks from 23 documents | 0.1s | overall 574/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [3/28] Vol 575: COMPLETE - 733 chunks from 32 documents | 0.1s | overall 575/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [4/28] Vol 576: COMPLETE - 862 chunks from 21 documents | 0.1s | overall 576/600 complete, 0 failed, 0 unavailable | ETA 2s
+  [CHECKPOINT] Batch 9/10 (volumes 513-576): 64/64 COMPLETE, 0 failed, 0 unavailable - checkpoint saved.
+  [5/28] Vol 577: COMPLETE - 438 chunks from 29 documents | 0.0s | overall 577/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [6/28] Vol 578: COMPLETE - 580 chunks from 30 documents | 0.1s | overall 578/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [7/28] Vol 579: COMPLETE - 635 chunks from 22 documents | 0.1s | overall 579/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [8/28] Vol 580: COMPLETE - 414 chunks from 21 documents | 0.0s | overall 580/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [9/28] Vol 581: COMPLETE - 438 chunks from 26 documents | 0.1s | overall 581/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [10/28] Vol 582: COMPLETE - 521 chunks from 23 documents | 0.1s | overall 582/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [11/28] Vol 583: COMPLETE - 400 chunks from 20 documents | 0.0s | overall 583/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [12/28] Vol 584: COMPLETE - 756 chunks from 30 documents | 0.1s | overall 584/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [13/28] Vol 585: COMPLETE - 873 chunks from 26 documents | 0.1s | overall 585/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [14/28] Vol 586: COMPLETE - 443 chunks from 26 documents | 0.1s | overall 586/600 complete, 0 failed, 0 unavailable | ETA 1s
+  [15/28] Vol 587: COMPLETE - 749 chunks from 29 documents | 0.1s | overall 587/600 complete, 0 failed, 0 unavailable | ETA 0s
+  [16/28] Vol 588: UNAVAILABLE - Volume 588 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 1 unavailable | ETA 0s
+  [17/28] Vol 589: UNAVAILABLE - Volume 589 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 2 unavailable | ETA 0s
+  [18/28] Vol 590: UNAVAILABLE - Volume 590 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 3 unavailable | ETA 0s
+  [19/28] Vol 591: UNAVAILABLE - Volume 591 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 4 unavailable | ETA 0s
+  [20/28] Vol 592: UNAVAILABLE - Volume 592 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 5 unavailable | ETA 0s
+  [21/28] Vol 593: UNAVAILABLE - Volume 593 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 6 unavailable | ETA 0s
+  [22/28] Vol 594: UNAVAILABLE - Volume 594 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 7 unavailable | ETA 0s
+  [23/28] Vol 595: UNAVAILABLE - Volume 595 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 8 unavailable | ETA 0s
+  [24/28] Vol 596: UNAVAILABLE - Volume 596 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 9 unavailable | ETA 0s
+  [25/28] Vol 597: UNAVAILABLE - Volume 597 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 10 unavailable | ETA 0s
+  [26/28] Vol 598: UNAVAILABLE - Volume 598 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 11 unavailable | ETA 0s
+  [27/28] Vol 599: UNAVAILABLE - Volume 599 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 12 unavailable | ETA 0s
+  [28/28] Vol 600: UNAVAILABLE - Volume 600 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk. | 0.0s | overall 587/600 complete, 0 failed, 13 unavailable | ETA 0s
+  [CHECKPOINT] Batch 10/10 (volumes 577-600): 11/24 COMPLETE, 0 failed, 13 unavailable - checkpoint saved.
+
+==============================================================================
+  [CAP STAGE 2: CHUNK ONLY - REPORT]  (elapsed 1s)
+    Target volumes:     600
+    COMPLETE:           587
+    FAILED:             0  -> volumes none
+    UNAVAILABLE:        13  -> volumes 588-600
+      Vol 588: UNAVAILABLE - Volume 588 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 589: UNAVAILABLE - Volume 589 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 590: UNAVAILABLE - Volume 590 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 591: UNAVAILABLE - Volume 591 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 592: UNAVAILABLE - Volume 592 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 593: UNAVAILABLE - Volume 593 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 594: UNAVAILABLE - Volume 594 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 595: UNAVAILABLE - Volume 595 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 596: UNAVAILABLE - Volume 596 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 597: UNAVAILABLE - Volume 597 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 598: UNAVAILABLE - Volume 598 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 599: UNAVAILABLE - Volume 599 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+      Vol 600: UNAVAILABLE - Volume 600 is not published by CAP (CasesMetadata.json returned HTTP 404 (CAP does not publish this volume)); there is nothing to chunk.
+  ALL 600 TARGET VOLUMES COMPLETE: NO
+  Record of every volume not completed: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chunk_checkpoint.json
+==============================================================================

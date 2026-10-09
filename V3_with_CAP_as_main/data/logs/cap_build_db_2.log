@@ -1,0 +1,121 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STAGE 3: BUILDING PRIMARY HARVARD CAP DATABASE (all)
+██████████████████████████████████████████████████████████████████████████████
+
+==============================================================================
+  BUILDING LEXAGENT v3.0 PRIMARY CAP DATABASE (STAGE 3: EMBEDDING / INDEXING)
+  Selection Mode: 'all'
+  Checkpoint Resume: ACTIVE
+==============================================================================
+  -> Target Volumes (600 total): ['1', '2', '3', '4', '5', '6', '7', '8']...
+
+  -> Loading verified chunk caches for 600 volumes from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chunks_cache...
+     Loaded [50/600] volumes | Total chunks: 32,205
+     Loaded [100/600] volumes | Total chunks: 69,119
+     Loaded [150/600] volumes | Total chunks: 106,568
+     Loaded [200/600] volumes | Total chunks: 141,507
+     Loaded [250/600] volumes | Total chunks: 172,854
+     Loaded [300/600] volumes | Total chunks: 206,409
+     Loaded [350/600] volumes | Total chunks: 253,971
+     Loaded [400/600] volumes | Total chunks: 308,570
+     Loaded [450/600] volumes | Total chunks: 359,606
+     Loaded [500/600] volumes | Total chunks: 417,678
+     Loaded [550/600] volumes | Total chunks: 484,942
+     Loaded [600/600] volumes | Total chunks: 528,283
+  [NOTICE] 7 target volume(s) are not published by CAP and are not in the corpus: 594-600
+
+  -> Total Retrieval Chunks: 528,283 from 593 volumes
+  -> Writing corpus JSON (528,283 chunks)...
+  [OK] Corpus JSON saved: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_corpus.json
+
+------------------------------------------------------------------------------
+  [STEP 2: LEXICAL ARTIFACTS & CCE CATALOG PERSISTENCE]
+------------------------------------------------------------------------------
+  [OK] Known cases catalog saved immediately: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl (313,611 entries)
+  -> Building and serializing memory-efficient BM25 index over 528,283 chunks...
+[LexAgent-V3] 2026-10-05 21:12:14 | src.retrieval.bm25_retriever | INFO | Building memory-efficient BM25 index over 528283 documents...
+     BM25 Inverted Index: 52,828/528,283 docs (10.0%) in 8.5s...
+     BM25 Inverted Index: 105,656/528,283 docs (20.0%) in 16.4s...
+     BM25 Inverted Index: 158,484/528,283 docs (30.0%) in 22.8s...
+     BM25 Inverted Index: 211,312/528,283 docs (40.0%) in 30.4s...
+     BM25 Inverted Index: 264,140/528,283 docs (50.0%) in 34.9s...
+     BM25 Inverted Index: 316,968/528,283 docs (60.0%) in 39.2s...
+     BM25 Inverted Index: 369,796/528,283 docs (70.0%) in 47.4s...
+     BM25 Inverted Index: 422,624/528,283 docs (80.0%) in 52.8s...
+     BM25 Inverted Index: 475,452/528,283 docs (90.0%) in 57.0s...
+     BM25 Inverted Index: 528,280/528,283 docs (100.0%) in 66.2s...
+     BM25 Inverted Index: 528,283/528,283 docs (100.0%) in 66.2s...
+[LexAgent-V3] 2026-10-05 21:13:37 | src.retrieval.bm25_retriever | INFO | BM25 index built successfully (1779847 unique terms, avgdl=321.3).
+[LexAgent-V3] 2026-10-05 21:13:58 | src.retrieval.bm25_retriever | INFO | BM25 index saved: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl.tmp (696.42 MB)
+  [OK] BM25 lexical index built & saved: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl
+
+------------------------------------------------------------------------------
+  [STEP 3: HARDWARE ACCELERATION & DENSE VECTOR INDEXING]
+------------------------------------------------------------------------------
+  [*] CUDA Acceleration: ACTIVE (GPU: NVIDIA GeForce RTX 5090, Total VRAM: 31.8 GB)
+     Target: Tensor Core batch parallelism enabled.
+------------------------------------------------------------------------------
+  [*] Active ChromaDB Storage: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chroma_corpus
+
+  [*] The corpus grew from 515,889 to 528,283 chunks; the earlier chunks are unchanged.
+
+  [RESUME ACTIVE] Found 515,889 chunks already in ChromaDB.
+  [RESUME ACTIVE] Resuming dense indexing from chunk 515,889 / 528,283 (97.7% already done).
+  [RESUME ACTIVE] Zero previous work will be lost!
+[LexAgent-V3] 2026-10-05 21:15:42 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 36184.44it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-05 21:15:45 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+
+  -> Indexing dense vectors into ChromaDB (Legal-BERT batch size: 256)...
+     Indexed: 516,145/528,283 (97.7%) — 99.1 chunks/s | ETA: 2m 02s | [Checkpoint Saved]
+     Indexed: 516,657/528,283 (97.8%) — 147.2 chunks/s | ETA: 1m 18s | [Checkpoint Saved]
+     Indexed: 517,169/528,283 (97.9%) — 142.0 chunks/s | ETA: 1m 18s | [Checkpoint Saved]
+     Indexed: 517,681/528,283 (98.0%) — 154.6 chunks/s | ETA: 1m 08s | [Checkpoint Saved]
+     Indexed: 518,193/528,283 (98.1%) — 148.2 chunks/s | ETA: 1m 08s | [Checkpoint Saved]
+     Indexed: 518,705/528,283 (98.2%) — 149.4 chunks/s | ETA: 1m 04s | [Checkpoint Saved]
+     Indexed: 519,217/528,283 (98.3%) — 136.9 chunks/s | ETA: 1m 06s | [Checkpoint Saved]
+     Indexed: 519,729/528,283 (98.4%) — 142.7 chunks/s | ETA: 59s | [Checkpoint Saved]
+     Indexed: 520,241/528,283 (98.5%) — 142.2 chunks/s | ETA: 56s | [Checkpoint Saved]
+     Indexed: 520,753/528,283 (98.6%) — 146.4 chunks/s | ETA: 51s | [Checkpoint Saved]
+     Indexed: 521,265/528,283 (98.7%) — 144.5 chunks/s | ETA: 48s | [Checkpoint Saved]
+     Indexed: 521,777/528,283 (98.8%) — 146.6 chunks/s | ETA: 44s | [Checkpoint Saved]
+     Indexed: 522,289/528,283 (98.9%) — 145.7 chunks/s | ETA: 41s | [Checkpoint Saved]
+     Indexed: 522,801/528,283 (99.0%) — 148.7 chunks/s | ETA: 36s | [Checkpoint Saved]
+     Indexed: 523,313/528,283 (99.1%) — 145.6 chunks/s | ETA: 34s | [Checkpoint Saved]
+     Indexed: 523,825/528,283 (99.2%) — 147.9 chunks/s | ETA: 30s | [Checkpoint Saved]
+     Indexed: 524,337/528,283 (99.3%) — 145.8 chunks/s | ETA: 27s | [Checkpoint Saved]
+     Indexed: 524,849/528,283 (99.3%) — 147.6 chunks/s | ETA: 23s | [Checkpoint Saved]
+     Indexed: 525,361/528,283 (99.4%) — 147.0 chunks/s | ETA: 19s | [Checkpoint Saved]
+     Indexed: 525,873/528,283 (99.5%) — 148.5 chunks/s | ETA: 16s | [Checkpoint Saved]
+     Indexed: 526,385/528,283 (99.6%) — 148.2 chunks/s | ETA: 12s | [Checkpoint Saved]
+     Indexed: 526,897/528,283 (99.7%) — 149.9 chunks/s | ETA: 9s | [Checkpoint Saved]
+     Indexed: 527,409/528,283 (99.8%) — 147.7 chunks/s | ETA: 5s | [Checkpoint Saved]
+     Indexed: 527,921/528,283 (99.9%) — 149.1 chunks/s | ETA: 2s | [Checkpoint Saved]
+     Indexed: 528,283/528,283 (100.0%) — 149.0 chunks/s | ETA: 0s | [Checkpoint Saved]
+
+  [OK] ChromaDB dense vector index complete: 528,283 chunks stored.
+       Path: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_chroma_corpus
+[LexAgent-V3] 2026-10-05 21:17:09 | src.data.cap_ingest | INFO | Manifest written to: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_corpus_manifest.json
+
+==============================================================================
+  LEXAGENT v3.0 CAP DATABASE SUCCESSFULLY BUILT!
+==============================================================================

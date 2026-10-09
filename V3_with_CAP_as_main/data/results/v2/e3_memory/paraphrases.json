@@ -1,0 +1,486 @@
+{
+  "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+  "seed": 7,
+  "rows": [
+    {
+      "case_id": 1,
+      "question": "Does the Fourth Amendment protect against warrantless searches conducted by private individuals or carriers acting without government involvement?",
+      "paraphrase": "Inquire: Is the Fourth Amendment applicable to unauthorized searches carried out by private entities or transportation services, devoid of any governmental intervention?"
+    },
+    {
+      "case_id": 2,
+      "question": "Can a state constitutionally impose the death penalty on an offender who was under the age of 18 at the time the crime was committed?",
+      "paraphrase": "Is it constitutionally permissible for a state to sentence a juvenile offender, who was under 18 at the time of the crime, to capital punishment?"
+    },
+    {
+      "case_id": 3,
+      "question": "May police officers stop and briefly detain a suspect on the street without probable cause if they possess reasonable articulable suspicion of criminal activity?",
+      "paraphrase": "Can police officers temporarily halt and retain a potential suspect on the street, absent probable cause, based on a reasonable and clearly expressible suspicion of wrongdoing?"
+    },
+    {
+      "case_id": 4,
+      "question": "Are statements made by a suspect during custodial police interrogation admissible if the suspect was not advised of their right to remain silent and right to counsel?",
+      "paraphrase": "Is the admissibility of statements made by a detainee during a police interrogation in custody questionable if the detainee was not informed about their right to refrain from speaking and their right to legal representation?"
+    },
+    {
+      "case_id": 5,
+      "question": "Does an indigent criminal defendant charged with a felony in state court have a constitutional right to court-appointed counsel?",
+      "paraphrase": "Does a defendant, who is financially unable to afford legal representation, accused of a felony in a state court, have a guaranteed right under the constitution to be provided with court-appointed legal counsel?"
+    },
+    {
+      "case_id": 6,
+      "question": "Does the prosecution violate due process when it suppresses evidence favorable to an accused upon request?",
+      "paraphrase": "Inquire: Does the prosecution breach the principle of due process by withholding evidence beneficial to the defendant when asked to disclose it?"
+    },
+    {
+      "case_id": 7,
+      "question": "Is evidence obtained through an unconstitutional search and seizure under the Fourth Amendment admissible in state criminal trials?",
+      "paraphrase": "Can evidence gathered through a search and seizure that violates the Fourth Amendment's protections against unreasonable searches and seizures be admitted in state court criminal proceedings?"
+    },
+    {
+      "case_id": 8,
+      "question": "What legal standard must a convicted defendant satisfy to prove their legal representation violated the Sixth Amendment right to counsel?",
+      "paraphrase": "What legal criteria must a defendant, who has been found guilty, meet to demonstrate that their constitutional right to counsel, as protected by the Sixth Amendment, was infringed upon by their legal representation?"
+    },
+    {
+      "case_id": 9,
+      "question": "May law enforcement search the digital contents of a cell phone seized from an arrestee without obtaining a search warrant?",
+      "paraphrase": "Can law enforcement conduct a search of the digital data stored on a cell phone that has been confiscated from an arrestee without first obtaining a search warrant?"
+    },
+    {
+      "case_id": 10,
+      "question": "Does government acquisition of historical cell-site location records from wireless carriers require a Fourth Amendment warrant supported by probable cause?",
+      "paraphrase": "Inquire about the necessity of a Fourth Amendment warrant, backed by probable cause, for governmental procurement of historical cell-site records from wireless service providers, under the context of privacy rights."
+    },
+    {
+      "case_id": 11,
+      "question": "Does the Eighth Amendment permit sentencing a juvenile offender to life imprisonment without the possibility of parole for a non-homicide crime?",
+      "paraphrase": "Inquires about the constitutionality of imposing a life sentence without the chance of parole on a juvenile offender, who has been convicted of a crime other than homicide, under the Eighth Amendment."
+    },
+    {
+      "case_id": 12,
+      "question": "May a state mandate a sentence of life imprisonment without parole for a juvenile offender convicted of murder?",
+      "paraphrase": "Can a state impose a life sentence without the possibility of parole on a minor who has been found guilty of murder?"
+    },
+    {
+      "case_id": 13,
+      "question": "Does electronic eavesdropping on a conversation in a public telephone booth constitute a Fourth Amendment search?",
+      "paraphrase": "Inquire about whether the act of surreptitiously monitoring a conversation in a public phone booth through electronic means infringes upon the protections of the Fourth Amendment, which pertains to unreasonable searches and seizures."
+    },
+    {
+      "case_id": 14,
+      "question": "Can a prosecutor use peremptory challenges to strike potential jurors based on their race?",
+      "paraphrase": "Is it permissible for a prosecutor to exercise peremptory challenges to dismiss potential jurors solely due to their racial background?"
+    },
+    {
+      "case_id": 15,
+      "question": "What legal standard governs the admissibility of scientific expert testimony in federal court under Federal Rule of Evidence 702?",
+      "paraphrase": "What is the applicable legal standard for determining the admissibility of scientific expert testimony in federal court, as outlined in Federal Rule of Evidence 702?"
+    },
+    {
+      "case_id": 16,
+      "question": "When a federal statute administered by an agency is ambiguous, must federal courts defer to the agency's reasonable construction?",
+      "paraphrase": "In cases where a federal law overseen by an agency contains ambiguity, is it necessary for federal courts to defer to the agency's reasonable interpretation?"
+    },
+    {
+      "case_id": 17,
+      "question": "What standard of fault must a public official prove to recover damages for a defamatory falsehood relating to official conduct?",
+      "paraphrase": "What level of negligence or intent must a public official demonstrate to be entitled to compensation for a libelous untruth concerning their official duties?"
+    },
+    {
+      "case_id": 18,
+      "question": "Does the First Amendment protect independent political expenditures made by corporations and associations?",
+      "paraphrase": "Inquire: Is the freedom of speech guaranteed by the First Amendment for independent political expenditures undertaken by corporations and organizations?"
+    },
+    {
+      "case_id": 19,
+      "question": "Does racial segregation of children in public schools deprive minority children of equal educational opportunities under the Equal Protection Clause?",
+      "paraphrase": "Inquires about whether the racial segregation of students in public schools constitutes a denial of equal educational opportunities for minority students, as guaranteed by the Equal Protection Clause."
+    },
+    {
+      "case_id": 20,
+      "question": "Does the Second Amendment protect an individual's right to keep and bear arms for self-defense inside the home unconnected with militia service?",
+      "paraphrase": "Inquire about the interpretation of the Second Amendment that grants an individual's personal right to possess and carry firearms for the purpose of self-defense within their residence, irrespective of any militia duties."
+    },
+    {
+      "case_id": 21,
+      "question": "Does a state law banning the use of contraceptives by married persons violate constitutional rights to privacy?",
+      "paraphrase": "Inquires about whether a state statute that prohibits the utilization of contraceptives by married individuals infringes upon the guaranteed rights to privacy under constitutional law."
+    },
+    {
+      "case_id": 22,
+      "question": "Does Congress have constitutional authority under the Commerce Clause to ban firearm possession in local school zones?",
+      "paraphrase": "Inquiries arise concerning the constitutional power of Congress, under the Commerce Clause, to enact legislation prohibiting the possession of firearms within school zones at a local level."
+    },
+    {
+      "case_id": 23,
+      "question": "Does government use of thermal-imaging technology to scan a private home from a public street constitute a Fourth Amendment search?",
+      "paraphrase": "Inquiring about whether the application of thermal-imaging devices by the government to survey a private dwelling from a public roadway qualifies as a search under the Fourth Amendment."
+    },
+    {
+      "case_id": 24,
+      "question": "Does the Double Jeopardy Clause prevent separate prosecutions by a state and the federal government for the same criminal act?",
+      "paraphrase": "Inquires about whether the Double Jeopardy Clause prohibits distinct criminal proceedings, one by a state and another by the federal government, for the same criminal offense?"
+    },
+    {
+      "case_id": 25,
+      "question": "Does the Fourteenth Amendment require states to license marriages between two people of the same sex?",
+      "paraphrase": "Inquire: Is it mandated by the Fourteenth Amendment that states permit marriages between two individuals of the same sex?"
+    },
+    {
+      "case_id": 26,
+      "question": "Does the Due Process Clause of the Fourteenth Amendment encompass a woman's qualified right to terminate her pregnancy?",
+      "paraphrase": "Inquires about whether the Due Process Clause of the Fourteenth Amendment protects a woman's right to have an abortion, subject to certain conditions."
+    },
+    {
+      "case_id": 27,
+      "question": "Are state statutory requirements requiring committee approval and hospital accreditation for abortions constitutional?",
+      "paraphrase": "Is it constitutionally permissible for state laws to mandate committee approval and hospital accreditation for abortions?"
+    },
+    {
+      "case_id": 28,
+      "question": "Does a state public school finance system relying on local property taxation violate the Equal Protection Clause?",
+      "paraphrase": "Inquires about whether a state's education funding system, primarily based on local property taxes, infringes upon the Equal Protection Clause."
+    },
+    {
+      "case_id": 29,
+      "question": "Does government supply of an essential chemical ingredient in an illegal manufacturing scheme constitute entrapment as a matter of law?",
+      "paraphrase": "Inquiries: Is the provision of a crucial chemical component by the government in an illicit production process considered an instance of entrapment under legal principles?"
+    },
+    {
+      "case_id": 30,
+      "question": "What three-prong test determines whether speech or artistic material is obscene and unprotected by the First Amendment?",
+      "paraphrase": "What criteria are used to decide if speech or artistic content is considered obscene and thus not safeguarded by the First Amendment?"
+    },
+    {
+      "case_id": 31,
+      "question": "What level of judicial scrutiny applies to government restrictions curtailing the civil rights of a single racial group during wartime?",
+      "paraphrase": "What degree of judicial review is applicable to government limitations that infringe upon the civil liberties of a specific racial group during a period of war?"
+    },
+    {
+      "case_id": 32,
+      "question": "Does the President have inherent constitutional authority to seize private industrial property during a wartime labor dispute without statutory authorization?",
+      "paraphrase": "Inquire about the existence of an inherent constitutional power held by the President to expropriate private industrial assets during a work-related conflict arising during wartime, without the need for legislative approval."
+    },
+    {
+      "case_id": 33,
+      "question": "Are state officials and legislatures bound by Supreme Court interpretations of the Constitution under the Supremacy Clause?",
+      "paraphrase": "Is it the case, under the Supremacy Clause, that state authorities and legislative bodies are obligated to adhere to the Constitution's interpretations as set forth by the Supreme Court?"
+    },
+    {
+      "case_id": 34,
+      "question": "May Congress prohibit racial discrimination in places of public accommodation serving interstate travelers under the Commerce Clause?",
+      "paraphrase": "Can the Congress enact laws that forbid racial discrimination in establishments offering public accommodations to interstate travelers, based on the authority granted by the Commerce Clause?"
+    },
+    {
+      "case_id": 35,
+      "question": "Does the Commerce Clause empower Congress to regulate racial discrimination in a local family restaurant purchasing food moving in interstate commerce?",
+      "paraphrase": "Inquiries about the scope of the Commerce Clause: Can Congress exercise its authority to regulate racial discrimination in a family restaurant, which procures food involved in interstate commerce?"
+    },
+    {
+      "case_id": 36,
+      "question": "Do state anti-miscegenation criminal statutes prohibiting marriage solely on the basis of racial classifications violate the Equal Protection and Due Process Clauses?",
+      "paraphrase": "Inquire: Whether state laws that outlaw marriage based solely on racial classifications, under the guise of anti-miscegenation statutes, infringe upon the Equal Protection and Due Process Clauses?"
+    },
+    {
+      "case_id": 37,
+      "question": "May public school officials prohibit students from wearing black armbands in protest of a war without demonstrating substantial disruption of school activities?",
+      "paraphrase": "Can school administrators restrict students from wearing black armbands as a form of protest against a war, without showing significant interference with school operations or activities?"
+    },
+    {
+      "case_id": 38,
+      "question": "Under what standard may government constitutionally restrict advocacy of the use of force or illegal conduct without violating the First Amendment?",
+      "paraphrase": "What standard allows government to constitutionally limit speech advocating for the use of force or unlawful actions, without infringing upon the protections provided by the First Amendment?"
+    },
+    {
+      "case_id": 39,
+      "question": "What three-pronged standard determines whether government aid to religious private schools violates the Establishment Clause?",
+      "paraphrase": "What criteria are used to decide if government assistance to non-public schools with religious affiliations infringes upon the Establishment Clause?"
+    },
+    {
+      "case_id": 40,
+      "question": "May the federal government obtain an injunction restraining the publication of classified national defense historical studies absent proof of direct and immediate national peril?",
+      "paraphrase": "Can the federal government secure a court order preventing the dissemination of classified national defense historical studies, without evidence of imminent and direct national danger?"
+    },
+    {
+      "case_id": 41,
+      "question": "Does the imposition of the death penalty under state statutes granting unguided jury discretion constitute cruel and unusual punishment?",
+      "paraphrase": "Inquires about whether the application of capital punishment under state laws that allow jury decisions without guidance is considered a form of inhumane or excessive punishment."
+    },
+    {
+      "case_id": 42,
+      "question": "Are bifurcated state capital punishment systems providing guided discretion with statutory aggravating and mitigating circumstances constitutional?",
+      "paraphrase": "Is it constitutionally permissible for state capital punishment systems to be divided, offering guided discretion while considering both statutory aggravating and mitigating factors?"
+    },
+    {
+      "case_id": 43,
+      "question": "May the President assert an absolute, unqualified presidential executive privilege of immunity from judicial process to withhold subpoenaed recordings relevant to a criminal trial?",
+      "paraphrase": "Can the President claim an unlimited, unconditional executive privilege, exempting him from judicial proceedings, to prevent the disclosure of subpoenaed recordings that are pertinent to a criminal trial?"
+    },
+    {
+      "case_id": 44,
+      "question": "Must a private individual proving defamation on a matter of public concern establish actual malice to recover actual injury damages?",
+      "paraphrase": "Is it necessary for a private individual claiming defamation regarding a matter of public interest to prove the existence of actual malice in order to recover damages for actual harm?"
+    },
+    {
+      "case_id": 46,
+      "question": "May a state university medical school set aside a rigid number of seats in an entering class exclusively for minority applicants?",
+      "paraphrase": "Can a state university medical school reserve a specific number of places in an incoming class solely for applicants belonging to minority groups?"
+    },
+    {
+      "case_id": 47,
+      "question": "Does city historic preservation landmark designation prohibiting construction of an office tower above a historic terminal constitute a regulatory taking?",
+      "paraphrase": "Inquires about whether the designation of a historic site as a landmark under city historic preservation laws, which prevents the construction of an office tower above a historic terminal, can be considered a regulatory taking."
+    },
+    {
+      "case_id": 48,
+      "question": "May police officers enter a suspect's home without a warrant or exigent circumstances to make a routine felony arrest?",
+      "paraphrase": "Can police officers gain entry into a suspect's residence for a standard felony arrest without first obtaining a warrant or under exceptional circumstances (exigent circumstances)?"
+    },
+    {
+      "case_id": 49,
+      "question": "Does a statutory provision authorizing one House of Congress to invalidate an executive branch deportation suspension decision violate bicameralism and presentment?",
+      "paraphrase": "Inquires about whether a statutory provision that empowers one House of Congress to nullify a suspension decision on deportations by the executive branch infringes upon the principles of bicameralism and presentment."
+    },
+    {
+      "case_id": 50,
+      "question": "Is the manufacturer of home video recording equipment liable for contributory copyright infringement if the equipment is capable of substantial noninfringing uses?",
+      "paraphrase": "Is the home video recording equipment manufacturer accountable for contributory copyright infringement, given that the equipment has significant non-infringing uses?"
+    },
+    {
+      "case_id": 51,
+      "question": "Should the exclusionary rule bar evidence obtained by police acting in reasonable, good-faith reliance on a search warrant issued by a magistrate that is ultimately found defective?",
+      "paraphrase": "Should the exclusionary rule prevent the use of evidence obtained by police who acted in good faith, relying on a search warrant issued by a judge, even if the warrant is later deemed to have defects?"
+    },
+    {
+      "case_id": 52,
+      "question": "Does the Fourth Amendment require school administrators to possess probable cause and obtain a warrant prior to searching a student's purse on school grounds?",
+      "paraphrase": "Inquire: Is it mandated by the Fourth Amendment that school officials must have probable cause and secure a warrant before conducting a search of a student's handbag within school premises?"
+    },
+    {
+      "case_id": 53,
+      "question": "Does the Tenth Amendment preclude Congress from applying the Fair Labor Standards Act minimum wage and overtime provisions to municipal transit authorities?",
+      "paraphrase": "Inquiries about the scope of the Tenth Amendment: Can Congress lawfully extend the minimum wage and overtime requirements of the Fair Labor Standards Act to local transit authorities operating public transportation systems?"
+    },
+    {
+      "case_id": 54,
+      "question": "May federal agency regulations force medical treatment decisions for disabled infants upon hospital providers without parental consent under Section 504?",
+      "paraphrase": "Can hospital providers be compelled by federal agency regulations to make medical treatment decisions for disabled infants, bypassing parental consent, under the provisions of Section 504?"
+    },
+    {
+      "case_id": 55,
+      "question": "Does severe or pervasive sexual harassment creating an intimidating or hostile work environment violate Title VII of the Civil Rights Act without proof of economic loss?",
+      "paraphrase": "Inquire about whether Title VII of the Civil Rights Act is infringed when there exists severe or persistent sexual harassment that generates an environment that is intimidating or hostile, without the requirement of demonstrating economic loss."
+    },
+    {
+      "case_id": 56,
+      "question": "Does a state law mandating the teaching of creation science whenever evolution is taught in public schools violate the Establishment Clause?",
+      "paraphrase": "Inquires about whether a state law, which requires the instruction of creation science alongside evolution in public schools, infringes upon the provisions of the Establishment Clause?"
+    },
+    {
+      "case_id": 57,
+      "question": "Does the Ethics in Government Act provision creating an independent counsel appointed by a special court violate Article II Appointments Clause or Separation of Powers?",
+      "paraphrase": "Inquires about potential violations of the Appointments Clause in Article II or the principle of Separation of Powers, regarding the provision in the Ethics in Government Act that establishes an independent prosecutor appointed by a special judicial body."
+    },
+    {
+      "case_id": 58,
+      "question": "May a state constitutionally criminalize the burning of the American flag as part of a peaceful political demonstration?",
+      "paraphrase": "Can a state legally enact a law that punishes the act of burning the American flag during a peaceful political protest?"
+    },
+    {
+      "case_id": 59,
+      "question": "Does the Constitution require a state to permit surrogate withdrawal of life-sustaining hydration from an incompetent patient absent clear and convincing evidence of the patient's wishes?",
+      "paraphrase": "Inquires about whether the Constitution mandates a state to allow the withdrawal of life-supporting hydration from an incompetent patient, except in cases where there is compelling evidence indicating the patient's preferences on the matter?"
+    },
+    {
+      "case_id": 60,
+      "question": "Does the Free Exercise Clause exempt religious individuals from compliance with neutral, generally applicable criminal laws banning sacramental peyote use?",
+      "paraphrase": "Inquire about the applicability of the Free Exercise Clause in exempting individuals with religious beliefs from adhering to criminal laws of general application and neutral nature, which prohibit the use of peyote in sacramental contexts."
+    },
+    {
+      "case_id": 61,
+      "question": "Does a state environmental regulation that denies all economically productive or beneficial use of private real property constitute a per se categorical taking?",
+      "paraphrase": "Inquires about whether a state environmental regulation, by prohibiting any economically valuable or advantageous use of private real estate, can be considered an absolute, categorical taking as a matter of law."
+    },
+    {
+      "case_id": 62,
+      "question": "What legal standard determines the constitutional validity of state pre-viability abortion restrictions after Planned Parenthood v. Casey?",
+      "paraphrase": "What legal criterion establishes the constitutional legitimacy of pre-viability abortion restrictions imposed by states, following the Planned Parenthood v. Casey decision?"
+    },
+    {
+      "case_id": 63,
+      "question": "Does an unexplainably bizarre congressional district drawn predominantly on the basis of race state an equal protection claim subject to strict scrutiny?",
+      "paraphrase": "Inquires about whether a congressional district that appears unreasonably odd and is primarily shaped on racial considerations could potentially raise an equal protection claim under the strict scrutiny standard?"
+    },
+    {
+      "case_id": 64,
+      "question": "Does a public school district policy requiring random suspicionless urinalysis drug testing of student athletes violate the Fourth Amendment?",
+      "paraphrase": "Inquires about whether a drug testing policy in a public school district, which mandates random, suspicionless urine analysis for student athletes, infringes upon the protections provided by the Fourth Amendment?"
+    },
+    {
+      "case_id": 65,
+      "question": "May Congress abrogate state sovereign immunity under the Article I Indian Commerce Clause to allow tribal gaming lawsuits against nonconsenting states?",
+      "paraphrase": "Can Congress, under the Indian Commerce Clause of Article I, override the immunity of states from lawsuits initiated by tribal gaming entities, even when those states have not given their consent?"
+    },
+    {
+      "case_id": 66,
+      "question": "Does a state constitutional amendment that revokes and prohibits all legal protections against discrimination for homosexual persons violate Equal Protection?",
+      "paraphrase": "Inquires about whether a state constitutional amendment, which rescinds and forbids all legal safeguards against discrimination based on sexual orientation (homosexual individuals), infringes upon the Equal Protection clause?"
+    },
+    {
+      "case_id": 67,
+      "question": "Does the exclusion of women from a state-supported elite military institute violate the Equal Protection Clause without an exceedingly persuasive justification?",
+      "paraphrase": "Inquires about whether the exclusion of women from a state-funded, prestigious military academy infringes upon the Equal Protection Clause without a compelling or exceptionally strong rationale?"
+    },
+    {
+      "case_id": 68,
+      "question": "May Congress constitutionally command state law enforcement officers to conduct federal background checks on prospective handgun purchasers under the Brady Act?",
+      "paraphrase": "Can the authority of Congress, under the Brady Act, lawfully mandate state law enforcement officials to perform federal firearm background checks on potential handgun buyers?"
+    },
+    {
+      "case_id": 69,
+      "question": "Do the broad indecency and patently offensive provisions of the Communications Decency Act violate the First Amendment as unconstitutionally vague and overbroad?",
+      "paraphrase": "Inquire about whether the extensive indecency and offensively explicit provisions within the Communications Decency Act infringe upon the First Amendment by being unduly vague and overly broad."
+    },
+    {
+      "case_id": 70,
+      "question": "May Congress expand substantive constitutional rights against states under Section 5 of the Fourteenth Amendment without showing congruence and proportionality?",
+      "paraphrase": "Can Congress broaden the substantive constitutional rights that apply to states, as per Section 5 of the Fourteenth Amendment, without demonstrating congruence and proportionality?"
+    },
+    {
+      "case_id": 71,
+      "question": "Does the Line Item Veto Act, allowing the President to unilaterally cancel statutory spending provisions after signing a bill into law, violate the Presentment Clause?",
+      "paraphrase": "Inquires about whether the Line Item Veto Act, which grants the President the power to individually annul statutory spending provisions within a bill after its enactment, infringes upon the stipulations of the Presentment Clause."
+    },
+    {
+      "case_id": 72,
+      "question": "Under what circumstances may an employer assert an affirmative defense to vicarious liability for supervisor sexual harassment that did not result in tangible employment action?",
+      "paraphrase": "Under what conditions can an employer claim an affirmative defense against being held vicariously liable for supervisor sexual harassment that did not lead to any significant changes in employment status?"
+    },
+    {
+      "case_id": 73,
+      "question": "Does the Census Act prohibit the use of statistical sampling procedures for the purpose of apportioning Representatives among the States?",
+      "paraphrase": "Inquires about whether the Census Act forbids the application of statistical sampling methods for the process of distributing Representatives among the States."
+    },
+    {
+      "case_id": 74,
+      "question": "Must any fact other than a prior conviction that increases the penalty for a crime beyond the prescribed statutory maximum be submitted to a jury and proved beyond a reasonable doubt?",
+      "paraphrase": "Is it required that any fact other than a prior conviction, which elevates the punishment for a crime above the statutory maximum, be presented to a jury and established beyond a reasonable doubt?"
+    },
+    {
+      "case_id": 75,
+      "question": "Does applying a state public accommodations law to compel an expressive association to accept a gay leader violate the First Amendment right of expressive association?",
+      "paraphrase": "Inquires about whether enforcing a state public accommodations law to mandate a expressive association to acknowledge a leader who is gay infringes upon the First Amendment's right to freedom of expressive association?"
+    },
+    {
+      "case_id": 76,
+      "question": "Does a state court order for manual recounts of presidential election ballots without uniform, non-arbitrary statewide standards violate the Equal Protection Clause?",
+      "paraphrase": "Inquires about whether a state court mandate for a manual recount of presidential election ballots, lacking uniform and non-discriminatory statewide guidelines, infringes upon the Equal Protection Clause?"
+    },
+    {
+      "case_id": 77,
+      "question": "Does the Eighth Amendment's Cruel and Unusual Punishments Clause prohibit the capital punishment of mentally retarded criminal offenders?",
+      "paraphrase": "Inquires about whether the Eighth Amendment's prohibition on cruel and unusual punishments applies to the imposition of capital punishment on criminals with mental retardation."
+    },
+    {
+      "case_id": 78,
+      "question": "Does a government tuition aid voucher program permitting parents to direct public tuition funds to private religious schools violate the Establishment Clause?",
+      "paraphrase": "Inquires about whether a government-funded educational voucher program, allowing parents to allocate public funds towards private schools with religious affiliations, contravenes the Establishment Clause."
+    },
+    {
+      "case_id": 79,
+      "question": "Did Congress exceed its enumerated authority under the Copyright Clause's 'limited Times' restriction by extending the duration of existing copyrights by twenty years?",
+      "paraphrase": "Inquiring about whether Congress overstepped the bounds of its powers as defined by the Copyright Clause's 'limited Time' provision when it extended the term of pre-existing copyrights by twenty years?"
+    },
+    {
+      "case_id": 80,
+      "question": "Does a state statute criminalizing consensual same-sex intimate sexual conduct between adults in the home violate the Due Process Clause of the Fourteenth Amendment?",
+      "paraphrase": "Inquires about whether a state law that penalizes consensual, private, adult same-sex intimate sexual activity, as protected by the Due Process Clause of the Fourteenth Amendment, is constitutionally valid."
+    },
+    {
+      "case_id": 81,
+      "question": "May a public university law school consider race as a flexible plus-factor in holistic candidate admissions to achieve the educational benefits of student body diversity?",
+      "paraphrase": "Can a public law school affiliated with a university incorporate race as a flexible, contributing factor in a comprehensive admissions process, aiming to secure the educational advantages derived from a diverse student body?"
+    },
+    {
+      "case_id": 82,
+      "question": "Does a United States citizen captured abroad and detained as an enemy combatant have a constitutional due process right to challenge the factual basis for detention before a neutral decisionmaker?",
+      "paraphrase": "Does a U.S. citizen apprehended overseas and labeled as an enemy combatant have a constitutional right, under due process, to contest the factual grounds for their detention before an impartial adjudicator?"
+    },
+    {
+      "case_id": 83,
+      "question": "Does the disposition of private property condemned under eminent domain for economic development purposes satisfy the 'public use' requirement of the Fifth Amendment?",
+      "paraphrase": "Inquiries about whether the distribution of privately-owned property that has been seized through eminent domain for economic development reasons complies with the 'public use' stipulation as outlined in the Fifth Amendment?"
+    },
+    {
+      "case_id": 84,
+      "question": "May the President establish military commissions to try foreign detainees at Guantanamo Bay without congressional statutory authorization or compliance with the Uniform Code of Military Justice?",
+      "paraphrase": "Can the President, without obtaining congressional statutory authorization or adhering to the Uniform Code of Military Justice, set up military tribunals to judge foreign detainees at Guantanamo Bay?"
+    },
+    {
+      "case_id": 85,
+      "question": "Is a warrantless search of a shared residence constitutional against a physically present co-occupant who expressly refuses consent, even if another co-occupant consents?",
+      "paraphrase": "Is it constitutionally permissible to conduct a search of a shared dwelling without a warrant, when a co-occupant who is physically present and explicitly denies consent, despite another co-occupant granting consent?"
+    },
+    {
+      "case_id": 86,
+      "question": "Does a state have Article III standing to petition for review of EPA's refusal to regulate greenhouse gas emissions contributing to climate change and coastal land loss?",
+      "paraphrase": "Inquire about the eligibility of a state to file a petition for judicial review, challenging the Environmental Protection Agency's decision not to regulate greenhouse gas emissions that contribute to climate change and subsequent coastal land loss."
+    },
+    {
+      "case_id": 87,
+      "question": "Do non-citizen foreign detainees held as enemy combatants at Guantanamo Bay have a constitutional right to petition federal courts for a writ of habeas corpus under the Suspension Clause?",
+      "paraphrase": "Inquire about the constitutional entitlement of non-citizen foreign detainees, who are being held as enemy combatants at Guantanamo Bay, to file a petition for a writ of habeas corpus in federal courts, under the provisions of the Suspension Clause."
+    },
+    {
+      "case_id": 88,
+      "question": "Does the Eighth Amendment prohibit the imposition of the death penalty for the rape of a child where the crime did not result in the death of the victim?",
+      "paraphrase": "Inquires about whether the Eighth Amendment forbids the application of capital punishment for the act of raping a minor, when the offense did not lead to the victim's demise."
+    },
+    {
+      "case_id": 89,
+      "question": "Does a state statute requiring in-person voters to present government-issued photo identification impose an unconstitutionally excessive burden on the right to vote?",
+      "paraphrase": "Inquires about whether a state law mandating voters casting ballots in person to provide photographic identification issued by the government imposes an unconstitutional undue burden on the right to exercise the franchise?"
+    },
+    {
+      "case_id": 90,
+      "question": "What pleading standard governs a federal civil complaint under Rule 8, and must courts accept threadbare recitals of elements supported by mere conclusory statements?",
+      "paraphrase": "Under what rule should a federal civil complaint, as per Rule 8, adhere, and should courts be prepared to dismiss claims with vague allegations backed by mere assertions rather than substantiated facts?"
+    },
+    {
+      "case_id": 91,
+      "question": "Is the Second Amendment individual right to keep and bear arms for self-defense applicable to the states through the Fourteenth Amendment Due Process Clause?",
+      "paraphrase": "Inquire about the applicability of the individual right to possess firearms for self-defense, as established by the Second Amendment, to the states, through the Due Process Clause of the Fourteenth Amendment."
+    },
+    {
+      "case_id": 92,
+      "question": "Does the government's physical installation of a GPS tracking device on an individual's vehicle to monitor movements on public streets constitute a Fourth Amendment search?",
+      "paraphrase": "Inquiring about the legality under the Fourth Amendment of the government's placement of a GPS tracking device on a private vehicle for the purpose of tracking movements on public roads."
+    },
+    {
+      "case_id": 93,
+      "question": "Does Congress have the constitutional authority under the Taxing Clause to require individuals to maintain health insurance coverage or pay a shared responsibility penalty?",
+      "paraphrase": "Inquiries concerning whether the Taxing Clause of the U.S. Constitution grants Congress the power to mandate individuals to carry health insurance or face a financial penalty for non-compliance."
+    },
+    {
+      "case_id": 94,
+      "question": "Does the Section 4(b) preclearance coverage formula of the Voting Rights Act violate the Tenth Amendment and the principle of equal sovereignty among the States?",
+      "paraphrase": "Inquires about potential infringement of the Tenth Amendment and the principle of equal state sovereignty by the Section 4(b) preclearance coverage formula as outlined in the Voting Rights Act."
+    },
+    {
+      "case_id": 95,
+      "question": "Does the federal Defense of Marriage Act provision defining marriage exclusively as a union between one man and one woman violate the Fifth Amendment Due Process Clause?",
+      "paraphrase": "Inquires about whether the federal Defense of Marriage Act's definition of marriage, limited to a union between a man and a woman, infringes upon the Fifth Amendment's guarantee of Due Process."
+    },
+    {
+      "case_id": 96,
+      "question": "Does a town board practice of opening monthly public legislative meetings with volunteer chaplains offering sectarian invocations violate the Establishment Clause?",
+      "paraphrase": "Inquires about whether a town's practice of initiating monthly public legislative sessions with non-appointed chaplains delivering prayers that favor specific religions infringes upon the Establishment Clause."
+    },
+    {
+      "case_id": 97,
+      "question": "Does Title VII's prohibition against sex discrimination in employment prohibit an employer from firing an individual merely for being gay or transgender?",
+      "paraphrase": "Inquire about whether Title VII's ban on employment discrimination based on sex includes protection for individuals who are terminated solely due to being homosexual or transgender."
+    }
+  ]
+}

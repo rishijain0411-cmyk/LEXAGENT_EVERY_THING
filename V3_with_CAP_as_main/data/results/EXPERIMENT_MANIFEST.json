@@ -1,0 +1,355 @@
+{
+  "written": "2026-10-06T15:00:50",
+  "rule": "Existing result files are part of the research record. They are listed here with their SHA-256 and were not modified.",
+  "code_state": {
+    "git_commit": "3d511de25fcb579199bcf49e2532693c868b0ce2",
+    "working_tree": "uncommitted changes present when the experiments ran; the exact code state of each run is not pinned",
+    "files_changed_since_commit": [
+      "M .gitignore",
+      " M README.md",
+      " M config.py",
+      " M experiments/benchmark_cases.py",
+      " M experiments/run_25_cases_benchmark.py",
+      " M experiments/run_ablation.py",
+      " M experiments/run_stress_test.py",
+      " M master_run.py",
+      " M requirements.txt",
+      " M run_local.py",
+      " M runs/build_db.py",
+      " M src/agents/state.py",
+      " M src/data/__init__.py",
+      " M src/data/cap_ingest.py",
+      " M src/evaluation/stress_test.py",
+      " M src/novel/cce.py",
+      " M src/utils/chroma_sync.py",
+      "?? experiments/forensics/",
+      "?? experiments/run_cce_evidence_study.py",
+      "?? paper/",
+      "?? src/data/cap_checkpoint.py",
+      "?? src/data/case_catalog.py",
+      "?? src/data/us_reports_pdf.py",
+      "?? tests/",
+      "?? ui/"
+    ]
+  },
+  "settings_shared_by_all_runs": {
+    "model_name": "mistralai/Mistral-7B-Instruct-v0.3",
+    "generation": {
+      "temperature": 0.1,
+      "do_sample": true,
+      "max_new_tokens": 1024,
+      "precision": "bfloat16"
+    },
+    "embedding_model": "nlpaueb/legal-bert-base-uncased",
+    "nli_model": "cross-encoder/nli-deberta-v3-small",
+    "retrieval": {
+      "dense_top_k": 4,
+      "bm25_top_k": 4,
+      "rrf_k": 60,
+      "fused_passages": 8
+    },
+    "cce": {
+      "acceptance_threshold_tau": 0.7,
+      "threshold_named_in_judge_prompt": 0.75,
+      "uncertain_lower_bound": 0.4,
+      "existence_threshold": 0.85,
+      "passages_read": 3,
+      "scan_limit_characters": 8000,
+      "window_characters": 450,
+      "window_step": 350
+    },
+    "ddc": {
+      "max_rounds": 3,
+      "continue_below_mean_ccs": 0.6,
+      "continue_below_min_ccs": 0.4,
+      "min_gaps": 1,
+      "challenge_strength_threshold": 0.5
+    },
+    "memory": {
+      "verdict_cache_cosine_threshold": 0.92,
+      "high_risk_mean_ccs": 0.45,
+      "cache_and_risk_embedding_model": "nlpaueb/legal-bert-base-uncased"
+    },
+    "random_seed": "config.RANDOM_SEED = 42, but config.set_random_seed() is never called by any runner: runs are unseeded",
+    "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+    "benchmark_cases": 96,
+    "corpus_fingerprint": "843beb0a3410102d183142eeb79cf621f3e6ec298379932e5a1b5e076a43e6d7"
+  },
+  "memory_namespaces_in_store": {
+    "(no namespace)": {
+      "verdicts": 1,
+      "risk_entries": 2
+    },
+    "ablation_1791216346_A1": {
+      "verdicts": 0,
+      "risk_entries": 3
+    },
+    "ablation_1791216346_A2": {
+      "verdicts": 0,
+      "risk_entries": 0
+    },
+    "ablation_1791216346_A3": {
+      "risk_entries": 0,
+      "verdicts": 0
+    },
+    "ablation_1791216346_A4": {
+      "verdicts": 1,
+      "risk_entries": 4
+    },
+    "ablation_1791216346_Full": {
+      "verdicts": 1,
+      "risk_entries": 4
+    },
+    "ablation_1791231448_A1": {
+      "verdicts": 41,
+      "risk_entries": 15
+    },
+    "ablation_1791231448_A2": {
+      "verdicts": 0,
+      "risk_entries": 0
+    },
+    "ablation_1791231448_A3": {
+      "risk_entries": 0,
+      "verdicts": 0
+    },
+    "ablation_1791231448_A4": {
+      "risk_entries": 87,
+      "verdicts": 37
+    },
+    "ablation_1791231448_Full": {
+      "verdicts": 36,
+      "risk_entries": 97
+    },
+    "ablation_1791265160_A2": {
+      "verdicts": 50,
+      "risk_entries": 0
+    },
+    "bench_1791216049": {
+      "verdicts": 0,
+      "risk_entries": 6
+    },
+    "bench_1791223669": {
+      "verdicts": 3,
+      "risk_entries": 3
+    },
+    "bench_1791224095": {
+      "verdicts": 35,
+      "risk_entries": 89
+    },
+    "ui_chat": {
+      "risk_entries": 2,
+      "verdicts": 0
+    }
+  },
+  "experiments": [
+    {
+      "experiment": "LexAgent full system, benchmark run",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/benchmark_100_cases_results.json",
+      "sha256": "caae116452835a0fb0aa1e92e87ea24052bfa654ab6c3c071646b89ec0117c3c",
+      "result_written": "2026-10-06T01:38:48",
+      "case_count": 96,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES, AS A MEASUREMENT OF THE SYSTEM AS BUILT — NOT as a measurement of the debate architecture: 34 of 96 answers were returned by the verdict cache for a different question. Must be disclosed.",
+      "memory_namespace": "bench_1791224095 (fresh namespace created by run_25_cases_benchmark.py; identified as the bench_ namespace with the most stored verdicts)",
+      "per_case_output": "scorecards only; no answers, citations, passages, citation-check reports or judge output were saved",
+      "log": "data/logs/benchmark_full.log (stdout only)",
+      "skipped_debates": 34
+    },
+    {
+      "experiment": "Single-agent RAG baseline",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/baseline_standard_rag_results.json",
+      "sha256": "c4be9670ed8d49d703a7f129ec7bc48f590e922422cb599cba525b6b0fbe84ad",
+      "result_written": "2026-10-06T01:46:12",
+      "case_count": 96,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES. Note: its dense query omits the jurisdiction string the debate appends, so its retrieved passages differ from the debate's in most cases; it reads 4 passages of 300 characters.",
+      "memory_namespace": "none (no memory)",
+      "per_case_output": "scorecards only",
+      "log": "data/logs/baseline_full.log"
+    },
+    {
+      "experiment": "Citation stress test (256 labelled citations)",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/citation_stress_test_results.json",
+      "sha256": "65a1dfe82c2f36fe58fe4677a6a0a825242a5143aca1d395d75bc7284805bf61",
+      "result_written": "2026-10-05T23:36:44",
+      "case_count": 256,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES",
+      "memory_namespace": "none",
+      "per_case_output": "per-citation tier, existence, support"
+    },
+    {
+      "experiment": "Citation stress test before the evidence-selection change",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/citation_stress_test_results_before_cce_fix.json",
+      "sha256": "101c138102e465e5ef47b9127e8b9453ce6b269846087934152948430309e714",
+      "result_written": "2026-10-05T23:13:29",
+      "case_count": 285,
+      "status": "SUPERSEDED",
+      "valid_for_publication": "ONLY as the historical 'before' column; different item counts (285) and the earlier checker",
+      "memory_namespace": "none"
+    },
+    {
+      "experiment": "Citation checker: evidence-selection study",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/cce_evidence_selection_study.json",
+      "sha256": "464d322162e7415c2940501548cc1a0015b3e66d95d46ed9c06d63cd609f2b77",
+      "result_written": "2026-10-06T11:08:30",
+      "case_count": 192,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES",
+      "memory_namespace": "none",
+      "per_case_output": "per-citation support score for each selection"
+    },
+    {
+      "experiment": "Ablation Full: debate graph, all components",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/ablation_summary.json",
+      "sha256": "11d04eb7c980b913ff6fc09183c8b0bc589dece5c9f132cb5dae97cc4bd16b5f",
+      "result_written": "2026-10-06T12:54:17",
+      "case_count": 96,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES, AS MEASURED, WITH DISCLOSURE: 30 of 96 debates were skipped by the verdict cache; means only",
+      "row": "Full",
+      "memory_namespace": "ablation_1791231448_Full",
+      "per_case_output": "NONE: one mean per measure; per-case behaviour is recoverable only from the log",
+      "log": "data/logs/ablation_full.log",
+      "started": "2026-10-06T01:47:28",
+      "ended": "2026-10-06T03:47:17",
+      "minutes": 119.8,
+      "skipped_debates": 30,
+      "debated": 66
+    },
+    {
+      "experiment": "Ablation A1: defense node removed",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/ablation_summary.json",
+      "sha256": "11d04eb7c980b913ff6fc09183c8b0bc589dece5c9f132cb5dae97cc4bd16b5f",
+      "result_written": "2026-10-06T12:54:17",
+      "case_count": 96,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES, AS MEASURED, WITH DISCLOSURE: 34 of 96 debates were skipped by the verdict cache; means only",
+      "row": "A1",
+      "memory_namespace": "ablation_1791231448_A1",
+      "per_case_output": "NONE: one mean per measure; per-case behaviour is recoverable only from the log",
+      "log": "data/logs/ablation_full.log",
+      "started": "2026-10-06T03:47:17",
+      "ended": "2026-10-06T04:30:00",
+      "minutes": 42.7,
+      "skipped_debates": 34,
+      "debated": 62
+    },
+    {
+      "experiment": "Ablation A3: memory nodes removed",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/ablation_summary.json",
+      "sha256": "11d04eb7c980b913ff6fc09183c8b0bc589dece5c9f132cb5dae97cc4bd16b5f",
+      "result_written": "2026-10-06T12:54:17",
+      "case_count": 96,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES — the only run of the debate that the verdict cache did not touch; means only",
+      "row": "A3",
+      "memory_namespace": "ablation_1791231448_A3 (created, never used)",
+      "per_case_output": "NONE: one mean per measure; per-case behaviour is recoverable only from the log",
+      "log": "data/logs/ablation_full.log",
+      "started": "2026-10-06T07:14:51",
+      "ended": "2026-10-06T10:12:02",
+      "minutes": 177.2,
+      "skipped_debates": 0,
+      "debated": 96
+    },
+    {
+      "experiment": "Ablation A4: one round only",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/ablation_summary.json",
+      "sha256": "11d04eb7c980b913ff6fc09183c8b0bc589dece5c9f132cb5dae97cc4bd16b5f",
+      "result_written": "2026-10-06T12:54:17",
+      "case_count": 96,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES, AS MEASURED, WITH DISCLOSURE: 29 of 96 debates were skipped by the verdict cache; means only",
+      "row": "A4",
+      "memory_namespace": "ablation_1791231448_A4",
+      "per_case_output": "NONE: one mean per measure; per-case behaviour is recoverable only from the log",
+      "log": "data/logs/ablation_full.log",
+      "started": "2026-10-06T10:12:02",
+      "ended": "2026-10-06T11:02:39",
+      "minutes": 50.6,
+      "skipped_debates": 29,
+      "debated": 67
+    },
+    {
+      "experiment": "Ablation A2 (corrected): citation checker removed",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/ablation_summary.json",
+      "sha256": "11d04eb7c980b913ff6fc09183c8b0bc589dece5c9f132cb5dae97cc4bd16b5f",
+      "result_written": "2026-10-06T12:54:17",
+      "case_count": 96,
+      "status": "COMPLETE",
+      "valid_for_publication": "YES, AS MEASURED, WITH DISCLOSURE: 37 of 96 debates were skipped by the verdict cache; means only",
+      "row": "A2",
+      "memory_namespace": "ablation_1791265160_A2",
+      "per_case_output": "NONE",
+      "log": "data/logs/ablation_A2_rerun.log",
+      "started": "2026-10-06T11:09:20",
+      "ended": "2026-10-06T12:54:17",
+      "minutes": 105.0,
+      "skipped_debates": 37,
+      "debated": 59,
+      "code_note": "run after src/agents/state.py declared the ablation switches"
+    },
+    {
+      "experiment": "Ablation A2 (first run): switch did not reach the judge",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/ablation_summary_before_switch_fix.json",
+      "sha256": "f69befb5328ca379bf9d41b870e3e7a3dad26bdc5da8d8986a13a9b36d551dab",
+      "result_written": "2026-10-06T11:03:13",
+      "case_count": 96,
+      "status": "INVALID — PRESERVED FOR AUDIT ONLY",
+      "valid_for_publication": "INVALID — PRESERVED FOR AUDIT ONLY",
+      "row": "A2",
+      "memory_namespace": "ablation_1791231448_A2",
+      "per_case_output": "NONE",
+      "log": "data/logs/ablation_full.log",
+      "started": "2026-10-06T04:30:00",
+      "ended": "2026-10-06T07:14:51",
+      "minutes": 164.8,
+      "reason": "LangGraph dropped use_cce from the state, so the judge rejected every citation as unverified (100 rejections logged) and confidence was capped at 0.20. Do not use; do not delete."
+    },
+    {
+      "experiment": "Smoke run (benchmark_2_cases_results.json)",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/benchmark_2_cases_results.json",
+      "sha256": "714ab0783b3ab3c538b5deed49b0989bedd941276b1382b9e71909e3b2e5dde3",
+      "result_written": "2026-10-05T21:34:37",
+      "case_count": 2,
+      "status": "DRY RUN",
+      "valid_for_publication": "NO — pipeline check on 2–3 cases",
+      "memory_namespace": "own"
+    },
+    {
+      "experiment": "Smoke run (benchmark_3_cases_results.json)",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/benchmark_3_cases_results.json",
+      "sha256": "656a08f3f886bc71fb8488de40febe5baa3ce361ab73ba2eaa37fa9147087abc",
+      "result_written": "2026-10-05T23:43:36",
+      "case_count": 3,
+      "status": "DRY RUN",
+      "valid_for_publication": "NO — pipeline check on 2–3 cases",
+      "memory_namespace": "own"
+    },
+    {
+      "experiment": "Smoke run (ablation_summary_2case_dryrun.json)",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/ablation_summary_2case_dryrun.json",
+      "sha256": "f440c9f83702c75666cb74024bea19af22087f9195ba48adff2d84751e444cdd",
+      "result_written": "2026-10-06T01:46:36",
+      "case_count": 2,
+      "status": "DRY RUN",
+      "valid_for_publication": "NO — pipeline check on 2–3 cases",
+      "memory_namespace": "own"
+    },
+    {
+      "experiment": "Recorded UI debate",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/ui/sample_transcript.json",
+      "case_count": 1,
+      "status": "COMPLETE",
+      "valid_for_publication": "ILLUSTRATION ONLY — one unseeded debate with its full trace",
+      "memory_namespace": "ui_chat"
+    },
+    {
+      "experiment": "Forensic audit (this audit)",
+      "result_file": "C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results/forensic_audit",
+      "status": "COMPLETE",
+      "valid_for_publication": "diagnostics, not experiments; no LLM was called and nothing was re-run"
+    }
+  ]
+}

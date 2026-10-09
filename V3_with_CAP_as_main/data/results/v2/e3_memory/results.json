@@ -1,0 +1,93 @@
+{
+  "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+  "namespace": "v2_e3_memory_pass1",
+  "verdicts_stored_in_pass_one": 79,
+  "stored_verdicts_that_carry_their_citations": 79,
+  "similarity_threshold": 0.92,
+  "workloads": {
+    "first_pass_distinct_questions": {
+      "queries": 96,
+      "with_a_stored_answer_for_the_same_case": 0,
+      "similarity_0.92": {
+        "hits": 45,
+        "correct": 0,
+        "wrong_question": 45,
+        "precision": 0.0,
+        "recall_on_stored": null
+      },
+      "exact": {
+        "hits": 0,
+        "correct": 0,
+        "wrong_question": 0,
+        "precision": null,
+        "recall_on_stored": null
+      }
+    },
+    "exact_repeats": {
+      "queries": 96,
+      "with_a_stored_answer_for_the_same_case": 79,
+      "similarity_0.92": {
+        "hits": 93,
+        "correct": 79,
+        "wrong_question": 14,
+        "precision": 0.8495,
+        "recall_on_stored": 1.0
+      },
+      "exact": {
+        "hits": 79,
+        "correct": 79,
+        "wrong_question": 0,
+        "precision": 1.0,
+        "recall_on_stored": 1.0
+      }
+    },
+    "format_variants": {
+      "queries": 96,
+      "with_a_stored_answer_for_the_same_case": 79,
+      "similarity_0.92": {
+        "hits": 95,
+        "correct": 79,
+        "wrong_question": 16,
+        "precision": 0.8316,
+        "recall_on_stored": 1.0
+      },
+      "exact": {
+        "hits": 79,
+        "correct": 79,
+        "wrong_question": 0,
+        "precision": 1.0,
+        "recall_on_stored": 1.0
+      }
+    },
+    "paraphrases": {
+      "queries": 96,
+      "with_a_stored_answer_for_the_same_case": 79,
+      "similarity_0.92": {
+        "hits": 93,
+        "correct": 78,
+        "wrong_question": 15,
+        "precision": 0.8387,
+        "recall_on_stored": 0.9873
+      },
+      "exact": {
+        "hits": 0,
+        "correct": 0,
+        "wrong_question": 0,
+        "precision": null,
+        "recall_on_stored": 0.0
+      }
+    }
+  },
+  "new_rule_through_AdaptiveMemory": {
+    "exact_repeats": 79,
+    "format_variants": 79,
+    "paraphrases": 0,
+    "wrong": 0
+  },
+  "simulation_agrees_with_code": true,
+  "re_hallucination": {
+    "citations_not_found_in_pass_one": 0,
+    "measurable": false,
+    "note": "The re-hallucination rate needs citations that failed the existence check in the first pass. With none, there is nothing to repeat and the rate is undefined, not zero."
+  }
+}

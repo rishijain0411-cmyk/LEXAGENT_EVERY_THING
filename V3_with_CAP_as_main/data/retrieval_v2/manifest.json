@@ -1,0 +1,27 @@
+{
+  "lexical": {
+    "tokenisation": "lower-cased runs of [a-z0-9]",
+    "corpus": {
+      "passages": 528283,
+      "doc_ids_sha256": "ac3999889fbe28d5a5a28bcd9b45c57aae00bf11dd7bfa497e50cc627f3900bf"
+    },
+    "vocabulary": 407098,
+    "seconds": 86.6,
+    "built": "2026-10-07T14:29:35"
+  },
+  "dense": {
+    "model": "BAAI/bge-base-en-v1.5",
+    "max_tokens": 512,
+    "query_prefix": "Represent this sentence for searching relevant passages: ",
+    "dimensions": 768,
+    "normalised": true,
+    "dtype": "float16",
+    "corpus": {
+      "passages": 528283,
+      "doc_ids_sha256": "ac3999889fbe28d5a5a28bcd9b45c57aae00bf11dd7bfa497e50cc627f3900bf"
+    },
+    "device": "cuda",
+    "seconds": 460.3,
+    "built": "2026-10-07T16:35:58"
+  }
+}

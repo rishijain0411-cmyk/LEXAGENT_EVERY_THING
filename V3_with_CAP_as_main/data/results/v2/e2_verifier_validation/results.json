@@ -1,0 +1,836 @@
+{
+  "rule": {
+    "split_seed": 42,
+    "selection": "highest development AUC (correct vs all wrong)",
+    "threshold": "maximises true-accept rate minus false-accept rate on development",
+    "gate": "test AUC >= 0.9"
+  },
+  "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+  "citations": {
+    "development": {
+      "correct": 48,
+      "misattributed": 48,
+      "casehold_distractor": 8
+    },
+    "test": {
+      "correct": 48,
+      "misattributed": 48,
+      "casehold_distractor": 12
+    }
+  },
+  "candidates": {
+    "cross-encoder/nli-deberta-v3-small | 450-character windows | dense_top3": {
+      "model": "cross-encoder/nli-deberta-v3-small",
+      "granularity": "window",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.0588,
+      "development": {
+        "auc_correct_vs_wrong": 0.724,
+        "auc_correct_vs_swapped": 0.6849,
+        "correct_accepted": "24/48",
+        "swapped_accepted": "6/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7087,
+        "auc_correct_vs_swapped": 0.6701,
+        "correct_accepted": "24/48",
+        "swapped_accepted": "15/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.6153,
+          0.8014
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-small | 450-character windows | hybrid_top3": {
+      "model": "cross-encoder/nli-deberta-v3-small",
+      "granularity": "window",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.1135,
+      "development": {
+        "auc_correct_vs_wrong": 0.7035,
+        "auc_correct_vs_swapped": 0.6602,
+        "correct_accepted": "22/48",
+        "swapped_accepted": "8/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7372,
+        "auc_correct_vs_swapped": 0.7036,
+        "correct_accepted": "20/48",
+        "swapped_accepted": "8/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.6427,
+          0.8222
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-small | 450-character windows | hybrid_top5": {
+      "model": "cross-encoder/nli-deberta-v3-small",
+      "granularity": "window",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.0141,
+      "development": {
+        "auc_correct_vs_wrong": 0.7158,
+        "auc_correct_vs_swapped": 0.6727,
+        "correct_accepted": "40/48",
+        "swapped_accepted": "29/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7146,
+        "auc_correct_vs_swapped": 0.6732,
+        "correct_accepted": "42/48",
+        "swapped_accepted": "31/48",
+        "false_holding_accepted": "4/12",
+        "auc_95ci": [
+          0.6177,
+          0.8024
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-small | whole passages | dense_top3": {
+      "model": "cross-encoder/nli-deberta-v3-small",
+      "granularity": "passage",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.1527,
+      "development": {
+        "auc_correct_vs_wrong": 0.6358,
+        "auc_correct_vs_swapped": 0.6215,
+        "correct_accepted": "22/48",
+        "swapped_accepted": "7/48",
+        "false_holding_accepted": "1/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.6552,
+        "auc_correct_vs_swapped": 0.6458,
+        "correct_accepted": "19/48",
+        "swapped_accepted": "9/48",
+        "false_holding_accepted": "2/12",
+        "auc_95ci": [
+          0.5469,
+          0.7545
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-small | whole passages | hybrid_top3": {
+      "model": "cross-encoder/nli-deberta-v3-small",
+      "granularity": "passage",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.0706,
+      "development": {
+        "auc_correct_vs_wrong": 0.6685,
+        "auc_correct_vs_swapped": 0.6432,
+        "correct_accepted": "26/48",
+        "swapped_accepted": "11/48",
+        "false_holding_accepted": "1/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.6497,
+        "auc_correct_vs_swapped": 0.6332,
+        "correct_accepted": "27/48",
+        "swapped_accepted": "20/48",
+        "false_holding_accepted": "4/12",
+        "auc_95ci": [
+          0.5378,
+          0.7486
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-small | whole passages | hybrid_top5": {
+      "model": "cross-encoder/nli-deberta-v3-small",
+      "granularity": "passage",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.0824,
+      "development": {
+        "auc_correct_vs_wrong": 0.6935,
+        "auc_correct_vs_swapped": 0.6732,
+        "correct_accepted": "32/48",
+        "swapped_accepted": "18/48",
+        "false_holding_accepted": "1/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.6295,
+        "auc_correct_vs_swapped": 0.6042,
+        "correct_accepted": "32/48",
+        "swapped_accepted": "27/48",
+        "false_holding_accepted": "4/12",
+        "auc_95ci": [
+          0.5181,
+          0.7302
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-base | 450-character windows | dense_top3": {
+      "model": "cross-encoder/nli-deberta-v3-base",
+      "granularity": "window",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.0488,
+      "development": {
+        "auc_correct_vs_wrong": 0.7232,
+        "auc_correct_vs_swapped": 0.7018,
+        "correct_accepted": "25/48",
+        "swapped_accepted": "7/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.6955,
+        "auc_correct_vs_swapped": 0.6918,
+        "correct_accepted": "22/48",
+        "swapped_accepted": "9/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.5903,
+          0.7924
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-base | 450-character windows | hybrid_top3": {
+      "model": "cross-encoder/nli-deberta-v3-base",
+      "granularity": "window",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.6315,
+      "development": {
+        "auc_correct_vs_wrong": 0.6823,
+        "auc_correct_vs_swapped": 0.6623,
+        "correct_accepted": "18/48",
+        "swapped_accepted": "3/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7264,
+        "auc_correct_vs_swapped": 0.7122,
+        "correct_accepted": "15/48",
+        "swapped_accepted": "2/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.6253,
+          0.8198
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-base | 450-character windows | hybrid_top5": {
+      "model": "cross-encoder/nli-deberta-v3-base",
+      "granularity": "window",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.1614,
+      "development": {
+        "auc_correct_vs_wrong": 0.7083,
+        "auc_correct_vs_swapped": 0.6866,
+        "correct_accepted": "26/48",
+        "swapped_accepted": "5/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7271,
+        "auc_correct_vs_swapped": 0.7096,
+        "correct_accepted": "25/48",
+        "swapped_accepted": "11/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.6305,
+          0.8188
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-base | whole passages | dense_top3": {
+      "model": "cross-encoder/nli-deberta-v3-base",
+      "granularity": "passage",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.0047,
+      "development": {
+        "auc_correct_vs_wrong": 0.6607,
+        "auc_correct_vs_swapped": 0.6766,
+        "correct_accepted": "39/48",
+        "swapped_accepted": "22/48",
+        "false_holding_accepted": "4/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7542,
+        "auc_correct_vs_swapped": 0.7405,
+        "correct_accepted": "42/48",
+        "swapped_accepted": "31/48",
+        "false_holding_accepted": "6/12",
+        "auc_95ci": [
+          0.6531,
+          0.8448
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-base | whole passages | hybrid_top3": {
+      "model": "cross-encoder/nli-deberta-v3-base",
+      "granularity": "passage",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.0044,
+      "development": {
+        "auc_correct_vs_wrong": 0.7292,
+        "auc_correct_vs_swapped": 0.7209,
+        "correct_accepted": "42/48",
+        "swapped_accepted": "21/48",
+        "false_holding_accepted": "3/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7601,
+        "auc_correct_vs_swapped": 0.7383,
+        "correct_accepted": "42/48",
+        "swapped_accepted": "31/48",
+        "false_holding_accepted": "6/12",
+        "auc_95ci": [
+          0.6649,
+          0.8514
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-base | whole passages | hybrid_top5": {
+      "model": "cross-encoder/nli-deberta-v3-base",
+      "granularity": "passage",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.0061,
+      "development": {
+        "auc_correct_vs_wrong": 0.6589,
+        "auc_correct_vs_swapped": 0.6402,
+        "correct_accepted": "43/48",
+        "swapped_accepted": "26/48",
+        "false_holding_accepted": "3/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7618,
+        "auc_correct_vs_swapped": 0.7274,
+        "correct_accepted": "45/48",
+        "swapped_accepted": "40/48",
+        "false_holding_accepted": "6/12",
+        "auc_95ci": [
+          0.6601,
+          0.8531
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-large | 450-character windows | dense_top3": {
+      "model": "cross-encoder/nli-deberta-v3-large",
+      "granularity": "window",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.9108,
+      "development": {
+        "auc_correct_vs_wrong": 0.734,
+        "auc_correct_vs_swapped": 0.7166,
+        "correct_accepted": "25/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7253,
+        "auc_correct_vs_swapped": 0.7313,
+        "correct_accepted": "19/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.6239,
+          0.8222
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-large | 450-character windows | hybrid_top3": {
+      "model": "cross-encoder/nli-deberta-v3-large",
+      "granularity": "window",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.8356,
+      "development": {
+        "auc_correct_vs_wrong": 0.7325,
+        "auc_correct_vs_swapped": 0.7214,
+        "correct_accepted": "28/48",
+        "swapped_accepted": "3/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7372,
+        "auc_correct_vs_swapped": 0.7478,
+        "correct_accepted": "26/48",
+        "swapped_accepted": "3/48",
+        "false_holding_accepted": "3/12",
+        "auc_95ci": [
+          0.6288,
+          0.8389
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-large | 450-character windows | hybrid_top5": {
+      "model": "cross-encoder/nli-deberta-v3-large",
+      "granularity": "window",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.9108,
+      "development": {
+        "auc_correct_vs_wrong": 0.8051,
+        "auc_correct_vs_swapped": 0.7943,
+        "correct_accepted": "34/48",
+        "swapped_accepted": "3/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.791,
+        "auc_correct_vs_swapped": 0.8038,
+        "correct_accepted": "26/48",
+        "swapped_accepted": "2/48",
+        "false_holding_accepted": "2/12",
+        "auc_95ci": [
+          0.6944,
+          0.8757
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-large | whole passages | dense_top3": {
+      "model": "cross-encoder/nli-deberta-v3-large",
+      "granularity": "passage",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.5873,
+      "development": {
+        "auc_correct_vs_wrong": 0.7009,
+        "auc_correct_vs_swapped": 0.6775,
+        "correct_accepted": "22/48",
+        "swapped_accepted": "4/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7816,
+        "auc_correct_vs_swapped": 0.7908,
+        "correct_accepted": "30/48",
+        "swapped_accepted": "7/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.6899,
+          0.8653
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-large | whole passages | hybrid_top3": {
+      "model": "cross-encoder/nli-deberta-v3-large",
+      "granularity": "passage",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.6421,
+      "development": {
+        "auc_correct_vs_wrong": 0.7906,
+        "auc_correct_vs_swapped": 0.7756,
+        "correct_accepted": "31/48",
+        "swapped_accepted": "5/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.8351,
+        "auc_correct_vs_swapped": 0.8329,
+        "correct_accepted": "32/48",
+        "swapped_accepted": "5/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.7486,
+          0.9115
+        ]
+      }
+    },
+    "cross-encoder/nli-deberta-v3-large | whole passages | hybrid_top5": {
+      "model": "cross-encoder/nli-deberta-v3-large",
+      "granularity": "passage",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.6546,
+      "development": {
+        "auc_correct_vs_wrong": 0.8158,
+        "auc_correct_vs_swapped": 0.8077,
+        "correct_accepted": "36/48",
+        "swapped_accepted": "7/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.8434,
+        "auc_correct_vs_swapped": 0.8394,
+        "correct_accepted": "37/48",
+        "swapped_accepted": "11/48",
+        "false_holding_accepted": "2/12",
+        "auc_95ci": [
+          0.7663,
+          0.9132
+        ]
+      }
+    },
+    "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | 450-character windows | dense_top3": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "granularity": "window",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.4679,
+      "development": {
+        "auc_correct_vs_wrong": 0.7582,
+        "auc_correct_vs_swapped": 0.7322,
+        "correct_accepted": "33/48",
+        "swapped_accepted": "11/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.8351,
+        "auc_correct_vs_swapped": 0.8142,
+        "correct_accepted": "32/48",
+        "swapped_accepted": "4/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.7486,
+          0.9083
+        ]
+      }
+    },
+    "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | 450-character windows | hybrid_top3": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "granularity": "window",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.4519,
+      "development": {
+        "auc_correct_vs_wrong": 0.7764,
+        "auc_correct_vs_swapped": 0.7465,
+        "correct_accepted": "36/48",
+        "swapped_accepted": "13/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.8566,
+        "auc_correct_vs_swapped": 0.832,
+        "correct_accepted": "36/48",
+        "swapped_accepted": "9/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.7746,
+          0.9261
+        ]
+      }
+    },
+    "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | 450-character windows | hybrid_top5": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "granularity": "window",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.7097,
+      "development": {
+        "auc_correct_vs_wrong": 0.7608,
+        "auc_correct_vs_swapped": 0.7313,
+        "correct_accepted": "27/48",
+        "swapped_accepted": "5/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.8701,
+        "auc_correct_vs_swapped": 0.8507,
+        "correct_accepted": "32/48",
+        "swapped_accepted": "4/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.7965,
+          0.9347
+        ]
+      }
+    },
+    "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | whole passages | dense_top3": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "granularity": "passage",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.47,
+      "development": {
+        "auc_correct_vs_wrong": 0.6719,
+        "auc_correct_vs_swapped": 0.6615,
+        "correct_accepted": "43/48",
+        "swapped_accepted": "29/48",
+        "false_holding_accepted": "4/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7562,
+        "auc_correct_vs_swapped": 0.7309,
+        "correct_accepted": "41/48",
+        "swapped_accepted": "27/48",
+        "false_holding_accepted": "4/12",
+        "auc_95ci": [
+          0.658,
+          0.8469
+        ]
+      }
+    },
+    "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | whole passages | hybrid_top3": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "granularity": "passage",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.5506,
+      "development": {
+        "auc_correct_vs_wrong": 0.7582,
+        "auc_correct_vs_swapped": 0.753,
+        "correct_accepted": "26/48",
+        "swapped_accepted": "8/48",
+        "false_holding_accepted": "1/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.8031,
+        "auc_correct_vs_swapped": 0.7839,
+        "correct_accepted": "24/48",
+        "swapped_accepted": "6/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.7153,
+          0.8819
+        ]
+      }
+    },
+    "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli | whole passages | hybrid_top5": {
+      "model": "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli",
+      "granularity": "passage",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.5915,
+      "development": {
+        "auc_correct_vs_wrong": 0.769,
+        "auc_correct_vs_swapped": 0.76,
+        "correct_accepted": "26/48",
+        "swapped_accepted": "6/48",
+        "false_holding_accepted": "1/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.7861,
+        "auc_correct_vs_swapped": 0.7595,
+        "correct_accepted": "26/48",
+        "swapped_accepted": "10/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.6948,
+          0.8688
+        ]
+      }
+    },
+    "tasksource/deberta-base-long-nli | 450-character windows | dense_top3": {
+      "model": "tasksource/deberta-base-long-nli",
+      "granularity": "window",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.1515,
+      "development": {
+        "auc_correct_vs_wrong": 0.9728,
+        "auc_correct_vs_swapped": 0.9705,
+        "correct_accepted": "43/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.9747,
+        "auc_correct_vs_swapped": 0.9722,
+        "correct_accepted": "42/48",
+        "swapped_accepted": "5/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.9479,
+          0.9931
+        ]
+      }
+    },
+    "tasksource/deberta-base-long-nli | 450-character windows | hybrid_top3": {
+      "model": "tasksource/deberta-base-long-nli",
+      "granularity": "window",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.1515,
+      "development": {
+        "auc_correct_vs_wrong": 0.9769,
+        "auc_correct_vs_swapped": 0.9748,
+        "correct_accepted": "45/48",
+        "swapped_accepted": "2/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.9858,
+        "auc_correct_vs_swapped": 0.9852,
+        "correct_accepted": "45/48",
+        "swapped_accepted": "4/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.9674,
+          0.9986
+        ]
+      }
+    },
+    "tasksource/deberta-base-long-nli | 450-character windows | hybrid_top5": {
+      "model": "tasksource/deberta-base-long-nli",
+      "granularity": "window",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.1515,
+      "development": {
+        "auc_correct_vs_wrong": 0.9766,
+        "auc_correct_vs_swapped": 0.974,
+        "correct_accepted": "45/48",
+        "swapped_accepted": "2/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.9823,
+        "auc_correct_vs_swapped": 0.9813,
+        "correct_accepted": "46/48",
+        "swapped_accepted": "5/48",
+        "false_holding_accepted": "2/12",
+        "auc_95ci": [
+          0.9576,
+          0.9986
+        ]
+      }
+    },
+    "tasksource/deberta-base-long-nli | whole passages | dense_top3": {
+      "model": "tasksource/deberta-base-long-nli",
+      "granularity": "passage",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.2695,
+      "development": {
+        "auc_correct_vs_wrong": 1.0,
+        "auc_correct_vs_swapped": 1.0,
+        "correct_accepted": "48/48",
+        "swapped_accepted": "0/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.9906,
+        "auc_correct_vs_swapped": 0.9891,
+        "correct_accepted": "43/48",
+        "swapped_accepted": "2/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.9767,
+          0.999
+        ]
+      }
+    },
+    "tasksource/deberta-base-long-nli | whole passages | hybrid_top3": {
+      "model": "tasksource/deberta-base-long-nli",
+      "granularity": "passage",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.1759,
+      "development": {
+        "auc_correct_vs_wrong": 0.9989,
+        "auc_correct_vs_swapped": 0.9987,
+        "correct_accepted": "48/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "1/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.9938,
+        "auc_correct_vs_swapped": 0.9931,
+        "correct_accepted": "47/48",
+        "swapped_accepted": "4/48",
+        "false_holding_accepted": "1/12",
+        "auc_95ci": [
+          0.9826,
+          1.0
+        ]
+      }
+    },
+    "tasksource/deberta-base-long-nli | whole passages | hybrid_top5": {
+      "model": "tasksource/deberta-base-long-nli",
+      "granularity": "passage",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.3012,
+      "development": {
+        "auc_correct_vs_wrong": 0.9993,
+        "auc_correct_vs_swapped": 0.9991,
+        "correct_accepted": "48/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.9934,
+        "auc_correct_vs_swapped": 0.9935,
+        "correct_accepted": "47/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.9785,
+          1.0
+        ]
+      }
+    },
+    "generator-yes-no | whole passages | dense_top3": {
+      "model": "generator-yes-no",
+      "granularity": "passage",
+      "selection": "dense_top3",
+      "threshold_chosen_on_development": 0.0851,
+      "development": {
+        "auc_correct_vs_wrong": 0.9996,
+        "auc_correct_vs_swapped": 0.9996,
+        "correct_accepted": "48/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 1.0,
+        "auc_correct_vs_swapped": 1.0,
+        "correct_accepted": "46/48",
+        "swapped_accepted": "0/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "generator-yes-no | whole passages | hybrid_top3": {
+      "model": "generator-yes-no",
+      "granularity": "passage",
+      "selection": "hybrid_top3",
+      "threshold_chosen_on_development": 0.2689,
+      "development": {
+        "auc_correct_vs_wrong": 0.9996,
+        "auc_correct_vs_swapped": 0.9996,
+        "correct_accepted": "48/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 0.9997,
+        "auc_correct_vs_swapped": 0.9996,
+        "correct_accepted": "47/48",
+        "swapped_accepted": "0/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          0.9979,
+          1.0
+        ]
+      }
+    },
+    "generator-yes-no | whole passages | hybrid_top5": {
+      "model": "generator-yes-no",
+      "granularity": "passage",
+      "selection": "hybrid_top5",
+      "threshold_chosen_on_development": 0.2689,
+      "development": {
+        "auc_correct_vs_wrong": 0.9996,
+        "auc_correct_vs_swapped": 0.9996,
+        "correct_accepted": "48/48",
+        "swapped_accepted": "1/48",
+        "false_holding_accepted": "0/8"
+      },
+      "test": {
+        "auc_correct_vs_wrong": 1.0,
+        "auc_correct_vs_swapped": 1.0,
+        "correct_accepted": "48/48",
+        "swapped_accepted": "0/48",
+        "false_holding_accepted": "0/12",
+        "auc_95ci": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "models_that_could_not_be_run": {},
+  "decision": {
+    "validated": true,
+    "model": "tasksource/deberta-base-long-nli",
+    "threshold": 0.2695,
+    "ranking": "dense",
+    "passages": 3,
+    "granularity": "passage",
+    "selected_candidate": "tasksource/deberta-base-long-nli | whole passages | dense_top3",
+    "development_auc": 1.0,
+    "test_auc": 0.9906,
+    "test_auc_95ci": [
+      0.9767,
+      0.999
+    ],
+    "required_test_auc": 0.9,
+    "passed_the_test": true,
+    "source": "experiments/v2/e2_verifier_validation.py, 2026-10-06T15:38:55",
+    "note": "gate open: the support verdict of this model may steer the judge, the controller and the memory"
+  },
+  "seconds": 440.0
+}

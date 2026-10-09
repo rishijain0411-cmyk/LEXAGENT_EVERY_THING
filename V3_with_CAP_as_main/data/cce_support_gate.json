@@ -1,0 +1,19 @@
+{
+  "validated": true,
+  "model": "tasksource/deberta-base-long-nli",
+  "threshold": 0.2695,
+  "ranking": "dense",
+  "passages": 3,
+  "granularity": "passage",
+  "selected_candidate": "tasksource/deberta-base-long-nli | whole passages | dense_top3",
+  "development_auc": 1.0,
+  "test_auc": 0.9906,
+  "test_auc_95ci": [
+    0.9767,
+    0.999
+  ],
+  "required_test_auc": 0.9,
+  "passed_the_test": true,
+  "source": "experiments/v2/e2_verifier_validation.py, 2026-10-06T15:38:55",
+  "note": "gate open: the support verdict of this model may steer the judge, the controller and the memory"
+}

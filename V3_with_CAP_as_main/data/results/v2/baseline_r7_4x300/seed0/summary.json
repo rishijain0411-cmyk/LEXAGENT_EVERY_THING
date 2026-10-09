@@ -1,0 +1,16 @@
+{
+  "cases": 96,
+  "errors": 0,
+  "skipped_by_cache": 0,
+  "seconds_this_session": 286.0,
+  "seconds_sum_of_cases": 286.3,
+  "finished": "2026-10-07T16:57:11",
+  "legacy_metric_means": {
+    "hr": 0.010417,
+    "ass": 0.94381,
+    "ar": 0.729167,
+    "ap": 0.488714,
+    "judge_confidence": 0.7
+  },
+  "note": "legacy_metric_means use the pre-audit definitions and are kept only for continuity; see experiments/v2/score.py"
+}

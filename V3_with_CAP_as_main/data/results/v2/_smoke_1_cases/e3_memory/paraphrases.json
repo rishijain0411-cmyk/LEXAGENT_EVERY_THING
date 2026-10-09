@@ -1,0 +1,11 @@
+{
+  "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+  "seed": 7,
+  "rows": [
+    {
+      "case_id": 1,
+      "question": "Does the Fourth Amendment protect against warrantless searches conducted by private individuals or carriers acting without government involvement?",
+      "paraphrase": "Inquire: Is the Fourth Amendment applicable to unauthorized searches carried out by private entities or transportation services, devoid of any governmental intervention?"
+    }
+  ]
+}

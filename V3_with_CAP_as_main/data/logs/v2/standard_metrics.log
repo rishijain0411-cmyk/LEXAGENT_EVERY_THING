@@ -1,0 +1,44 @@
+[LexAgent-V3] 2026-10-07 14:48:29 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 32949.10it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-07 14:48:33 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-07 14:48:42 | src.retrieval.dense_retriever | INFO | DenseRetriever initialized (top_k=4, collection=cap_authorities)
+[LexAgent-V3] 2026-10-07 14:48:56 | src.retrieval.bm25_retriever | INFO | BM25 index loaded from: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl (1779847 vocabulary terms)
+[LexAgent-V3] 2026-10-07 14:48:56 | src.retrieval.hybrid_retriever | INFO | HybridRetriever initialized (RRF k=60)
+[LexAgent-V3] 2026-10-07 14:49:02 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/202 [00:00<?, ?it/s]Loading weights:  20%|█▉        | 40/202 [00:00<00:00, 398.29it/s]Loading weights:  42%|████▏     | 84/202 [00:00<00:00, 408.10it/s]Loading weights: 100%|██████████| 202/202 [00:00<00:00, 956.17it/s]
+[LexAgent-V3] 2026-10-07 14:49:06 | src.novel.cce | INFO | Loaded NLI CrossEncoder: tasksource/deberta-base-long-nli
+[LexAgent-V3] 2026-10-07 14:49:06 | src.novel.cce | INFO | CCE policy=gated | support gate OPEN (experiments/v2/e2_verifier_validation.py, 2026-10-06T15:38:55)
+[LexAgent-V3] 2026-10-07 14:49:06 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+  [standard] baseline_4x300/seed0: 96 cases
+  [standard] baseline_4x300/seed1: 96 cases
+  [standard] baseline_4x300/seed2: 96 cases
+  [standard] baseline_8x500/seed0: 96 cases
+  [standard] baseline_8x500/seed1: 96 cases
+  [standard] baseline_8x500/seed2: 96 cases
+  [standard] e0_legacy_checker_no_memory/seed0: 96 cases
+  [standard] e0_legacy_checker_no_memory/seed1: 96 cases
+  [standard] e0_legacy_checker_no_memory/seed2: 96 cases
+  [standard] e4_repaired_A1/seed0: 96 cases
+  [standard] e4_repaired_A2/seed0: 96 cases
+  [standard] e4_repaired_A3/seed0: 96 cases
+  [standard] e4_repaired_A4/seed0: 96 cases
+  [standard] e4_repaired_Full/seed0: 96 cases
+  [standard] 14 runs -> C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\v2\STANDARD_METRICS.md

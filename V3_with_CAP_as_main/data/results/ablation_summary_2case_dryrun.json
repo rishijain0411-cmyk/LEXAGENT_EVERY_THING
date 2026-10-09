@@ -1,0 +1,52 @@
+[
+  {
+    "variant": "Full",
+    "description": "Full LexAgent v3.0 (DVA+)",
+    "total_cases": 2,
+    "completed_cases": 2,
+    "crashed_cases": 0,
+    "mean_hr": 0.0,
+    "mean_cas": 0.9257500000000001,
+    "mean_confidence": 0.5
+  },
+  {
+    "variant": "A1",
+    "description": "w/o Defense Node (No adversarial cross-examination)",
+    "total_cases": 2,
+    "completed_cases": 2,
+    "crashed_cases": 0,
+    "mean_hr": 0.0,
+    "mean_cas": 0.90835,
+    "mean_confidence": 0.2
+  },
+  {
+    "variant": "A2",
+    "description": "w/o CCE (No citation confidence verification)",
+    "total_cases": 2,
+    "completed_cases": 2,
+    "crashed_cases": 0,
+    "mean_hr": 0.0,
+    "mean_cas": 0.9008499999999999,
+    "mean_confidence": 0.1
+  },
+  {
+    "variant": "A3",
+    "description": "w/o Adaptive Memory (Stateless inference)",
+    "total_cases": 2,
+    "completed_cases": 2,
+    "crashed_cases": 0,
+    "mean_hr": 0.0,
+    "mean_cas": 0.9066000000000001,
+    "mean_confidence": 0.1
+  },
+  {
+    "variant": "A4",
+    "description": "w/o DDC (Fixed 1-round termination)",
+    "total_cases": 2,
+    "completed_cases": 2,
+    "crashed_cases": 0,
+    "mean_hr": 0.0,
+    "mean_cas": 0.8942,
+    "mean_confidence": 0.485
+  }
+]

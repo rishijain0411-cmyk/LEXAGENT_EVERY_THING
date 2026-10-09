@@ -1,0 +1,57 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  RUNNING PHASE 1: HYBRID RETRIEVAL OVER CAP DATABASE
+██████████████████████████████████████████████████████████████████████████████
+
+======================================================================
+  PHASE 1 SMOKE TEST: CAP HYBRID RETRIEVAL (Dense + BM25)
+======================================================================
+  Query: 'Does the Fourth Amendment protect against warrantless cell phone searches?'
+[LexAgent-V3] 2026-10-05 21:17:42 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 37340.24it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-05 21:17:45 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-05 21:17:45 | src.retrieval.dense_retriever | INFO | DenseRetriever initialized (top_k=4, collection=cap_authorities)
+[LexAgent-V3] 2026-10-05 21:18:00 | src.retrieval.bm25_retriever | INFO | BM25 index loaded from: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_bm25_index.pkl (1779847 vocabulary terms)
+[LexAgent-V3] 2026-10-05 21:18:00 | src.retrieval.hybrid_retriever | INFO | HybridRetriever initialized (RRF k=60)
+[LexAgent-V3] 2026-10-05 21:18:00 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  18%|█▊        | 19/106 [00:00<00:00, 189.87it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 1020.40it/s]
+[LexAgent-V3] 2026-10-05 21:18:04 | src.novel.cce | INFO | Loaded NLI CrossEncoder: cross-encoder/nli-deberta-v3-small
+[LexAgent-V3] 2026-10-05 21:18:04 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, tau=0.70, NLI active=True
+[LexAgent-V3] 2026-10-05 21:18:05 | src.novel.adaptive_memory | INFO | AdaptiveMemory initialized (namespace=''): 0 cached verdicts, 0 risk entries
+[LexAgent-V3] 2026-10-05 21:18:07 | src.retrieval.dense_retriever | INFO | Dense retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-05 21:18:07 | src.retrieval.bm25_retriever | INFO | BM25 retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 4 results
+[LexAgent-V3] 2026-10-05 21:18:07 | src.retrieval.hybrid_retriever | INFO | Hybrid retrieval: query='Does the Fourth Amendment protect against warrantl...' -> 8 results (from 4 dense + 4 BM25)
+
+  Retrieved 8 authority passages from CAP:
+  [1] United States v. Place 462 U.S. 696: interests. See ante, at 709-710. It makes little difference to a traveler whose luggage is seized whether the police con...
+  [2] Riley v. California 573 U.S. 373: RILEY v. CALIFORNIA certiorari to the court of appeal of california, fourth appellate district, division one No. 13–132....
+  [3] United States v. Ross 456 U.S. 798: of the vehicle, and is a principal basis for the Court’s automobile exception to the warrant requirement. See Chambers, ...
+  [4] Carpenter v. United States 585 U.S. 296: more than six days of cell-site records in order to determine whether a person was within several hundred city blocks of...
+  [5] Ybarra v. Illinois 444 U.S. 85: or other actions indicative of an intent to commit an assault, and acted generally in a manner that was not threatening....
+  [6] Carpenter v. United States 585 U.S. 296: of a person's physical presence compiled every day, every moment, over several years. Such a chronicle implicates privac...
+  [7] Davis v. United States 328 U.S. 582: the window was in fact attempting to open it by force or to do more than observe the interior. But the situation was suc...
+  [8] Riley v. California 573 U.S. 373: a categorical basis—not in an ad hoc, case-by-case fashion by individual police officers.' ” Michigan v. Summers, 452 U....
+[LexAgent-V3] 2026-10-05 21:18:07 | src.retrieval.hybrid_retriever | INFO | Entity map built: 12 lookup keys from 8 documents
+
+  Extracted Entity Map (12 keys): ['United States v. Place', '462 U.S. 696', 'Riley v. California', '573 U.S. 373', 'United States v. Ross']
+======================================================================
+  PHASE 1 SMOKE TEST PASSED!
+======================================================================

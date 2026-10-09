@@ -1,0 +1,426 @@
+
+██████████████████████████████████████████████████████████████████████████████
+  STEP 3: RUNNING 100-CASE COMPREHENSIVE BENCHMARK EVALUATION (FULL RUN)
+██████████████████████████████████████████████████████████████████████████████
+  [TEST SET] 4 benchmark case(s) are left out because the corpus has no source text for them:
+    - #45 Buckley v. Valeo: only 216 words of the target case are in the corpus (423 U.S. 1040)
+    - #98 Dobbs v. Jackson Women's Health Organization: the target case is not in the corpus
+    - #99 New York State Rifle & Pistol Association, Inc. v. Bruen: the target case is not in the corpus
+    - #100 Students for Fair Admissions, Inc. v. President and Fellows of Harvard College: the target case is not in the corpus
+
+===========================================================================
+  LEXAGENT v3.0 (CAP EDITION) — 96-CASE FULL BENCHMARK EVALUATION
+===========================================================================
+  Loaded 313611 canonical CAP cases and citations.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 24598.21it/s]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   2%|▏         | 6/291 [00:00<00:13, 20.81it/s]Loading weights:   5%|▍         | 14/291 [00:00<00:10, 25.26it/s]Loading weights:   8%|▊         | 24/291 [00:00<00:08, 29.90it/s]Loading weights:  12%|█▏        | 36/291 [00:01<00:06, 38.67it/s]Loading weights:  14%|█▍        | 41/291 [00:01<00:06, 36.82it/s]Loading weights:  16%|█▌        | 46/291 [00:01<00:07, 31.76it/s]Loading weights:  17%|█▋        | 50/291 [00:01<00:08, 27.88it/s]Loading weights:  20%|█▉        | 58/291 [00:01<00:08, 26.54it/s]Loading weights:  24%|██▎       | 69/291 [00:02<00:07, 30.65it/s]Loading weights:  27%|██▋       | 78/291 [00:02<00:05, 37.20it/s]Loading weights:  29%|██▊       | 83/291 [00:02<00:05, 36.77it/s]Loading weights:  31%|███       | 90/291 [00:02<00:06, 31.87it/s]Loading weights:  34%|███▍      | 99/291 [00:03<00:06, 30.65it/s]Loading weights:  37%|███▋      | 108/291 [00:03<00:05, 30.97it/s]Loading weights:  40%|████      | 117/291 [00:03<00:05, 33.72it/s]Loading weights:  42%|████▏     | 122/291 [00:03<00:04, 33.87it/s]Loading weights:  43%|████▎     | 126/291 [00:03<00:05, 30.27it/s]Loading weights:  45%|████▌     | 131/291 [00:04<00:06, 25.47it/s]Loading weights:  49%|████▉     | 144/291 [00:04<00:03, 38.99it/s]Loading weights:  51%|█████     | 149/291 [00:04<00:04, 34.61it/s]Loading weights:  53%|█████▎    | 153/291 [00:04<00:04, 32.82it/s]Loading weights:  54%|█████▍    | 157/291 [00:04<00:04, 31.16it/s]Loading weights:  56%|█████▌    | 162/291 [00:05<00:05, 25.66it/s]Loading weights:  59%|█████▉    | 171/291 [00:05<00:03, 32.82it/s]Loading weights:  60%|██████    | 175/291 [00:05<00:03, 31.80it/s]Loading weights:  62%|██████▏   | 180/291 [00:05<00:03, 28.92it/s]Loading weights:  64%|██████▎   | 185/291 [00:05<00:03, 30.38it/s]Loading weights:  65%|██████▍   | 189/291 [00:06<00:03, 29.95it/s]Loading weights:  67%|██████▋   | 194/291 [00:06<00:04, 23.51it/s]Loading weights:  69%|██████▉   | 202/291 [00:06<00:02, 31.52it/s]Loading weights:  71%|███████   | 207/291 [00:06<00:02, 32.88it/s]Loading weights:  74%|███████▎  | 214/291 [00:06<00:01, 40.32it/s]Loading weights:  75%|███████▌  | 219/291 [00:06<00:02, 33.48it/s]Loading weights:  77%|███████▋  | 223/291 [00:07<00:02, 23.46it/s]Loading weights:  79%|███████▊  | 229/291 [00:07<00:02, 28.52it/s]Loading weights:  81%|████████  | 235/291 [00:07<00:01, 28.72it/s]Loading weights:  82%|████████▏ | 239/291 [00:07<00:01, 29.73it/s]Loading weights:  84%|████████▎ | 243/291 [00:07<00:01, 26.35it/s]Loading weights:  85%|████████▍ | 247/291 [00:08<00:01, 27.90it/s]Loading weights:  87%|████████▋ | 253/291 [00:08<00:01, 27.34it/s]Loading weights:  88%|████████▊ | 257/291 [00:08<00:01, 29.32it/s]Loading weights:  90%|████████▉ | 261/291 [00:08<00:01, 29.39it/s]Loading weights:  91%|█████████ | 265/291 [00:08<00:00, 30.67it/s]Loading weights:  92%|█████████▏| 269/291 [00:08<00:00, 22.90it/s]Loading weights:  94%|█████████▍| 274/291 [00:09<00:00, 27.06it/s]Loading weights:  96%|█████████▌| 278/291 [00:09<00:00, 25.08it/s]Loading weights:  97%|█████████▋| 283/291 [00:09<00:00, 29.52it/s]Loading weights: 100%|██████████| 291/291 [00:09<00:00, 31.14it/s]
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\experiments\..\src\models\load_model.py:130: LangChainDeprecationWarning: The class `HuggingFacePipeline` was deprecated in LangChain 0.0.37 and will be removed in 1.0. An updated version of the class exists in the `langchain-huggingface package and should be used instead. To use it run `pip install -U `langchain-huggingface` and import as `from `langchain_huggingface import HuggingFacePipeline``.
+  llm_pipeline = HuggingFacePipeline(pipeline=text_pipeline)
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 1119.41it/s]
+
+[1/96] Case #1: Fourth Amendment — Private Searches
+      Q: Does the Fourth Amendment protect against warrantless searches conducted by private indivi...
+      -> HR: 0.00% | CAS: 0.9356 | Conf: 0.86 | Status: CONVERGED
+
+[2/96] Case #2: Eighth Amendment — Juvenile Death Penalty
+      Q: Can a state constitutionally impose the death penalty on an offender who was under the age...
+      -> HR: 0.00% | CAS: 0.9012 | Conf: 0.95 | Status: CONVERGED
+
+[3/96] Case #3: Fourth Amendment — Stop and Frisk
+      Q: May police officers stop and briefly detain a suspect on the street without probable cause...
+      -> HR: 0.00% | CAS: 0.8799 | Conf: 0.94 | Status: CONVERGED
+
+[4/96] Case #4: Fifth Amendment — Custodial Interrogation
+      Q: Are statements made by a suspect during custodial police interrogation admissible if the s...
+      -> HR: 0.00% | CAS: 0.9264 | Conf: 0.99 | Status: CONVERGED
+
+[5/96] Case #5: Sixth Amendment — Right to Appointed Counsel
+      Q: Does an indigent criminal defendant charged with a felony in state court have a constituti...
+      -> HR: 0.00% | CAS: 0.9291 | Conf: 0.95 | Status: CONVERGED
+
+[6/96] Case #6: Fourteenth Amendment — Due Process Brady Evidence
+      Q: Does the prosecution violate due process when it suppresses evidence favorable to an accus...
+      -> HR: 0.00% | CAS: 0.8592 | Conf: 0.82 | Status: CONVERGED
+
+[7/96] Case #7: Fourth Amendment — Exclusionary Rule in State Courts
+      Q: Is evidence obtained through an unconstitutional search and seizure under the Fourth Amend...
+      -> HR: 0.00% | CAS: 0.8974 | Conf: 0.20 | Status: CONTESTED
+
+[8/96] Case #8: Sixth Amendment — Ineffective Assistance of Counsel
+      Q: What legal standard must a convicted defendant satisfy to prove their legal representation...
+      -> HR: 0.00% | CAS: 0.8488 | Conf: 0.00 | Status: CONTESTED
+
+[9/96] Case #9: Fourth Amendment — Cell Phone Search Incident to Arrest
+      Q: May law enforcement search the digital contents of a cell phone seized from an arrestee wi...
+      -> HR: 0.00% | CAS: 0.9404 | Conf: 0.95 | Status: CONVERGED
+
+[10/96] Case #10: Fourth Amendment — Historical Cell Site Records
+      Q: Does government acquisition of historical cell-site location records from wireless carrier...
+      -> HR: 0.00% | CAS: 0.9413 | Conf: 0.00 | Status: CONTESTED
+
+[11/96] Case #11: Eighth Amendment — Juvenile Non-Homicide LWOP
+      Q: Does the Eighth Amendment permit sentencing a juvenile offender to life imprisonment witho...
+      -> HR: 0.00% | CAS: 0.8942 | Conf: 0.00 | Status: CONTESTED
+
+[12/96] Case #12: Eighth Amendment — Mandatory Juvenile Life Without Parole
+      Q: May a state mandate a sentence of life imprisonment without parole for a juvenile offender...
+      -> HR: 0.00% | CAS: 0.9244 | Conf: 0.20 | Status: CONTESTED
+
+[13/96] Case #13: Fourth Amendment — Public Telephone Privacy
+      Q: Does electronic eavesdropping on a conversation in a public telephone booth constitute a F...
+      -> HR: 0.00% | CAS: 0.9379 | Conf: 0.00 | Status: CONTESTED
+
+[14/96] Case #14: Fourteenth Amendment — Racial Bias in Peremptory Strikes
+      Q: Can a prosecutor use peremptory challenges to strike potential jurors based on their race?...
+      -> HR: 33.33% | CAS: 0.9335 | Conf: 0.00 | Status: CONTESTED
+
+[15/96] Case #15: Evidence — Scientific Expert Testimony Gatekeeper
+      Q: What legal standard governs the admissibility of scientific expert testimony in federal co...
+      -> HR: 0.00% | CAS: 0.8779 | Conf: 0.20 | Status: CONTESTED
+
+[16/96] Case #16: Administrative Law — Judicial Deference to Agencies
+      Q: When a federal statute administered by an agency is ambiguous, must federal courts defer t...
+      -> HR: 0.00% | CAS: 0.9268 | Conf: 0.99 | Status: CONVERGED
+
+[17/96] Case #17: First Amendment — Public Official Defamation Standard
+      Q: What standard of fault must a public official prove to recover damages for a defamatory fa...
+      -> HR: 0.00% | CAS: 0.9499 | Conf: 0.99 | Status: CONVERGED
+
+[18/96] Case #18: First Amendment — Corporate Political Expenditures
+      Q: Does the First Amendment protect independent political expenditures made by corporations a...
+      -> HR: 0.00% | CAS: 0.9309 | Conf: 0.97 | Status: CONVERGED
+
+[19/96] Case #19: Fourteenth Amendment — Racial School Desegregation
+      Q: Does racial segregation of children in public schools deprive minority children of equal e...
+      -> HR: 0.00% | CAS: 0.8765 | Conf: 0.00 | Status: CONTESTED
+
+[20/96] Case #20: Second Amendment — Individual Right to Bear Arms
+      Q: Does the Second Amendment protect an individual's right to keep and bear arms for self-def...
+      -> HR: 0.00% | CAS: 0.9144 | Conf: 0.20 | Status: CONTESTED
+
+[21/96] Case #21: Constitutional Privacy — Contraception & Marital Privacy
+      Q: Does a state law banning the use of contraceptives by married persons violate constitution...
+      -> HR: 0.00% | CAS: 0.8657 | Conf: 0.88 | Status: CONVERGED
+
+[22/96] Case #22: Commerce Clause — Limitations on Federal Power
+      Q: Does Congress have constitutional authority under the Commerce Clause to ban firearm posse...
+      -> HR: 0.00% | CAS: 0.9525 | Conf: 0.00 | Status: CONTESTED
+
+[23/96] Case #23: Fourth Amendment — Thermal Imaging of Homes
+      Q: Does government use of thermal-imaging technology to scan a private home from a public str...
+      -> HR: 0.00% | CAS: 0.9520 | Conf: 0.00 | Status: CONTESTED
+
+[24/96] Case #24: Fifth Amendment — Double Jeopardy Dual Sovereignty
+      Q: Does the Double Jeopardy Clause prevent separate prosecutions by a state and the federal g...
+      -> HR: 0.00% | CAS: 0.9335 | Conf: 0.20 | Status: CONTESTED
+
+[25/96] Case #25: Fourteenth Amendment — Same-Sex Marriage
+      Q: Does the Fourteenth Amendment require states to license marriages between two people of th...
+      -> HR: 0.00% | CAS: 0.9115 | Conf: 0.98 | Status: CONVERGED
+
+[26/96] Case #26: Fourteenth Amendment — Due Process Abortion Rights (CAP Vol 410)
+      Q: Does the Due Process Clause of the Fourteenth Amendment encompass a woman's qualified righ...
+      -> HR: 0.00% | CAS: 0.9310 | Conf: 0.20 | Status: CONTESTED
+
+[27/96] Case #27: Fourteenth Amendment — Abortion Procedural Restrictions (CAP Vol 410)
+      Q: Are state statutory requirements requiring committee approval and hospital accreditation f...
+      -> HR: 0.00% | CAS: 0.9003 | Conf: 0.20 | Status: CONTESTED
+
+[28/96] Case #28: Fourteenth Amendment — Public School Financing & Equal Protection (CAP Vol 411)
+      Q: Does a state public school finance system relying on local property taxation violate the E...
+      -> HR: 0.00% | CAS: 0.9231 | Conf: 0.20 | Status: CONTESTED
+
+[29/96] Case #29: Fifth Amendment — Entrapment Defense & Government Conduct (CAP Vol 411)
+      Q: Does government supply of an essential chemical ingredient in an illegal manufacturing sch...
+      -> HR: 0.00% | CAS: 0.9517 | Conf: 0.99 | Status: CONVERGED
+
+[30/96] Case #30: First Amendment — Obscenity Standard (CAP Vol 413)
+      Q: What three-prong test determines whether speech or artistic material is obscene and unprot...
+      -> HR: 0.00% | CAS: 0.9763 | Conf: 0.99 | Status: CONVERGED
+
+[31/96] Case #31: Equal Protection — Racial Classifications & Strict Scrutiny
+      Q: What level of judicial scrutiny applies to government restrictions curtailing the civil ri...
+      -> HR: 0.00% | CAS: 0.9449 | Conf: 0.96 | Status: CONVERGED
+
+[32/96] Case #32: Separation of Powers — Presidential Executive Power Limits
+      Q: Does the President have inherent constitutional authority to seize private industrial prop...
+      -> HR: 0.00% | CAS: 0.8751 | Conf: 0.95 | Status: CONVERGED
+
+[33/96] Case #33: Supremacy Clause — State Duty to Follow Supreme Court Rulings
+      Q: Are state officials and legislatures bound by Supreme Court interpretations of the Constit...
+      -> HR: 0.00% | CAS: 0.8789 | Conf: 0.20 | Status: CONTESTED
+
+[34/96] Case #34: Commerce Clause — Civil Rights Act Public Accommodations
+      Q: May Congress prohibit racial discrimination in places of public accommodation serving inte...
+      -> HR: 0.00% | CAS: 0.9253 | Conf: 0.81 | Status: CONVERGED
+
+[35/96] Case #35: Commerce Clause — Local Restaurant Commerce Regulation
+      Q: Does the Commerce Clause empower Congress to regulate racial discrimination in a local fam...
+      -> HR: 0.00% | CAS: 0.9464 | Conf: 0.00 | Status: CONTESTED
+
+[36/96] Case #36: Fourteenth Amendment — Interracial Marriage Freedom
+      Q: Do state anti-miscegenation criminal statutes prohibiting marriage solely on the basis of ...
+      -> HR: 0.00% | CAS: 0.8927 | Conf: 0.00 | Status: CONTESTED
+
+[37/96] Case #37: First Amendment — Student Expressive Symbolic Speech
+      Q: May public school officials prohibit students from wearing black armbands in protest of a ...
+      -> HR: 0.00% | CAS: 0.9466 | Conf: 0.94 | Status: CONVERGED
+
+[38/96] Case #38: First Amendment — Incitement of Imminent Lawless Action
+      Q: Under what standard may government constitutionally restrict advocacy of the use of force ...
+      -> HR: 0.00% | CAS: 0.9223 | Conf: 0.00 | Status: CONTESTED
+
+[39/96] Case #39: Establishment Clause — Three-Prong Lemon Test
+      Q: What three-pronged standard determines whether government aid to religious private schools...
+      -> HR: 0.00% | CAS: 0.8834 | Conf: 0.00 | Status: CONTESTED
+
+[40/96] Case #40: First Amendment — National Security Prior Restraints
+      Q: May the federal government obtain an injunction restraining the publication of classified ...
+      -> HR: 0.00% | CAS: 0.9055 | Conf: 0.91 | Status: CONVERGED
+
+[41/96] Case #41: Eighth Amendment — Arbitrary and Capricious Capital Sentencing
+      Q: Does the imposition of the death penalty under state statutes granting unguided jury discr...
+      -> HR: 0.00% | CAS: 0.9122 | Conf: 0.20 | Status: CONTESTED
+
+[42/96] Case #42: Eighth Amendment — Guided Discretion Capital Sentencing
+      Q: Are bifurcated state capital punishment systems providing guided discretion with statutory...
+      -> HR: 0.00% | CAS: 0.9041 | Conf: 0.00 | Status: CONTESTED
+
+[43/96] Case #43: Separation of Powers — Generalized Executive Privilege in Criminal Trials
+      Q: May the President assert an absolute, unqualified presidential executive privilege of immu...
+      -> HR: 0.00% | CAS: 0.8700 | Conf: 0.00 | Status: CONTESTED
+
+[44/96] Case #44: First Amendment — Defamation of Private Individuals
+      Q: Must a private individual proving defamation on a matter of public concern establish actua...
+      -> HR: 0.00% | CAS: 0.9076 | Conf: 0.00 | Status: CONTESTED
+
+[45/96] Case #46: Equal Protection — University Admissions Racial Quotas
+      Q: May a state university medical school set aside a rigid number of seats in an entering cla...
+      -> HR: 0.00% | CAS: 0.9293 | Conf: 0.00 | Status: CONTESTED
+
+[46/96] Case #47: Fifth Amendment Takings — Regulatory Landmarks Preservation
+      Q: Does city historic preservation landmark designation prohibiting construction of an office...
+      -> HR: 0.00% | CAS: 0.9046 | Conf: 0.00 | Status: CONTESTED
+
+[47/96] Case #48: Fourth Amendment — Routine Felony Arrest Inside the Home
+      Q: May police officers enter a suspect's home without a warrant or exigent circumstances to m...
+      -> HR: 0.00% | CAS: 0.9204 | Conf: 0.00 | Status: CONTESTED
+
+[48/96] Case #49: Separation of Powers — One-House Legislative Veto
+      Q: Does a statutory provision authorizing one House of Congress to invalidate an executive br...
+      -> HR: 0.00% | CAS: 0.9311 | Conf: 0.87 | Status: CONVERGED
+
+[49/96] Case #50: Copyright Law — Secondary Liability & Substantial Noninfringing Uses
+      Q: Is the manufacturer of home video recording equipment liable for contributory copyright in...
+      -> HR: 0.00% | CAS: 0.9450 | Conf: 0.00 | Status: CONTESTED
+
+[50/96] Case #51: Fourth Amendment — Good-Faith Exception to Exclusionary Rule
+      Q: Should the exclusionary rule bar evidence obtained by police acting in reasonable, good-fa...
+      -> HR: 0.00% | CAS: 0.9188 | Conf: 0.00 | Status: CONTESTED
+
+[51/96] Case #52: Fourth Amendment — Public School Student Searches
+      Q: Does the Fourth Amendment require school administrators to possess probable cause and obta...
+      -> HR: 0.00% | CAS: 0.9361 | Conf: 0.00 | Status: CONTESTED
+
+[52/96] Case #53: Tenth Amendment — Federal Minimum Wage Application to State Employees
+      Q: Does the Tenth Amendment preclude Congress from applying the Fair Labor Standards Act mini...
+      -> HR: 0.00% | CAS: 0.9267 | Conf: 0.97 | Status: CONVERGED
+
+[53/96] Case #54: Administrative Law — Rehabilitation Act Scope on Medical Treatment
+      Q: May federal agency regulations force medical treatment decisions for disabled infants upon...
+      -> HR: 50.00% | CAS: 0.9489 | Conf: 0.97 | Status: CONVERGED
+
+[54/96] Case #55: Title VII — Hostile Work Environment Sexual Harassment
+      Q: Does severe or pervasive sexual harassment creating an intimidating or hostile work enviro...
+      -> HR: 0.00% | CAS: 0.9191 | Conf: 1.00 | Status: CONVERGED
+
+[55/96] Case #56: Establishment Clause — Balanced Treatment for Creationism in Public Schools
+      Q: Does a state law mandating the teaching of creation science whenever evolution is taught i...
+      -> HR: 0.00% | CAS: 0.8596 | Conf: 0.00 | Status: CONTESTED
+
+[56/96] Case #57: Appointments Clause & Separation of Powers — Independent Counsel Act
+      Q: Does the Ethics in Government Act provision creating an independent counsel appointed by a...
+      -> HR: 0.00% | CAS: 0.9319 | Conf: 0.00 | Status: CONTESTED
+
+[57/96] Case #58: First Amendment — Symbolic Speech Flag Desecration
+      Q: May a state constitutionally criminalize the burning of the American flag as part of a pea...
+      -> HR: 0.00% | CAS: 0.9227 | Conf: 0.00 | Status: CONTESTED
+
+[58/96] Case #59: Fourteenth Amendment Due Process — Right to Refuse Medical Treatment
+      Q: Does the Constitution require a state to permit surrogate withdrawal of life-sustaining hy...
+      -> HR: 0.00% | CAS: 0.9209 | Conf: 0.00 | Status: CONTESTED
+
+[59/96] Case #60: Free Exercise Clause — Neutral Laws of General Applicability
+      Q: Does the Free Exercise Clause exempt religious individuals from compliance with neutral, g...
+      -> HR: 0.00% | CAS: 0.8692 | Conf: 0.00 | Status: CONTESTED
+
+[60/96] Case #61: Fifth Amendment Takings — Total Deprivation of Economically Beneficial Use
+      Q: Does a state environmental regulation that denies all economically productive or beneficia...
+      -> HR: 0.00% | CAS: 0.9192 | Conf: 0.20 | Status: CONTESTED
+
+[61/96] Case #62: Fourteenth Amendment Due Process — Undue Burden Abortion Standard
+      Q: What legal standard determines the constitutional validity of state pre-viability abortion...
+      -> HR: 0.00% | CAS: 0.9381 | Conf: 0.00 | Status: CONTESTED
+
+[62/96] Case #63: Fourteenth Amendment Equal Protection — Racial Gerrymandering
+      Q: Does an unexplainably bizarre congressional district drawn predominantly on the basis of r...
+      -> HR: 0.00% | CAS: 0.9327 | Conf: 0.85 | Status: CONVERGED
+
+[63/96] Case #64: Fourth Amendment — Suspicionless Student Athlete Drug Testing
+      Q: Does a public school district policy requiring random suspicionless urinalysis drug testin...
+      -> HR: 0.00% | CAS: 0.9207 | Conf: 0.00 | Status: CONTESTED
+
+[64/96] Case #65: Eleventh Amendment — Congressional Abrogation of State Sovereign Immunity
+      Q: May Congress abrogate state sovereign immunity under the Article I Indian Commerce Clause ...
+      -> HR: 0.00% | CAS: 0.8000 | Conf: 0.00 | Status: CONTESTED
+
+[65/96] Case #66: Fourteenth Amendment Equal Protection — Sexual Orientation Discrimination
+      Q: Does a state constitutional amendment that revokes and prohibits all legal protections aga...
+      -> HR: 0.00% | CAS: 0.8709 | Conf: 0.00 | Status: CONTESTED
+
+[66/96] Case #67: Fourteenth Amendment Equal Protection — Single-Sex State Military Colleges
+      Q: Does the exclusion of women from a state-supported elite military institute violate the Eq...
+      -> HR: 0.00% | CAS: 0.9240 | Conf: 0.00 | Status: CONTESTED
+
+[67/96] Case #68: Tenth Amendment — Federal Commandeering of State Executive Officers
+      Q: May Congress constitutionally command state law enforcement officers to conduct federal ba...
+      -> HR: 0.00% | CAS: 0.9103 | Conf: 0.00 | Status: CONTESTED
+
+[68/96] Case #69: First Amendment — Indecency Restrictions on the Internet
+      Q: Do the broad indecency and patently offensive provisions of the Communications Decency Act...
+      -> HR: 0.00% | CAS: 0.9184 | Conf: 0.00 | Status: CONTESTED
+
+[69/96] Case #70: Fourteenth Amendment Section 5 Enforcement — Religious Freedom Restoration Act
+      Q: May Congress expand substantive constitutional rights against states under Section 5 of th...
+      -> HR: 0.00% | CAS: 0.8279 | Conf: 0.20 | Status: CONTESTED
+
+[70/96] Case #71: Separation of Powers — Line Item Veto Act Presentment Clause
+      Q: Does the Line Item Veto Act, allowing the President to unilaterally cancel statutory spend...
+      -> HR: 50.00% | CAS: 0.9387 | Conf: 0.73 | Status: CONVERGED
+
+[71/96] Case #72: Title VII — Employer Vicarious Liability for Supervisor Harassment
+      Q: Under what circumstances may an employer assert an affirmative defense to vicarious liabil...
+      -> HR: 0.00% | CAS: 0.9024 | Conf: 0.00 | Status: CONTESTED
+
+[72/96] Case #73: Census Clause & Statutory Apportionment — Statistical Sampling
+      Q: Does the Census Act prohibit the use of statistical sampling procedures for the purpose of...
+      -> HR: 0.00% | CAS: 0.9662 | Conf: 0.92 | Status: CONVERGED
+
+[73/96] Case #74: Sixth Amendment Jury Right — Sentence-Enhancing Factual Findings
+      Q: Must any fact other than a prior conviction that increases the penalty for a crime beyond ...
+      -> HR: 0.00% | CAS: 0.9143 | Conf: 0.98 | Status: CONVERGED
+
+[74/96] Case #75: First Amendment Freedom of Association — Exclusion of Homosexual Leaders
+      Q: Does applying a state public accommodations law to compel an expressive association to acc...
+      -> HR: 0.00% | CAS: 0.8849 | Conf: 0.00 | Status: CONTESTED
+
+[75/96] Case #76: Fourteenth Amendment Equal Protection — Presidential Election Recount Standards
+      Q: Does a state court order for manual recounts of presidential election ballots without unif...
+      -> HR: 0.00% | CAS: 0.9454 | Conf: 0.85 | Status: CONVERGED
+
+[76/96] Case #77: Eighth Amendment — Execution of Intellectually Disabled Offenders
+      Q: Does the Eighth Amendment's Cruel and Unusual Punishments Clause prohibit the capital puni...
+      -> HR: 0.00% | CAS: 0.9219 | Conf: 0.98 | Status: CONVERGED
+
+[77/96] Case #78: Establishment Clause — School Voucher Neutral Choice Programs
+      Q: Does a government tuition aid voucher program permitting parents to direct public tuition ...
+      -> HR: 0.00% | CAS: 0.9691 | Conf: 0.96 | Status: CONVERGED
+
+[78/96] Case #79: Copyright Clause — Congressional Extension of Existing Copyright Terms
+      Q: Did Congress exceed its enumerated authority under the Copyright Clause's 'limited Times' ...
+      -> HR: 0.00% | CAS: 0.9431 | Conf: 0.00 | Status: CONTESTED
+
+[79/96] Case #80: Fourteenth Amendment Due Process — Decriminalization of Adult Private Intimate Conduct
+      Q: Does a state statute criminalizing consensual same-sex intimate sexual conduct between adu...
+      -> HR: 0.00% | CAS: 0.9192 | Conf: 0.00 | Status: CONTESTED
+
+[80/96] Case #81: Equal Protection — Holistic Diversity in Law School Admissions
+      Q: May a public university law school consider race as a flexible plus-factor in holistic can...
+      -> HR: 0.00% | CAS: 0.9512 | Conf: 0.20 | Status: CONTESTED
+
+[81/96] Case #82: Due Process & Separation of Powers — Citizen Enemy Combatant Detention
+      Q: Does a United States citizen captured abroad and detained as an enemy combatant have a con...
+      -> HR: 0.00% | CAS: 0.9584 | Conf: 0.76 | Status: CONVERGED
+
+[82/96] Case #83: Fifth Amendment Takings — Eminent Domain for Economic Development
+      Q: Does the disposition of private property condemned under eminent domain for economic devel...
+      -> HR: 0.00% | CAS: 0.9423 | Conf: 0.33 | Status: CONTESTED
+
+[83/96] Case #84: Separation of Powers & Geneva Conventions — Military Commissions
+      Q: May the President establish military commissions to try foreign detainees at Guantanamo Ba...
+      -> HR: 0.00% | CAS: 0.9279 | Conf: 0.00 | Status: CONTESTED
+
+[84/96] Case #85: Fourth Amendment — Consent Search Objected to by Physically Present Co-Occupant
+      Q: Is a warrantless search of a shared residence constitutional against a physically present ...
+      -> HR: 0.00% | CAS: 0.9482 | Conf: 0.84 | Status: CONVERGED
+
+[85/96] Case #86: Article III Standing & Clean Air Act — Greenhouse Gas Regulation
+      Q: Does a state have Article III standing to petition for review of EPA's refusal to regulate...
+      -> HR: 0.00% | CAS: 0.9200 | Conf: 0.99 | Status: CONVERGED
+
+[86/96] Case #87: Suspension Clause — Constitutional Habeas Corpus at Guantanamo Bay
+      Q: Do non-citizen foreign detainees held as enemy combatants at Guantanamo Bay have a constit...
+      -> HR: 0.00% | CAS: 0.9325 | Conf: 0.00 | Status: CONTESTED
+
+[87/96] Case #88: Eighth Amendment — Death Penalty for Non-Homicide Child Rape
+      Q: Does the Eighth Amendment prohibit the imposition of the death penalty for the rape of a c...
+      -> HR: 0.00% | CAS: 0.8870 | Conf: 0.00 | Status: CONTESTED
+
+[88/96] Case #89: Fourteenth Amendment Equal Protection — Government Photo Voter ID Laws
+      Q: Does a state statute requiring in-person voters to present government-issued photo identif...
+      -> HR: 0.00% | CAS: 0.9229 | Conf: 0.00 | Status: CONTESTED
+
+[89/96] Case #90: Federal Civil Pleading — Plausibility Standard Against Legal Conclusions
+      Q: What pleading standard governs a federal civil complaint under Rule 8, and must courts acc...
+      -> HR: 0.00% | CAS: 0.8924 | Conf: 0.98 | Status: CONVERGED
+
+[90/96] Case #91: Second Amendment — Incorporation Against State & Municipal Handgun Bans
+      Q: Is the Second Amendment individual right to keep and bear arms for self-defense applicable...
+      -> HR: 0.00% | CAS: 0.9027 | Conf: 0.00 | Status: CONTESTED
+
+[91/96] Case #92: Fourth Amendment — GPS Tracker Attachment as Physical Trespass
+      Q: Does the government's physical installation of a GPS tracking device on an individual's ve...
+      -> HR: 0.00% | CAS: 0.9349 | Conf: 0.00 | Status: CONTESTED
+
+[92/96] Case #93: Commerce Clause & Taxing Power — Affordable Care Act Individual Mandate
+      Q: Does Congress have the constitutional authority under the Taxing Clause to require individ...
+      -> HR: 0.00% | CAS: 0.9186 | Conf: 0.00 | Status: CONTESTED
+
+[93/96] Case #94: Voting Rights Act Section 4(b) — Equal Sovereignty of States
+      Q: Does the Section 4(b) preclearance coverage formula of the Voting Rights Act violate the T...
+      -> HR: 0.00% | CAS: 0.9109 | Conf: 0.00 | Status: CONTESTED
+
+[94/96] Case #95: Fifth Amendment Equal Protection — Defense of Marriage Act Section 3
+      Q: Does the federal Defense of Marriage Act provision defining marriage exclusively as a unio...
+      -> HR: 0.00% | CAS: 0.9028 | Conf: 0.00 | Status: CONTESTED
+
+[95/96] Case #96: Establishment Clause — Legislative Town Board Prayers
+      Q: Does a town board practice of opening monthly public legislative meetings with volunteer c...
+      -> HR: 0.00% | CAS: 0.9214 | Conf: 0.00 | Status: CONTESTED
+
+[96/96] Case #97: Title VII Civil Rights Act — Sexual Orientation and Gender Identity
+      Q: Does Title VII's prohibition against sex discrimination in employment prohibit an employer...
+      -> HR: 0.00% | CAS: 0.9153 | Conf: 0.98 | Status: CONVERGED
+
+===========================================================================
+  AGGREGATE BENCHMARK SCORECARD SUMMARY
+===========================================================================
+  Total Cases Evaluated:           96
+  Completed Successfully:          96
+  Crashed/Failed Cases:            0
+  Mean Hallucination Rate (HR):    1.39%
+    ├─ Citation Fabrication Rate (CFR): 1.39%
+    ├─ Off-Corpus Precedent Rate (OOR): 0.00%
+    └─ Misattribution Rate (MAR):       33.68%
+  Unsupported Claim Rate (UCR):    8.52%
+  Answer Semantic Similarity (ASS):0.9165
+  Authority Recall (AR):           52.08%
+  Authority Precision (AP):        21.39%
+  Holding Attribution Acc (HAA):   25.69%
+  Mean Evidence Overlap (EOR):     1.56%
+  Mean Judge Confidence:           0.37
+  Debate Convergence Rate (DCR):   36.46%
+  Total Execution Time:            6832.6s
+===========================================================================
+
+Detailed scorecard saved to: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\benchmark_100_cases_results.json

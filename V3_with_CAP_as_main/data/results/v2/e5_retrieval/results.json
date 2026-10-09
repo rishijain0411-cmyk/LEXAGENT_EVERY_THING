@@ -1,0 +1,677 @@
+{
+  "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+  "questions": 96,
+  "passages": 528283,
+  "depth_retrieved": 50,
+  "single_retrievers": {
+    "legal-bert, question + jurisdiction (the debate's query)": {
+      "top1": {
+        "found": 18,
+        "share": 0.1875
+      },
+      "top4": {
+        "found": 39,
+        "share": 0.4062
+      },
+      "top8": {
+        "found": 46,
+        "share": 0.4792
+      },
+      "top20": {
+        "found": 61,
+        "share": 0.6354
+      }
+    },
+    "legal-bert, question only (the earlier baseline's query)": {
+      "top1": {
+        "found": 20,
+        "share": 0.2083
+      },
+      "top4": {
+        "found": 41,
+        "share": 0.4271
+      },
+      "top8": {
+        "found": 52,
+        "share": 0.5417
+      },
+      "top20": {
+        "found": 64,
+        "share": 0.6667
+      }
+    },
+    "bm25, whitespace tokens (the system's)": {
+      "top1": {
+        "found": 50,
+        "share": 0.5208
+      },
+      "top4": {
+        "found": 74,
+        "share": 0.7708
+      },
+      "top8": {
+        "found": 80,
+        "share": 0.8333
+      },
+      "top20": {
+        "found": 87,
+        "share": 0.9062
+      }
+    },
+    "bm25, word tokens": {
+      "top1": {
+        "found": 54,
+        "share": 0.5625
+      },
+      "top4": {
+        "found": 76,
+        "share": 0.7917
+      },
+      "top8": {
+        "found": 81,
+        "share": 0.8438
+      },
+      "top20": {
+        "found": 90,
+        "share": 0.9375
+      }
+    },
+    "bge-base-en-v1.5 (retrieval-trained)": {
+      "top1": {
+        "found": 52,
+        "share": 0.5417
+      },
+      "top4": {
+        "found": 73,
+        "share": 0.7604
+      },
+      "top8": {
+        "found": 77,
+        "share": 0.8021
+      },
+      "top20": {
+        "found": 88,
+        "share": 0.9167
+      }
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained)": {
+      "top1": {
+        "found": 47,
+        "share": 0.4896
+      },
+      "top4": {
+        "found": 68,
+        "share": 0.7083
+      },
+      "top8": {
+        "found": 73,
+        "share": 0.7604
+      },
+      "top20": {
+        "found": 85,
+        "share": 0.8854
+      }
+    }
+  },
+  "fusion_top_8": {
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, whitespace tokens (the system's) | 4+4 | no limit": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 29,
+      "target_in_top_4": 62,
+      "target_in_top_8": 76,
+      "share_top_8": 0.7917,
+      "distinct_cases_in_top_8": 5.17
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, whitespace tokens (the system's) | 4+4 | max 2 per case": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 29,
+      "target_in_top_4": 63,
+      "target_in_top_8": 76,
+      "share_top_8": 0.7917,
+      "distinct_cases_in_top_8": 5.17
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, whitespace tokens (the system's) | 8+8 | no limit": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 35,
+      "target_in_top_4": 62,
+      "target_in_top_8": 76,
+      "share_top_8": 0.7917,
+      "distinct_cases_in_top_8": 5.36
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, whitespace tokens (the system's) | 8+8 | max 2 per case": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 35,
+      "target_in_top_4": 63,
+      "target_in_top_8": 76,
+      "share_top_8": 0.7917,
+      "distinct_cases_in_top_8": 6.34
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, whitespace tokens (the system's) | 20+20 | no limit": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 46,
+      "target_in_top_4": 64,
+      "target_in_top_8": 77,
+      "share_top_8": 0.8021,
+      "distinct_cases_in_top_8": 5.2
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, whitespace tokens (the system's) | 20+20 | max 2 per case": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 46,
+      "target_in_top_4": 65,
+      "target_in_top_8": 77,
+      "share_top_8": 0.8021,
+      "distinct_cases_in_top_8": 6.46
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, word tokens | 4+4 | no limit": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 29,
+      "target_in_top_4": 68,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 5.14
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, word tokens | 4+4 | max 2 per case": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 29,
+      "target_in_top_4": 68,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 5.14
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, word tokens | 8+8 | no limit": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 37,
+      "target_in_top_4": 69,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 5.35
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, word tokens | 8+8 | max 2 per case": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 37,
+      "target_in_top_4": 69,
+      "target_in_top_8": 79,
+      "share_top_8": 0.8229,
+      "distinct_cases_in_top_8": 6.34
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, word tokens | 20+20 | no limit": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 47,
+      "target_in_top_4": 70,
+      "target_in_top_8": 77,
+      "share_top_8": 0.8021,
+      "distinct_cases_in_top_8": 5.09
+    },
+    "legal-bert, question + jurisdiction (the debate's query) + bm25, word tokens | 20+20 | max 2 per case": {
+      "dense": "legal-bert, question + jurisdiction (the debate's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 47,
+      "target_in_top_4": 71,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 6.45
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, whitespace tokens (the system's) | 4+4 | no limit": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 27,
+      "target_in_top_4": 63,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 5.12
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, whitespace tokens (the system's) | 4+4 | max 2 per case": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 27,
+      "target_in_top_4": 64,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 5.12
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, whitespace tokens (the system's) | 8+8 | no limit": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 37,
+      "target_in_top_4": 64,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 5.3
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, whitespace tokens (the system's) | 8+8 | max 2 per case": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 37,
+      "target_in_top_4": 65,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 6.2
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, whitespace tokens (the system's) | 20+20 | no limit": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 47,
+      "target_in_top_4": 68,
+      "target_in_top_8": 79,
+      "share_top_8": 0.8229,
+      "distinct_cases_in_top_8": 5.07
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, whitespace tokens (the system's) | 20+20 | max 2 per case": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 47,
+      "target_in_top_4": 68,
+      "target_in_top_8": 79,
+      "share_top_8": 0.8229,
+      "distinct_cases_in_top_8": 6.4
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, word tokens | 4+4 | no limit": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 28,
+      "target_in_top_4": 68,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 5.08
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, word tokens | 4+4 | max 2 per case": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 28,
+      "target_in_top_4": 68,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 5.08
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, word tokens | 8+8 | no limit": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 36,
+      "target_in_top_4": 69,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 5.26
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, word tokens | 8+8 | max 2 per case": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 36,
+      "target_in_top_4": 69,
+      "target_in_top_8": 81,
+      "share_top_8": 0.8438,
+      "distinct_cases_in_top_8": 6.18
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, word tokens | 20+20 | no limit": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 47,
+      "target_in_top_4": 72,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 5.0
+    },
+    "legal-bert, question only (the earlier baseline's query) + bm25, word tokens | 20+20 | max 2 per case": {
+      "dense": "legal-bert, question only (the earlier baseline's query)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 47,
+      "target_in_top_4": 72,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 6.36
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, whitespace tokens (the system's) | 4+4 | no limit": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 57,
+      "target_in_top_4": 74,
+      "target_in_top_8": 82,
+      "share_top_8": 0.8542,
+      "distinct_cases_in_top_8": 3.82
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, whitespace tokens (the system's) | 4+4 | max 2 per case": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 57,
+      "target_in_top_4": 75,
+      "target_in_top_8": 82,
+      "share_top_8": 0.8542,
+      "distinct_cases_in_top_8": 3.82
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, whitespace tokens (the system's) | 8+8 | no limit": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 58,
+      "target_in_top_4": 75,
+      "target_in_top_8": 82,
+      "share_top_8": 0.8542,
+      "distinct_cases_in_top_8": 4.04
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, whitespace tokens (the system's) | 8+8 | max 2 per case": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 58,
+      "target_in_top_4": 75,
+      "target_in_top_8": 83,
+      "share_top_8": 0.8646,
+      "distinct_cases_in_top_8": 5.08
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, whitespace tokens (the system's) | 20+20 | no limit": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 62,
+      "target_in_top_4": 73,
+      "target_in_top_8": 82,
+      "share_top_8": 0.8542,
+      "distinct_cases_in_top_8": 3.84
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, whitespace tokens (the system's) | 20+20 | max 2 per case": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 62,
+      "target_in_top_4": 74,
+      "target_in_top_8": 83,
+      "share_top_8": 0.8646,
+      "distinct_cases_in_top_8": 5.78
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 4+4 | no limit": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 56,
+      "target_in_top_4": 76,
+      "target_in_top_8": 81,
+      "share_top_8": 0.8438,
+      "distinct_cases_in_top_8": 3.61
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 4+4 | max 2 per case": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 56,
+      "target_in_top_4": 76,
+      "target_in_top_8": 81,
+      "share_top_8": 0.8438,
+      "distinct_cases_in_top_8": 3.61
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 8+8 | no limit": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 58,
+      "target_in_top_4": 76,
+      "target_in_top_8": 81,
+      "share_top_8": 0.8438,
+      "distinct_cases_in_top_8": 3.99
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 8+8 | max 2 per case": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 58,
+      "target_in_top_4": 77,
+      "target_in_top_8": 82,
+      "share_top_8": 0.8542,
+      "distinct_cases_in_top_8": 4.96
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 20+20 | no limit": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 61,
+      "target_in_top_4": 73,
+      "target_in_top_8": 84,
+      "share_top_8": 0.875,
+      "distinct_cases_in_top_8": 3.8
+    },
+    "bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 20+20 | max 2 per case": {
+      "dense": "bge-base-en-v1.5 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 61,
+      "target_in_top_4": 73,
+      "target_in_top_8": 84,
+      "share_top_8": 0.875,
+      "distinct_cases_in_top_8": 5.67
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, whitespace tokens (the system's) | 4+4 | no limit": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 49,
+      "target_in_top_4": 68,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 4.15
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, whitespace tokens (the system's) | 4+4 | max 2 per case": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 49,
+      "target_in_top_4": 69,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 4.15
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, whitespace tokens (the system's) | 8+8 | no limit": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 51,
+      "target_in_top_4": 68,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 4.3
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, whitespace tokens (the system's) | 8+8 | max 2 per case": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 51,
+      "target_in_top_4": 69,
+      "target_in_top_8": 80,
+      "share_top_8": 0.8333,
+      "distinct_cases_in_top_8": 5.2
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, whitespace tokens (the system's) | 20+20 | no limit": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 52,
+      "target_in_top_4": 65,
+      "target_in_top_8": 78,
+      "share_top_8": 0.8125,
+      "distinct_cases_in_top_8": 4.07
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, whitespace tokens (the system's) | 20+20 | max 2 per case": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, whitespace tokens (the system's)",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 52,
+      "target_in_top_4": 65,
+      "target_in_top_8": 79,
+      "share_top_8": 0.8229,
+      "distinct_cases_in_top_8": 5.82
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, word tokens | 4+4 | no limit": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": null,
+      "target_at_rank_1": 50,
+      "target_in_top_4": 71,
+      "target_in_top_8": 83,
+      "share_top_8": 0.8646,
+      "distinct_cases_in_top_8": 4.03
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, word tokens | 4+4 | max 2 per case": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 4,
+      "per_case_limit": 2,
+      "target_at_rank_1": 50,
+      "target_in_top_4": 72,
+      "target_in_top_8": 83,
+      "share_top_8": 0.8646,
+      "distinct_cases_in_top_8": 4.03
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, word tokens | 8+8 | no limit": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": null,
+      "target_at_rank_1": 51,
+      "target_in_top_4": 71,
+      "target_in_top_8": 82,
+      "share_top_8": 0.8542,
+      "distinct_cases_in_top_8": 4.2
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, word tokens | 8+8 | max 2 per case": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 8,
+      "per_case_limit": 2,
+      "target_at_rank_1": 51,
+      "target_in_top_4": 72,
+      "target_in_top_8": 83,
+      "share_top_8": 0.8646,
+      "distinct_cases_in_top_8": 5.04
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, word tokens | 20+20 | no limit": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": null,
+      "target_at_rank_1": 54,
+      "target_in_top_4": 71,
+      "target_in_top_8": 82,
+      "share_top_8": 0.8542,
+      "distinct_cases_in_top_8": 4.04
+    },
+    "all-MiniLM-L6-v2 (retrieval-trained) + bm25, word tokens | 20+20 | max 2 per case": {
+      "dense": "all-MiniLM-L6-v2 (retrieval-trained)",
+      "lexical": "bm25, word tokens",
+      "depth_each": 20,
+      "per_case_limit": 2,
+      "target_at_rank_1": 54,
+      "target_in_top_4": 73,
+      "target_in_top_8": 83,
+      "share_top_8": 0.8646,
+      "distinct_cases_in_top_8": 5.75
+    }
+  },
+  "the_system_as_it_is": {
+    "dense": "legal-bert, question + jurisdiction (the debate's query)",
+    "lexical": "bm25, whitespace tokens (the system's)",
+    "depth_each": 4,
+    "per_case_limit": null,
+    "target_at_rank_1": 29,
+    "target_in_top_4": 62,
+    "target_in_top_8": 76,
+    "share_top_8": 0.7917,
+    "distinct_cases_in_top_8": 5.17
+  },
+  "best_fusion": {
+    "name": "bge-base-en-v1.5 (retrieval-trained) + bm25, word tokens | 20+20 | no limit",
+    "dense": "bge-base-en-v1.5 (retrieval-trained)",
+    "lexical": "bm25, word tokens",
+    "depth_each": 20,
+    "per_case_limit": null,
+    "target_at_rank_1": 61,
+    "target_in_top_4": 73,
+    "target_in_top_8": 84,
+    "share_top_8": 0.875,
+    "distinct_cases_in_top_8": 3.8
+  },
+  "models_that_could_not_be_run": {},
+  "timings": {
+    "bm25_word_index_seconds": 143.7,
+    "bge-base-en-v1.5_embedding_seconds": 282.5,
+    "all-MiniLM-L6-v2_embedding_seconds": 215.2
+  },
+  "seconds": 772.2,
+  "note": "Selecting the best configuration on these 96 questions and reporting it on the same questions is optimistic; treat the ranking of configurations as the finding, not the best number."
+}

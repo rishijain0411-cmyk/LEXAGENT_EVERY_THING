@@ -1,0 +1,59 @@
+
+=====================================================================================
+  LEXAGENT v3.0: CITATION CHECKER - EVIDENCE SELECTION STUDY
+=====================================================================================
+[LexAgent-V3] 2026-10-06 11:03:19 | src.models.load_model | INFO | Loading embedder: nlpaueb/legal-bert-base-uncased (on cuda)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 34261.00it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: nlpaueb/legal-bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.decoder.weight             | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.decoder.bias               | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+C:\Users\admin\Desktop\LexAgent\LexAgent\V3_with_CAP_as_main\experiments\..\src\models\load_model.py:145: FutureWarning: The `get_sentence_embedding_dimension` method has been renamed to `get_embedding_dimension`.
+  embedder.get_sentence_embedding_dimension())
+[LexAgent-V3] 2026-10-06 11:03:22 | src.models.load_model | INFO | Embedder loaded: nlpaueb/legal-bert-base-uncased (dim=768)
+[LexAgent-V3] 2026-10-06 11:03:22 | src.novel.cce | INFO | Loaded 313611 known cases from C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/cap_known_cases.pkl
+Loading weights:   0%|          | 0/106 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 60/106 [00:00<00:00, 599.85it/s]Loading weights: 100%|██████████| 106/106 [00:00<00:00, 1041.92it/s]
+[LexAgent-V3] 2026-10-06 11:03:28 | src.novel.cce | INFO | Loaded NLI CrossEncoder: cross-encoder/nli-deberta-v3-small
+[LexAgent-V3] 2026-10-06 11:03:28 | src.novel.cce | INFO | CCE (Factorized) initialized: 313611 known cases, 181,941 reports in the case catalog, tau=0.70, NLI active=True
+  [TEST SET] 4 benchmark case(s) are left out because the corpus has no source text for them:
+    - #45 Buckley v. Valeo: only 216 words of the target case are in the corpus (423 U.S. 1040)
+    - #98 Dobbs v. Jackson Women's Health Organization: the target case is not in the corpus
+    - #99 New York State Rifle & Pistol Association, Inc. v. Bruen: the target case is not in the corpus
+    - #100 Students for Fair Admissions, Inc. v. President and Fellows of Harvard College: the target case is not in the corpus
+  Citations: 96 correct, 96 with a swapped holding
+  [ 24/192] scored
+  [ 48/192] scored
+  [ 72/192] scored
+  [ 96/192] scored
+  [120/192] scored
+  [144/192] scored
+  [168/192] scored
+  [192/192] scored
+
+-------------------------------------------------------------------------------------
+  Passages read by the entailment model    | Correct accepted  | Swapped accepted  | Windows
+-------------------------------------------------------------------------------------
+  checker as deployed                      |  22/96            |   5/96            |
+  dense_top3                               |  22/96            |   5/96            | 23.9
+  dense_top5                               |  28/96            |   8/96            | 39.7
+  lexical_top3                             |  24/96            |   6/96            | 24.3
+  lexical_top5                             |  30/96            |   8/96            | 40.2
+  hybrid_top3                              |  23/96            |   1/96            | 24.3
+  hybrid_top5                              |  29/96            |   6/96            | 40.1
+  whole_opinion                            |  60/96            |  24/96            | 483.8
+-------------------------------------------------------------------------------------
+
+Evidence study saved to: C:/Users/admin/Desktop/LexAgent/LexAgent/V3_with_CAP_as_main/data/results\cce_evidence_selection_study.json
+

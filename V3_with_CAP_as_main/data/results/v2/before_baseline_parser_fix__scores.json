@@ -1,0 +1,4930 @@
+{
+  "written": "2026-10-08T01:06:57",
+  "benchmark_sha256": "ec0cd20b06d57a53ff200138e4aabd3b1b001e90e1eaa5315698abaecfcd0de6",
+  "cases": 96,
+  "similarity_metric": {
+    "model": "sentence-transformers/all-mpnet-base-v2",
+    "floor_holding_of_another_case": 0.2935,
+    "the_question_itself": 0.7181
+  },
+  "runs": {
+    "baseline_4x300": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.5938,
+          "citations_per_answer": 1.26,
+          "citations": 121,
+          "existence_rate": 0.9752,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "pool": {
+          "target_cited_rate": 0.5938,
+          "citations_per_answer": 1.26,
+          "citations": 121,
+          "existence_rate": 0.9752,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "answers_with_uncited_case_mentions": 15,
+        "uncited_mentions": 21,
+        "uncited_mentions_not_found": 6,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 6.5,
+        "measures": {
+          "target cited by the answer": 0.5938,
+          "target cited by any agent": 0.5938,
+          "citations the answer rests on": 1.2604,
+          "citations made by all agents": 1.2604,
+          "answer rests on no existing authority": 0.1146,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7314,
+          "legacy: fabricated-name rate": 0.0243,
+          "legacy: answer similarity (Legal-BERT)": 0.9407,
+          "legacy: authority recall": 0.5833
+        }
+      },
+      "seed1": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.6354,
+          "citations_per_answer": 1.25,
+          "citations": 120,
+          "existence_rate": 0.975,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "pool": {
+          "target_cited_rate": 0.6354,
+          "citations_per_answer": 1.25,
+          "citations": 120,
+          "existence_rate": 0.975,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "answers_with_uncited_case_mentions": 13,
+        "uncited_mentions": 18,
+        "uncited_mentions_not_found": 6,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 5.5,
+        "measures": {
+          "target cited by the answer": 0.6354,
+          "target cited by any agent": 0.6354,
+          "citations the answer rests on": 1.25,
+          "citations made by all agents": 1.25,
+          "answer rests on no existing authority": 0.1146,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7356,
+          "legacy: fabricated-name rate": 0.0243,
+          "legacy: answer similarity (Legal-BERT)": 0.9409,
+          "legacy: authority recall": 0.6146
+        }
+      },
+      "seed2": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.5938,
+          "citations_per_answer": 1.219,
+          "citations": 117,
+          "existence_rate": 0.9658,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 4,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 14
+        },
+        "pool": {
+          "target_cited_rate": 0.5938,
+          "citations_per_answer": 1.219,
+          "citations": 117,
+          "existence_rate": 0.9658,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 4,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 14
+        },
+        "answers_with_uncited_case_mentions": 13,
+        "uncited_mentions": 18,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 5.0,
+        "measures": {
+          "target cited by the answer": 0.5938,
+          "target cited by any agent": 0.5938,
+          "citations the answer rests on": 1.2188,
+          "citations made by all agents": 1.2188,
+          "answer rests on no existing authority": 0.1458,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7314,
+          "legacy: fabricated-name rate": 0.0295,
+          "legacy: answer similarity (Legal-BERT)": 0.9415,
+          "legacy: authority recall": 0.5833
+        }
+      }
+    },
+    "baseline_8x500": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.3333,
+          "citations_per_answer": 0.604,
+          "citations": 58,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 54
+        },
+        "pool": {
+          "target_cited_rate": 0.3333,
+          "citations_per_answer": 0.604,
+          "citations": 58,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 54
+        },
+        "answers_with_uncited_case_mentions": 21,
+        "uncited_mentions": 35,
+        "uncited_mentions_not_found": 3,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 6.1,
+        "measures": {
+          "target cited by the answer": 0.3333,
+          "target cited by any agent": 0.3333,
+          "citations the answer rests on": 0.6042,
+          "citations made by all agents": 0.6042,
+          "answer rests on no existing authority": 0.5625,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7454,
+          "legacy: fabricated-name rate": 0.0,
+          "legacy: answer similarity (Legal-BERT)": 0.9405,
+          "legacy: authority recall": 0.3229
+        }
+      },
+      "seed1": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.3542,
+          "citations_per_answer": 0.615,
+          "citations": 59,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 54
+        },
+        "pool": {
+          "target_cited_rate": 0.3542,
+          "citations_per_answer": 0.615,
+          "citations": 59,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 54
+        },
+        "answers_with_uncited_case_mentions": 22,
+        "uncited_mentions": 34,
+        "uncited_mentions_not_found": 3,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 4.6,
+        "measures": {
+          "target cited by the answer": 0.3542,
+          "target cited by any agent": 0.3542,
+          "citations the answer rests on": 0.6146,
+          "citations made by all agents": 0.6146,
+          "answer rests on no existing authority": 0.5625,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7463,
+          "legacy: fabricated-name rate": 0.0,
+          "legacy: answer similarity (Legal-BERT)": 0.9404,
+          "legacy: authority recall": 0.3438
+        }
+      },
+      "seed2": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.3542,
+          "citations_per_answer": 0.594,
+          "citations": 57,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 55
+        },
+        "pool": {
+          "target_cited_rate": 0.3542,
+          "citations_per_answer": 0.594,
+          "citations": 57,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 55
+        },
+        "answers_with_uncited_case_mentions": 24,
+        "uncited_mentions": 32,
+        "uncited_mentions_not_found": 2,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 4.6,
+        "measures": {
+          "target cited by the answer": 0.3542,
+          "target cited by any agent": 0.3542,
+          "citations the answer rests on": 0.5938,
+          "citations made by all agents": 0.5938,
+          "answer rests on no existing authority": 0.5729,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7466,
+          "legacy: fabricated-name rate": 0.0,
+          "legacy: answer similarity (Legal-BERT)": 0.9406,
+          "legacy: authority recall": 0.3438
+        }
+      }
+    },
+    "baseline_r7_4x300": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.75,
+          "citations_per_answer": 1.615,
+          "citations": 155,
+          "existence_rate": 0.9871,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 2,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 10
+        },
+        "pool": {
+          "target_cited_rate": 0.75,
+          "citations_per_answer": 1.615,
+          "citations": 155,
+          "existence_rate": 0.9871,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 2,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 10
+        },
+        "answers_with_uncited_case_mentions": 8,
+        "uncited_mentions": 12,
+        "uncited_mentions_not_found": 2,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 4.8,
+        "measures": {
+          "target cited by the answer": 0.75,
+          "target cited by any agent": 0.75,
+          "citations the answer rests on": 1.6146,
+          "citations made by all agents": 1.6146,
+          "answer rests on no existing authority": 0.1042,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7476,
+          "legacy: fabricated-name rate": 0.0104,
+          "legacy: answer similarity (Legal-BERT)": 0.9438,
+          "legacy: authority recall": 0.7292
+        }
+      },
+      "seed1": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.75,
+          "citations_per_answer": 1.604,
+          "citations": 154,
+          "existence_rate": 0.9935,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 1,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "pool": {
+          "target_cited_rate": 0.75,
+          "citations_per_answer": 1.604,
+          "citations": 154,
+          "existence_rate": 0.9935,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 1,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "answers_with_uncited_case_mentions": 9,
+        "uncited_mentions": 15,
+        "uncited_mentions_not_found": 4,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 5.0,
+        "measures": {
+          "target cited by the answer": 0.75,
+          "target cited by any agent": 0.75,
+          "citations the answer rests on": 1.6042,
+          "citations made by all agents": 1.6042,
+          "answer rests on no existing authority": 0.1146,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7469,
+          "legacy: fabricated-name rate": 0.0156,
+          "legacy: answer similarity (Legal-BERT)": 0.9436,
+          "legacy: authority recall": 0.7083
+        }
+      },
+      "seed2": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.75,
+          "citations_per_answer": 1.615,
+          "citations": 155,
+          "existence_rate": 0.9935,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 1,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "pool": {
+          "target_cited_rate": 0.75,
+          "citations_per_answer": 1.615,
+          "citations": 155,
+          "existence_rate": 0.9935,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 1,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "answers_with_uncited_case_mentions": 10,
+        "uncited_mentions": 16,
+        "uncited_mentions_not_found": 2,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 4.9,
+        "measures": {
+          "target cited by the answer": 0.75,
+          "target cited by any agent": 0.75,
+          "citations the answer rests on": 1.6146,
+          "citations made by all agents": 1.6146,
+          "answer rests on no existing authority": 0.1146,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7471,
+          "legacy: fabricated-name rate": 0.026,
+          "legacy: answer similarity (Legal-BERT)": 0.943,
+          "legacy: authority recall": 0.7188
+        }
+      }
+    },
+    "baseline_r7_8x500": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.3229,
+          "citations_per_answer": 0.448,
+          "citations": 43,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 65
+        },
+        "pool": {
+          "target_cited_rate": 0.3229,
+          "citations_per_answer": 0.448,
+          "citations": 43,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 65
+        },
+        "answers_with_uncited_case_mentions": 19,
+        "uncited_mentions": 35,
+        "uncited_mentions_not_found": 1,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 5.1,
+        "measures": {
+          "target cited by the answer": 0.3229,
+          "target cited by any agent": 0.3229,
+          "citations the answer rests on": 0.4479,
+          "citations made by all agents": 0.4479,
+          "answer rests on no existing authority": 0.6771,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7485,
+          "legacy: fabricated-name rate": 0.0104,
+          "legacy: answer similarity (Legal-BERT)": 0.9396,
+          "legacy: authority recall": 0.3021
+        }
+      },
+      "seed1": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.3229,
+          "citations_per_answer": 0.562,
+          "citations": 54,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 64
+        },
+        "pool": {
+          "target_cited_rate": 0.3229,
+          "citations_per_answer": 0.562,
+          "citations": 54,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 64
+        },
+        "answers_with_uncited_case_mentions": 18,
+        "uncited_mentions": 29,
+        "uncited_mentions_not_found": 1,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 5.0,
+        "measures": {
+          "target cited by the answer": 0.3229,
+          "target cited by any agent": 0.3229,
+          "citations the answer rests on": 0.5625,
+          "citations made by all agents": 0.5625,
+          "answer rests on no existing authority": 0.6667,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7518,
+          "legacy: fabricated-name rate": 0.0,
+          "legacy: answer similarity (Legal-BERT)": 0.9409,
+          "legacy: authority recall": 0.3125
+        }
+      },
+      "seed2": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.2708,
+          "citations_per_answer": 0.448,
+          "citations": 43,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 70
+        },
+        "pool": {
+          "target_cited_rate": 0.2708,
+          "citations_per_answer": 0.448,
+          "citations": 43,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 70
+        },
+        "answers_with_uncited_case_mentions": 23,
+        "uncited_mentions": 40,
+        "uncited_mentions_not_found": 3,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": null,
+        "mean_rounds": 0.0,
+        "minutes": 5.2,
+        "measures": {
+          "target cited by the answer": 0.2708,
+          "target cited by any agent": 0.2708,
+          "citations the answer rests on": 0.4479,
+          "citations made by all agents": 0.4479,
+          "answer rests on no existing authority": 0.7292,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.7504,
+          "legacy: fabricated-name rate": 0.0,
+          "legacy: answer similarity (Legal-BERT)": 0.9407,
+          "legacy: authority recall": 0.2604
+        }
+      }
+    },
+    "e0_legacy_checker_no_memory": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.3021,
+          "citations_per_answer": 0.562,
+          "citations": 54,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 48
+        },
+        "pool": {
+          "target_cited_rate": 0.8542,
+          "citations_per_answer": 4.979,
+          "citations": 478,
+          "existence_rate": 0.9854,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 7,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 27,
+        "uncited_mentions": 30,
+        "uncited_mentions_not_found": 3,
+        "holding_support": {
+          "citations_checked": 263,
+          "support_shown_rate": 0.3878,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.5162,
+        "mean_rounds": 3.0,
+        "minutes": 180.4,
+        "measures": {
+          "target cited by the answer": 0.3021,
+          "target cited by any agent": 0.8542,
+          "citations the answer rests on": 0.5625,
+          "citations made by all agents": 4.9792,
+          "answer rests on no existing authority": 0.5,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6684,
+          "legacy: fabricated-name rate": 0.0082,
+          "legacy: answer similarity (Legal-BERT)": 0.9261,
+          "legacy: authority recall": 0.6771
+        }
+      },
+      "seed1": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.3021,
+          "citations_per_answer": 0.615,
+          "citations": 59,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 39
+        },
+        "pool": {
+          "target_cited_rate": 0.8438,
+          "citations_per_answer": 5.073,
+          "citations": 487,
+          "existence_rate": 0.9856,
+          "citations_not_found": 2,
+          "citations_not_in_corpus": 5,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 0.5,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 34,
+        "uncited_mentions": 37,
+        "uncited_mentions_not_found": 7,
+        "holding_support": {
+          "citations_checked": 273,
+          "support_shown_rate": 0.3919,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.5889,
+        "mean_rounds": 3.0,
+        "minutes": 188.9,
+        "measures": {
+          "target cited by the answer": 0.3021,
+          "target cited by any agent": 0.8438,
+          "citations the answer rests on": 0.6146,
+          "citations made by all agents": 5.0729,
+          "answer rests on no existing authority": 0.4062,
+          "cited cases not found (all agents)": 0.0208,
+          "answer similarity (sentence embedding)": 0.6678,
+          "legacy: fabricated-name rate": 0.0139,
+          "legacy: answer similarity (Legal-BERT)": 0.9216,
+          "legacy: authority recall": 0.7083
+        }
+      },
+      "seed2": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.4271,
+          "citations_per_answer": 0.688,
+          "citations": 66,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 37
+        },
+        "pool": {
+          "target_cited_rate": 0.8438,
+          "citations_per_answer": 4.927,
+          "citations": 473,
+          "existence_rate": 0.9873,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 6,
+          "reporter_cites_given": 2,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 33,
+        "uncited_mentions": 35,
+        "uncited_mentions_not_found": 6,
+        "holding_support": {
+          "citations_checked": 271,
+          "support_shown_rate": 0.4502,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.6129,
+        "mean_rounds": 3.0,
+        "minutes": 186.9,
+        "measures": {
+          "target cited by the answer": 0.4271,
+          "target cited by any agent": 0.8438,
+          "citations the answer rests on": 0.6875,
+          "citations made by all agents": 4.9271,
+          "answer rests on no existing authority": 0.3854,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6574,
+          "legacy: fabricated-name rate": 0.02,
+          "legacy: answer similarity (Legal-BERT)": 0.9197,
+          "legacy: authority recall": 0.7292
+        }
+      }
+    },
+    "e4_repaired_A1": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.7083,
+          "citations_per_answer": 1.083,
+          "citations": 104,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 9
+        },
+        "pool": {
+          "target_cited_rate": 0.8021,
+          "citations_per_answer": 1.667,
+          "citations": 160,
+          "existence_rate": 0.9875,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 2,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 12,
+        "uncited_mentions": 14,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 132,
+          "support_shown_rate": 0.9318,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7219,
+        "mean_rounds": 1.729,
+        "minutes": 57.4,
+        "measures": {
+          "target cited by the answer": 0.7083,
+          "target cited by any agent": 0.8021,
+          "citations the answer rests on": 1.0833,
+          "citations made by all agents": 1.6667,
+          "answer rests on no existing authority": 0.0938,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6569,
+          "legacy: fabricated-name rate": 0.0,
+          "legacy: answer similarity (Legal-BERT)": 0.921,
+          "legacy: authority recall": 0.7396
+        }
+      }
+    },
+    "e4_repaired_A2": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.6562,
+          "citations_per_answer": 1.167,
+          "citations": 112,
+          "existence_rate": 0.9911,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 1,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 7
+        },
+        "pool": {
+          "target_cited_rate": 0.8125,
+          "citations_per_answer": 4.927,
+          "citations": 473,
+          "existence_rate": 0.9915,
+          "citations_not_found": 1,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 5,
+        "uncited_mentions": 5,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 0,
+          "support_shown_rate": null,
+          "support_model_validated": false
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7656,
+        "mean_rounds": 3.0,
+        "minutes": 180.4,
+        "measures": {
+          "target cited by the answer": 0.6562,
+          "target cited by any agent": 0.8125,
+          "citations the answer rests on": 1.1667,
+          "citations made by all agents": 4.9271,
+          "answer rests on no existing authority": 0.0729,
+          "cited cases not found (all agents)": 0.0104,
+          "answer similarity (sentence embedding)": 0.6661,
+          "legacy: fabricated-name rate": 0.0056,
+          "legacy: answer similarity (Legal-BERT)": 0.9218,
+          "legacy: authority recall": 0.75
+        }
+      }
+    },
+    "e4_repaired_A3": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.6562,
+          "citations_per_answer": 0.979,
+          "citations": 94,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 15
+        },
+        "pool": {
+          "target_cited_rate": 0.875,
+          "citations_per_answer": 4.854,
+          "citations": 466,
+          "existence_rate": 0.9979,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 1,
+          "reporter_cites_given": 1,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 17,
+        "uncited_mentions": 18,
+        "uncited_mentions_not_found": 7,
+        "holding_support": {
+          "citations_checked": 282,
+          "support_shown_rate": 0.8404,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.6446,
+        "mean_rounds": 3.0,
+        "minutes": 184.8,
+        "measures": {
+          "target cited by the answer": 0.6562,
+          "target cited by any agent": 0.875,
+          "citations the answer rests on": 0.9792,
+          "citations made by all agents": 4.8542,
+          "answer rests on no existing authority": 0.1562,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6598,
+          "legacy: fabricated-name rate": 0.0,
+          "legacy: answer similarity (Legal-BERT)": 0.9199,
+          "legacy: authority recall": 0.75
+        }
+      }
+    },
+    "e4_repaired_A4": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.625,
+          "citations_per_answer": 1.031,
+          "citations": 99,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 11
+        },
+        "pool": {
+          "target_cited_rate": 0.7708,
+          "citations_per_answer": 2.698,
+          "citations": 259,
+          "existence_rate": 0.9884,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 14,
+        "uncited_mentions": 15,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 260,
+          "support_shown_rate": 0.8385,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.6862,
+        "mean_rounds": 1.0,
+        "minutes": 66.9,
+        "measures": {
+          "target cited by the answer": 0.625,
+          "target cited by any agent": 0.7708,
+          "citations the answer rests on": 1.0312,
+          "citations made by all agents": 2.6979,
+          "answer rests on no existing authority": 0.1146,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6562,
+          "legacy: fabricated-name rate": 0.0078,
+          "legacy: answer similarity (Legal-BERT)": 0.9214,
+          "legacy: authority recall": 0.7604
+        }
+      }
+    },
+    "e4_repaired_Full": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.6354,
+          "citations_per_answer": 0.979,
+          "citations": 94,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 17
+        },
+        "pool": {
+          "target_cited_rate": 0.8333,
+          "citations_per_answer": 4.896,
+          "citations": 470,
+          "existence_rate": 0.9872,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 6,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 17,
+        "uncited_mentions": 18,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 273,
+          "support_shown_rate": 0.8608,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.634,
+        "mean_rounds": 3.0,
+        "minutes": 181.7,
+        "measures": {
+          "target cited by the answer": 0.6354,
+          "target cited by any agent": 0.8333,
+          "citations the answer rests on": 0.9792,
+          "citations made by all agents": 4.8958,
+          "answer rests on no existing authority": 0.1771,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6706,
+          "legacy: fabricated-name rate": 0.0104,
+          "legacy: answer similarity (Legal-BERT)": 0.9237,
+          "legacy: authority recall": 0.7292
+        }
+      },
+      "seed1": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.625,
+          "citations_per_answer": 1.094,
+          "citations": 105,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 10
+        },
+        "pool": {
+          "target_cited_rate": 0.8438,
+          "citations_per_answer": 4.698,
+          "citations": 451,
+          "existence_rate": 0.9823,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 8,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 11,
+        "uncited_mentions": 12,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 269,
+          "support_shown_rate": 0.855,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7048,
+        "mean_rounds": 3.0,
+        "minutes": 186.0,
+        "measures": {
+          "target cited by the answer": 0.625,
+          "target cited by any agent": 0.8438,
+          "citations the answer rests on": 1.0938,
+          "citations made by all agents": 4.6979,
+          "answer rests on no existing authority": 0.1042,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6662,
+          "legacy: fabricated-name rate": 0.0148,
+          "legacy: answer similarity (Legal-BERT)": 0.9246,
+          "legacy: authority recall": 0.7188
+        }
+      }
+    },
+    "f1_ledger_Full": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.5729,
+          "citations_per_answer": 1.042,
+          "citations": 100,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 100,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 13
+        },
+        "pool": {
+          "target_cited_rate": 0.7604,
+          "citations_per_answer": 2.688,
+          "citations": 258,
+          "existence_rate": 0.9884,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 100,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 6,
+        "uncited_mentions": 6,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 260,
+          "support_shown_rate": 0.8462,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7245,
+        "mean_rounds": 1.01,
+        "minutes": 64.4,
+        "measures": {
+          "target cited by the answer": 0.5729,
+          "target cited by any agent": 0.7604,
+          "citations the answer rests on": 1.0417,
+          "citations made by all agents": 2.6875,
+          "answer rests on no existing authority": 0.1354,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.677,
+          "legacy: fabricated-name rate": 0.0078,
+          "legacy: answer similarity (Legal-BERT)": 0.924,
+          "legacy: authority recall": 0.75
+        }
+      }
+    },
+    "f2_final_Full": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.625,
+          "citations_per_answer": 1.177,
+          "citations": 113,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 113,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 9
+        },
+        "pool": {
+          "target_cited_rate": 0.8229,
+          "citations_per_answer": 2.844,
+          "citations": 273,
+          "existence_rate": 0.9963,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 1,
+          "reporter_cites_given": 122,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 9,
+        "uncited_mentions": 9,
+        "uncited_mentions_not_found": 3,
+        "holding_support": {
+          "citations_checked": 272,
+          "support_shown_rate": 0.8309,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7273,
+        "mean_rounds": 1.01,
+        "minutes": 64.9,
+        "measures": {
+          "target cited by the answer": 0.625,
+          "target cited by any agent": 0.8229,
+          "citations the answer rests on": 1.1771,
+          "citations made by all agents": 2.8438,
+          "answer rests on no existing authority": 0.0938,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6807,
+          "legacy: fabricated-name rate": 0.0382,
+          "legacy: answer similarity (Legal-BERT)": 0.9231,
+          "legacy: authority recall": 0.8021
+        }
+      },
+      "seed1": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.5938,
+          "citations_per_answer": 1.115,
+          "citations": 107,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 107,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 13
+        },
+        "pool": {
+          "target_cited_rate": 0.8229,
+          "citations_per_answer": 2.688,
+          "citations": 258,
+          "existence_rate": 0.9884,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 3,
+          "reporter_cites_given": 112,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 8,
+        "uncited_mentions": 10,
+        "uncited_mentions_not_found": 4,
+        "holding_support": {
+          "citations_checked": 258,
+          "support_shown_rate": 0.8217,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7155,
+        "mean_rounds": 1.01,
+        "minutes": 69.4,
+        "measures": {
+          "target cited by the answer": 0.5938,
+          "target cited by any agent": 0.8229,
+          "citations the answer rests on": 1.1146,
+          "citations made by all agents": 2.6875,
+          "answer rests on no existing authority": 0.1354,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6937,
+          "legacy: fabricated-name rate": 0.0174,
+          "legacy: answer similarity (Legal-BERT)": 0.9255,
+          "legacy: authority recall": 0.8021
+        }
+      },
+      "seed2": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.6562,
+          "citations_per_answer": 1.198,
+          "citations": 115,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 115,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 11
+        },
+        "pool": {
+          "target_cited_rate": 0.8438,
+          "citations_per_answer": 2.708,
+          "citations": 260,
+          "existence_rate": 0.9923,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 2,
+          "reporter_cites_given": 120,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 8,
+        "uncited_mentions": 8,
+        "uncited_mentions_not_found": 5,
+        "holding_support": {
+          "citations_checked": 264,
+          "support_shown_rate": 0.8447,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7065,
+        "mean_rounds": 1.0,
+        "minutes": 71.5,
+        "measures": {
+          "target cited by the answer": 0.6562,
+          "target cited by any agent": 0.8438,
+          "citations the answer rests on": 1.1979,
+          "citations made by all agents": 2.7083,
+          "answer rests on no existing authority": 0.1146,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.694,
+          "legacy: fabricated-name rate": 0.0182,
+          "legacy: answer similarity (Legal-BERT)": 0.9236,
+          "legacy: authority recall": 0.8229
+        }
+      }
+    },
+    "f3_retrieval_Full": {
+      "seed0": {
+        "cases": 96,
+        "skipped_debates": 0,
+        "answer": {
+          "target_cited_rate": 0.6458,
+          "citations_per_answer": 1.219,
+          "citations": 117,
+          "existence_rate": 1.0,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 0,
+          "reporter_cites_given": 0,
+          "reporter_cite_correct_rate": null,
+          "answers_without_existing_authority": 10
+        },
+        "pool": {
+          "target_cited_rate": 0.9271,
+          "citations_per_answer": 4.812,
+          "citations": 462,
+          "existence_rate": 0.9697,
+          "citations_not_found": 0,
+          "citations_not_in_corpus": 14,
+          "reporter_cites_given": 5,
+          "reporter_cite_correct_rate": 1.0,
+          "answers_without_existing_authority": 0
+        },
+        "answers_with_uncited_case_mentions": 8,
+        "uncited_mentions": 9,
+        "uncited_mentions_not_found": 4,
+        "holding_support": {
+          "citations_checked": 276,
+          "support_shown_rate": 0.8768,
+          "support_model_validated": true
+        },
+        "complete": true,
+        "errors": 0,
+        "mean_confidence": 0.7125,
+        "mean_rounds": 3.0,
+        "minutes": 183.3,
+        "measures": {
+          "target cited by the answer": 0.6458,
+          "target cited by any agent": 0.9271,
+          "citations the answer rests on": 1.2188,
+          "citations made by all agents": 4.8125,
+          "answer rests on no existing authority": 0.1042,
+          "cited cases not found (all agents)": 0.0,
+          "answer similarity (sentence embedding)": 0.6665,
+          "legacy: fabricated-name rate": 0.026,
+          "legacy: answer similarity (Legal-BERT)": 0.92,
+          "legacy: authority recall": 0.8229
+        }
+      }
+    }
+  },
+  "paired_comparisons": {
+    "e0_legacy_checker_no_memory vs baseline_4x300": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.3438,
+        "mean_b": 0.6076,
+        "difference": -0.2639,
+        "ci95": [
+          -0.3576,
+          -0.1701
+        ],
+        "p": 0.0001,
+        "dz": -0.557,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8472,
+        "mean_b": 0.6076,
+        "difference": 0.2396,
+        "ci95": [
+          0.1528,
+          0.3264
+        ],
+        "p": 0.0001,
+        "dz": 0.551,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 0.6215,
+        "mean_b": 1.2431,
+        "difference": -0.6215,
+        "ci95": [
+          -0.7569,
+          -0.4861
+        ],
+        "p": 0.0001,
+        "dz": -0.912,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.9931,
+        "mean_b": 1.2431,
+        "difference": 3.75,
+        "ci95": [
+          3.4792,
+          4.0174
+        ],
+        "p": 0.0001,
+        "dz": 2.829,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.4306,
+        "mean_b": 0.125,
+        "difference": 0.3056,
+        "ci95": [
+          0.2257,
+          0.3854
+        ],
+        "p": 0.0001,
+        "dz": 0.757,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0069,
+        "mean_b": 0.0,
+        "difference": 0.0069,
+        "ci95": [
+          0.0,
+          0.0174
+        ],
+        "p": 0.5023,
+        "dz": 0.145,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6645,
+        "mean_b": 0.7328,
+        "difference": -0.0683,
+        "ci95": [
+          -0.0892,
+          -0.0475
+        ],
+        "p": 0.0001,
+        "dz": -0.646,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.014,
+        "mean_b": 0.026,
+        "difference": -0.012,
+        "ci95": [
+          -0.0468,
+          0.0141
+        ],
+        "p": 0.4927,
+        "dz": -0.077,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9225,
+        "mean_b": 0.941,
+        "difference": -0.0186,
+        "ci95": [
+          -0.0233,
+          -0.0141
+        ],
+        "p": 0.0001,
+        "dz": -0.793,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.7049,
+        "mean_b": 0.5938,
+        "difference": 0.1111,
+        "ci95": [
+          0.0278,
+          0.1979
+        ],
+        "p": 0.0152,
+        "dz": 0.262,
+        "significant": true
+      },
+      "_seeds": {
+        "e0_legacy_checker_no_memory": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "e0_legacy_checker_no_memory vs baseline_8x500": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.3438,
+        "mean_b": 0.3472,
+        "difference": -0.0035,
+        "ci95": [
+          -0.1111,
+          0.1007
+        ],
+        "p": 1.0,
+        "dz": -0.006,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8472,
+        "mean_b": 0.3472,
+        "difference": 0.5,
+        "ci95": [
+          0.4097,
+          0.5903
+        ],
+        "p": 0.0001,
+        "dz": 1.096,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 0.6215,
+        "mean_b": 0.6042,
+        "difference": 0.0174,
+        "ci95": [
+          -0.1319,
+          0.1667
+        ],
+        "p": 0.8555,
+        "dz": 0.023,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.9931,
+        "mean_b": 0.6042,
+        "difference": 4.3889,
+        "ci95": [
+          4.0903,
+          4.684
+        ],
+        "p": 0.0001,
+        "dz": 2.949,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.4306,
+        "mean_b": 0.566,
+        "difference": -0.1354,
+        "ci95": [
+          -0.2396,
+          -0.0313
+        ],
+        "p": 0.0171,
+        "dz": -0.255,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0069,
+        "mean_b": 0.0,
+        "difference": 0.0069,
+        "ci95": [
+          0.0,
+          0.0174
+        ],
+        "p": 0.5023,
+        "dz": 0.145,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6645,
+        "mean_b": 0.7461,
+        "difference": -0.0816,
+        "ci95": [
+          -0.1022,
+          -0.0617
+        ],
+        "p": 0.0001,
+        "dz": -0.799,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.014,
+        "mean_b": 0.0,
+        "difference": 0.014,
+        "ci95": [
+          0.0059,
+          0.0235
+        ],
+        "p": 0.0022,
+        "dz": 0.318,
+        "significant": true
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9225,
+        "mean_b": 0.9405,
+        "difference": -0.018,
+        "ci95": [
+          -0.0226,
+          -0.0135
+        ],
+        "p": 0.0001,
+        "dz": -0.795,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.7049,
+        "mean_b": 0.3368,
+        "difference": 0.3681,
+        "ci95": [
+          0.2674,
+          0.4653
+        ],
+        "p": 0.0001,
+        "dz": 0.737,
+        "significant": true
+      },
+      "_seeds": {
+        "e0_legacy_checker_no_memory": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_8x500": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "e4_repaired_Full vs baseline_4x300": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6302,
+        "mean_b": 0.6076,
+        "difference": 0.0226,
+        "ci95": [
+          -0.0712,
+          0.1146
+        ],
+        "p": 0.6653,
+        "dz": 0.047,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8385,
+        "mean_b": 0.6076,
+        "difference": 0.2309,
+        "ci95": [
+          0.1493,
+          0.316
+        ],
+        "p": 0.0001,
+        "dz": 0.546,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0365,
+        "mean_b": 1.2431,
+        "difference": -0.2066,
+        "ci95": [
+          -0.3628,
+          -0.0503
+        ],
+        "p": 0.0129,
+        "dz": -0.262,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.7969,
+        "mean_b": 1.2431,
+        "difference": 3.5538,
+        "ci95": [
+          3.2865,
+          3.8125
+        ],
+        "p": 0.0001,
+        "dz": 2.713,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1406,
+        "mean_b": 0.125,
+        "difference": 0.0156,
+        "ci95": [
+          -0.066,
+          0.0938
+        ],
+        "p": 0.7393,
+        "dz": 0.039,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6684,
+        "mean_b": 0.7328,
+        "difference": -0.0644,
+        "ci95": [
+          -0.0867,
+          -0.0422
+        ],
+        "p": 0.0001,
+        "dz": -0.576,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0126,
+        "mean_b": 0.026,
+        "difference": -0.0135,
+        "ci95": [
+          -0.0482,
+          0.0135
+        ],
+        "p": 0.4578,
+        "dz": -0.085,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9242,
+        "mean_b": 0.941,
+        "difference": -0.0169,
+        "ci95": [
+          -0.0218,
+          -0.0121
+        ],
+        "p": 0.0001,
+        "dz": -0.689,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.724,
+        "mean_b": 0.5938,
+        "difference": 0.1302,
+        "ci95": [
+          0.0434,
+          0.217
+        ],
+        "p": 0.0063,
+        "dz": 0.295,
+        "significant": true
+      },
+      "_seeds": {
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ],
+        "baseline_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "e4_repaired_Full vs baseline_8x500": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6302,
+        "mean_b": 0.3472,
+        "difference": 0.283,
+        "ci95": [
+          0.1806,
+          0.3854
+        ],
+        "p": 0.0001,
+        "dz": 0.552,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8385,
+        "mean_b": 0.3472,
+        "difference": 0.4913,
+        "ci95": [
+          0.3993,
+          0.5833
+        ],
+        "p": 0.0001,
+        "dz": 1.049,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0365,
+        "mean_b": 0.6042,
+        "difference": 0.4323,
+        "ci95": [
+          0.2604,
+          0.6007
+        ],
+        "p": 0.0001,
+        "dz": 0.499,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.7969,
+        "mean_b": 0.6042,
+        "difference": 4.1927,
+        "ci95": [
+          3.8976,
+          4.4809
+        ],
+        "p": 0.0001,
+        "dz": 2.872,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1406,
+        "mean_b": 0.566,
+        "difference": -0.4253,
+        "ci95": [
+          -0.526,
+          -0.3264
+        ],
+        "p": 0.0001,
+        "dz": -0.843,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6684,
+        "mean_b": 0.7461,
+        "difference": -0.0777,
+        "ci95": [
+          -0.0984,
+          -0.0569
+        ],
+        "p": 0.0001,
+        "dz": -0.739,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0126,
+        "mean_b": 0.0,
+        "difference": 0.0126,
+        "ci95": [
+          0.0035,
+          0.0234
+        ],
+        "p": 0.0332,
+        "dz": 0.249,
+        "significant": true
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9242,
+        "mean_b": 0.9405,
+        "difference": -0.0164,
+        "ci95": [
+          -0.0212,
+          -0.0114
+        ],
+        "p": 0.0001,
+        "dz": -0.665,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.724,
+        "mean_b": 0.3368,
+        "difference": 0.3872,
+        "ci95": [
+          0.2882,
+          0.4878
+        ],
+        "p": 0.0001,
+        "dz": 0.773,
+        "significant": true
+      },
+      "_seeds": {
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ],
+        "baseline_8x500": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "baseline_8x500 vs baseline_4x300": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.3472,
+        "mean_b": 0.6076,
+        "difference": -0.2604,
+        "ci95": [
+          -0.3681,
+          -0.1528
+        ],
+        "p": 0.0001,
+        "dz": -0.481,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.3472,
+        "mean_b": 0.6076,
+        "difference": -0.2604,
+        "ci95": [
+          -0.3681,
+          -0.1528
+        ],
+        "p": 0.0001,
+        "dz": -0.481,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 0.6042,
+        "mean_b": 1.2431,
+        "difference": -0.6389,
+        "ci95": [
+          -0.8403,
+          -0.4444
+        ],
+        "p": 0.0001,
+        "dz": -0.652,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 0.6042,
+        "mean_b": 1.2431,
+        "difference": -0.6389,
+        "ci95": [
+          -0.8403,
+          -0.4444
+        ],
+        "p": 0.0001,
+        "dz": -0.652,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.566,
+        "mean_b": 0.125,
+        "difference": 0.441,
+        "ci95": [
+          0.3403,
+          0.5417
+        ],
+        "p": 0.0001,
+        "dz": 0.879,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.7461,
+        "mean_b": 0.7328,
+        "difference": 0.0133,
+        "ci95": [
+          0.0052,
+          0.022
+        ],
+        "p": 0.0031,
+        "dz": 0.319,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.026,
+        "difference": -0.026,
+        "ci95": [
+          -0.059,
+          -0.0017
+        ],
+        "p": 0.1295,
+        "dz": -0.176,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9405,
+        "mean_b": 0.941,
+        "difference": -0.0005,
+        "ci95": [
+          -0.0029,
+          0.0017
+        ],
+        "p": 0.6665,
+        "dz": -0.045,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.3368,
+        "mean_b": 0.5938,
+        "difference": -0.2569,
+        "ci95": [
+          -0.3646,
+          -0.1493
+        ],
+        "p": 0.0001,
+        "dz": -0.474,
+        "significant": true
+      },
+      "_seeds": {
+        "baseline_8x500": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "e4_repaired_Full vs e0_legacy_checker_no_memory": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6302,
+        "mean_b": 0.3438,
+        "difference": 0.2865,
+        "ci95": [
+          0.1997,
+          0.3733
+        ],
+        "p": 0.0001,
+        "dz": 0.664,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8385,
+        "mean_b": 0.8472,
+        "difference": -0.0087,
+        "ci95": [
+          -0.0417,
+          0.0243
+        ],
+        "p": 0.6871,
+        "dz": -0.053,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0365,
+        "mean_b": 0.6215,
+        "difference": 0.4149,
+        "ci95": [
+          0.3142,
+          0.5174
+        ],
+        "p": 0.0001,
+        "dz": 0.81,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.7969,
+        "mean_b": 4.9931,
+        "difference": -0.1962,
+        "ci95": [
+          -0.3542,
+          -0.0417
+        ],
+        "p": 0.0158,
+        "dz": -0.248,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1406,
+        "mean_b": 0.4306,
+        "difference": -0.2899,
+        "ci95": [
+          -0.3681,
+          -0.2118
+        ],
+        "p": 0.0001,
+        "dz": -0.755,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0069,
+        "difference": -0.0069,
+        "ci95": [
+          -0.0174,
+          0.0
+        ],
+        "p": 0.5023,
+        "dz": -0.145,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6684,
+        "mean_b": 0.6645,
+        "difference": 0.0039,
+        "ci95": [
+          -0.0109,
+          0.0188
+        ],
+        "p": 0.6075,
+        "dz": 0.052,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0126,
+        "mean_b": 0.014,
+        "difference": -0.0014,
+        "ci95": [
+          -0.0153,
+          0.013
+        ],
+        "p": 0.8431,
+        "dz": -0.02,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9242,
+        "mean_b": 0.9225,
+        "difference": 0.0017,
+        "ci95": [
+          -0.0019,
+          0.0052
+        ],
+        "p": 0.3651,
+        "dz": 0.093,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.724,
+        "mean_b": 0.7049,
+        "difference": 0.0191,
+        "ci95": [
+          -0.0295,
+          0.0694
+        ],
+        "p": 0.5037,
+        "dz": 0.077,
+        "significant": false
+      },
+      "_seeds": {
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ],
+        "e0_legacy_checker_no_memory": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "e4_repaired_Full vs e4_repaired_A1": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6302,
+        "mean_b": 0.7083,
+        "difference": -0.0781,
+        "ci95": [
+          -0.1562,
+          -0.0052
+        ],
+        "p": 0.0602,
+        "dz": -0.206,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8385,
+        "mean_b": 0.8021,
+        "difference": 0.0365,
+        "ci95": [
+          -0.0208,
+          0.0885
+        ],
+        "p": 0.2709,
+        "dz": 0.133,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0365,
+        "mean_b": 1.0833,
+        "difference": -0.0469,
+        "ci95": [
+          -0.1667,
+          0.0677
+        ],
+        "p": 0.5019,
+        "dz": -0.078,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.7969,
+        "mean_b": 1.6667,
+        "difference": 3.1302,
+        "ci95": [
+          2.8646,
+          3.3802
+        ],
+        "p": 0.0001,
+        "dz": 2.415,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1406,
+        "mean_b": 0.0938,
+        "difference": 0.0469,
+        "ci95": [
+          -0.0208,
+          0.1146
+        ],
+        "p": 0.2228,
+        "dz": 0.141,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6684,
+        "mean_b": 0.6569,
+        "difference": 0.0115,
+        "ci95": [
+          -0.011,
+          0.0352
+        ],
+        "p": 0.3408,
+        "dz": 0.099,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0126,
+        "mean_b": 0.0,
+        "difference": 0.0126,
+        "ci95": [
+          0.0035,
+          0.0234
+        ],
+        "p": 0.0332,
+        "dz": 0.249,
+        "significant": true
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9242,
+        "mean_b": 0.921,
+        "difference": 0.0031,
+        "ci95": [
+          -0.0016,
+          0.0077
+        ],
+        "p": 0.1921,
+        "dz": 0.134,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.724,
+        "mean_b": 0.7396,
+        "difference": -0.0156,
+        "ci95": [
+          -0.0885,
+          0.0573
+        ],
+        "p": 0.7805,
+        "dz": -0.043,
+        "significant": false
+      },
+      "_seeds": {
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ],
+        "e4_repaired_A1": [
+          "seed0"
+        ]
+      }
+    },
+    "e4_repaired_Full vs e4_repaired_A2": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6302,
+        "mean_b": 0.6562,
+        "difference": -0.026,
+        "ci95": [
+          -0.1146,
+          0.0625
+        ],
+        "p": 0.6521,
+        "dz": -0.058,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8385,
+        "mean_b": 0.8125,
+        "difference": 0.026,
+        "ci95": [
+          -0.0104,
+          0.0625
+        ],
+        "p": 0.277,
+        "dz": 0.142,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0365,
+        "mean_b": 1.1667,
+        "difference": -0.1302,
+        "ci95": [
+          -0.2604,
+          0.0
+        ],
+        "p": 0.0566,
+        "dz": -0.202,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.7969,
+        "mean_b": 4.9271,
+        "difference": -0.1302,
+        "ci95": [
+          -0.3698,
+          0.1094
+        ],
+        "p": 0.3187,
+        "dz": -0.107,
+        "significant": false
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1406,
+        "mean_b": 0.0729,
+        "difference": 0.0677,
+        "ci95": [
+          0.0,
+          0.1354
+        ],
+        "p": 0.081,
+        "dz": 0.196,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0104,
+        "difference": -0.0104,
+        "ci95": [
+          -0.0312,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": -0.102,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6684,
+        "mean_b": 0.6661,
+        "difference": 0.0023,
+        "ci95": [
+          -0.0227,
+          0.028
+        ],
+        "p": 0.8598,
+        "dz": 0.018,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0126,
+        "mean_b": 0.0056,
+        "difference": 0.007,
+        "ci95": [
+          -0.0063,
+          0.0201
+        ],
+        "p": 0.2932,
+        "dz": 0.108,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9242,
+        "mean_b": 0.9218,
+        "difference": 0.0024,
+        "ci95": [
+          -0.0024,
+          0.0074
+        ],
+        "p": 0.3575,
+        "dz": 0.096,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.724,
+        "mean_b": 0.75,
+        "difference": -0.026,
+        "ci95": [
+          -0.0885,
+          0.0312
+        ],
+        "p": 0.5111,
+        "dz": -0.086,
+        "significant": false
+      },
+      "_seeds": {
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ],
+        "e4_repaired_A2": [
+          "seed0"
+        ]
+      }
+    },
+    "e4_repaired_Full vs e4_repaired_A3": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6302,
+        "mean_b": 0.6562,
+        "difference": -0.026,
+        "ci95": [
+          -0.1042,
+          0.0521
+        ],
+        "p": 0.6047,
+        "dz": -0.065,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8385,
+        "mean_b": 0.875,
+        "difference": -0.0365,
+        "ci95": [
+          -0.0885,
+          0.0104
+        ],
+        "p": 0.237,
+        "dz": -0.144,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0365,
+        "mean_b": 0.9792,
+        "difference": 0.0573,
+        "ci95": [
+          -0.0521,
+          0.1719
+        ],
+        "p": 0.3621,
+        "dz": 0.1,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.7969,
+        "mean_b": 4.8542,
+        "difference": -0.0573,
+        "ci95": [
+          -0.2396,
+          0.1198
+        ],
+        "p": 0.5828,
+        "dz": -0.063,
+        "significant": false
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1406,
+        "mean_b": 0.1562,
+        "difference": -0.0156,
+        "ci95": [
+          -0.0885,
+          0.0573
+        ],
+        "p": 0.781,
+        "dz": -0.043,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6684,
+        "mean_b": 0.6598,
+        "difference": 0.0086,
+        "ci95": [
+          -0.0115,
+          0.0296
+        ],
+        "p": 0.4253,
+        "dz": 0.083,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0126,
+        "mean_b": 0.0,
+        "difference": 0.0126,
+        "ci95": [
+          0.0035,
+          0.0234
+        ],
+        "p": 0.0332,
+        "dz": 0.249,
+        "significant": true
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9242,
+        "mean_b": 0.9199,
+        "difference": 0.0042,
+        "ci95": [
+          -0.0006,
+          0.0096
+        ],
+        "p": 0.113,
+        "dz": 0.164,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.724,
+        "mean_b": 0.75,
+        "difference": -0.026,
+        "ci95": [
+          -0.0938,
+          0.0417
+        ],
+        "p": 0.5467,
+        "dz": -0.078,
+        "significant": false
+      },
+      "_seeds": {
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ],
+        "e4_repaired_A3": [
+          "seed0"
+        ]
+      }
+    },
+    "e4_repaired_Full vs e4_repaired_A4": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6302,
+        "mean_b": 0.625,
+        "difference": 0.0052,
+        "ci95": [
+          -0.0885,
+          0.099
+        ],
+        "p": 1.0,
+        "dz": 0.011,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8385,
+        "mean_b": 0.7708,
+        "difference": 0.0677,
+        "ci95": [
+          0.0208,
+          0.1198
+        ],
+        "p": 0.0122,
+        "dz": 0.274,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0365,
+        "mean_b": 1.0312,
+        "difference": 0.0052,
+        "ci95": [
+          -0.1094,
+          0.1198
+        ],
+        "p": 1.0,
+        "dz": 0.009,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.7969,
+        "mean_b": 2.6979,
+        "difference": 2.099,
+        "ci95": [
+          1.8854,
+          2.3073
+        ],
+        "p": 0.0001,
+        "dz": 1.966,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1406,
+        "mean_b": 0.1146,
+        "difference": 0.026,
+        "ci95": [
+          -0.0469,
+          0.099
+        ],
+        "p": 0.5771,
+        "dz": 0.071,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6684,
+        "mean_b": 0.6562,
+        "difference": 0.0122,
+        "ci95": [
+          -0.0107,
+          0.0345
+        ],
+        "p": 0.2985,
+        "dz": 0.106,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0126,
+        "mean_b": 0.0078,
+        "difference": 0.0048,
+        "ci95": [
+          -0.0113,
+          0.02
+        ],
+        "p": 0.5946,
+        "dz": 0.062,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9242,
+        "mean_b": 0.9214,
+        "difference": 0.0028,
+        "ci95": [
+          -0.0018,
+          0.0075
+        ],
+        "p": 0.2505,
+        "dz": 0.118,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.724,
+        "mean_b": 0.7604,
+        "difference": -0.0365,
+        "ci95": [
+          -0.1042,
+          0.0312
+        ],
+        "p": 0.3655,
+        "dz": -0.109,
+        "significant": false
+      },
+      "_seeds": {
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ],
+        "e4_repaired_A4": [
+          "seed0"
+        ]
+      }
+    },
+    "f2_final_Full vs baseline_r7_4x300": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.625,
+        "mean_b": 0.75,
+        "difference": -0.125,
+        "ci95": [
+          -0.2222,
+          -0.0278
+        ],
+        "p": 0.0174,
+        "dz": -0.253,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8299,
+        "mean_b": 0.75,
+        "difference": 0.0799,
+        "ci95": [
+          -0.0069,
+          0.1667
+        ],
+        "p": 0.0925,
+        "dz": 0.182,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.1632,
+        "mean_b": 1.6111,
+        "difference": -0.4479,
+        "ci95": [
+          -0.6319,
+          -0.2639
+        ],
+        "p": 0.0001,
+        "dz": -0.481,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 2.7465,
+        "mean_b": 1.6111,
+        "difference": 1.1354,
+        "ci95": [
+          0.9236,
+          1.3333
+        ],
+        "p": 0.0001,
+        "dz": 1.09,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1146,
+        "mean_b": 0.1111,
+        "difference": 0.0035,
+        "ci95": [
+          -0.0729,
+          0.0764
+        ],
+        "p": 1.0,
+        "dz": 0.009,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6895,
+        "mean_b": 0.7472,
+        "difference": -0.0577,
+        "ci95": [
+          -0.0798,
+          -0.0363
+        ],
+        "p": 0.0001,
+        "dz": -0.527,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0246,
+        "mean_b": 0.0174,
+        "difference": 0.0072,
+        "ci95": [
+          -0.0179,
+          0.0301
+        ],
+        "p": 0.5789,
+        "dz": 0.061,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.924,
+        "mean_b": 0.9435,
+        "difference": -0.0194,
+        "ci95": [
+          -0.0235,
+          -0.0155
+        ],
+        "p": 0.0001,
+        "dz": -0.962,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.809,
+        "mean_b": 0.7188,
+        "difference": 0.0903,
+        "ci95": [
+          0.0,
+          0.1771
+        ],
+        "p": 0.0592,
+        "dz": 0.202,
+        "significant": false
+      },
+      "_seeds": {
+        "f2_final_Full": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_r7_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "f2_final_Full vs baseline_r7_8x500": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.625,
+        "mean_b": 0.3056,
+        "difference": 0.3194,
+        "ci95": [
+          0.2118,
+          0.4236
+        ],
+        "p": 0.0001,
+        "dz": 0.608,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8299,
+        "mean_b": 0.3056,
+        "difference": 0.5243,
+        "ci95": [
+          0.4201,
+          0.625
+        ],
+        "p": 0.0001,
+        "dz": 1.035,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.1632,
+        "mean_b": 0.4861,
+        "difference": 0.6771,
+        "ci95": [
+          0.4826,
+          0.8646
+        ],
+        "p": 0.0001,
+        "dz": 0.697,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 2.7465,
+        "mean_b": 0.4861,
+        "difference": 2.2604,
+        "ci95": [
+          2.0312,
+          2.4792
+        ],
+        "p": 0.0001,
+        "dz": 2.026,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1146,
+        "mean_b": 0.691,
+        "difference": -0.5764,
+        "ci95": [
+          -0.6667,
+          -0.4792
+        ],
+        "p": 0.0001,
+        "dz": -1.233,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6895,
+        "mean_b": 0.7502,
+        "difference": -0.0608,
+        "ci95": [
+          -0.0824,
+          -0.0405
+        ],
+        "p": 0.0001,
+        "dz": -0.573,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0246,
+        "mean_b": 0.0035,
+        "difference": 0.0211,
+        "ci95": [
+          0.0046,
+          0.0394
+        ],
+        "p": 0.0219,
+        "dz": 0.24,
+        "significant": true
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.924,
+        "mean_b": 0.9404,
+        "difference": -0.0164,
+        "ci95": [
+          -0.0208,
+          -0.012
+        ],
+        "p": 0.0001,
+        "dz": -0.727,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.809,
+        "mean_b": 0.2917,
+        "difference": 0.5174,
+        "ci95": [
+          0.4132,
+          0.6181
+        ],
+        "p": 0.0001,
+        "dz": 1.016,
+        "significant": true
+      },
+      "_seeds": {
+        "f2_final_Full": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_r7_8x500": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "f2_final_Full vs e4_repaired_Full": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.625,
+        "mean_b": 0.6302,
+        "difference": -0.0052,
+        "ci95": [
+          -0.1024,
+          0.0937
+        ],
+        "p": 0.9456,
+        "dz": -0.011,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8299,
+        "mean_b": 0.8385,
+        "difference": -0.0087,
+        "ci95": [
+          -0.0816,
+          0.0642
+        ],
+        "p": 0.8588,
+        "dz": -0.024,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.1632,
+        "mean_b": 1.0365,
+        "difference": 0.1267,
+        "ci95": [
+          0.0087,
+          0.25
+        ],
+        "p": 0.0496,
+        "dz": 0.208,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 2.7465,
+        "mean_b": 4.7969,
+        "difference": -2.0503,
+        "ci95": [
+          -2.2743,
+          -1.8229
+        ],
+        "p": 0.0001,
+        "dz": -1.827,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1146,
+        "mean_b": 0.1406,
+        "difference": -0.026,
+        "ci95": [
+          -0.0938,
+          0.0399
+        ],
+        "p": 0.4833,
+        "dz": -0.078,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6895,
+        "mean_b": 0.6684,
+        "difference": 0.0211,
+        "ci95": [
+          -0.0013,
+          0.0423
+        ],
+        "p": 0.0632,
+        "dz": 0.192,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0246,
+        "mean_b": 0.0126,
+        "difference": 0.012,
+        "ci95": [
+          -0.0013,
+          0.0275
+        ],
+        "p": 0.1161,
+        "dz": 0.166,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.924,
+        "mean_b": 0.9242,
+        "difference": -0.0001,
+        "ci95": [
+          -0.0042,
+          0.004
+        ],
+        "p": 0.9621,
+        "dz": -0.005,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.809,
+        "mean_b": 0.724,
+        "difference": 0.0851,
+        "ci95": [
+          0.0035,
+          0.1684
+        ],
+        "p": 0.0528,
+        "dz": 0.204,
+        "significant": false
+      },
+      "_seeds": {
+        "f2_final_Full": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ]
+      }
+    },
+    "f2_final_Full vs baseline_4x300": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.625,
+        "mean_b": 0.6076,
+        "difference": 0.0174,
+        "ci95": [
+          -0.0868,
+          0.125
+        ],
+        "p": 0.7973,
+        "dz": 0.033,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8299,
+        "mean_b": 0.6076,
+        "difference": 0.2222,
+        "ci95": [
+          0.1285,
+          0.3229
+        ],
+        "p": 0.0002,
+        "dz": 0.465,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.1632,
+        "mean_b": 1.2431,
+        "difference": -0.0799,
+        "ci95": [
+          -0.2396,
+          0.0799
+        ],
+        "p": 0.3428,
+        "dz": -0.101,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 2.7465,
+        "mean_b": 1.2431,
+        "difference": 1.5035,
+        "ci95": [
+          1.3299,
+          1.684
+        ],
+        "p": 0.0001,
+        "dz": 1.698,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1146,
+        "mean_b": 0.125,
+        "difference": -0.0104,
+        "ci95": [
+          -0.0868,
+          0.0625
+        ],
+        "p": 0.859,
+        "dz": -0.028,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6895,
+        "mean_b": 0.7328,
+        "difference": -0.0433,
+        "ci95": [
+          -0.0648,
+          -0.0224
+        ],
+        "p": 0.0003,
+        "dz": -0.4,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0246,
+        "mean_b": 0.026,
+        "difference": -0.0014,
+        "ci95": [
+          -0.0376,
+          0.0289
+        ],
+        "p": 0.9427,
+        "dz": -0.009,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.924,
+        "mean_b": 0.941,
+        "difference": -0.017,
+        "ci95": [
+          -0.0214,
+          -0.0127
+        ],
+        "p": 0.0001,
+        "dz": -0.78,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.809,
+        "mean_b": 0.5938,
+        "difference": 0.2153,
+        "ci95": [
+          0.1215,
+          0.316
+        ],
+        "p": 0.0002,
+        "dz": 0.439,
+        "significant": true
+      },
+      "_seeds": {
+        "f2_final_Full": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "f1_ledger_Full vs e4_repaired_Full": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.5729,
+        "mean_b": 0.6302,
+        "difference": -0.0573,
+        "ci95": [
+          -0.151,
+          0.0312
+        ],
+        "p": 0.2736,
+        "dz": -0.125,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.7604,
+        "mean_b": 0.8385,
+        "difference": -0.0781,
+        "ci95": [
+          -0.125,
+          -0.0365
+        ],
+        "p": 0.0005,
+        "dz": -0.353,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.0417,
+        "mean_b": 1.0365,
+        "difference": 0.0052,
+        "ci95": [
+          -0.125,
+          0.1406
+        ],
+        "p": 1.0,
+        "dz": 0.008,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 2.6875,
+        "mean_b": 4.7969,
+        "difference": -2.1094,
+        "ci95": [
+          -2.3229,
+          -1.8906
+        ],
+        "p": 0.0001,
+        "dz": -1.942,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1354,
+        "mean_b": 0.1406,
+        "difference": -0.0052,
+        "ci95": [
+          -0.0729,
+          0.0677
+        ],
+        "p": 1.0,
+        "dz": -0.015,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.677,
+        "mean_b": 0.6684,
+        "difference": 0.0086,
+        "ci95": [
+          -0.0121,
+          0.0296
+        ],
+        "p": 0.4249,
+        "dz": 0.082,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0078,
+        "mean_b": 0.0126,
+        "difference": -0.0048,
+        "ci95": [
+          -0.02,
+          0.0113
+        ],
+        "p": 0.5946,
+        "dz": -0.062,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.924,
+        "mean_b": 0.9242,
+        "difference": -0.0001,
+        "ci95": [
+          -0.0049,
+          0.0047
+        ],
+        "p": 0.9633,
+        "dz": -0.005,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.75,
+        "mean_b": 0.724,
+        "difference": 0.026,
+        "ci95": [
+          -0.0365,
+          0.0938
+        ],
+        "p": 0.5303,
+        "dz": 0.082,
+        "significant": false
+      },
+      "_seeds": {
+        "f1_ledger_Full": [
+          "seed0"
+        ],
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ]
+      }
+    },
+    "f3_retrieval_Full vs e4_repaired_Full": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.6458,
+        "mean_b": 0.6302,
+        "difference": 0.0156,
+        "ci95": [
+          -0.1042,
+          0.1354
+        ],
+        "p": 0.8578,
+        "dz": 0.027,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.9271,
+        "mean_b": 0.8385,
+        "difference": 0.0885,
+        "ci95": [
+          0.0208,
+          0.1615
+        ],
+        "p": 0.0201,
+        "dz": 0.255,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.2188,
+        "mean_b": 1.0365,
+        "difference": 0.1823,
+        "ci95": [
+          0.0417,
+          0.3229
+        ],
+        "p": 0.0148,
+        "dz": 0.256,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 4.8125,
+        "mean_b": 4.7969,
+        "difference": 0.0156,
+        "ci95": [
+          -0.2656,
+          0.2969
+        ],
+        "p": 0.9443,
+        "dz": 0.011,
+        "significant": false
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1042,
+        "mean_b": 0.1406,
+        "difference": -0.0365,
+        "ci95": [
+          -0.1198,
+          0.0469
+        ],
+        "p": 0.4602,
+        "dz": -0.087,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6665,
+        "mean_b": 0.6684,
+        "difference": -0.0019,
+        "ci95": [
+          -0.028,
+          0.023
+        ],
+        "p": 0.8927,
+        "dz": -0.014,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.026,
+        "mean_b": 0.0126,
+        "difference": 0.0135,
+        "ci95": [
+          -0.0087,
+          0.0395
+        ],
+        "p": 0.2976,
+        "dz": 0.112,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.92,
+        "mean_b": 0.9242,
+        "difference": -0.0041,
+        "ci95": [
+          -0.0098,
+          0.0015
+        ],
+        "p": 0.1663,
+        "dz": -0.145,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.8229,
+        "mean_b": 0.724,
+        "difference": 0.099,
+        "ci95": [
+          0.0156,
+          0.1875
+        ],
+        "p": 0.0366,
+        "dz": 0.229,
+        "significant": true
+      },
+      "_seeds": {
+        "f3_retrieval_Full": [
+          "seed0"
+        ],
+        "e4_repaired_Full": [
+          "seed0",
+          "seed1"
+        ]
+      }
+    },
+    "f2_final_Full vs f1_ledger_Full": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.625,
+        "mean_b": 0.5729,
+        "difference": 0.0521,
+        "ci95": [
+          -0.0486,
+          0.1528
+        ],
+        "p": 0.3443,
+        "dz": 0.103,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8299,
+        "mean_b": 0.7604,
+        "difference": 0.0694,
+        "ci95": [
+          -0.0069,
+          0.1493
+        ],
+        "p": 0.1023,
+        "dz": 0.177,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.1632,
+        "mean_b": 1.0417,
+        "difference": 0.1215,
+        "ci95": [
+          -0.0243,
+          0.2604
+        ],
+        "p": 0.1052,
+        "dz": 0.173,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 2.7465,
+        "mean_b": 2.6875,
+        "difference": 0.059,
+        "ci95": [
+          -0.1111,
+          0.2257
+        ],
+        "p": 0.5326,
+        "dz": 0.069,
+        "significant": false
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1146,
+        "mean_b": 0.1354,
+        "difference": -0.0208,
+        "ci95": [
+          -0.1042,
+          0.059
+        ],
+        "p": 0.6727,
+        "dz": -0.052,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6895,
+        "mean_b": 0.677,
+        "difference": 0.0124,
+        "ci95": [
+          -0.0095,
+          0.0344
+        ],
+        "p": 0.2651,
+        "dz": 0.114,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0246,
+        "mean_b": 0.0078,
+        "difference": 0.0168,
+        "ci95": [
+          -0.0029,
+          0.0373
+        ],
+        "p": 0.1192,
+        "dz": 0.167,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.924,
+        "mean_b": 0.924,
+        "difference": 0.0,
+        "ci95": [
+          -0.005,
+          0.0053
+        ],
+        "p": 0.9989,
+        "dz": 0.0,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.809,
+        "mean_b": 0.75,
+        "difference": 0.059,
+        "ci95": [
+          -0.0174,
+          0.1389
+        ],
+        "p": 0.1604,
+        "dz": 0.155,
+        "significant": false
+      },
+      "_seeds": {
+        "f2_final_Full": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "f1_ledger_Full": [
+          "seed0"
+        ]
+      }
+    },
+    "f2_final_Full vs f3_retrieval_Full": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.625,
+        "mean_b": 0.6458,
+        "difference": -0.0208,
+        "ci95": [
+          -0.1146,
+          0.0764
+        ],
+        "p": 0.724,
+        "dz": -0.043,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.8299,
+        "mean_b": 0.9271,
+        "difference": -0.0972,
+        "ci95": [
+          -0.1528,
+          -0.0451
+        ],
+        "p": 0.0002,
+        "dz": -0.362,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.1632,
+        "mean_b": 1.2188,
+        "difference": -0.0556,
+        "ci95": [
+          -0.2083,
+          0.0972
+        ],
+        "p": 0.511,
+        "dz": -0.072,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 2.7465,
+        "mean_b": 4.8125,
+        "difference": -2.066,
+        "ci95": [
+          -2.309,
+          -1.8194
+        ],
+        "p": 0.0001,
+        "dz": -1.675,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1146,
+        "mean_b": 0.1042,
+        "difference": 0.0104,
+        "ci95": [
+          -0.0694,
+          0.0833
+        ],
+        "p": 0.8534,
+        "dz": 0.027,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.6895,
+        "mean_b": 0.6665,
+        "difference": 0.023,
+        "ci95": [
+          -0.0025,
+          0.0502
+        ],
+        "p": 0.0951,
+        "dz": 0.172,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0246,
+        "mean_b": 0.026,
+        "difference": -0.0014,
+        "ci95": [
+          -0.0284,
+          0.0237
+        ],
+        "p": 0.9314,
+        "dz": -0.011,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.924,
+        "mean_b": 0.92,
+        "difference": 0.004,
+        "ci95": [
+          -0.0007,
+          0.0089
+        ],
+        "p": 0.1161,
+        "dz": 0.165,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.809,
+        "mean_b": 0.8229,
+        "difference": -0.0139,
+        "ci95": [
+          -0.0903,
+          0.0625
+        ],
+        "p": 0.787,
+        "dz": -0.036,
+        "significant": false
+      },
+      "_seeds": {
+        "f2_final_Full": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "f3_retrieval_Full": [
+          "seed0"
+        ]
+      }
+    },
+    "baseline_r7_4x300 vs baseline_4x300": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.75,
+        "mean_b": 0.6076,
+        "difference": 0.1424,
+        "ci95": [
+          0.0417,
+          0.2465
+        ],
+        "p": 0.0094,
+        "dz": 0.281,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.75,
+        "mean_b": 0.6076,
+        "difference": 0.1424,
+        "ci95": [
+          0.0417,
+          0.2465
+        ],
+        "p": 0.0094,
+        "dz": 0.281,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 1.6111,
+        "mean_b": 1.2431,
+        "difference": 0.3681,
+        "ci95": [
+          0.1632,
+          0.5729
+        ],
+        "p": 0.0007,
+        "dz": 0.36,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 1.6111,
+        "mean_b": 1.2431,
+        "difference": 0.3681,
+        "ci95": [
+          0.1632,
+          0.5729
+        ],
+        "p": 0.0007,
+        "dz": 0.36,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.1111,
+        "mean_b": 0.125,
+        "difference": -0.0139,
+        "ci95": [
+          -0.0868,
+          0.059
+        ],
+        "p": 0.7855,
+        "dz": -0.038,
+        "significant": false
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.7472,
+        "mean_b": 0.7328,
+        "difference": 0.0144,
+        "ci95": [
+          0.0066,
+          0.0225
+        ],
+        "p": 0.0008,
+        "dz": 0.357,
+        "significant": true
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0174,
+        "mean_b": 0.026,
+        "difference": -0.0087,
+        "ci95": [
+          -0.0417,
+          0.0208
+        ],
+        "p": 0.6875,
+        "dz": -0.056,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9435,
+        "mean_b": 0.941,
+        "difference": 0.0024,
+        "ci95": [
+          -0.0,
+          0.005
+        ],
+        "p": 0.0608,
+        "dz": 0.195,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.7188,
+        "mean_b": 0.5938,
+        "difference": 0.125,
+        "ci95": [
+          0.0243,
+          0.2292
+        ],
+        "p": 0.0236,
+        "dz": 0.244,
+        "significant": true
+      },
+      "_seeds": {
+        "baseline_r7_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "baseline_r7_8x500 vs baseline_8x500": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.3056,
+        "mean_b": 0.3472,
+        "difference": -0.0417,
+        "ci95": [
+          -0.1458,
+          0.059
+        ],
+        "p": 0.4742,
+        "dz": -0.081,
+        "significant": false
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.3056,
+        "mean_b": 0.3472,
+        "difference": -0.0417,
+        "ci95": [
+          -0.1458,
+          0.059
+        ],
+        "p": 0.4742,
+        "dz": -0.081,
+        "significant": false
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 0.4861,
+        "mean_b": 0.6042,
+        "difference": -0.1181,
+        "ci95": [
+          -0.3021,
+          0.0764
+        ],
+        "p": 0.2509,
+        "dz": -0.121,
+        "significant": false
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 0.4861,
+        "mean_b": 0.6042,
+        "difference": -0.1181,
+        "ci95": [
+          -0.3021,
+          0.0764
+        ],
+        "p": 0.2509,
+        "dz": -0.121,
+        "significant": false
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.691,
+        "mean_b": 0.566,
+        "difference": 0.125,
+        "ci95": [
+          0.0208,
+          0.2292
+        ],
+        "p": 0.0287,
+        "dz": 0.236,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.7502,
+        "mean_b": 0.7461,
+        "difference": 0.0041,
+        "ci95": [
+          -0.0059,
+          0.0141
+        ],
+        "p": 0.4239,
+        "dz": 0.081,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0035,
+        "mean_b": 0.0,
+        "difference": 0.0035,
+        "ci95": [
+          0.0,
+          0.0104
+        ],
+        "p": 1.0,
+        "dz": 0.102,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9404,
+        "mean_b": 0.9405,
+        "difference": -0.0001,
+        "ci95": [
+          -0.0034,
+          0.0033
+        ],
+        "p": 0.9511,
+        "dz": -0.007,
+        "significant": false
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.2917,
+        "mean_b": 0.3368,
+        "difference": -0.0451,
+        "ci95": [
+          -0.1493,
+          0.0556
+        ],
+        "p": 0.4299,
+        "dz": -0.088,
+        "significant": false
+      },
+      "_seeds": {
+        "baseline_r7_8x500": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_8x500": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    },
+    "baseline_r7_8x500 vs baseline_r7_4x300": {
+      "target cited by the answer": {
+        "n": 96,
+        "mean_a": 0.3056,
+        "mean_b": 0.75,
+        "difference": -0.4444,
+        "ci95": [
+          -0.5486,
+          -0.3403
+        ],
+        "p": 0.0001,
+        "dz": -0.854,
+        "significant": true
+      },
+      "target cited by any agent": {
+        "n": 96,
+        "mean_a": 0.3056,
+        "mean_b": 0.75,
+        "difference": -0.4444,
+        "ci95": [
+          -0.5486,
+          -0.3403
+        ],
+        "p": 0.0001,
+        "dz": -0.854,
+        "significant": true
+      },
+      "citations the answer rests on": {
+        "n": 96,
+        "mean_a": 0.4861,
+        "mean_b": 1.6111,
+        "difference": -1.125,
+        "ci95": [
+          -1.3889,
+          -0.8646
+        ],
+        "p": 0.0001,
+        "dz": -0.85,
+        "significant": true
+      },
+      "citations made by all agents": {
+        "n": 96,
+        "mean_a": 0.4861,
+        "mean_b": 1.6111,
+        "difference": -1.125,
+        "ci95": [
+          -1.3889,
+          -0.8646
+        ],
+        "p": 0.0001,
+        "dz": -0.85,
+        "significant": true
+      },
+      "answer rests on no existing authority": {
+        "n": 96,
+        "mean_a": 0.691,
+        "mean_b": 0.1111,
+        "difference": 0.5799,
+        "ci95": [
+          0.4792,
+          0.6771
+        ],
+        "p": 0.0001,
+        "dz": 1.169,
+        "significant": true
+      },
+      "cited cases not found (all agents)": {
+        "n": 96,
+        "mean_a": 0.0,
+        "mean_b": 0.0,
+        "difference": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0,
+        "dz": null,
+        "significant": false
+      },
+      "answer similarity (sentence embedding)": {
+        "n": 96,
+        "mean_a": 0.7502,
+        "mean_b": 0.7472,
+        "difference": 0.003,
+        "ci95": [
+          -0.0052,
+          0.0114
+        ],
+        "p": 0.4804,
+        "dz": 0.073,
+        "significant": false
+      },
+      "legacy: fabricated-name rate": {
+        "n": 96,
+        "mean_a": 0.0035,
+        "mean_b": 0.0174,
+        "difference": -0.0139,
+        "ci95": [
+          -0.0347,
+          0.0035
+        ],
+        "p": 0.2511,
+        "dz": -0.141,
+        "significant": false
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "n": 96,
+        "mean_a": 0.9404,
+        "mean_b": 0.9435,
+        "difference": -0.0031,
+        "ci95": [
+          -0.0056,
+          -0.0007
+        ],
+        "p": 0.0162,
+        "dz": -0.247,
+        "significant": true
+      },
+      "legacy: authority recall": {
+        "n": 96,
+        "mean_a": 0.2917,
+        "mean_b": 0.7188,
+        "difference": -0.4271,
+        "ci95": [
+          -0.5278,
+          -0.3229
+        ],
+        "p": 0.0001,
+        "dz": -0.814,
+        "significant": true
+      },
+      "_seeds": {
+        "baseline_r7_8x500": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ],
+        "baseline_r7_4x300": [
+          "seed0",
+          "seed1",
+          "seed2"
+        ]
+      }
+    }
+  },
+  "seed_to_seed": {
+    "baseline_4x300": {
+      "target cited by the answer": {
+        "values": [
+          0.5938,
+          0.6354,
+          0.5938
+        ],
+        "sd": 0.024
+      },
+      "target cited by any agent": {
+        "values": [
+          0.5938,
+          0.6354,
+          0.5938
+        ],
+        "sd": 0.024
+      },
+      "citations the answer rests on": {
+        "values": [
+          1.2604,
+          1.25,
+          1.2188
+        ],
+        "sd": 0.0216
+      },
+      "citations made by all agents": {
+        "values": [
+          1.2604,
+          1.25,
+          1.2188
+        ],
+        "sd": 0.0216
+      },
+      "answer rests on no existing authority": {
+        "values": [
+          0.1146,
+          0.1146,
+          0.1458
+        ],
+        "sd": 0.018
+      },
+      "cited cases not found (all agents)": {
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sd": 0.0
+      },
+      "answer similarity (sentence embedding)": {
+        "values": [
+          0.7314,
+          0.7356,
+          0.7314
+        ],
+        "sd": 0.0024
+      },
+      "legacy: fabricated-name rate": {
+        "values": [
+          0.0243,
+          0.0243,
+          0.0295
+        ],
+        "sd": 0.003
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "values": [
+          0.9407,
+          0.9409,
+          0.9415
+        ],
+        "sd": 0.0004
+      },
+      "legacy: authority recall": {
+        "values": [
+          0.5833,
+          0.6146,
+          0.5833
+        ],
+        "sd": 0.0181
+      }
+    },
+    "baseline_8x500": {
+      "target cited by the answer": {
+        "values": [
+          0.3333,
+          0.3542,
+          0.3542
+        ],
+        "sd": 0.0121
+      },
+      "target cited by any agent": {
+        "values": [
+          0.3333,
+          0.3542,
+          0.3542
+        ],
+        "sd": 0.0121
+      },
+      "citations the answer rests on": {
+        "values": [
+          0.6042,
+          0.6146,
+          0.5938
+        ],
+        "sd": 0.0104
+      },
+      "citations made by all agents": {
+        "values": [
+          0.6042,
+          0.6146,
+          0.5938
+        ],
+        "sd": 0.0104
+      },
+      "answer rests on no existing authority": {
+        "values": [
+          0.5625,
+          0.5625,
+          0.5729
+        ],
+        "sd": 0.006
+      },
+      "cited cases not found (all agents)": {
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sd": 0.0
+      },
+      "answer similarity (sentence embedding)": {
+        "values": [
+          0.7454,
+          0.7463,
+          0.7466
+        ],
+        "sd": 0.0006
+      },
+      "legacy: fabricated-name rate": {
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sd": 0.0
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "values": [
+          0.9405,
+          0.9404,
+          0.9406
+        ],
+        "sd": 0.0001
+      },
+      "legacy: authority recall": {
+        "values": [
+          0.3229,
+          0.3438,
+          0.3438
+        ],
+        "sd": 0.0121
+      }
+    },
+    "baseline_r7_4x300": {
+      "target cited by the answer": {
+        "values": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "sd": 0.0
+      },
+      "target cited by any agent": {
+        "values": [
+          0.75,
+          0.75,
+          0.75
+        ],
+        "sd": 0.0
+      },
+      "citations the answer rests on": {
+        "values": [
+          1.6146,
+          1.6042,
+          1.6146
+        ],
+        "sd": 0.006
+      },
+      "citations made by all agents": {
+        "values": [
+          1.6146,
+          1.6042,
+          1.6146
+        ],
+        "sd": 0.006
+      },
+      "answer rests on no existing authority": {
+        "values": [
+          0.1042,
+          0.1146,
+          0.1146
+        ],
+        "sd": 0.006
+      },
+      "cited cases not found (all agents)": {
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sd": 0.0
+      },
+      "answer similarity (sentence embedding)": {
+        "values": [
+          0.7476,
+          0.7469,
+          0.7471
+        ],
+        "sd": 0.0004
+      },
+      "legacy: fabricated-name rate": {
+        "values": [
+          0.0104,
+          0.0156,
+          0.026
+        ],
+        "sd": 0.0079
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "values": [
+          0.9438,
+          0.9436,
+          0.943
+        ],
+        "sd": 0.0004
+      },
+      "legacy: authority recall": {
+        "values": [
+          0.7292,
+          0.7083,
+          0.7188
+        ],
+        "sd": 0.0105
+      }
+    },
+    "baseline_r7_8x500": {
+      "target cited by the answer": {
+        "values": [
+          0.3229,
+          0.3229,
+          0.2708
+        ],
+        "sd": 0.0301
+      },
+      "target cited by any agent": {
+        "values": [
+          0.3229,
+          0.3229,
+          0.2708
+        ],
+        "sd": 0.0301
+      },
+      "citations the answer rests on": {
+        "values": [
+          0.4479,
+          0.5625,
+          0.4479
+        ],
+        "sd": 0.0662
+      },
+      "citations made by all agents": {
+        "values": [
+          0.4479,
+          0.5625,
+          0.4479
+        ],
+        "sd": 0.0662
+      },
+      "answer rests on no existing authority": {
+        "values": [
+          0.6771,
+          0.6667,
+          0.7292
+        ],
+        "sd": 0.0335
+      },
+      "cited cases not found (all agents)": {
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sd": 0.0
+      },
+      "answer similarity (sentence embedding)": {
+        "values": [
+          0.7485,
+          0.7518,
+          0.7504
+        ],
+        "sd": 0.0017
+      },
+      "legacy: fabricated-name rate": {
+        "values": [
+          0.0104,
+          0.0,
+          0.0
+        ],
+        "sd": 0.006
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "values": [
+          0.9396,
+          0.9409,
+          0.9407
+        ],
+        "sd": 0.0007
+      },
+      "legacy: authority recall": {
+        "values": [
+          0.3021,
+          0.3125,
+          0.2604
+        ],
+        "sd": 0.0276
+      }
+    },
+    "e0_legacy_checker_no_memory": {
+      "target cited by the answer": {
+        "values": [
+          0.3021,
+          0.3021,
+          0.4271
+        ],
+        "sd": 0.0722
+      },
+      "target cited by any agent": {
+        "values": [
+          0.8542,
+          0.8438,
+          0.8438
+        ],
+        "sd": 0.006
+      },
+      "citations the answer rests on": {
+        "values": [
+          0.5625,
+          0.6146,
+          0.6875
+        ],
+        "sd": 0.0628
+      },
+      "citations made by all agents": {
+        "values": [
+          4.9792,
+          5.0729,
+          4.9271
+        ],
+        "sd": 0.0739
+      },
+      "answer rests on no existing authority": {
+        "values": [
+          0.5,
+          0.4062,
+          0.3854
+        ],
+        "sd": 0.0611
+      },
+      "cited cases not found (all agents)": {
+        "values": [
+          0.0,
+          0.0208,
+          0.0
+        ],
+        "sd": 0.012
+      },
+      "answer similarity (sentence embedding)": {
+        "values": [
+          0.6684,
+          0.6678,
+          0.6574
+        ],
+        "sd": 0.0062
+      },
+      "legacy: fabricated-name rate": {
+        "values": [
+          0.0082,
+          0.0139,
+          0.02
+        ],
+        "sd": 0.0059
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "values": [
+          0.9261,
+          0.9216,
+          0.9197
+        ],
+        "sd": 0.0033
+      },
+      "legacy: authority recall": {
+        "values": [
+          0.6771,
+          0.7083,
+          0.7292
+        ],
+        "sd": 0.0262
+      }
+    },
+    "e4_repaired_Full": {
+      "target cited by the answer": {
+        "values": [
+          0.6354,
+          0.625
+        ],
+        "sd": 0.0074
+      },
+      "target cited by any agent": {
+        "values": [
+          0.8333,
+          0.8438
+        ],
+        "sd": 0.0074
+      },
+      "citations the answer rests on": {
+        "values": [
+          0.9792,
+          1.0938
+        ],
+        "sd": 0.081
+      },
+      "citations made by all agents": {
+        "values": [
+          4.8958,
+          4.6979
+        ],
+        "sd": 0.1399
+      },
+      "answer rests on no existing authority": {
+        "values": [
+          0.1771,
+          0.1042
+        ],
+        "sd": 0.0515
+      },
+      "cited cases not found (all agents)": {
+        "values": [
+          0.0,
+          0.0
+        ],
+        "sd": 0.0
+      },
+      "answer similarity (sentence embedding)": {
+        "values": [
+          0.6706,
+          0.6662
+        ],
+        "sd": 0.0031
+      },
+      "legacy: fabricated-name rate": {
+        "values": [
+          0.0104,
+          0.0148
+        ],
+        "sd": 0.0031
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "values": [
+          0.9237,
+          0.9246
+        ],
+        "sd": 0.0006
+      },
+      "legacy: authority recall": {
+        "values": [
+          0.7292,
+          0.7188
+        ],
+        "sd": 0.0074
+      }
+    },
+    "f2_final_Full": {
+      "target cited by the answer": {
+        "values": [
+          0.625,
+          0.5938,
+          0.6562
+        ],
+        "sd": 0.0312
+      },
+      "target cited by any agent": {
+        "values": [
+          0.8229,
+          0.8229,
+          0.8438
+        ],
+        "sd": 0.0121
+      },
+      "citations the answer rests on": {
+        "values": [
+          1.1771,
+          1.1146,
+          1.1979
+        ],
+        "sd": 0.0434
+      },
+      "citations made by all agents": {
+        "values": [
+          2.8438,
+          2.6875,
+          2.7083
+        ],
+        "sd": 0.0849
+      },
+      "answer rests on no existing authority": {
+        "values": [
+          0.0938,
+          0.1354,
+          0.1146
+        ],
+        "sd": 0.0208
+      },
+      "cited cases not found (all agents)": {
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "sd": 0.0
+      },
+      "answer similarity (sentence embedding)": {
+        "values": [
+          0.6807,
+          0.6937,
+          0.694
+        ],
+        "sd": 0.0076
+      },
+      "legacy: fabricated-name rate": {
+        "values": [
+          0.0382,
+          0.0174,
+          0.0182
+        ],
+        "sd": 0.0118
+      },
+      "legacy: answer similarity (Legal-BERT)": {
+        "values": [
+          0.9231,
+          0.9255,
+          0.9236
+        ],
+        "sd": 0.0013
+      },
+      "legacy: authority recall": {
+        "values": [
+          0.8021,
+          0.8021,
+          0.8229
+        ],
+        "sd": 0.012
+      }
+    }
+  }
+}
